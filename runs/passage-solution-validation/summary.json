@@ -1,0 +1,141 @@
+{
+  "protocol": "rgb_tracked_geometry_local_odometry_v2",
+  "completion_contract": "public_body_reference_and_clearance_v2",
+  "mode": "api",
+  "thinking": {
+    "type": "enabled"
+  },
+  "seed": 0,
+  "max_model_calls_per_case": 20,
+  "max_wall_seconds_per_case": 300,
+  "total_cases": 3,
+  "successes": 3,
+  "cases": [
+    {
+      "task_id": "go_through_red_triangle_tunnel",
+      "success": true,
+      "model_calls": 17,
+      "reasoning_responses": 17,
+      "wall_elapsed_s": 111.77060021699981,
+      "evaluation": {
+        "success": true,
+        "goal_kind": "passage",
+        "distance_to_target_center_m": 1.1449205771700848,
+        "distance_error_m": 0.14492057717008477,
+        "heading_error_rad": 0.2573671357966574,
+        "standoff_m": 1.0,
+        "distance_tolerance_m": 0.18,
+        "stopped": true,
+        "speed_mps": 0.0025548805015693054,
+        "fallen": false,
+        "collision": false,
+        "collision_physics_steps": 0,
+        "target_xy_m": [
+          4.4,
+          0.0
+        ],
+        "base_xy_m": [
+          3.2790812081894183,
+          0.2332041813376958
+        ],
+        "sim_time_s": 24.199999999997466,
+        "source": "privileged_simulator_evaluator",
+        "passage_crossed": true,
+        "beyond_exit": true,
+        "gate_x_m": 2.2,
+        "finish_x_min_m": 3.0
+      },
+      "metrics_path": "runs/passage-solution-validation/20261028-194237-api-go_through_red_triangle_tunnel-s0-261d77/metrics.json",
+      "observation_protocol": "rgb_tracked_geometry_local_odometry_v2",
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    {
+      "task_id": "go_through_green_rectangle_tunnel",
+      "success": true,
+      "model_calls": 17,
+      "reasoning_responses": 17,
+      "wall_elapsed_s": 56.31050366999989,
+      "evaluation": {
+        "success": true,
+        "goal_kind": "passage",
+        "distance_to_target_center_m": 1.1804223020131583,
+        "distance_error_m": 0.18042230201315834,
+        "heading_error_rad": 0.24482341410647912,
+        "standoff_m": 1.0,
+        "distance_tolerance_m": 0.18,
+        "stopped": true,
+        "speed_mps": 0.003571867989945883,
+        "fallen": false,
+        "collision": false,
+        "collision_physics_steps": 0,
+        "target_xy_m": [
+          4.4,
+          0.0
+        ],
+        "base_xy_m": [
+          3.2368616114594633,
+          0.20126077658939617
+        ],
+        "sim_time_s": 25.719999999996624,
+        "source": "privileged_simulator_evaluator",
+        "passage_crossed": true,
+        "beyond_exit": true,
+        "gate_x_m": 2.2,
+        "finish_x_min_m": 3.0
+      },
+      "metrics_path": "runs/passage-solution-validation/20261028-194514-api-go_through_green_rectangle_tunnel-s0-96af90/metrics.json",
+      "observation_protocol": "rgb_tracked_geometry_local_odometry_v2",
+      "thinking": {
+        "type": "enabled"
+      }
+    },
+    {
+      "task_id": "go_through_yellow_triangle_tunnel",
+      "success": true,
+      "model_calls": 19,
+      "reasoning_responses": 19,
+      "wall_elapsed_s": 90.34952309799883,
+      "evaluation": {
+        "success": true,
+        "goal_kind": "passage",
+        "distance_to_target_center_m": 1.3087628476582664,
+        "distance_error_m": 0.30876284765826645,
+        "heading_error_rad": 0.23151294830211233,
+        "standoff_m": 1.0,
+        "distance_tolerance_m": 0.18,
+        "stopped": true,
+        "speed_mps": 0.0036915888443555004,
+        "fallen": false,
+        "collision": false,
+        "collision_physics_steps": 0,
+        "target_xy_m": [
+          4.4,
+          0.0
+        ],
+        "base_xy_m": [
+          3.1032539260964946,
+          0.17694578612224265
+        ],
+        "sim_time_s": 23.899999999997632,
+        "source": "privileged_simulator_evaluator",
+        "passage_crossed": true,
+        "beyond_exit": true,
+        "gate_x_m": 2.2,
+        "finish_x_min_m": 3.0
+      },
+      "metrics_path": "runs/passage-solution-validation/20261028-194514-api-go_through_yellow_triangle_tunnel-s0-3939e2/metrics.json",
+      "observation_protocol": "rgb_tracked_geometry_local_odometry_v2",
+      "thinking": {
+        "type": "enabled"
+      }
+    }
+  ],
+  "automatic_tests_passed": 230,
+  "changed_evaluation_thresholds": false,
+  "controller_changed": false,
+  "supplies_privileged_goal_coordinates": false,
+  "odometry_source": "idealized_simulated_proprioception",
+  "interpretation": "three local smoke trials, not a robustness or original QUARD benchmark success-rate estimate"
+}

@@ -1,0 +1,1815 @@
+{
+  "schema_version": 1,
+  "dataset": "Tong314/QUARD",
+  "revision": "375cbd77d6b8e96ff82e1529f0c44caa5c182d5e",
+  "license": "MIT",
+  "license_source": "https://huggingface.co/datasets/Tong314/QUARD",
+  "project_url": "https://quart-online.github.io/",
+  "code_url": "https://github.com/yuan48/QUART-Online",
+  "code_revision": "da8a0d3c3c4e8663d414b952c078d29b4316b7c4",
+  "paper": {
+    "title": "CerebVLA: Slow Brain, Fast Cerebellum for Motion-Aware Asynchronous Quadrupedal Control",
+    "file": "../QUAR_VLA_ICRA_2027.pdf",
+    "sha256": "15b594f6053cb35911dc13755232e4abd6b27f7856853b0f8b1fc2faefb2ccaf",
+    "dataset_section": "IV-A-1",
+    "table": "I"
+  },
+  "subset_kind": "independently_selected_public_regression_samples",
+  "exact_paper_task_ids_and_splits_available": false,
+  "sample_hz": 50,
+  "frames": [
+    0,
+    33,
+    67,
+    100
+  ],
+  "sampling_note": "One four-frame clip from the first archived trajectory of each public non-unload task. Frame indices are our deterministic test selection, not a published CerebVLA split.",
+  "integrity_note": "Only selected members are downloaded and SHA-256 checked. Source archive hashes are expected upstream LFS hashes; whole archives are not downloaded or verified.",
+  "tasks": [
+    {
+      "task_id": "crawl_red_gate2",
+      "category": "crawl",
+      "instruction": "crawl through the red gate2, normally",
+      "episode_id": "000339",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 325,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/crawl_red_gate2.tar.gz?download=true",
+        "root": "crawl_red_gate2",
+        "bytes": 1558530470,
+        "sha256": "737039341c45b6ead69c87a3c49e90a5fa954fc2ff337e3637ea616f67efe8d6",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "crawl_red_gate2/000339/action/000.npy",
+          "source_path": "crawl_red_gate2/000339/action/000.npy",
+          "bytes": 1507,
+          "sha256": "175f9f41b6a7be7d1f6edab7e947538dfb9721a0b3d5224dd41240a1fa759d57"
+        },
+        {
+          "path": "crawl_red_gate2/000339/action/033.npy",
+          "source_path": "crawl_red_gate2/000339/action/033.npy",
+          "bytes": 1507,
+          "sha256": "93c40ff721d7e23893999d0a7488483675190a925347aef44868658cd9b05be8"
+        },
+        {
+          "path": "crawl_red_gate2/000339/action/067.npy",
+          "source_path": "crawl_red_gate2/000339/action/067.npy",
+          "bytes": 1507,
+          "sha256": "0143701f545d0b839c1d923684a10f50ecc2b71e714de530d3c4b290e40e8377"
+        },
+        {
+          "path": "crawl_red_gate2/000339/action/100.npy",
+          "source_path": "crawl_red_gate2/000339/action/100.npy",
+          "bytes": 1507,
+          "sha256": "fb19f6ce254b69cefc0efcea2d3da29b81438192df6ef116ae89531ce067094e"
+        },
+        {
+          "path": "crawl_red_gate2/000339/command/000.npy",
+          "source_path": "crawl_red_gate2/000339/command/000.npy",
+          "bytes": 759,
+          "sha256": "99329bd5a0d2e706be5583bb6358a56df520a17da4117a573ea15c4e312ddbd4"
+        },
+        {
+          "path": "crawl_red_gate2/000339/command/033.npy",
+          "source_path": "crawl_red_gate2/000339/command/033.npy",
+          "bytes": 759,
+          "sha256": "bba6ecaf5886df99c4b5abfe1776203a62d6a58212d1f6e41198f1f9f01509b9"
+        },
+        {
+          "path": "crawl_red_gate2/000339/command/067.npy",
+          "source_path": "crawl_red_gate2/000339/command/067.npy",
+          "bytes": 759,
+          "sha256": "453491eb944e9589600407ca74fbcf734a63cae314e791b0779522c6b13872ba"
+        },
+        {
+          "path": "crawl_red_gate2/000339/command/100.npy",
+          "source_path": "crawl_red_gate2/000339/command/100.npy",
+          "bytes": 759,
+          "sha256": "5078334b3014de711e998242d084967276ca20115b1a3de9ea8e2671514122df"
+        },
+        {
+          "path": "crawl_red_gate2/000339/depth/000.png",
+          "source_path": "crawl_red_gate2/000339/depth/000.png",
+          "bytes": 3263,
+          "sha256": "1e0ca81d7ef73d75245ebc201b40cd8011880a770c10a4cb39aba9b86fe7fbbc"
+        },
+        {
+          "path": "crawl_red_gate2/000339/depth/033.png",
+          "source_path": "crawl_red_gate2/000339/depth/033.png",
+          "bytes": 3757,
+          "sha256": "a1eae4a6007fc6305d9d8c8edb39e5a660a448cf24d2483ff8659c5254021987"
+        },
+        {
+          "path": "crawl_red_gate2/000339/depth/067.png",
+          "source_path": "crawl_red_gate2/000339/depth/067.png",
+          "bytes": 5733,
+          "sha256": "e1f3a6df89ad62346d1677c1e0937a1b73e77f9a9be564774668e5a1c5aa4a2f"
+        },
+        {
+          "path": "crawl_red_gate2/000339/depth/100.png",
+          "source_path": "crawl_red_gate2/000339/depth/100.png",
+          "bytes": 3867,
+          "sha256": "373163f12f3cbd2d5a707a2d8f17b98c332480cd1a0a671538d16eb11f98bfcf"
+        },
+        {
+          "path": "crawl_red_gate2/000339/image/000.png",
+          "source_path": "crawl_red_gate2/000339/image/000.png",
+          "bytes": 7485,
+          "sha256": "d3cfa80e7a21ab8107b5b42c1006f778b93c60b5ab353cff07582e2a917a3558"
+        },
+        {
+          "path": "crawl_red_gate2/000339/image/033.png",
+          "source_path": "crawl_red_gate2/000339/image/033.png",
+          "bytes": 9733,
+          "sha256": "069e3e65216c4725debf0fc8d6fabed2127bb55eab21bf6ddf9891c815b21085"
+        },
+        {
+          "path": "crawl_red_gate2/000339/image/067.png",
+          "source_path": "crawl_red_gate2/000339/image/067.png",
+          "bytes": 5892,
+          "sha256": "9813d4ef79d8a25bcafb2ccf528730c7110eab6b76555dbf677ced65bc6d97e5"
+        },
+        {
+          "path": "crawl_red_gate2/000339/image/100.png",
+          "source_path": "crawl_red_gate2/000339/image/100.png",
+          "bytes": 4794,
+          "sha256": "033f4dabe140f4e092bdd6dc550ffe29c0dd6b34a298d98d8cc24382bdc6dbea"
+        },
+        {
+          "path": "crawl_red_gate2/000339/info.csv",
+          "source_path": "crawl_red_gate2/000339/info.csv",
+          "bytes": 255,
+          "sha256": "79fc9101395328855ffa8eec605957a9b09c08f7609c01b9be679e6c52e4168a"
+        }
+      ]
+    },
+    {
+      "task_id": "crawl_red_gate3",
+      "category": "crawl",
+      "instruction": "crawl through the red gate3, slowly",
+      "episode_id": "000339",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 426,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/crawl_red_gate3.tar.gz?download=true",
+        "root": "crawl_red_gate3",
+        "bytes": 1473972568,
+        "sha256": "b9ea606668b48999941dffd238b968af2d7c7d351afd025b5524b28f8ce6ced8",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "crawl_red_gate3/000339/action/000.npy",
+          "source_path": "crawl_red_gate3/000339/action/000.npy",
+          "bytes": 1507,
+          "sha256": "79d04ac55903a26136a0ca5d4b7a08d82bdb170a17fbde3000478a00bc6b1569"
+        },
+        {
+          "path": "crawl_red_gate3/000339/action/033.npy",
+          "source_path": "crawl_red_gate3/000339/action/033.npy",
+          "bytes": 1507,
+          "sha256": "701a357912d68403942528ef86fd681bfc81e4c0dd77c32430ba1dce6e9538ef"
+        },
+        {
+          "path": "crawl_red_gate3/000339/action/067.npy",
+          "source_path": "crawl_red_gate3/000339/action/067.npy",
+          "bytes": 1507,
+          "sha256": "eff59748745443be7c74d9d8944b1436e7e167ddebe7cd21cda4790713951989"
+        },
+        {
+          "path": "crawl_red_gate3/000339/action/100.npy",
+          "source_path": "crawl_red_gate3/000339/action/100.npy",
+          "bytes": 1507,
+          "sha256": "59e8bde1b54a9e604c84050e67ef7884273a5e84b7e1554a0ccca3c45219247c"
+        },
+        {
+          "path": "crawl_red_gate3/000339/command/000.npy",
+          "source_path": "crawl_red_gate3/000339/command/000.npy",
+          "bytes": 759,
+          "sha256": "2928f484f83438e2473fe3d135b995c24a1c97e676a9b12b32cca0c2db9f85b1"
+        },
+        {
+          "path": "crawl_red_gate3/000339/command/033.npy",
+          "source_path": "crawl_red_gate3/000339/command/033.npy",
+          "bytes": 759,
+          "sha256": "5439789e8ffdb05432e6442280c2e889feb1b0404cf9db1c13c85480cb4a7054"
+        },
+        {
+          "path": "crawl_red_gate3/000339/command/067.npy",
+          "source_path": "crawl_red_gate3/000339/command/067.npy",
+          "bytes": 759,
+          "sha256": "e26ac79114e59954ff1b2479c44ae900b5d68ef7f8759460f9ecb8dcb4286b1a"
+        },
+        {
+          "path": "crawl_red_gate3/000339/command/100.npy",
+          "source_path": "crawl_red_gate3/000339/command/100.npy",
+          "bytes": 759,
+          "sha256": "0957abc61e029a0ba85f8d16b2236d112dd53a4947ae982b5eb1255d01aa3e93"
+        },
+        {
+          "path": "crawl_red_gate3/000339/depth/000.png",
+          "source_path": "crawl_red_gate3/000339/depth/000.png",
+          "bytes": 4804,
+          "sha256": "1dd11985c2017534a781bf495e2e8ef3b4ed77c675175c82a548a57a40fb2aa7"
+        },
+        {
+          "path": "crawl_red_gate3/000339/depth/033.png",
+          "source_path": "crawl_red_gate3/000339/depth/033.png",
+          "bytes": 3926,
+          "sha256": "1d3e74ae1f06b3c92428042e6bac01f3419777bcf65cd0cbb76205d2a62f4723"
+        },
+        {
+          "path": "crawl_red_gate3/000339/depth/067.png",
+          "source_path": "crawl_red_gate3/000339/depth/067.png",
+          "bytes": 3851,
+          "sha256": "74aec434b0e4f8fa621efd620fb20697521efc0d65201d7d5f1eb7042a078e1e"
+        },
+        {
+          "path": "crawl_red_gate3/000339/depth/100.png",
+          "source_path": "crawl_red_gate3/000339/depth/100.png",
+          "bytes": 4596,
+          "sha256": "aee61ab5b44c0e96c8a40be7aaa237dfcbf821ac682ff70e280b34b57a3c1aa2"
+        },
+        {
+          "path": "crawl_red_gate3/000339/image/000.png",
+          "source_path": "crawl_red_gate3/000339/image/000.png",
+          "bytes": 8118,
+          "sha256": "d22bb63298e500aa22ed45ecee90814c036a7ce5ebd5d6e76e2fe137093a125f"
+        },
+        {
+          "path": "crawl_red_gate3/000339/image/033.png",
+          "source_path": "crawl_red_gate3/000339/image/033.png",
+          "bytes": 8714,
+          "sha256": "b9362e694e510a4664af6824d60fe17bb8b8ad8ae46375d7467009d28ca23cc0"
+        },
+        {
+          "path": "crawl_red_gate3/000339/image/067.png",
+          "source_path": "crawl_red_gate3/000339/image/067.png",
+          "bytes": 9543,
+          "sha256": "3e640911ed5432ad06aa70f96496e93022c3c85b93cfaef31abb45231b499be1"
+        },
+        {
+          "path": "crawl_red_gate3/000339/image/100.png",
+          "source_path": "crawl_red_gate3/000339/image/100.png",
+          "bytes": 8321,
+          "sha256": "d4d3c7c9a0cc3cf53914b796127fbdacc1b13654dfe2659857130ebb0b33c7fb"
+        },
+        {
+          "path": "crawl_red_gate3/000339/info.csv",
+          "source_path": "crawl_red_gate3/000339/info.csv",
+          "bytes": 254,
+          "sha256": "c32822a71aa68f895f0d6181ceb37b73e3531cb4410ebfd6b555bb786848e906"
+        }
+      ]
+    },
+    {
+      "task_id": "distinguish_texture_a",
+      "category": "distinguish",
+      "instruction": "distinguish the texture a, normally",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 159,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/distinguish_texture_a.tar.gz?download=true",
+        "root": "distinguish_texture_a",
+        "bytes": 4187005295,
+        "sha256": "210ec5b73872839c89cdf263fc897cf9e28d69c3666d8246a61643f1b6b8636d",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "distinguish_texture_a/000422/action/000.npy",
+          "source_path": "distinguish_texture_a/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "a6ee329c28507bc6c33e4511b40acd469cd574df8158051306235fbc833ca7f4"
+        },
+        {
+          "path": "distinguish_texture_a/000422/action/033.npy",
+          "source_path": "distinguish_texture_a/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "023159e76a2fa5b6c3a7330b5dfed8c8009135feffeef6080650e8b1e6b41d97"
+        },
+        {
+          "path": "distinguish_texture_a/000422/action/067.npy",
+          "source_path": "distinguish_texture_a/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "b87c6f40e7c56b7483153ca900acba5802d980236b90ad12fdd7f06960573c1f"
+        },
+        {
+          "path": "distinguish_texture_a/000422/action/100.npy",
+          "source_path": "distinguish_texture_a/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "31f861975939a2dbb4d7767a7f57734d81e2b919c688915111220efca578809f"
+        },
+        {
+          "path": "distinguish_texture_a/000422/command/000.npy",
+          "source_path": "distinguish_texture_a/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "06e7c3822237e22fb538f2f4db08c6ff8775a9bc64f35573f7b0edf5f64ac3b0"
+        },
+        {
+          "path": "distinguish_texture_a/000422/command/033.npy",
+          "source_path": "distinguish_texture_a/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "65808c1cb974eac425236f4694b8b1f50e35dbb2b828bd7610c077351b57fbf7"
+        },
+        {
+          "path": "distinguish_texture_a/000422/command/067.npy",
+          "source_path": "distinguish_texture_a/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "928251119ec23672f9e797c335ba3c5c9d57d38731a73e793e250f79b95bcd4c"
+        },
+        {
+          "path": "distinguish_texture_a/000422/command/100.npy",
+          "source_path": "distinguish_texture_a/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "cdfdb36213abdf712c33a6f8e2731ee5b98f721338631caf038241b236ae3cc9"
+        },
+        {
+          "path": "distinguish_texture_a/000422/depth/000.png",
+          "source_path": "distinguish_texture_a/000422/depth/000.png",
+          "bytes": 2762,
+          "sha256": "f6efe31b9be8f0804f6b86f63f304c4384b48c3c2a0eb002d3d3f296380b6279"
+        },
+        {
+          "path": "distinguish_texture_a/000422/depth/033.png",
+          "source_path": "distinguish_texture_a/000422/depth/033.png",
+          "bytes": 5686,
+          "sha256": "2cf31bb261365db035d2a35e2766aef0928c722a1782ddd90da92335746db1a4"
+        },
+        {
+          "path": "distinguish_texture_a/000422/depth/067.png",
+          "source_path": "distinguish_texture_a/000422/depth/067.png",
+          "bytes": 3679,
+          "sha256": "e3eefa678b6715088c3da601984d97a35faa02ffbc0fd687642903d8699ef404"
+        },
+        {
+          "path": "distinguish_texture_a/000422/depth/100.png",
+          "source_path": "distinguish_texture_a/000422/depth/100.png",
+          "bytes": 2771,
+          "sha256": "a79df1a44dfba8551ba01829521594ffb1ce16f802a40ac5928c3553ba9a8d9d"
+        },
+        {
+          "path": "distinguish_texture_a/000422/image/000.png",
+          "source_path": "distinguish_texture_a/000422/image/000.png",
+          "bytes": 13128,
+          "sha256": "78ec51700c618577dfdb543d3c3bd67ee675d8eb8aeb4c2b12dfdde99cb4bbe1"
+        },
+        {
+          "path": "distinguish_texture_a/000422/image/033.png",
+          "source_path": "distinguish_texture_a/000422/image/033.png",
+          "bytes": 13440,
+          "sha256": "c2bc9fcd7cb1e5b3395fc5e6e94167d32712bb01450fe1fda86f2075cf445ba2"
+        },
+        {
+          "path": "distinguish_texture_a/000422/image/067.png",
+          "source_path": "distinguish_texture_a/000422/image/067.png",
+          "bytes": 12837,
+          "sha256": "7b929ba40e80444592851b37ea8ff413e0e8c89777ffd5a463bd68e404c8b594"
+        },
+        {
+          "path": "distinguish_texture_a/000422/image/100.png",
+          "source_path": "distinguish_texture_a/000422/image/100.png",
+          "bytes": 12613,
+          "sha256": "904c549c6e6e7dda4cc1605c2a2efd74c3f9f37c6fdecb819f9f6360dfa62ab4"
+        },
+        {
+          "path": "distinguish_texture_a/000422/info.csv",
+          "source_path": "distinguish_texture_a/000422/info.csv",
+          "bytes": 277,
+          "sha256": "747c4cce46a074743d7a11f251a391f6199b9fb3edb3bc968185cb0e68849e56"
+        }
+      ]
+    },
+    {
+      "task_id": "distinguish_texture_b",
+      "category": "distinguish",
+      "instruction": "distinguish the texture b, quickly",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 142,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/distinguish_texture_b.tar.gz?download=true",
+        "root": "distinguish_texture_b",
+        "bytes": 4158716014,
+        "sha256": "1a08b1e2db4700a2a83733998091867f5ad3ba4e16a0fffc51550ef89e86942a",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "distinguish_texture_b/000422/action/000.npy",
+          "source_path": "distinguish_texture_b/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "1fff0b99b6108f8abf4edc884bdb7a589fb783838dd95cd082bec8d00534d3c9"
+        },
+        {
+          "path": "distinguish_texture_b/000422/action/033.npy",
+          "source_path": "distinguish_texture_b/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "9856ccdccaa7bc30408cf921bf5289476112e3800e945ae9cc48089a8ae2bf16"
+        },
+        {
+          "path": "distinguish_texture_b/000422/action/067.npy",
+          "source_path": "distinguish_texture_b/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "98ed2e576347742fa83de9848f4465cfbbd43ed063261c787f03a0baeff4c4ac"
+        },
+        {
+          "path": "distinguish_texture_b/000422/action/100.npy",
+          "source_path": "distinguish_texture_b/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "65ae304394fe86fb80708cf3d3061e811606668ac85ca21b6a4acdef81190ff8"
+        },
+        {
+          "path": "distinguish_texture_b/000422/command/000.npy",
+          "source_path": "distinguish_texture_b/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "e566a6a139d574d904dcd79e679ada04f590dc16aa2c443d4cffa1ee2fceeccf"
+        },
+        {
+          "path": "distinguish_texture_b/000422/command/033.npy",
+          "source_path": "distinguish_texture_b/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "df64eb0bb1f25f86160b2f3d4653a6cfcac404fd94b3858c5eb1dd8b8d48976d"
+        },
+        {
+          "path": "distinguish_texture_b/000422/command/067.npy",
+          "source_path": "distinguish_texture_b/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "8ec5ba685645d98900c4ab0d7ac5a96ee05b8a7853beccec5cd428c451881a8e"
+        },
+        {
+          "path": "distinguish_texture_b/000422/command/100.npy",
+          "source_path": "distinguish_texture_b/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "161ec949d6ff727e26c071aa95bffee249e857b82a6a5ef30344c5cefdd687c4"
+        },
+        {
+          "path": "distinguish_texture_b/000422/depth/000.png",
+          "source_path": "distinguish_texture_b/000422/depth/000.png",
+          "bytes": 3206,
+          "sha256": "963aecbaf6a6ea2bf8161bc36e2b4bf991d691ee90e1d8aeb147278e1df43d85"
+        },
+        {
+          "path": "distinguish_texture_b/000422/depth/033.png",
+          "source_path": "distinguish_texture_b/000422/depth/033.png",
+          "bytes": 4279,
+          "sha256": "c3d988c9bc3e45a653ff840782180feaba49b177be5a1acf33399d5dc45dbd72"
+        },
+        {
+          "path": "distinguish_texture_b/000422/depth/067.png",
+          "source_path": "distinguish_texture_b/000422/depth/067.png",
+          "bytes": 4068,
+          "sha256": "01d0c6a0c72a5f37ef9f9a42ad88a2654ef80eee6f4e781e2eab021f856aaa1d"
+        },
+        {
+          "path": "distinguish_texture_b/000422/depth/100.png",
+          "source_path": "distinguish_texture_b/000422/depth/100.png",
+          "bytes": 3510,
+          "sha256": "185235fa2c345d5fcecf81723f2103e99248fd0627efaee49e6b32ac94931658"
+        },
+        {
+          "path": "distinguish_texture_b/000422/image/000.png",
+          "source_path": "distinguish_texture_b/000422/image/000.png",
+          "bytes": 12158,
+          "sha256": "d7453a7eb6dd560e240ab9e0fd8d88004de83632829a90ffba04323e9e852658"
+        },
+        {
+          "path": "distinguish_texture_b/000422/image/033.png",
+          "source_path": "distinguish_texture_b/000422/image/033.png",
+          "bytes": 12591,
+          "sha256": "b3a6133c75444f4ad08dadbb2296eb4fecbf7c938c6021352317fafd8e73e3fa"
+        },
+        {
+          "path": "distinguish_texture_b/000422/image/067.png",
+          "source_path": "distinguish_texture_b/000422/image/067.png",
+          "bytes": 12855,
+          "sha256": "099173f16e7f617b780a1cd4f24c8b30db14ae9b032867f7eaf146647b8703f3"
+        },
+        {
+          "path": "distinguish_texture_b/000422/image/100.png",
+          "source_path": "distinguish_texture_b/000422/image/100.png",
+          "bytes": 12992,
+          "sha256": "22ddcb04c2c4bc3aa3829385ce31160ffa3ef717c1a92c11811e5bb1d5b30905"
+        },
+        {
+          "path": "distinguish_texture_b/000422/info.csv",
+          "source_path": "distinguish_texture_b/000422/info.csv",
+          "bytes": 276,
+          "sha256": "3f2a6f05fa752cabf9e7b586770b34af3ab750a029b2c285f806259271c18a1c"
+        }
+      ]
+    },
+    {
+      "task_id": "distinguish_texture_c",
+      "category": "distinguish",
+      "instruction": "distinguish the texture c, quickly",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 157,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/distinguish_texture_c.tar.gz?download=true",
+        "root": "distinguish_texture_c",
+        "bytes": 4073980285,
+        "sha256": "f9837859f0d463c1ace23d520f8fefb700104714b5ab0fff1fcf192fb8336daf",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "distinguish_texture_c/000422/action/000.npy",
+          "source_path": "distinguish_texture_c/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "36f65031afb936f3cb05bebafc8619cd272ad304b7af40a6e4685a08cf6360e1"
+        },
+        {
+          "path": "distinguish_texture_c/000422/action/033.npy",
+          "source_path": "distinguish_texture_c/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "1c99720783b497d94065841fdad30865187cc0686f58b2e1503c45b560fb5ce4"
+        },
+        {
+          "path": "distinguish_texture_c/000422/action/067.npy",
+          "source_path": "distinguish_texture_c/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "721d728f931cb34831b7c2a5df3b65a47404144e2746dcb236673dcbb4c0af1d"
+        },
+        {
+          "path": "distinguish_texture_c/000422/action/100.npy",
+          "source_path": "distinguish_texture_c/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "e7b1ad5cac26cb9e5ff134701f2772c3a9487133eb954db63ca81ebffa366ee7"
+        },
+        {
+          "path": "distinguish_texture_c/000422/command/000.npy",
+          "source_path": "distinguish_texture_c/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "ca7427a3bd56f63d1ea75ed1851ef7a223f4202075a0c1ddd409bcb9a2392b65"
+        },
+        {
+          "path": "distinguish_texture_c/000422/command/033.npy",
+          "source_path": "distinguish_texture_c/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "68031d53a8554607ef903213542bf65f6a76376a3383efe6f8be64b0584734c2"
+        },
+        {
+          "path": "distinguish_texture_c/000422/command/067.npy",
+          "source_path": "distinguish_texture_c/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "207d65d002eee574abfda3b07242604254d2090d10680037a9be32db2dd407cf"
+        },
+        {
+          "path": "distinguish_texture_c/000422/command/100.npy",
+          "source_path": "distinguish_texture_c/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "af75745dd71bf9f1b828d823e5fd172704edbb623d2c4e7acadc80c011e16938"
+        },
+        {
+          "path": "distinguish_texture_c/000422/depth/000.png",
+          "source_path": "distinguish_texture_c/000422/depth/000.png",
+          "bytes": 4991,
+          "sha256": "a331663e9d66e156e6837879f6d7397a423aa727726877ff9e1fd1628ac6804d"
+        },
+        {
+          "path": "distinguish_texture_c/000422/depth/033.png",
+          "source_path": "distinguish_texture_c/000422/depth/033.png",
+          "bytes": 3894,
+          "sha256": "be01ee38c112a53eeb77607958fa56c8fcdf634ed9e9d9361bf8dcfcdea88f73"
+        },
+        {
+          "path": "distinguish_texture_c/000422/depth/067.png",
+          "source_path": "distinguish_texture_c/000422/depth/067.png",
+          "bytes": 5344,
+          "sha256": "a32de0e111777fdc9e05e2c8ba74b710c74923388d7138ddd802ef9a558f8ae3"
+        },
+        {
+          "path": "distinguish_texture_c/000422/depth/100.png",
+          "source_path": "distinguish_texture_c/000422/depth/100.png",
+          "bytes": 3860,
+          "sha256": "a9f8773fbb7b96bdbc34981875484d5c3dd1f077c31c91606fae300066f1debb"
+        },
+        {
+          "path": "distinguish_texture_c/000422/image/000.png",
+          "source_path": "distinguish_texture_c/000422/image/000.png",
+          "bytes": 11878,
+          "sha256": "aec7615bc123f26b988a2dc90e23b2d530f5ecbccfbe1ea457d35afe76799cfe"
+        },
+        {
+          "path": "distinguish_texture_c/000422/image/033.png",
+          "source_path": "distinguish_texture_c/000422/image/033.png",
+          "bytes": 11570,
+          "sha256": "57256f38fc89fe5935289410d67229ee8d880a9cb3c762d7421cf484e46daee4"
+        },
+        {
+          "path": "distinguish_texture_c/000422/image/067.png",
+          "source_path": "distinguish_texture_c/000422/image/067.png",
+          "bytes": 11736,
+          "sha256": "e4250aad4745a3d690051caa1213610876a2a0dfb92221329213d4bb9aac4fe1"
+        },
+        {
+          "path": "distinguish_texture_c/000422/image/100.png",
+          "source_path": "distinguish_texture_c/000422/image/100.png",
+          "bytes": 11574,
+          "sha256": "d3ab1fe7c54206a3e56fa8e17254492515999d194a7702d2a772235a62a4ec42"
+        },
+        {
+          "path": "distinguish_texture_c/000422/info.csv",
+          "source_path": "distinguish_texture_c/000422/info.csv",
+          "bytes": 276,
+          "sha256": "be987339146579f08dcd444232a0f0bc3dd6e8fabc16b872f4c9df4d3dcdd3e0"
+        }
+      ]
+    },
+    {
+      "task_id": "go_avoid_texture_cooker",
+      "category": "go_avoid",
+      "instruction": "go to the texture cooker and avoid obstacle, slowly",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 432,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/go_avoid_texture_cooker.tar.gz?download=true",
+        "root": "go_avoid_texture_cooker",
+        "bytes": 4453656873,
+        "sha256": "3c0cb7c2440a7cb0ce7ce3652edc4f803230f247a089c0660dd2f382ee97c453",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "go_avoid_texture_cooker/000422/action/000.npy",
+          "source_path": "go_avoid_texture_cooker/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "758fded41dfddf801d811be3ed333635d24a94a8422a2d156e406e3ab7d67ea8"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/action/033.npy",
+          "source_path": "go_avoid_texture_cooker/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "1bc5310a761e28208ccdc2c96d357717a69a67a0e5b00ed5274c656346cd47a6"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/action/067.npy",
+          "source_path": "go_avoid_texture_cooker/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "8a29642358b969909b39e1dc171225312870bc202d02aa137da4d2d05a142fd6"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/action/100.npy",
+          "source_path": "go_avoid_texture_cooker/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "f2871edd4773a6325c96b55c2b30d0a67c0b23a11afa69c4012da8895e992a6b"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/command/000.npy",
+          "source_path": "go_avoid_texture_cooker/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "5ce430816ec8fa0d369b637f8fe9017c4cf2d7901a6f4c0042c4a454e507e912"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/command/033.npy",
+          "source_path": "go_avoid_texture_cooker/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "d65be478c920a02d33f240080f6c0bbac4f7860af7058d556f8e31879815aae6"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/command/067.npy",
+          "source_path": "go_avoid_texture_cooker/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "916d0f73910fa54178ec435dc5619003e0c001c0ee8b37ceda567784c66e07b3"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/command/100.npy",
+          "source_path": "go_avoid_texture_cooker/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "249b8d1a11225682b593906b6b6d30a83c672adad34cff5f1c6e68f732027aad"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/depth/000.png",
+          "source_path": "go_avoid_texture_cooker/000422/depth/000.png",
+          "bytes": 3891,
+          "sha256": "5f9e46bd4a1bd4d5ad1516d94acf1cc9f6d32e392db9b6ea74c1262cd92aeca9"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/depth/033.png",
+          "source_path": "go_avoid_texture_cooker/000422/depth/033.png",
+          "bytes": 3743,
+          "sha256": "85c1a61c53425006efeb9f2d28d8da2ff515bfe0dfa1a390dcef667d1c3aac08"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/depth/067.png",
+          "source_path": "go_avoid_texture_cooker/000422/depth/067.png",
+          "bytes": 5539,
+          "sha256": "1194e42413b9231a60131522edba3273f020a736d5f405377aa76ad758023bc5"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/depth/100.png",
+          "source_path": "go_avoid_texture_cooker/000422/depth/100.png",
+          "bytes": 4118,
+          "sha256": "39f10f5c7ad2175115e429f5f208231297d0c62fc0daf7ac4b0b5e059fb70d87"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/image/000.png",
+          "source_path": "go_avoid_texture_cooker/000422/image/000.png",
+          "bytes": 27417,
+          "sha256": "6df2f8d4aaf6b96b4a675c7b5aa16cbd4a0f400885ee61695d3b5adabf82299b"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/image/033.png",
+          "source_path": "go_avoid_texture_cooker/000422/image/033.png",
+          "bytes": 35824,
+          "sha256": "a220edd43aa046557c5be813474c8262d15ef219b4f0bce415de2ea0df5a5115"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/image/067.png",
+          "source_path": "go_avoid_texture_cooker/000422/image/067.png",
+          "bytes": 19693,
+          "sha256": "f91f9c0e50949f6b851f043629ccef0546bf642464fd6de548d5ede635da09ba"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/image/100.png",
+          "source_path": "go_avoid_texture_cooker/000422/image/100.png",
+          "bytes": 3479,
+          "sha256": "50b7d1f193e2bc55e229bb810121aa55fea3f59fd13c95f5c5835d90994e8504"
+        },
+        {
+          "path": "go_avoid_texture_cooker/000422/info.csv",
+          "source_path": "go_avoid_texture_cooker/000422/info.csv",
+          "bytes": 303,
+          "sha256": "c4d59cc38ed98ca9b45e9d0b19879b39a74187c1caf6e9d2ab6501c23062f68e"
+        }
+      ]
+    },
+    {
+      "task_id": "go_avoid_texture_drawers",
+      "category": "go_avoid",
+      "instruction": "go to the texture drawers and avoid obstacle, quickly",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 213,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/go_avoid_texture_drawers.tar.gz?download=true",
+        "root": "go_avoid_texture_drawers",
+        "bytes": 3727400355,
+        "sha256": "d8682f22616b51ca93ed7f4f6ea6dee25bed87a67cd5d587603ef2eafc9af0c7",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "go_avoid_texture_drawers/000422/action/000.npy",
+          "source_path": "go_avoid_texture_drawers/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "d29dda009f9be06adb639e76b8cbf9b0532071b80097b01267f37b449861dde3"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/action/033.npy",
+          "source_path": "go_avoid_texture_drawers/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "b067af195d333c8c6a7ab0d1f5b356ea5caeec6b352e3a855646348c507f796c"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/action/067.npy",
+          "source_path": "go_avoid_texture_drawers/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "e43cf88a46fa0c32d5cede78d7d5334bfaf0512ed853175c031881ecb50c5943"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/action/100.npy",
+          "source_path": "go_avoid_texture_drawers/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "6dd0a6a59c06046bb8053fd1eaca7a035127a470c01f492a458be4737b7856ca"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/command/000.npy",
+          "source_path": "go_avoid_texture_drawers/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "5ba9f35efaf9b0cd2b9d5eb7aee89cc5cad1c24d225da8c4c9fe1b4453027c3c"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/command/033.npy",
+          "source_path": "go_avoid_texture_drawers/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "9af519dc6204a865732ca1838fd7988244d06869b57585f22ed6817a718b3f33"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/command/067.npy",
+          "source_path": "go_avoid_texture_drawers/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "f058d77376e872e4b2d134c09ce52b69c3054ac08033f0859d6d7f16feebf918"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/command/100.npy",
+          "source_path": "go_avoid_texture_drawers/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "8702f8310ad69dc46e89cd1a7e4777057eef9f2ef07801668d5c2105c09a162a"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/depth/000.png",
+          "source_path": "go_avoid_texture_drawers/000422/depth/000.png",
+          "bytes": 7599,
+          "sha256": "85b0d4aebac951fa8c8d3074c598fa76bb3cca877e5205fd03d786c40c8f5bc8"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/depth/033.png",
+          "source_path": "go_avoid_texture_drawers/000422/depth/033.png",
+          "bytes": 10255,
+          "sha256": "a640ebb87346204379565b74856328df6b97242ecf86ab6457e147b86e5f8f88"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/depth/067.png",
+          "source_path": "go_avoid_texture_drawers/000422/depth/067.png",
+          "bytes": 5051,
+          "sha256": "ea162033e99b5fa22e044e6869f345d630deb5c53b38514f8bab8064dd8e98f6"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/depth/100.png",
+          "source_path": "go_avoid_texture_drawers/000422/depth/100.png",
+          "bytes": 4631,
+          "sha256": "f1ef0ffda74959423bdb92693c69ce0f83fa819a4ac2d21385b257ee91e32f49"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/image/000.png",
+          "source_path": "go_avoid_texture_drawers/000422/image/000.png",
+          "bytes": 47798,
+          "sha256": "d4f8bd56d074c3d783151bc8a44257596d4dbec49519c3ae278417a8f5b1a4ca"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/image/033.png",
+          "source_path": "go_avoid_texture_drawers/000422/image/033.png",
+          "bytes": 54588,
+          "sha256": "8591e4c7a9eda918f7e44d2fd80720b08244ebf5a760cd54ee382906dc2410e6"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/image/067.png",
+          "source_path": "go_avoid_texture_drawers/000422/image/067.png",
+          "bytes": 13746,
+          "sha256": "3a98f604d8d08d77c0f097224606dc6525011ee14bbf63e7b911701ea6f769f1"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/image/100.png",
+          "source_path": "go_avoid_texture_drawers/000422/image/100.png",
+          "bytes": 15015,
+          "sha256": "6eb6bed399054ef88186c492529a7b99b74c4cf1d06f2c0ea24605843dd7c6ff"
+        },
+        {
+          "path": "go_avoid_texture_drawers/000422/info.csv",
+          "source_path": "go_avoid_texture_drawers/000422/info.csv",
+          "bytes": 307,
+          "sha256": "36db3c294e2e8353ff13e2697320d2257d340ccf65993b865fa362b70b888f1f"
+        }
+      ]
+    },
+    {
+      "task_id": "go_avoid_texture_fan",
+      "category": "go_avoid",
+      "instruction": "go to the texture fan and avoid obstacle, quickly",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 232,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/go_avoid_texture_fan.tar.gz?download=true",
+        "root": "go_avoid_texture_fan",
+        "bytes": 9570725963,
+        "sha256": "170e211f6a19ab7f41eeef2f717db9e1f054c0f44af0129e68c20e20067be036",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "go_avoid_texture_fan/000422/action/000.npy",
+          "source_path": "go_avoid_texture_fan/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "28eebcbcb5cdf23ce692dcdddfbb1d86c6555e0d72782079c95596c7c0870af0"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/action/033.npy",
+          "source_path": "go_avoid_texture_fan/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "ed595185f992595a4507241933c7776cae51c9cccc77fa9e2fc478497b63009b"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/action/067.npy",
+          "source_path": "go_avoid_texture_fan/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "82b9f79166ba99fd1a70576f1bf4fe2ded81148f1f0b82f9b673fd7aa58d8836"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/action/100.npy",
+          "source_path": "go_avoid_texture_fan/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "8f7f6109ef247af745fb25f8c13db1f507b0df7659f7c549c9f62a7db9a2f03e"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/command/000.npy",
+          "source_path": "go_avoid_texture_fan/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "098bb4ce003683b2a54126f4d3e93e7c7711b8cd26b8e85b85e1baa9648d22ca"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/command/033.npy",
+          "source_path": "go_avoid_texture_fan/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "f38ab1aa9f24f7845776c31d211b27e910054d8675b39f1dcdbbdb0e1056a1ab"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/command/067.npy",
+          "source_path": "go_avoid_texture_fan/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "501bcf72e9c410016e5707009415104883f27ce714ac27f26a491c6287ecb402"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/command/100.npy",
+          "source_path": "go_avoid_texture_fan/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "d87213d38d1162c522aa94993e06c3fb71442e89844f2811c7c0d2dec222f991"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/depth/000.png",
+          "source_path": "go_avoid_texture_fan/000422/depth/000.png",
+          "bytes": 7034,
+          "sha256": "e64fe0d52fec1fb7d043e0370dbb711f65915638caafb09ee48a70cb1fcaae44"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/depth/033.png",
+          "source_path": "go_avoid_texture_fan/000422/depth/033.png",
+          "bytes": 8138,
+          "sha256": "467f47cc10fe868bb1ed2c60d9642c9434d6ae5627b19500e78bfb52d155c565"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/depth/067.png",
+          "source_path": "go_avoid_texture_fan/000422/depth/067.png",
+          "bytes": 4146,
+          "sha256": "679ce9812d0e1a3ea4da367638f174ba408facea4ffec1b637f94d3eeba0f5c5"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/depth/100.png",
+          "source_path": "go_avoid_texture_fan/000422/depth/100.png",
+          "bytes": 8355,
+          "sha256": "1fcb43beafd23b605178c904e0fdfb3e4629b1ed4eaf1a681ac2f0f578202d03"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/image/000.png",
+          "source_path": "go_avoid_texture_fan/000422/image/000.png",
+          "bytes": 34492,
+          "sha256": "7901aac45464bd92a996258e3db044a346c16cb9b6529c26af64dd48a793e938"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/image/033.png",
+          "source_path": "go_avoid_texture_fan/000422/image/033.png",
+          "bytes": 45885,
+          "sha256": "742d00b6e4a94367bc95223d9b081949ec08a498f78008e8ecc61eb08130346b"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/image/067.png",
+          "source_path": "go_avoid_texture_fan/000422/image/067.png",
+          "bytes": 13921,
+          "sha256": "7895f29ebc79fe0cbffaec5afa44964d5fb3b41141787601d8fe66b8540ed9b1"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/image/100.png",
+          "source_path": "go_avoid_texture_fan/000422/image/100.png",
+          "bytes": 37639,
+          "sha256": "c2f9abe1806d3011a4395110fc4e135607c1a9940b86a11f5f76c24169b75db3"
+        },
+        {
+          "path": "go_avoid_texture_fan/000422/info.csv",
+          "source_path": "go_avoid_texture_fan/000422/info.csv",
+          "bytes": 298,
+          "sha256": "88a64417dd880517ad2ab6f0d979347391eaae4327f4df9365efb8e1831c7807"
+        }
+      ]
+    },
+    {
+      "task_id": "go_avoid_texture_sofa",
+      "category": "go_avoid",
+      "instruction": "go to the texture sofa and avoid obstacle, quickly",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 252,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/go_avoid_texture_sofa.tar.gz?download=true",
+        "root": "go_avoid_texture_sofa",
+        "bytes": 7159403037,
+        "sha256": "7063b83e57132c093c4c4548df28ae366575f079ec2debed7a398d9d2224ac2d",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "go_avoid_texture_sofa/000422/action/000.npy",
+          "source_path": "go_avoid_texture_sofa/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "371a9a12570ed242c378a3e84138bfe57a25cc33d1fa9f955ccff0ef4a56f5b9"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/action/033.npy",
+          "source_path": "go_avoid_texture_sofa/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "9a59e8e16e05462b42cc618e3362900b661a72867006241d14f8cf9eddd4a28c"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/action/067.npy",
+          "source_path": "go_avoid_texture_sofa/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "f274cf77aad4b7989d4d4ad46c529dd86a35403fda1176b723aca4ed57e63ed4"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/action/100.npy",
+          "source_path": "go_avoid_texture_sofa/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "90d25ca7e02a45e695bd41db7b18a53ca86c665baa78301ea21e36c1b6df9cbf"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/command/000.npy",
+          "source_path": "go_avoid_texture_sofa/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "7413c6410fd21091fb0291665e9f17e503c502218f6d00b0321961389742b89f"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/command/033.npy",
+          "source_path": "go_avoid_texture_sofa/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "9b2271e7c44f19fb4890dec9fe9267c59996bac6a168c559c719e984034cce23"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/command/067.npy",
+          "source_path": "go_avoid_texture_sofa/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "f60aa3213ecede4c02257473ad5e52acc922d204bfb8d651cb2900238ecb7c4b"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/command/100.npy",
+          "source_path": "go_avoid_texture_sofa/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "6044827970ec2ff21c55c984c2fe43e9602305b3245b0e87d5b659bc0d6d6af1"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/depth/000.png",
+          "source_path": "go_avoid_texture_sofa/000422/depth/000.png",
+          "bytes": 4969,
+          "sha256": "d49860e9408156d5636b3efba3f49c1cdf1121920b26637308da95d3bd952f82"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/depth/033.png",
+          "source_path": "go_avoid_texture_sofa/000422/depth/033.png",
+          "bytes": 6010,
+          "sha256": "3c60cb1403807e11ffd3209c5ae93d91067543e164820f0bd7585de83d3421a5"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/depth/067.png",
+          "source_path": "go_avoid_texture_sofa/000422/depth/067.png",
+          "bytes": 3372,
+          "sha256": "287a96a7a7339f0d96f7f6b4da22c1dd75370a5c16f217c806bc7716b076233d"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/depth/100.png",
+          "source_path": "go_avoid_texture_sofa/000422/depth/100.png",
+          "bytes": 2448,
+          "sha256": "482c5e3e996c79051cedb8d92317929b31edf3968396eb05fe9653b255fcb52c"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/image/000.png",
+          "source_path": "go_avoid_texture_sofa/000422/image/000.png",
+          "bytes": 26281,
+          "sha256": "d8be2231038722404375282bd2d32b76931f92ccac24700c6cfb02c986dcf69b"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/image/033.png",
+          "source_path": "go_avoid_texture_sofa/000422/image/033.png",
+          "bytes": 27746,
+          "sha256": "952e33aef059addaa4fe8597394470525a1ef5da0c606e3ba0c370e4543c8c70"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/image/067.png",
+          "source_path": "go_avoid_texture_sofa/000422/image/067.png",
+          "bytes": 23904,
+          "sha256": "6c55e675bc21fe6ff7fa72094d5c7abacb6f3894ae4e25d6144682250cb1fd40"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/image/100.png",
+          "source_path": "go_avoid_texture_sofa/000422/image/100.png",
+          "bytes": 3166,
+          "sha256": "eb08349bbfcd890b3585bf1d5c0757413d39f74c13cd476cb2a1f0ae38684ead"
+        },
+        {
+          "path": "go_avoid_texture_sofa/000422/info.csv",
+          "source_path": "go_avoid_texture_sofa/000422/info.csv",
+          "bytes": 295,
+          "sha256": "85b05bdcbbf048c3aadb854f8d38b3c2a66bd6e621e7ca11f6649d9a6433ccb0"
+        }
+      ]
+    },
+    {
+      "task_id": "go_through_green_rectangle_tunnel",
+      "category": "go_through",
+      "instruction": "go through the green rectangle tunnel, normally",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 738,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/go_through_green_rectangle_tunnel.tar.gz?download=true",
+        "root": "go_through_green_rectangle tunnel",
+        "bytes": 12967103060,
+        "sha256": "324cd02700652ec158d756ba969d61e89b359a5051933ab8634b21fb6fa87544",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/action/000.npy",
+          "source_path": "go_through_green_rectangle tunnel/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "a221609d317865eb8790b600fb108b64555958645a53c148a598476e47213bc8"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/action/033.npy",
+          "source_path": "go_through_green_rectangle tunnel/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "1fe6d86ab5af3c52d688df46ddc814df057bfd32df0e769ed77eef6d6672ef36"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/action/067.npy",
+          "source_path": "go_through_green_rectangle tunnel/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "2c39f2e14e6550ba8372f6677be0fa4299ff446a6fc9f63bf379f613cf5c83fb"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/action/100.npy",
+          "source_path": "go_through_green_rectangle tunnel/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "e325ab4cce9146d2c1d9c79521c106072e34a3cfc9e04ae8ba80c12b8bc6f016"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/command/000.npy",
+          "source_path": "go_through_green_rectangle tunnel/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "e1d745ebfcc78b4643a8a47689865696c1dab8a552c37a73834c2bb8b9ff89e7"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/command/033.npy",
+          "source_path": "go_through_green_rectangle tunnel/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "b3638a58fa21f8694408edfa05c4c1235f5992d9d38397f58c6cb4b6f3b24228"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/command/067.npy",
+          "source_path": "go_through_green_rectangle tunnel/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "82688090d11ad2e4c733e2f5d3cd0d9b74a61335f0426ae108e4c686db4c7a14"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/command/100.npy",
+          "source_path": "go_through_green_rectangle tunnel/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "aa6bd950f8501872bee9ce6a076c41533adb723d8670dfcb91d23a04fb25556a"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/depth/000.png",
+          "source_path": "go_through_green_rectangle tunnel/000422/depth/000.png",
+          "bytes": 5575,
+          "sha256": "835084c2b4b84df627cdc41b8b6e823bda33de416ca08f361f57204dffa124c0"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/depth/033.png",
+          "source_path": "go_through_green_rectangle tunnel/000422/depth/033.png",
+          "bytes": 4231,
+          "sha256": "d813b5f52e852c527a5f2856b0093512a094886fa45e7d0a9010622bdd3f478d"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/depth/067.png",
+          "source_path": "go_through_green_rectangle tunnel/000422/depth/067.png",
+          "bytes": 4017,
+          "sha256": "fe33bc9741e90ba191d29a0baea0b65fd64cc454350cb19ec384fa3964883000"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/depth/100.png",
+          "source_path": "go_through_green_rectangle tunnel/000422/depth/100.png",
+          "bytes": 5644,
+          "sha256": "5e23448e1d94e2cf18ae5b84bc22e806c8172a1bc5c68dea0fe9bd7661d0c121"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/image/000.png",
+          "source_path": "go_through_green_rectangle tunnel/000422/image/000.png",
+          "bytes": 11899,
+          "sha256": "3628df5b177ede4e0e85dbad08c2a2effdba0b811465cbd2bf8dc5b8f7640c67"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/image/033.png",
+          "source_path": "go_through_green_rectangle tunnel/000422/image/033.png",
+          "bytes": 12444,
+          "sha256": "445842ecf43439804e5701eb408331893fbc73ad4b18f44687fc3bad40537cc5"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/image/067.png",
+          "source_path": "go_through_green_rectangle tunnel/000422/image/067.png",
+          "bytes": 11421,
+          "sha256": "020f963b773b9615870e27427cd395fb7ca41c8a4d2d259c44d1d31ea9ad62c8"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/image/100.png",
+          "source_path": "go_through_green_rectangle tunnel/000422/image/100.png",
+          "bytes": 11575,
+          "sha256": "da5b5efee1a807305d13dad5bf54c94d276e0f9ca69df862b4c7f0184e0e448e"
+        },
+        {
+          "path": "go_through_green_rectangle_tunnel/000422/info.csv",
+          "source_path": "go_through_green_rectangle tunnel/000422/info.csv",
+          "bytes": 313,
+          "sha256": "24e167bca5842a12c57d66ca7bbaf47f2f1695eb23d8768810d9046e44c9032f"
+        }
+      ]
+    },
+    {
+      "task_id": "go_through_red_triangle_tunnel",
+      "category": "go_through",
+      "instruction": "go through the red triangle tunnel, quickly",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 339,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/go_through_red_triangle_tunnel.tar.gz?download=true",
+        "root": "go_through_red_triangle tunnel",
+        "bytes": 15889718640,
+        "sha256": "e47d6225b7994de9085c9f1de56b542944f24042977f9ef05b0073b06f16e0f8",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "go_through_red_triangle_tunnel/000422/action/000.npy",
+          "source_path": "go_through_red_triangle tunnel/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "3b44dab3f8611e537e9cd5b3bb6be6079ee22113b1512090f9b7b9d6833e28e1"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/action/033.npy",
+          "source_path": "go_through_red_triangle tunnel/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "593163ba13c3888a46f626100020ec9bcba40c72a286d95dbd3d841d9ba9b624"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/action/067.npy",
+          "source_path": "go_through_red_triangle tunnel/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "6c5bd4f9f4e51ce9c07befb5f7dbbdb004ca4fb9a06c92b5325ec63a06074280"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/action/100.npy",
+          "source_path": "go_through_red_triangle tunnel/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "8c9c1368b5e2ba9ec8f33158dc02ba882f38962e3c14947d1504aefe4fb2326e"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/command/000.npy",
+          "source_path": "go_through_red_triangle tunnel/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "8bcc493f86e6299bcd19af80fb34f059003e4d5acc509f7ea29dc254518c7403"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/command/033.npy",
+          "source_path": "go_through_red_triangle tunnel/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "6fa4312514b96fb6eeab08877d993584457030c6a80bf223233afaddf6ae4350"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/command/067.npy",
+          "source_path": "go_through_red_triangle tunnel/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "e56709f6c820cde7ad8d41e0c94dea2c48597103855e61aeeae5f2e4c9a4d3af"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/command/100.npy",
+          "source_path": "go_through_red_triangle tunnel/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "231071a02bb51e5174c2d93122c328b39e31de40d2c3f8917ec479008059f8fa"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/depth/000.png",
+          "source_path": "go_through_red_triangle tunnel/000422/depth/000.png",
+          "bytes": 8622,
+          "sha256": "d3c1d79f3b6692e0d42e5c6a2f4883adc0b4f58e4ad151ce9d5421b6144f2280"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/depth/033.png",
+          "source_path": "go_through_red_triangle tunnel/000422/depth/033.png",
+          "bytes": 9705,
+          "sha256": "c6e6c6a5a5ddba8125f0c744af17c2ed0e73aaf1c3af1ecc93edcde0faf6a3ea"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/depth/067.png",
+          "source_path": "go_through_red_triangle tunnel/000422/depth/067.png",
+          "bytes": 8677,
+          "sha256": "ec9508df3abf72cf7a5df69366c5fc149e91288f69b725c15b116829b1cae1fa"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/depth/100.png",
+          "source_path": "go_through_red_triangle tunnel/000422/depth/100.png",
+          "bytes": 6992,
+          "sha256": "b21ed1a1d7624de512edd6c01f5be02b49ad56c0f7dd42c5b3b83b08215cb45d"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/image/000.png",
+          "source_path": "go_through_red_triangle tunnel/000422/image/000.png",
+          "bytes": 12805,
+          "sha256": "bf4982f3b4e600d2905921049f262a7f149481354c150fe7a0724f8a90df0bd1"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/image/033.png",
+          "source_path": "go_through_red_triangle tunnel/000422/image/033.png",
+          "bytes": 13779,
+          "sha256": "afaec3e7af2aaac6e5b913da5242b3535f321132bb8effa2f4ec345fb8c64a00"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/image/067.png",
+          "source_path": "go_through_red_triangle tunnel/000422/image/067.png",
+          "bytes": 11667,
+          "sha256": "fd422592896527841658ce03cfbfb88acf6eb2ea63e3cb2a86c4cd5932ab0cb8"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/image/100.png",
+          "source_path": "go_through_red_triangle tunnel/000422/image/100.png",
+          "bytes": 14875,
+          "sha256": "c88f968711f991d761e1368f480fb6690e12c289d82652f0749bc258976a8c12"
+        },
+        {
+          "path": "go_through_red_triangle_tunnel/000422/info.csv",
+          "source_path": "go_through_red_triangle tunnel/000422/info.csv",
+          "bytes": 308,
+          "sha256": "685a979653384ae76f2ac4ab39daedd097f1f1730267debe5f9d87d14db0d48b"
+        }
+      ]
+    },
+    {
+      "task_id": "go_through_yellow_triangle_tunnel",
+      "category": "go_through",
+      "instruction": "go through the yellow triangle tunnel, slowly",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 700,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/go_through_yellow_triangle_tunnel.tar.gz?download=true",
+        "root": "go_through_yellow_triangle tunnel",
+        "bytes": 15894439190,
+        "sha256": "9dc69aba748c287bcd6a8354c88b1aab985c2657961482c0a888e0311c9ea3bb",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/action/000.npy",
+          "source_path": "go_through_yellow_triangle tunnel/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "0d7aa8e735579fe6d83ff96ebe3b628925a5fa22bf975938aab8614005816777"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/action/033.npy",
+          "source_path": "go_through_yellow_triangle tunnel/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "3cfd8e5a9ba3d3aa61159a92f24e5935e63e996d65d409c2837d5844e358aace"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/action/067.npy",
+          "source_path": "go_through_yellow_triangle tunnel/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "f81d2c4649dedf0e8c5e8b33c1f4aeaf209add9e2c4b20b86f062c2df29384b7"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/action/100.npy",
+          "source_path": "go_through_yellow_triangle tunnel/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "dbdaa0ade62ff2abd1e83a5d5e5a26bf2bf535b299934b90ca7c4f674065dc42"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/command/000.npy",
+          "source_path": "go_through_yellow_triangle tunnel/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "ed59157a3812ae4fea059275794aee97258c0564abfd1cf0a38ff95561f88376"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/command/033.npy",
+          "source_path": "go_through_yellow_triangle tunnel/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "312e93f20cefd2f3f4b737663f83c4ae30efac8bed772931464e3f32fa0466d1"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/command/067.npy",
+          "source_path": "go_through_yellow_triangle tunnel/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "ab9dc4f74570e560011cc6c9dff15f06a0e1c2f6e229f471da381a5308d9ccd5"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/command/100.npy",
+          "source_path": "go_through_yellow_triangle tunnel/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "3c47c8630a88710bbd466f4f5afa800bd370b79a9143ed5c5efe0904a471fea0"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/depth/000.png",
+          "source_path": "go_through_yellow_triangle tunnel/000422/depth/000.png",
+          "bytes": 10133,
+          "sha256": "9d5f667bb3d1f03dd951a59f94114ab6950ba588224deb1f4a2b3ff662941c4d"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/depth/033.png",
+          "source_path": "go_through_yellow_triangle tunnel/000422/depth/033.png",
+          "bytes": 10172,
+          "sha256": "80602b708585f3271bc459e21578e5484c248f0f328b93b3fbc29f6097eaa0a9"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/depth/067.png",
+          "source_path": "go_through_yellow_triangle tunnel/000422/depth/067.png",
+          "bytes": 9007,
+          "sha256": "d65b210e6b097fca8521c48235006b44ffba8ef7c1f0672c55e49867d44e349f"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/depth/100.png",
+          "source_path": "go_through_yellow_triangle tunnel/000422/depth/100.png",
+          "bytes": 6722,
+          "sha256": "b33c162b23a97f0db55476d53508189c7b765da42628d1e478fd5d277b47ed0c"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/image/000.png",
+          "source_path": "go_through_yellow_triangle tunnel/000422/image/000.png",
+          "bytes": 11324,
+          "sha256": "609a259c9b4ac224e071f4854a757e41f69f217639f50f044e8e1fd212a80786"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/image/033.png",
+          "source_path": "go_through_yellow_triangle tunnel/000422/image/033.png",
+          "bytes": 11409,
+          "sha256": "02d60750832eaf6174fc80e5ab8566b7905087086f5b4b0d4f46784f70ec54c2"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/image/067.png",
+          "source_path": "go_through_yellow_triangle tunnel/000422/image/067.png",
+          "bytes": 12226,
+          "sha256": "8c9098801df4576a33d2b6a6bb422b8bdb8ba00dd75059fc672b857cb3f88f68"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/image/100.png",
+          "source_path": "go_through_yellow_triangle tunnel/000422/image/100.png",
+          "bytes": 11712,
+          "sha256": "fbfb9b6534f149f46f57fe9256cc1ffd53eeb517e59641384b088e0ae9d9664d"
+        },
+        {
+          "path": "go_through_yellow_triangle_tunnel/000422/info.csv",
+          "source_path": "go_through_yellow_triangle tunnel/000422/info.csv",
+          "bytes": 311,
+          "sha256": "3defafe884e1363ec5e7fe46d9b6f8941abd5387344263f766823c84387db2fb"
+        }
+      ]
+    },
+    {
+      "task_id": "go_to_blue_ball",
+      "category": "go_to",
+      "instruction": "go to the blue ball, quickly",
+      "episode_id": "000099",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 192,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/go_to_blue_ball.tar.gz?download=true",
+        "root": "go_to_blue_ball",
+        "bytes": 1617698804,
+        "sha256": "1513a88dee37ae9f6be7a7c4a1dd8232b0592dfc776cbde8a53ff852f1bb8066",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "go_to_blue_ball/000099/action/000.npy",
+          "source_path": "go_to_blue_ball/000099/action/000.npy",
+          "bytes": 1507,
+          "sha256": "78e8ebd24dc013e46dcb5ec6c5ad60e007a9987c8a39c6f3f5e75289c3490eaa"
+        },
+        {
+          "path": "go_to_blue_ball/000099/action/033.npy",
+          "source_path": "go_to_blue_ball/000099/action/033.npy",
+          "bytes": 1507,
+          "sha256": "d4314232d45b7951bfb3b527ba754e5a952da8a60054e80671e828a060eb1064"
+        },
+        {
+          "path": "go_to_blue_ball/000099/action/067.npy",
+          "source_path": "go_to_blue_ball/000099/action/067.npy",
+          "bytes": 1507,
+          "sha256": "2143d031c8a7b9ad0197d5c40f3b1a48e896a2d9bc8088c48bde4add345c33fa"
+        },
+        {
+          "path": "go_to_blue_ball/000099/action/100.npy",
+          "source_path": "go_to_blue_ball/000099/action/100.npy",
+          "bytes": 1507,
+          "sha256": "a40933f3df4d55149899cdbc10d7fa1e64cc3c5de3ee2d4e501d0c82030e9c8d"
+        },
+        {
+          "path": "go_to_blue_ball/000099/command/000.npy",
+          "source_path": "go_to_blue_ball/000099/command/000.npy",
+          "bytes": 759,
+          "sha256": "99de11431347ad0fb6ccf2bb4fd6985f1d0ce6b84a564731c0010ec1a7c7084b"
+        },
+        {
+          "path": "go_to_blue_ball/000099/command/033.npy",
+          "source_path": "go_to_blue_ball/000099/command/033.npy",
+          "bytes": 759,
+          "sha256": "456e260e06c5fd90486df4818add415b22941b36f1616f09c9b3290aa8d14afe"
+        },
+        {
+          "path": "go_to_blue_ball/000099/command/067.npy",
+          "source_path": "go_to_blue_ball/000099/command/067.npy",
+          "bytes": 759,
+          "sha256": "fa20b2db24dd0dbdc53e226ba5f19f1b701c6aaafef1d3d64243f908ee78e6cb"
+        },
+        {
+          "path": "go_to_blue_ball/000099/command/100.npy",
+          "source_path": "go_to_blue_ball/000099/command/100.npy",
+          "bytes": 759,
+          "sha256": "caadfd276d55f73056d34a5beedad657e7409a7d65391d7d7f751de29c3199e6"
+        },
+        {
+          "path": "go_to_blue_ball/000099/depth/000.png",
+          "source_path": "go_to_blue_ball/000099/depth/000.png",
+          "bytes": 4461,
+          "sha256": "049327cb5d385a4104a3a84a88dd71081cdfd21d22d1a816a7ed34a86bf0e830"
+        },
+        {
+          "path": "go_to_blue_ball/000099/depth/033.png",
+          "source_path": "go_to_blue_ball/000099/depth/033.png",
+          "bytes": 4321,
+          "sha256": "6bd91425fdca83fab6dd8e8924987e68b2455683f5fa0f9e3f9e59bed9f42fc0"
+        },
+        {
+          "path": "go_to_blue_ball/000099/depth/067.png",
+          "source_path": "go_to_blue_ball/000099/depth/067.png",
+          "bytes": 5126,
+          "sha256": "37c9817e5210c21bed60870c4a94d6e192c0611e801054b3f91be5bca6d18539"
+        },
+        {
+          "path": "go_to_blue_ball/000099/depth/100.png",
+          "source_path": "go_to_blue_ball/000099/depth/100.png",
+          "bytes": 4605,
+          "sha256": "4c4b42ae565466b8b94e77b52a52e1678c6e4ab495d14df2d6407eb4480b0fff"
+        },
+        {
+          "path": "go_to_blue_ball/000099/image/000.png",
+          "source_path": "go_to_blue_ball/000099/image/000.png",
+          "bytes": 8724,
+          "sha256": "f4b9b5cd64406f8c3fc14da8c97410e79c0a40502d3ebeda5d440cd692064aed"
+        },
+        {
+          "path": "go_to_blue_ball/000099/image/033.png",
+          "source_path": "go_to_blue_ball/000099/image/033.png",
+          "bytes": 9167,
+          "sha256": "33542e53fd7f85e4e4f432da7c3f4cefa07478481108ab21eaeef812ba9cc2cb"
+        },
+        {
+          "path": "go_to_blue_ball/000099/image/067.png",
+          "source_path": "go_to_blue_ball/000099/image/067.png",
+          "bytes": 10074,
+          "sha256": "d9818ecaa13e588229d5c44821bdaf4c24b0b92a1ab2bd1aba0e889c1bbaa105"
+        },
+        {
+          "path": "go_to_blue_ball/000099/image/100.png",
+          "source_path": "go_to_blue_ball/000099/image/100.png",
+          "bytes": 14524,
+          "sha256": "8d8850ae25c5e91cf7f25307b22d7f4667758f632a8c77f9c89ae4dfa4f81613"
+        },
+        {
+          "path": "go_to_blue_ball/000099/info.csv",
+          "source_path": "go_to_blue_ball/000099/info.csv",
+          "bytes": 272,
+          "sha256": "2482f27cfef38b5b69d860b99cecbc7e404136e78e95c82334972f4683ee4cab"
+        }
+      ]
+    },
+    {
+      "task_id": "go_to_green_cube",
+      "category": "go_to",
+      "instruction": "go to the green cube, normally",
+      "episode_id": "000422",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 381,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/go_to_green_cube.tar.gz?download=true",
+        "root": "go_to_green_cube",
+        "bytes": 2658687492,
+        "sha256": "9d3fc21666f0cbb19273bd4be594516a025c0fc3288b3188ad2e2667264bc33b",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "go_to_green_cube/000422/action/000.npy",
+          "source_path": "go_to_green_cube/000422/action/000.npy",
+          "bytes": 1507,
+          "sha256": "61263e588dce2356eee9c6973e9117bd86b733e24f4987d6124d6c5a759dda92"
+        },
+        {
+          "path": "go_to_green_cube/000422/action/033.npy",
+          "source_path": "go_to_green_cube/000422/action/033.npy",
+          "bytes": 1507,
+          "sha256": "6f788f632f77e9e6b43f77dd34de77329516c541050bf77105adf29bc3f0f65b"
+        },
+        {
+          "path": "go_to_green_cube/000422/action/067.npy",
+          "source_path": "go_to_green_cube/000422/action/067.npy",
+          "bytes": 1507,
+          "sha256": "3bd9de0b2412129f1d588aa091e05e2cd6bf98f988de4805ad607f08843b2a73"
+        },
+        {
+          "path": "go_to_green_cube/000422/action/100.npy",
+          "source_path": "go_to_green_cube/000422/action/100.npy",
+          "bytes": 1507,
+          "sha256": "090469a238f1c4d8bf018b58994e3c875e1df1afb974b05180b71ccfe271c874"
+        },
+        {
+          "path": "go_to_green_cube/000422/command/000.npy",
+          "source_path": "go_to_green_cube/000422/command/000.npy",
+          "bytes": 759,
+          "sha256": "4eca65c8dd3722e75576696df9a05eaaf00ed033c3fea4cea079d4f49a3ca694"
+        },
+        {
+          "path": "go_to_green_cube/000422/command/033.npy",
+          "source_path": "go_to_green_cube/000422/command/033.npy",
+          "bytes": 759,
+          "sha256": "a25bdc74268d18f2b7cb6f1d389701505c34f7012932cc2d1bd46f2de911ca98"
+        },
+        {
+          "path": "go_to_green_cube/000422/command/067.npy",
+          "source_path": "go_to_green_cube/000422/command/067.npy",
+          "bytes": 759,
+          "sha256": "aae4907e61c67cb0b8a78c908c14b26b57048a9d6228c8b43e54f48e81d9d4ff"
+        },
+        {
+          "path": "go_to_green_cube/000422/command/100.npy",
+          "source_path": "go_to_green_cube/000422/command/100.npy",
+          "bytes": 759,
+          "sha256": "229bfae6457c5c86b7c9277dfd973dee6dec771cd66132c0dab1c342761368e5"
+        },
+        {
+          "path": "go_to_green_cube/000422/depth/000.png",
+          "source_path": "go_to_green_cube/000422/depth/000.png",
+          "bytes": 4310,
+          "sha256": "21504e4439bbf575397cf8a07fb191789ee957d0dcea49f64adcec1ffa4f8ebf"
+        },
+        {
+          "path": "go_to_green_cube/000422/depth/033.png",
+          "source_path": "go_to_green_cube/000422/depth/033.png",
+          "bytes": 6480,
+          "sha256": "650b0c81acb46144aff91b1dd853786b96eea994b0a906d09750e6f189e46c16"
+        },
+        {
+          "path": "go_to_green_cube/000422/depth/067.png",
+          "source_path": "go_to_green_cube/000422/depth/067.png",
+          "bytes": 5641,
+          "sha256": "3ecfa24aab6916b9bd8a2b2eb6c7610d141e3a20e9cd123e9deb30f66cc0b08a"
+        },
+        {
+          "path": "go_to_green_cube/000422/depth/100.png",
+          "source_path": "go_to_green_cube/000422/depth/100.png",
+          "bytes": 2547,
+          "sha256": "c662dc61914df4c89198c5c7169c1d5e7cff0e03edd30483b4136d67613c8dad"
+        },
+        {
+          "path": "go_to_green_cube/000422/image/000.png",
+          "source_path": "go_to_green_cube/000422/image/000.png",
+          "bytes": 18272,
+          "sha256": "73f682170a829796a23889d434b02752f7d641831fe8a38dd579faf5e82f4ed7"
+        },
+        {
+          "path": "go_to_green_cube/000422/image/033.png",
+          "source_path": "go_to_green_cube/000422/image/033.png",
+          "bytes": 16077,
+          "sha256": "dfa7a282a5be6443f2a6f354f8826e5ccbbf1021c8ef95a32e277f0f7f0d5266"
+        },
+        {
+          "path": "go_to_green_cube/000422/image/067.png",
+          "source_path": "go_to_green_cube/000422/image/067.png",
+          "bytes": 16717,
+          "sha256": "9356b7fefef3bf8064f2c3d36c1f42a1c0ea5ac9ae2ab6e0890c4fe8d9c4dd9c"
+        },
+        {
+          "path": "go_to_green_cube/000422/image/100.png",
+          "source_path": "go_to_green_cube/000422/image/100.png",
+          "bytes": 9662,
+          "sha256": "67d80fa8954379b7fea0f32b8bb7912a55c917cf3137cfaef7c3d131d44a26d2"
+        },
+        {
+          "path": "go_to_green_cube/000422/info.csv",
+          "source_path": "go_to_green_cube/000422/info.csv",
+          "bytes": 278,
+          "sha256": "59c1068eaf04a08587cb5af1202228c278e11d0beccea1db2be66d2bd3f74f1f"
+        }
+      ]
+    },
+    {
+      "task_id": "go_to_red_cube",
+      "category": "go_to",
+      "instruction": "go to the red cube, slowly",
+      "episode_id": "000099",
+      "recorded_urdf": "wr2",
+      "recorded_trajectory_frames": 380,
+      "archive": {
+        "url": "https://huggingface.co/datasets/Tong314/QUARD/resolve/375cbd77d6b8e96ff82e1529f0c44caa5c182d5e/go_to_red_cube.tar.gz?download=true",
+        "root": "go_to_red_cube",
+        "bytes": 1033934826,
+        "sha256": "ec0f60a21b9fc487dcf51d7c895e3905ec27c3a152d7d4df3555cdb4135802b7",
+        "full_archive_verified": false
+      },
+      "files": [
+        {
+          "path": "go_to_red_cube/000099/action/000.npy",
+          "source_path": "go_to_red_cube/000099/action/000.npy",
+          "bytes": 1507,
+          "sha256": "576fc9e254872a59c286f217348a537712abbfd8642588de5b8ba950d4ffc2e2"
+        },
+        {
+          "path": "go_to_red_cube/000099/action/033.npy",
+          "source_path": "go_to_red_cube/000099/action/033.npy",
+          "bytes": 1507,
+          "sha256": "94c5a40e17b7eaa0d7bf0911cca2489e3f1f72ceb13e89d5d379af62dae9164d"
+        },
+        {
+          "path": "go_to_red_cube/000099/action/067.npy",
+          "source_path": "go_to_red_cube/000099/action/067.npy",
+          "bytes": 1507,
+          "sha256": "6ee6abb65a709de80d2cc8d1f763cfef19332d25584f18a088e9520f3f013c0d"
+        },
+        {
+          "path": "go_to_red_cube/000099/action/100.npy",
+          "source_path": "go_to_red_cube/000099/action/100.npy",
+          "bytes": 1507,
+          "sha256": "0cd8a2a685c579cf096589cf6a31674c27b62af934793a42fbaecd57bcc224f8"
+        },
+        {
+          "path": "go_to_red_cube/000099/command/000.npy",
+          "source_path": "go_to_red_cube/000099/command/000.npy",
+          "bytes": 759,
+          "sha256": "89f44861689597828e09d7264d0449c8f02f2e2b06832502bdf10000bbb72b60"
+        },
+        {
+          "path": "go_to_red_cube/000099/command/033.npy",
+          "source_path": "go_to_red_cube/000099/command/033.npy",
+          "bytes": 759,
+          "sha256": "c33a8b1010a60f06275c4d36c11b69da99bcbe1a34932d37158957380c1d8a0c"
+        },
+        {
+          "path": "go_to_red_cube/000099/command/067.npy",
+          "source_path": "go_to_red_cube/000099/command/067.npy",
+          "bytes": 759,
+          "sha256": "46423957a8d4a519329f7395f5f9ee3311f9f10c1db918e8bf782c456cc1d74f"
+        },
+        {
+          "path": "go_to_red_cube/000099/command/100.npy",
+          "source_path": "go_to_red_cube/000099/command/100.npy",
+          "bytes": 759,
+          "sha256": "4701bb0debcf4976af863d7e88d3bf28a2d73c40151c375f8ba4975e8b7c4975"
+        },
+        {
+          "path": "go_to_red_cube/000099/depth/000.png",
+          "source_path": "go_to_red_cube/000099/depth/000.png",
+          "bytes": 4124,
+          "sha256": "5fc4b825f2e7e26013248aa607614c8ff486f6ff94d32078f933459e728f9d29"
+        },
+        {
+          "path": "go_to_red_cube/000099/depth/033.png",
+          "source_path": "go_to_red_cube/000099/depth/033.png",
+          "bytes": 6745,
+          "sha256": "fbdb69f7937b6aca0013ec660e7bd0d55e2b6baa875f7185887383d2497ee7e4"
+        },
+        {
+          "path": "go_to_red_cube/000099/depth/067.png",
+          "source_path": "go_to_red_cube/000099/depth/067.png",
+          "bytes": 3762,
+          "sha256": "6b124b8505bd4d7392d354279d12a74dad5c7f91e4ce95e66b926cfeb3a74675"
+        },
+        {
+          "path": "go_to_red_cube/000099/depth/100.png",
+          "source_path": "go_to_red_cube/000099/depth/100.png",
+          "bytes": 4231,
+          "sha256": "25f0838416bf050bdbe3521b57ad30b18533ff6b182c54232974a47acec790b9"
+        },
+        {
+          "path": "go_to_red_cube/000099/image/000.png",
+          "source_path": "go_to_red_cube/000099/image/000.png",
+          "bytes": 11391,
+          "sha256": "cf24399c51b8cc1d88f49e22d6387c2317151a8e393e245c5f7741e5d501e9a8"
+        },
+        {
+          "path": "go_to_red_cube/000099/image/033.png",
+          "source_path": "go_to_red_cube/000099/image/033.png",
+          "bytes": 12845,
+          "sha256": "b3b0bb4b76df37222b65bd94992a4b0da0def9af7b3442d724a99737c74b5af2"
+        },
+        {
+          "path": "go_to_red_cube/000099/image/067.png",
+          "source_path": "go_to_red_cube/000099/image/067.png",
+          "bytes": 5901,
+          "sha256": "9fd7950b5b89c979b8276358a9cc1ea3197dfac3f395acde1fcc6d53fab4ba2b"
+        },
+        {
+          "path": "go_to_red_cube/000099/image/100.png",
+          "source_path": "go_to_red_cube/000099/image/100.png",
+          "bytes": 5733,
+          "sha256": "c97af0dc6ea373807a683ad3588e72098cbb3b2ab2fc1c62df276641e5453afa"
+        },
+        {
+          "path": "go_to_red_cube/000099/info.csv",
+          "source_path": "go_to_red_cube/000099/info.csv",
+          "bytes": 274,
+          "sha256": "c759d77a30a2b4f4bf669b34215edec3bbcdf5ad18d7ef283a58278d69c6cb4b"
+        }
+      ]
+    }
+  ]
+}
