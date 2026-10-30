@@ -1,0 +1,14 @@
+numpy==1.26.4
+pillow==11.0.0
+cffi==1.17.1
+warp-lang==1.12.0
+numba==0.61.2
+packaging==25.0
+setuptools==75.8.2
+
+pyarrow==25.0.0
+websockets==17.0.1
+click==8.4.2
+opencv-python-headless==4.11.0.86
+
+h5py==3.11.0

@@ -1,0 +1,208 @@
+addict==2.4.0
+aenum==3.1.17
+aioboto3==15.1.0
+aiobotocore==2.24.0
+aiodns==3.1.1
+aiofiles==23.2.1
+aiohappyeyeballs==2.4.4
+aiohttp==3.11.11
+aioitertools==0.11.0
+aiosignal==1.3.2
+annotated-types==0.8.0
+anyio==4.15.1
+asteval==1.0.6
+asttokens==3.0.2
+async-timeout==5.0.1
+attrs==26.1.0
+av==15.1.0
+awscrt==0.23.8
+azure-core==1.28.0
+azure-identity==1.13.0
+azure-storage-blob==12.17.0
+-e git+https://github.com/StanfordVL/BEHAVIOR-1K.git@26f2c7ef7b9cf96bd0414f81e1e751e493762779#egg=bddl&subdirectory=bddl3
+boto3==1.39.11
+botocore==1.39.11
+certifi==2026.10.23
+cffi==1.17.1
+charset-normalizer==3.3.2
+click==8.4.2
+cloudpickle==3.1.2
+cmake==4.1.3
+colorama==0.4.6
+contourpy==1.3.3
+coverage==7.4.4
+cryptography==44.0.3
+cycler==0.12.1
+datasets==4.8.5
+defusedxml==0.7.1
+dill==0.4.1
+draccus==0.10.0
+einops==0.8.2
+executing==2.3.0
+Farama-Notifications==0.0.6
+fastapi==0.115.7
+fastjsonschema==2.22.2
+filelock==4.2.4
+fonttools==4.67.0
+frozenlist==1.5.0
+fsspec==2026.2.0
+future==1.0.0
+gitdb==4.0.12
+GitPython==3.2.1
+graphviz==0.21
+gunicorn==23.0.0
+gymnasium==1.4.0
+h11==0.16.0
+h5py==3.11.0
+hf-xet==1.7.0
+httpcore==1.0.9
+httpcore2==2.16.0
+httptools==0.6.1
+httpx==0.28.1
+httpx2==2.16.0
+huggingface_hub==1.33.0
+idna==3.20
+idna-ssl==1.1.0
+ImageIO==2.38.1
+imageio-ffmpeg==0.6.0
+iniconfig==2.3.1
+ipython==9.17.1
+ipython_pygments_lexers==1.1.1
+isaacsim @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim-5.1.0.0-cp311-none-win_amd64.whl#sha256=f2f4cbc13594749deb5905aebdf76ac68c3e5caef5db88be941b18735a889751
+isaacsim-app @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_app-5.1.0.0-cp311-none-win_amd64.whl#sha256=4bf4ef7818c624638d1ee6cd7669d99fb94eb4794c20007c676f812b1f8fa234
+isaacsim-asset @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_asset-5.1.0.0-cp311-none-win_amd64.whl#sha256=3d0d686168fe156e966c401ffa8ba5965d566ce7a7d1b8a9a4b396575e5fbb43
+isaacsim-benchmark @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_benchmark-5.1.0.0-cp311-none-win_amd64.whl#sha256=43a41b2f82c31e8da06a28f1c0b4b1a1735e170af2ee77b566c855fa309cd617
+isaacsim-code-editor @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_code_editor-5.1.0.0-cp311-none-win_amd64.whl#sha256=8dbb5a845947f9584494dc5defce1b1c539056bd7cb81a03c55dd41897d06ead
+isaacsim-core @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_core-5.1.0.0-cp311-none-win_amd64.whl#sha256=2a5565e4d8dff8ad2c82298900b887c93e5e3548e00c4da587edc0eb05fcd6a9
+isaacsim-cortex @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_cortex-5.1.0.0-cp311-none-win_amd64.whl#sha256=7779529c2d53d97643cd3ae57aecc2d805765c59ab94dc24d29e6ea680583469
+isaacsim-example @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_example-5.1.0.0-cp311-none-win_amd64.whl#sha256=e16a149c50514d6b3157b8267efe7a24abe72637fc8967311b097e7538fd772a
+isaacsim-extscache-kit @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_extscache_kit-5.1.0.0-cp311-none-win_amd64.whl#sha256=8c1e752426d202159c49b2874e21a23b0a57a86969b8abaf8064c1d1ff9e64aa
+isaacsim-extscache-kit-sdk @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_extscache_kit_sdk-5.1.0.0-cp311-none-win_amd64.whl#sha256=16953730a0f93df6e36ef454fe2a783658c949e9ac8e7efeb5fdbf8c41ce5d29
+isaacsim-extscache-physics @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_extscache_physics-5.1.0.0-cp311-none-win_amd64.whl#sha256=e0051cdc1fd464355ce5aca07c7b2e03926854f14fe6830e30f51522ef03d97d
+isaacsim-gui @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_gui-5.1.0.0-cp311-none-win_amd64.whl#sha256=28afb4c0697ac41382f26055ae1e5885e72755f1cc18784250450ab48ea01aad
+isaacsim-kernel @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_kernel-5.1.0.0-cp311-none-win_amd64.whl#sha256=b82831156c88ee022837f440d3a4298d011a204c5ab64e5bde837164e395b397
+isaacsim-replicator @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_replicator-5.1.0.0-cp311-none-win_amd64.whl#sha256=aaabd003ed80e4af79622c1547dfab3054f169cb20a705027bd0108213334777
+isaacsim-rl @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_rl-5.1.0.0-cp311-none-win_amd64.whl#sha256=6a2bb5ef88d77910ed221658b4848089ebd16f08a38cd73b352d9f4098c6ba8f
+isaacsim-robot @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_robot-5.1.0.0-cp311-none-win_amd64.whl#sha256=80cc1561f1a34ee3f65c86ec0573c3eddab20f00a56b42757156dbeed0434fb7
+isaacsim-robot-motion @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_robot_motion-5.1.0.0-cp311-none-win_amd64.whl#sha256=0b61feb94e8bb8b59e14820169283e878872d1b1969df60ebbd1d8ae40fb15cf
+isaacsim-robot-setup @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_robot_setup-5.1.0.0-cp311-none-win_amd64.whl#sha256=a0680508fbfc37e0d87654b48ff5ebfe786ceaae7cb1d987e7d68f41700f16dd
+isaacsim-ros1 @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_ros1-5.1.0.0-cp311-none-win_amd64.whl#sha256=413075524a7a368372ee3072152c62c0f85d4251509888517f6e8d4fa0e260ad
+isaacsim-ros2 @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_ros2-5.1.0.0-cp311-none-win_amd64.whl#sha256=ccbe7d3f9ec5b3b915a0f645e751f10dfff79f810a6e5bcfdde4e311d2c96e98
+isaacsim-sensor @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_sensor-5.1.0.0-cp311-none-win_amd64.whl#sha256=02becac807d15b9a7bcb61ca1f7312b8d848e2b0a9fcb02cd827d34e04feaa04
+isaacsim-storage @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_storage-5.1.0.0-cp311-none-win_amd64.whl#sha256=ca2e7f0d7b0af4739334e4b192f4fca686de7b1b650d591d3a3217a252b18408
+isaacsim-template @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_template-5.1.0.0-cp311-none-win_amd64.whl#sha256=806c850d3670e3ccf1f611c355a7e779555979bea88a42eda33fe290785c12f6
+isaacsim-test @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_test-5.1.0.0-cp311-none-win_amd64.whl#sha256=43cc26aea985702c032b4fed7e0e24d035cc18206efb9fc2c29a2d62b29fe7bb
+isaacsim-utils @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/isaacsim_utils-5.1.0.0-cp311-none-win_amd64.whl#sha256=eba6954ccde8faded7a313f06180187b96e4aba1f8703332053e9b39964fdbf6
+isodate==0.6.1
+jedi==0.20.1
+Jinja2==3.1.6
+jmespath==1.0.1
+joblib==1.6.0
+jsonlines==4.0.0
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+jupyter_core==5.9.1
+jupytext==1.19.6
+kiwisolver==1.5.1
+-e git+https://github.com/wensi-ai/lerobot.git@436812bd8ee39b768c645c248c91f1330834e687#egg=lerobot
+llvmlite==0.44.0
+lxml==6.1.3
+markdown-it-py==4.2.0
+MarkupSafe==3.0.3
+matplotlib==3.11.2
+matplotlib-inline==0.2.2
+mdit-py-plugins==0.6.1
+mdurl==0.1.2
+mergedeep==1.3.4
+mpmath==1.3.0
+msal==1.27.0
+msal-extensions==1.0.0
+msvc_runtime==14.44.35112
+multidict==6.1.0
+multiprocess==0.70.19
+mypy_extensions==1.1.0
+nbformat==5.11.1
+nest-asyncio==1.6.0
+networkx==3.6.1
+nltk==3.10.4
+numba==0.61.2
+numpy==1.26.4
+oauthlib==3.2.2
+omegaconf==2.4.0
+-e git+https://github.com/StanfordVL/BEHAVIOR-1K.git@26f2c7ef7b9cf96bd0414f81e1e751e493762779#egg=omnigibson&subdirectory=omnigibson
+omniverse-kit @ file:///D:/RoboHarnessSim/downloads/isaacsim-5.1.0/omniverse_kit-107.3.1.206797-cp311-none-win_amd64.whl#sha256=18b7eaef44c38b32d67d151c698a6e688ab7691d2ea2e652c8474a2ac20f2b5a
+opencv-python==4.11.0.86
+opencv-python-headless==4.11.0.86
+osqp==0.6.7.post3
+packaging==25.0
+pandas==2.3.3
+parso==0.8.7
+pillow==11.0.0
+Pint==0.20.1
+platformdirs==4.13.5
+pluggy==1.7.0
+portalocker==2.7.0
+progressbar==2.5
+prompt_toolkit==3.0.53
+propcache==0.2.1
+psutil==7.2.2
+pure_eval==0.2.4
+pyarrow==25.0.0
+pycares==4.8.0
+pycparser==3.12
+pydantic==2.14.1
+pydantic_core==2.50.1
+Pygments==2.21.0
+PyJWT==2.15.1
+pymeshlab==2022.2.post4
+pyparsing==3.3.3
+pyperclip==1.8.0
+pypng==0.20220715.0
+pytest==9.1.1
+python-dateutil==2.9.0.post0
+python-multipart==0.0.20
+pytz==2024.1
+pywin32==306
+PyYAML==6.0.3
+pyyaml-include==1.4.1
+qdldl==0.1.7.post5
+qrcode==7.4.2
+referencing==0.37.0
+regex==2026.9.29
+requests==2.32.3
+requests-oauthlib==1.3.1
+rpds-py==2026.9.1
+rtree==1.4.1
+s3transfer==0.13.1
+safetensors==0.8.0
+scipy==1.17.1
+sentry-sdk==2.29.1
+six==1.17.0
+smmap==5.0.3
+stack-data==0.6.3
+starlette==0.45.3
+sympy==1.14.0
+termcolor==3.3.0
+toml==0.10.2
+torch @ file:///D:/RoboHarnessSim/downloads/torch-2.7.0%2Bcu126-cp311-cp311-win_amd64.whl#sha256=3fadb116d605e22ea95682f3efe7747989ac8f22a3d4c9ea3cc90c44050708e0
+torchaudio==2.7.0+cu126
+torchvision==0.22.0+cu126
+tornado==6.5.1
+tqdm==4.70.1
+traitlets==5.16.1
+transforms3d==0.4.2
+trimesh==5.2.0
+truststore==0.10.5
+typing-inspect==0.9.0
+typing-inspection==0.4.4
+typing_extensions==4.16.0
+tzdata==2026.5
+urllib3==2.8.0
+uvicorn==0.29.0
+warp-lang==1.12.0
+watchdog==4.0.0
+wcwidth==0.9.4
+websockets==17.0.1
+wrapt==1.16.0
+xxhash==4.0.2
+yarl==1.18.3

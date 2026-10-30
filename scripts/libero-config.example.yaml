@@ -1,0 +1,5 @@
+benchmark_root: D:/RoboHarnessSim/LIBERO/libero/libero
+bddl_files: D:/RoboHarnessSim/LIBERO/libero/libero/bddl_files
+init_states: D:/RoboHarnessSim/LIBERO/libero/libero/init_files
+datasets: D:/RoboHarnessSim/assets/libero-datasets
+assets: D:/RoboHarnessSim/LIBERO/libero/libero/assets

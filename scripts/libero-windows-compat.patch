@@ -1,0 +1,22 @@
+--- original/robosuite/utils/binding_utils.py
++++ local/robosuite/utils/binding_utils.py
+@@ -24,7 +24,7 @@
+ 
+ _SYSTEM = platform.system()
+ if _SYSTEM == "Windows":
+-    ctypes.WinDLL(os.path.join(os.path.dirname(__file__), "mujoco.dll"))
++    ctypes.WinDLL(os.path.join(os.path.dirname(mujoco.__file__), "mujoco.dll"))
+ 
+ CUDA_VISIBLE_DEVICES = os.environ.get("CUDA_VISIBLE_DEVICES", "")
+ if CUDA_VISIBLE_DEVICES != "":
+--- original/robosuite/utils/mjcf_utils.py
++++ local/robosuite/utils/mjcf_utils.py
+@@ -239,7 +239,7 @@
+     Returns:
+         str: Full (absolute) xml path
+     """
+-    if xml_path.startswith("/"):
++    if os.path.isabs(xml_path):
+         full_path = xml_path
+     else:
+         full_path = os.path.join(robosuite.models.assets_root, xml_path)

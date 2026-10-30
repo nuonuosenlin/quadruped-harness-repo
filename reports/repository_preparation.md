@@ -1,0 +1,53 @@
+# 仓库整理记录
+
+- 日期：2026-10-30。
+- 来源：D:\RoboHarnessSim；独立仓库：D:\quadruped-harness-repo。
+- 只收录本人新增 harness、必要启动/探针脚本、依赖版本与局部补丁，以及两份报告。
+- 未复制环境、缓存、资产、下载包、官方源码树、原始运行请求响应或日志。
+- 仓库副本调整：启动器读取本仓库 env.ps1 并执行本仓库代码；闭环读取最新 API 探针结果；运行源码快照来自当前副本。运行环境及输出仍在原 D 盘工作区。原工作区源码未修改。
+- 8 项离线测试通过；PowerShell 脚本语法检查通过。没有重新调用 API、运行仿真或安装依赖；副本路径调整后的完整端到端执行尚未重新验证。
+- 整理目录已按 sk-、api_key、Token 前缀、私钥及凭据赋值模式扫描，未发现候选凭据。命中的是环境变量名、扫描规则和文档说明；扫描不输出值。提交前再次检查暂存内容。
+- .gitignore 排除环境、缓存、资产、上游源码、下载包、密钥文件、日志和大体积生成物。
+- 本机 Git 可用，gh 不可用。本阶段仅做本地提交；远程仓库名称、可见性、地址与 push 由用户确认后处理。
+
+## 文件清单
+
+- `.gitignore`
+- `README.md`
+- `THIRD_PARTY_NOTICES.md`
+- `harness/README.md`
+- `harness/api_probe.py`
+- `harness/audit_run.py`
+- `harness/geometry.py`
+- `harness/libero_loop.py`
+- `harness/protocol.py`
+- `harness/run-api-probe.ps1`
+- `harness/run-libero-loop.ps1`
+- `harness/test_offline.py`
+- `harness/text_client.py`
+- `reports/loop_retry_report.md`
+- `reports/repository_preparation.md`
+- `reports/simulation_report.md`
+- `scripts/behavior-commit.txt`
+- `scripts/behavior-constraints.txt`
+- `scripts/behavior-core-requirements.txt`
+- `scripts/behavior-freeze.txt`
+- `scripts/behavior-lerobot-import-requirements.txt`
+- `scripts/behavior_interface_probe.py`
+- `scripts/behavior_official_demo.py`
+- `scripts/check-secrets.py`
+- `scripts/env.ps1`
+- `scripts/isaac-missing-runtime-requirements.txt`
+- `scripts/libero-commit.txt`
+- `scripts/libero-config.example.yaml`
+- `scripts/libero-constraints.txt`
+- `scripts/libero-freeze.txt`
+- `scripts/libero-simulation-requirements.txt`
+- `scripts/libero-windows-compat.patch`
+- `scripts/libero_interface_probe.py`
+- `scripts/libero_official_demo.py`
+- `scripts/patch_libero_windows.py`
+- `scripts/robosuite-macros-private.py`
+- `scripts/run-behavior.ps1`
+- `scripts/run-libero.ps1`
+- `scripts/setup-libero.ps1`

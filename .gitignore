@@ -1,0 +1,42 @@
+# Local environments and generated files
+envs/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.git-credentials
+
+# Downloads, caches, upstream source trees and simulator assets
+downloads/
+cache/
+assets/
+LIBERO/
+BEHAVIOR-1K/
+tools/
+home/
+tmp/
+logs/
+harness/runs/
+
+# Credentials
+.env
+.env.*
+*api_key*
+*.pem
+*.key
+
+# Logs and large generated artifacts
+*.log
+*.whl
+*.zip
+*.7z
+*.tar
+*.gz
+*.mp4
+*.avi
+*.npy
+*.npz
+*.pt
+*.pth
+*.onnx
