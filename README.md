@@ -98,10 +98,3 @@ API 密钥由运行者自行设置环境变量 `DASHSCOPE_API_KEY`。代码只�
 - [仿真搭建报告](reports/simulation_report.md)
 - [闭环补测报告](reports/loop_retry_report.md)：含首次失败、阶段修复和 9 步成功记录
 
-离线检查密钥痕迹（不联网、不读取真实密钥；发现候选值只报告位置并退出）：
-
-```powershell
-& 'D:\RoboHarnessSim\envs\libero\python.exe' -B .\scripts\check-secrets.py .
-```
-
-`api_key` 环境变量名或检查器中的模式属于代码引用，不等于真实凭据。环境、资产、缓存、下载包、运行日志与密钥文件通过 `.gitignore` 排除。
