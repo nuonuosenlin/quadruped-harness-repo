@@ -1,6 +1,6 @@
 # Quadruped Harness Reproduction
 
-嵌入式课四足机器人项目中，本人负责的仿真与最小 LLM 闭环复现。
+目前实现的仿真与最小 LLM 闭环复现。
 
 **基于 LIBERO / BEHAVIOR，新增自研 harness 与千问 API 闭环。** LLM 只负责决策；本地工具处理视觉几何、IK 和仿真动作。不训练模型，不新增动作头，不向 LLM 发送图像。
 
