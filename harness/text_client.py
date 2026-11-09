@@ -31,7 +31,7 @@ class TextClient:
 
     def payload(self, messages, tools):
         if self.calls >= self.MAX_CALLS:
-            raise RuntimeError('STEP_REVIEW: 12 API calls already used')
+            raise RuntimeError('STEP_REVIEW: %d API calls already used' % self.MAX_CALLS)
         # This is the sole network payload builder. Reject multimodal content.
         for m in messages:
             if m.get('role') not in ('system', 'user', 'assistant', 'tool'):

@@ -4,6 +4,8 @@
 
 **基于 LIBERO / BEHAVIOR，新增自研 harness 与千问 API 闭环。** LLM 只负责决策；本地工具处理视觉几何、IK 和仿真动作。不训练模型，不新增动作头，不向 LLM 发送图像。
 
+touch+adjust 量化 10/10（初始状态索引 0-9，预算 12 步/15000 tokens），抓取单步验证 3/4（单一初始状态索引 0，预算 20 步/30000 tokens），BDDL 仍为 false，搬运/释放/番茄酱未做。
+
 ## 已验证与待完成
 
 | 内容 | 状态 |
@@ -12,7 +14,8 @@
 | BEHAVIOR v3.9.1 empty/Fetch demo 和感知/动作探针 | 已验证；仅机器人资产 |
 | 百炼 qwen3.8-flash 普通对话与 function call | 已验证 |
 | LIBERO touch + adjust 距离子任务 | 已验证：9 个决策步、4 条轨迹、117 个控制步，距离 2.20cm ≤3cm，9,503 tokens |
-| 完整抓取和装篮、消融实验 | 待完成 |
+| 汤罐抓取、提起与保持 | 单步验证 3/4，包含一次接近阶段工具调用缺失 |
+| 装篮、消融实验 | 待完成 |
 | BEHAVIOR 家庭任务、四足机器人任务、真机适配 | 待完成 |
 
 
@@ -35,7 +38,7 @@ scripts/   启动器、最小依赖、历史版本快照、Windows 补丁、密�
 reports/   仿真搭建报告、闭环补测报告与整理检查记录
 ```
 
-代码仓库放在 `D:\quadruped-harness-repo`；原仿真工作区仍在 `D:\RoboHarnessSim`。环境、上游源码、资产、缓存与运行输出留在原工作区，均不提交。原始 JSON、图像、视频和运行日志未复制进仓库，报告中的历史证据路径指向原机器，不能在全新克隆中直接打开。
+代码仓库放在 `D:\quadruped-harness-repo`；原仿真工作区仍在 `D:\RoboHarnessSim`。环境、上游源码、资产、缓存与运行输出留在原工作区，均不提交。选定运行的 JSON 已备份到 docs/evidence/，清单及 SHA256 见 docs/evidence/manifest.json。图像、视频、深度/分割数组和逐控制步 JSONL 未备份，报告中的其他历史路径仍指向原机器。
 
 ## 复跑：已有环境
 
@@ -98,3 +101,12 @@ API 密钥由运行者自行设置环境变量 `DASHSCOPE_API_KEY`。代码只�
 - [仿真搭建报告](reports/simulation_report.md)
 - [闭环补测报告](reports/loop_retry_report.md)：含首次失败、阶段修复和 9 步成功记录
 
+
+
+## 2026-11-09 代码与证据备份
+
+工作副本 harness 的文件按原内容同步，包含 -InitialStateIndex、-Grasp、grasp_lift、cli_args/tool_args 隔离和仅抓取模式的 20 步/30000 tokens 预算。默认接近模式仍为 12 步/15000 tokens。仓库中保留了工作副本原有的 D:\RoboHarnessSim 路径和固定 API preflight 路径。删除原工作区后，需要重建环境、资产及路径，并将备份的 API preflight 结果恢复到预期位置后才能运行。
+
+抓取三次通过均为相同初始状态。第四次在接近阶段因未返回工具调用而中止。保留了 args 覆盖中止轮、旧预算中止轮与新预算下四轮结果。备份未重新运行仿真或调用模型。
+
+[完整备份清单](docs/evidence/manifest.json) 包含每个已复制文件的路径、字节数及 SHA256。缺少原始图像和深度数组时，无法独立重做全部几何审计。

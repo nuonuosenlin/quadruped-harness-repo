@@ -1,0 +1,161 @@
+{
+  "status": "passed",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "model": "qwen3.8-flash",
+  "console_verified": false,
+  "text_only": true,
+  "simulation_started": false,
+  "requests": [
+    {
+      "label": "ordinary_chat",
+      "request": {
+        "model": "qwen3.8-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Reply with exactly API_OK. This is a text-only connectivity test."
+          }
+        ],
+        "max_tokens": 256,
+        "stream": false,
+        "enable_thinking": false
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "API_OK",
+              "role": "assistant"
+            }
+          }
+        ],
+        "created": 1793189837,
+        "id": "chatcmpl-0e833e87-4c9b-908a-a950-8bc728eebd3e",
+        "model": "qwen3.8-flash",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 2,
+          "prompt_tokens": 39,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 39
+          },
+          "total_tokens": 41
+        }
+      }
+    },
+    {
+      "label": "function_call",
+      "request": {
+        "model": "qwen3.8-flash",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Call echo_keypoint exactly once with name=\"probe\" and xyz=[0.1,0.2,0.3]. Do not answer in prose."
+          }
+        ],
+        "max_tokens": 256,
+        "stream": false,
+        "enable_thinking": false,
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "echo_keypoint",
+              "description": "Echo one supplied 3D point for an API parsing test. Does not control any robot.",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "xyz": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    },
+                    "minItems": 3,
+                    "maxItems": 3
+                  }
+                },
+                "required": [
+                  "name",
+                  "xyz"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        ],
+        "tool_choice": "auto"
+      },
+      "response": {
+        "choices": [
+          {
+            "finish_reason": "tool_calls",
+            "index": 0,
+            "message": {
+              "content": "",
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "function": {
+                    "arguments": "{\"name\": \"probe\", \"xyz\": \n[0.1, 0.2, 0.3]\n\n}",
+                    "name": "echo_keypoint"
+                  },
+                  "id": "call_e4c93d8fa66148dca5a1faa2",
+                  "index": 0,
+                  "type": "function"
+                }
+              ]
+            }
+          }
+        ],
+        "created": 1793189837,
+        "id": "chatcmpl-cd3e1cfe-f3b4-93fe-a83f-ad95ac03a1ae",
+        "model": "qwen3.8-flash",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 52,
+          "prompt_tokens": 363,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 363
+          },
+          "total_tokens": 415
+        }
+      }
+    }
+  ],
+  "total_tokens": 456,
+  "completion_requests": 2,
+  "matching_model_ids": [
+    "cmaas-qwen3.8-flash",
+    "qwen3.8-omni-flash-realtime",
+    "qwen3.8-omni-flash",
+    "qwen3.8-livetranslate-flash-realtime",
+    "qwen3.8-flash"
+  ],
+  "model_selection_evidence": "Authenticated /models catalog, not console UI",
+  "parsed_tool_call": {
+    "name": "echo_keypoint",
+    "arguments": {
+      "name": "probe",
+      "xyz": [
+        0.1,
+        0.2,
+        0.3
+      ]
+    },
+    "local_result": {
+      "name": "probe",
+      "xyz": [
+        0.1,
+        0.2,
+        0.3
+      ]
+    }
+  }
+}

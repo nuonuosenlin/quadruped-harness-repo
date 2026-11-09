@@ -1,4 +1,5 @@
 """One LIBERO touch/adjust episode. LLM sees text and numeric keypoints only."""
+import argparse
 import datetime
 import hashlib
 import json
@@ -28,7 +29,7 @@ def dump(value):
 
 
 class Harness:
-    def __init__(self, out):
+    def __init__(self, out, initial_state_index=0):
         from libero.libero import benchmark, get_libero_path
         from libero.libero.envs import OffScreenRenderEnv
         from robosuite.utils import camera_utils
@@ -50,7 +51,7 @@ class Harness:
                 camera_widths=256, camera_depths=True, camera_segmentations='instance')
             self.env.seed(0)
             self.env.reset()
-            self.obs = self.env.set_init_state(suite.get_task_init_states(0)[0])
+            self.obs = self.env.set_init_state(suite.get_task_init_states(0)[initial_state_index])
             for _ in range(10):
                 self.obs, _, _, _ = self.env.step(np.zeros(7))
             self.robot = self.env.robots[0]
@@ -246,38 +247,50 @@ SYSTEM = """You decide actions for one LIBERO distance subtask using exactly one
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--initial-state-index', type=int, default=0)
+    parser.add_argument('--grasp', action='store_true')
+    cli_args = parser.parse_args()
+    if cli_args.grasp:
+        from libero_grasp import GraspHarness, GraspProgress
+    if cli_args.initial_state_index < 0:
+        parser.error('--initial-state-index must be non-negative')
     if shutil.disk_usage(str(ROOT)).free < 10*1024**3:
         raise RuntimeError('Disk reserve below 10 GiB')
-    candidates = sorted((ROOT/'harness/runs').glob('api_*/result.json'), reverse=True)
-    if not candidates:
-        raise RuntimeError('No API preflight result; run harness/run-api-probe.ps1 first')
-    preflight_path = candidates[0]
+    preflight_path = ROOT/'harness/runs/api_20261028_201720/result.json'
     preflight = json.loads(preflight_path.read_text(encoding='utf-8'))
     if preflight['status'] != 'passed':
         raise RuntimeError('API preflight gate failed')
-    out = ROOT/'harness/runs'/('touch_'+datetime.datetime.now().strftime('%Y%m%d_%H%M%S'))
+    out = ROOT/'harness/runs'/(('grasp_' if cli_args.grasp else 'touch_')+datetime.datetime.now().strftime('%Y%m%d_%H%M%S'))
     out.mkdir(parents=True, exist_ok=False)
     source = out/'source'
     source.mkdir()
     manifest = []
-    for path in sorted(Path(__file__).resolve().parent.glob('*.py')):
+    for path in sorted((ROOT/'harness').glob('*.py')):
         shutil.copy2(str(path),str(source/path.name))
         manifest.append({'path':str(path),'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
     (out/'source_manifest.json').write_text(dump(manifest),encoding='utf-8')
     client = TextClient(preflight['model'])
-    progress = Progress()
+    if cli_args.grasp:
+        client.MAX_CALLS = 20
+        client.MAX_TOTAL_TOKENS = 30000
+    progress = GraspProgress() if cli_args.grasp else Progress()
     report = {'status': 'initializing', 'revision': 'persistent_phase_v2',
         'model': client.model, 'api_preflight': str(preflight_path),
-        'previous_episode': None, # Historical original-machine evidence is described in reports.
-        'episode_count': 1, 'seed': 0, 'initial_state_index': 0, 'max_llm_steps': 12,
+        'previous_episode': str(ROOT/'harness/runs/touch_20261028_202556/result.json'),
+        'episode_count': 1, 'seed': 0, 'initial_state_index': cli_args.initial_state_index, 'max_llm_steps': client.MAX_CALLS,
         'text_only': True, 'threshold_m': THRESHOLD, 'steps': [], 'success': False,
         'privileged_information': ['instance mask truth and semantic name association',
         'simulated depth and camera K/T', 'EEF/joint state', 'MuJoCo kinematic model for IK', 'BDDL success predicate'],
         'collinear_parallel': 'pure geometry tested; robot trajectory execution not validated',
         'collision_planning': 'not implemented; bounded local Cartesian approach only',
         'physical_contact_claimed': False, 'original_basket_task_claimed': False,
-        'budget': {'max_completion_tokens':384, 'max_actual_request_tokens':6000, 'max_total_tokens':15000},
+        'budget': {'max_completion_tokens':384, 'max_actual_request_tokens':6000, 'max_total_tokens':client.MAX_TOTAL_TOKENS},
         'repeat_guard': {'same_error_limit':2, 'no_phase_progress_limit':2}}
+    system = SYSTEM
+    if cli_args.grasp:
+        report['experiment'] = 'single_can_grasp_lift'
+        system += ' In this run 3 cm completes only approach. Then use legal_relation grasp_lift, execute its ID; the simulator checks whether the can rises with the EEF and stays held.'
     harness = None
     started = time.monotonic()
     previous_exchange = []
@@ -290,7 +303,9 @@ def main():
         (out/'result.json').write_text(dump(client.redact(report)), encoding='utf-8')
     try:
         save()
-        harness = Harness(out)
+        harness = (GraspHarness if cli_args.grasp else Harness)(out, cli_args.initial_state_index)
+        if cli_args.grasp:
+            progress.harness = harness
         report['scene'] = harness.task.name
         report['calibration'] = {'K':harness.K, 'T_camera_to_world':harness.T,
             'image_origin':'top-left; RGB/depth/mask flipped together', 'camera_axes':'OpenCV', 'mask_id':harness.mask_id}
@@ -299,14 +314,17 @@ def main():
             raise RuntimeError('Subtask already satisfied; cannot claim an action loop')
         report['status'] = 'running'
         save()
-        for step in range(1,13):
+        for step in range(1, client.MAX_CALLS + 1):
             if shutil.disk_usage(str(ROOT)).free < 10*1024**3:
                 raise RuntimeError('Disk reserve below 10 GiB')
             state = harness.state(None)
             state.pop('last_tool_result', None)
             state['workflow'] = progress.summary()
+            if cli_args.grasp:
+                state['goal'] = 'Approach soup can, then grasp and lift it.'
+                state['approach_ready'] = harness.approach_ready
             observation = dump(state)
-            messages = [{'role':'system','content':SYSTEM}] + previous_exchange + [{'role':'user','content':observation}]
+            messages = [{'role':'system','content':system}] + previous_exchange + [{'role':'user','content':observation}]
             active_tools = progress.tools()
             payload = client.payload(messages, active_tools)
             entry = {'step':step, 'workflow_before':progress.summary(), 'observation_text':observation, 'request':payload}
@@ -326,17 +344,19 @@ def main():
                 raise RuntimeError('Expected exactly one valid tool call')
             fn = calls[0]['function']
             name = fn['name']
-            args = json.loads(fn['arguments'])
-            entry['tool_call'] = {'id':calls[0]['id'], 'name':name, 'arguments':args}
+            tool_args = json.loads(fn['arguments'])
+            entry['tool_call'] = {'id':calls[0]['id'], 'name':name, 'arguments':tool_args}
             try:
-                progress.validate(name,args)
-                result = getattr(harness,name)(**args)
+                progress.validate(name,tool_args)
+                result = getattr(harness,name)(**tool_args)
             except ValueError as exc:
                 result = {'error':str(exc), 'required_workflow':progress.summary()}
             entry['tool_result'] = result
-            repeat_error = progress.record(name,args,result)
+            repeat_error = progress.record(name,tool_args,result)
             entry['workflow_after'] = progress.summary()
             check = harness.check_success()
+            if cli_args.grasp:
+                entry['workflow_after'] = progress.summary()
             entry['check'] = check
             previous_exchange = [
                 {'role':'assistant','content':assistant.get('content'), 'tool_calls':calls},
@@ -347,12 +367,14 @@ def main():
             save()
             with (out/'steps.jsonl').open('a',encoding='utf-8') as f:
                 f.write(dump(client.redact(entry))+'\n')
-            print(dump({'step':step,'tool':name,'relation':args.get('relation'),
+            print(dump({'step':step,'tool':name,'relation':tool_args.get('relation'),
                         'phase':progress.phase,'distance_m':round(check['distance_m'],6),
                         'success':check['success'],'tokens_total':client.total}), flush=True)
             if check['success']:
                 report['status'] = 'passed'
                 break
+            if cli_args.grasp and harness.grasp_result is not None:
+                raise RuntimeError(harness.grasp_result['failure_category'])
             if repeat_error:
                 raise RuntimeError(repeat_error)
         else:
@@ -376,6 +398,11 @@ def main():
                 report['status'] = 'stopped'
             finally:
                 harness.close()
+        if cli_args.grasp and harness is not None:
+            report['grasp_stage'] = harness.grasp_stage
+            if report['status'] != 'passed':
+                report['failure_category'] = ((harness.grasp_result or {}).get('failure_category') or
+                    ('approach_not_reached' if not harness.approach_ready else 'other'))
         save()
         print(dump({'status':report['status'],'success':report['success'],'llm_steps':len(report['steps']),
             'tokens':report['tokens'],'result':str(out/'result.json'),'failure':report.get('failure')}), flush=True)

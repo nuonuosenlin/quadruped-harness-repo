@@ -1,0 +1,17 @@
+{
+  "audit": "passed",
+  "llm_steps": 9,
+  "tokens": {
+    "prompt": 9151,
+    "completion": 472,
+    "total": 9623
+  },
+  "logged_control_steps": 117,
+  "pure_text_requests": 9,
+  "standard_tool_context_verified": true,
+  "phase_contracts_verified": true,
+  "source_snapshots_verified": true,
+  "distance_from_saved_depth_and_actual_eef_m": 0.022119763245099282,
+  "subtask_success": true,
+  "bddl_success": false
+}
