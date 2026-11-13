@@ -1,0 +1,40 @@
+{
+  "task": "memory_ab_occluded_v1",
+  "seed": 0,
+  "provider": "compatible",
+  "model": "deepseek-v4.1-flash",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "viewer": true,
+  "budgets": {
+    "max_model_calls": 120,
+    "max_wall_seconds": 2400,
+    "max_sim_seconds": 600,
+    "history_turns": 6,
+    "api_timeout": 90,
+    "max_output_tokens": 8192
+  },
+  "order": [
+    "H0",
+    "H2 only if H0 fails"
+  ],
+  "stop_if_H0_success": true,
+  "offline_tests": {
+    "passed": 267,
+    "skipped": 15
+  },
+  "code_sha256": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "8203bb136d92c30033f7ab8366537ffc4b2e7cff088ef043377bc15bb98aa67d",
+    "go2_demo/backend.py": "fc2f0ebd74ffec9eaea12f17e9c8d66cac8ad5253fceb9301d1aa9feea1755b8",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "ce06dafcd1a6a65f510e1abefa824dd6cda5b6dcf47b8e82322c25d8daaaa386",
+    "go2_demo/memory_planning.py": "87ef0c43d23134d471388be9a1dfdb9d50d0176bf662b83f46155e28d895729c",
+    "go2_demo/models.py": "ab3b574e12d0ae56d1025d3d6a51c98b83093bfeb35cfa13a560f970fab6753f",
+    "go2_demo/ordered_evaluation.py": "ff57acbbebd7d4109e809fde17969152ae2a8dc5ebd55116d3716e1116da14ef",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "cca86ee3ad5c30588273065f474fbd0287bcb384877014fc44389ddeffc152a3",
+    "go2_demo/scenarios.py": "5ae3159d9fef9bf13e1b7abe4243ff47999e940065994ea98932731ebaefb4b7",
+    "go2_demo/types.py": "26189f055ab6becd6e8f436c8ba0d34d58f720e59bc724a0aab28096712ad1ee"
+  }
+}

@@ -1,0 +1,503 @@
+{
+  "method": "Unmodified MuJoCo model + actual camera frustum + nearest-surface ray intersections",
+  "scene_id": "go_avoid_texture_fan",
+  "category": "go_avoid",
+  "seed": 0,
+  "camera_horizontal_half_fov_deg": 45.74642225983861,
+  "pairs": [
+    {
+      "A": "fan",
+      "B": "red_marker",
+      "A_xy_m": [
+        1.65,
+        0.0
+      ],
+      "B_xy_m": [
+        3.5,
+        0.0
+      ],
+      "target_separation_m": 1.85,
+      "B_geom_names": [
+        "scenario_target"
+      ],
+      "condition_a_positive_certificate": true,
+      "condition_b_rejected_by_counterexample": true,
+      "condition_c_scene_unchanged": true,
+      "status": "rejected_b",
+      "reason": "B has unobstructed rays inside the frustum at a valid A stop pose after one permitted turn",
+      "poses": [
+        {
+          "name": "initial",
+          "body_xy_m": [
+            0.0,
+            0.0
+          ],
+          "yaw_rad": 0.0,
+          "visible_positive_certificate": true,
+          "frustum_surface_samples": 150,
+          "unoccluded_unique_sampled_pixels": 35,
+          "visible_geom_count": 1,
+          "B_projected_u_range": [
+            305.5237975181762,
+            333.4762024818238
+          ],
+          "B_projected_v_range": [
+            86.65808351359908,
+            196.4711030136432
+          ],
+          "occluding_geom_samples": {
+            "fan_head": 105
+          },
+          "unoccluded_rays": [
+            {
+              "sample_world_xyz_m": [
+                3.44,
+                -0.133,
+                1.3225
+              ],
+              "pixel_uv": [
+                332.7901590811535,
+                89.31677766360124
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 3.2506299774043805
+            },
+            {
+              "sample_world_xyz_m": [
+                3.44,
+                -0.0665,
+                1.3225
+              ],
+              "pixel_uv": [
+                326.1450795405768,
+                89.31677766360124
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 3.24858869357141
+            },
+            {
+              "sample_world_xyz_m": [
+                3.44,
+                0.0,
+                1.3225
+              ],
+              "pixel_uv": [
+                319.5,
+                89.31677766360124
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 3.2479079805314686
+            },
+            {
+              "sample_world_xyz_m": [
+                3.44,
+                0.06649999999999999,
+                1.3225
+              ],
+              "pixel_uv": [
+                312.8549204594232,
+                89.31677766360124
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 3.24858869357141
+            },
+            {
+              "sample_world_xyz_m": [
+                3.44,
+                0.133,
+                1.3225
+              ],
+              "pixel_uv": [
+                306.2098409188465,
+                89.31677766360124
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 3.2506299774043805
+            },
+            {
+              "sample_world_xyz_m": [
+                3.56,
+                -0.133,
+                1.3225
+              ],
+              "pixel_uv": [
+                332.2979309670367,
+                92.65689700939379
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 3.2413103391495306
+            }
+          ],
+          "camera_world_xyz_m": [
+            0.32,
+            0.0,
+            0.42000000000000004
+          ]
+        },
+        {
+          "name": "A_stop_counterexample",
+          "body_xy_m": [
+            0.6499999999999999,
+            0.0
+          ],
+          "yaw_before_turn_rad": 0.0,
+          "turn_rad": 0.6,
+          "yaw_after_turn_rad": 0.6000000000000001,
+          "A_distance_m": 1.0,
+          "A_heading_error_rad": 0.0,
+          "A_distance_heading_pass_before_turn": true,
+          "static_environment_contact_free": true,
+          "velocity_set_to_zero": true,
+          "body_height_m": 0.34,
+          "evaluated_view_count": 2,
+          "visible_positive_certificate": true,
+          "frustum_surface_samples": 150,
+          "unoccluded_unique_sampled_pixels": 33,
+          "visible_geom_count": 1,
+          "B_projected_u_range": [
+            539.9135884673508,
+            596.3453712234759
+          ],
+          "B_projected_v_range": [
+            27.701335136509528,
+            207.2481430395628
+          ],
+          "occluding_geom_samples": {
+            "fan_head": 117
+          },
+          "unoccluded_rays": [
+            {
+              "sample_world_xyz_m": [
+                3.44,
+                -0.0665,
+                1.3225
+              ],
+              "pixel_uv": [
+                580.796519582854,
+                34.846147366747715
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.6936481599653974
+            },
+            {
+              "sample_world_xyz_m": [
+                3.44,
+                0.0,
+                1.3225
+              ],
+              "pixel_uv": [
+                567.2175973629663,
+                37.58564653910909
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.6883613923758984
+            },
+            {
+              "sample_world_xyz_m": [
+                3.44,
+                0.06649999999999999,
+                1.3225
+              ],
+              "pixel_uv": [
+                554.1434393773842,
+                40.22331132581556
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.6847119104942316
+            },
+            {
+              "sample_world_xyz_m": [
+                3.44,
+                0.133,
+                1.3225
+              ],
+              "pixel_uv": [
+                541.5464140745895,
+                42.764716293926995
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.6827063962875055
+            },
+            {
+              "sample_world_xyz_m": [
+                3.56,
+                0.0,
+                1.3225
+              ],
+              "pixel_uv": [
+                565.5797999515139,
+                44.337367036626574
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.6743573179571962
+            },
+            {
+              "sample_world_xyz_m": [
+                3.56,
+                0.06649999999999999,
+                1.3225
+              ],
+              "pixel_uv": [
+                553.1456557240954,
+                46.73214052938036
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.671014125131953
+            }
+          ],
+          "camera_world_xyz_m": [
+            0.9141073967710969,
+            0.18068559148641128,
+            0.42000000000000004
+          ]
+        }
+      ]
+    },
+    {
+      "A": "red_marker",
+      "B": "fan",
+      "A_xy_m": [
+        3.5,
+        0.0
+      ],
+      "B_xy_m": [
+        1.65,
+        0.0
+      ],
+      "target_separation_m": 1.85,
+      "B_geom_names": [
+        "fan_base",
+        "fan_stand",
+        "fan_head"
+      ],
+      "condition_a_positive_certificate": true,
+      "condition_b_rejected_by_counterexample": true,
+      "condition_c_scene_unchanged": true,
+      "status": "rejected_b",
+      "reason": "B has unobstructed rays inside the frustum at a valid A stop pose after one permitted turn",
+      "poses": [
+        {
+          "name": "initial",
+          "body_xy_m": [
+            0.0,
+            0.0
+          ],
+          "yaw_rad": 0.0,
+          "visible_positive_certificate": true,
+          "frustum_surface_samples": 534,
+          "unoccluded_unique_sampled_pixels": 419,
+          "visible_geom_count": 3,
+          "B_projected_u_range": [
+            240.28460916381903,
+            398.715390836181
+          ],
+          "B_projected_v_range": [
+            113.62039190150857,
+            298.4871233676675
+          ],
+          "occluding_geom_samples": {},
+          "unoccluded_rays": [
+            {
+              "sample_world_xyz_m": [
+                1.41,
+                -0.266,
+                0.0040000000000000036
+              ],
+              "pixel_uv": [
+                395.5831125379797,
+                298.4871233676675
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.1966252546223484
+            },
+            {
+              "sample_world_xyz_m": [
+                1.41,
+                -0.266,
+                0.042
+              ],
+              "pixel_uv": [
+                395.5831125379797,
+                287.61810729081327
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.183951012500095
+            },
+            {
+              "sample_world_xyz_m": [
+                1.41,
+                -0.266,
+                0.08
+              ],
+              "pixel_uv": [
+                395.5831125379797,
+                276.749091213959
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.1723719546287346
+            },
+            {
+              "sample_world_xyz_m": [
+                1.41,
+                -0.266,
+                0.118
+              ],
+              "pixel_uv": [
+                395.5831125379797,
+                265.88007513710477
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.1619208234643184
+            },
+            {
+              "sample_world_xyz_m": [
+                1.41,
+                -0.266,
+                0.156
+              ],
+              "pixel_uv": [
+                395.5831125379797,
+                255.01105906025055
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.152628300884548
+            },
+            {
+              "sample_world_xyz_m": [
+                1.41,
+                -0.133,
+                0.0040000000000000036
+              ],
+              "pixel_uv": [
+                357.54155626898984,
+                298.4871233676675
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.1742423088954
+            }
+          ],
+          "camera_world_xyz_m": [
+            0.32,
+            0.0,
+            0.42000000000000004
+          ]
+        },
+        {
+          "name": "A_stop_counterexample",
+          "body_xy_m": [
+            2.6848531500638164,
+            -0.8393066263524416
+          ],
+          "yaw_before_turn_rad": 1.04,
+          "turn_rad": 0.6,
+          "yaw_after_turn_rad": 1.6400000000000006,
+          "A_distance_m": 1.17,
+          "A_heading_error_rad": 0.2400000000000002,
+          "A_distance_heading_pass_before_turn": true,
+          "static_environment_contact_free": true,
+          "velocity_set_to_zero": true,
+          "body_height_m": 0.34,
+          "evaluated_view_count": 95,
+          "visible_positive_certificate": true,
+          "frustum_surface_samples": 19,
+          "unoccluded_unique_sampled_pixels": 19,
+          "visible_geom_count": 1,
+          "B_projected_u_range": [
+            -850.8893005016516,
+            53.41125246834491
+          ],
+          "B_projected_v_range": [
+            20.50694107452219,
+            621.002390777395
+          ],
+          "occluding_geom_samples": {},
+          "unoccluded_rays": [
+            {
+              "sample_world_xyz_m": [
+                1.89,
+                0.266,
+                0.0040000000000000036
+              ],
+              "pixel_uv": [
+                52.80637064379653,
+                334.3379637039892
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.1781642638384917
+            },
+            {
+              "sample_world_xyz_m": [
+                1.89,
+                0.266,
+                0.042
+              ],
+              "pixel_uv": [
+                52.80637064379653,
+                320.1941112502594
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.165289248464129
+            },
+            {
+              "sample_world_xyz_m": [
+                1.89,
+                0.266,
+                0.08
+              ],
+              "pixel_uv": [
+                52.80637064379653,
+                306.05025879652965
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.1535228790908723
+            },
+            {
+              "sample_world_xyz_m": [
+                1.89,
+                0.266,
+                0.118
+              ],
+              "pixel_uv": [
+                52.80637064379653,
+                291.90640634279987
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.142899397403855
+            },
+            {
+              "sample_world_xyz_m": [
+                1.89,
+                0.266,
+                0.156
+              ],
+              "pixel_uv": [
+                52.80637064379653,
+                277.7625538890701
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.1334509396467476
+            },
+            {
+              "sample_world_xyz_m": [
+                1.7639999999999998,
+                0.28,
+                0.0040000000000000036
+              ],
+              "pixel_uv": [
+                14.635318647171744,
+                330.2561457890829
+              ],
+              "ray_first_hit": "fan_base",
+              "ray_distance_m": 1.0946457961723577
+            }
+          ],
+          "camera_world_xyz_m": [
+            2.6627256464945166,
+            -0.520072584330306,
+            0.42000000000000004
+          ]
+        }
+      ]
+    }
+  ]
+}

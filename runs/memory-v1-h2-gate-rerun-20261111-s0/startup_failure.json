@@ -1,0 +1,18 @@
+{
+  "episode": "runs/memory-v1-h2-gate-rerun-20261111-s0/H2/20261111-083814-api-memory_ab_occluded_v1-s0-87fc41",
+  "model_requests": 0,
+  "metrics": {
+    "success": false,
+    "termination": "startup_error",
+    "task_id": "memory_ab_occluded_v1",
+    "scenario_source": "local_memory_ordered_navigation_demo_not_official_benchmark",
+    "mode": "api",
+    "is_llm_result": true,
+    "error": {
+      "type": "ImportError",
+      "code": "RUNTIME_ERROR",
+      "message": "Failed to load GLFW3 shared library."
+    }
+  },
+  "cause": "run monitor activation flag inherited by GLFW Python probe; cleared before child launch"
+}

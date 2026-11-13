@@ -1,0 +1,760 @@
+{
+  "source_episode": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-search-budget-rerun-20261111-s0/H2/20261111-152723-api-memory_ab_occluded_v1-s0-62de9d",
+  "source_files_sha256": {
+    "metrics.json": "69a8318dfed8c3af9dae021fff69309300d40a59159939ab287e83f8c1d4c0ff",
+    "events.jsonl": "39e4a39417dd85fc1efe731ba1dcd61da5e6d078ecff952b53191b172cb96d11",
+    "trajectory.jsonl": "81e366e97316ec8532406d5090c8b26fd64682ce8b18f729944146caee15b453"
+  },
+  "platform_half_size_from_scenario_m": [
+    8.0,
+    6.0
+  ],
+  "experimental_support_margin_m": 0.35,
+  "first_ten_move_decisions": [
+    7,
+    14,
+    21,
+    27,
+    29,
+    32,
+    33,
+    40,
+    42,
+    44
+  ],
+  "first_ten_all_allowed": true,
+  "fatal_move_99_blocked": true,
+  "blocked_decisions_on_original_pose_trace": [
+    91,
+    94,
+    97,
+    99
+  ],
+  "moves": [
+    {
+      "decision": 7,
+      "sim_time_before_s": 8.939999999999655,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        0.028652561030461855,
+        -0.014290067738791127,
+        0.4695983287769439
+      ],
+      "arguments": {
+        "forward_m": 0.25,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        0.25159009294443185,
+        0.09884196514362292
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 14,
+      "sim_time_before_s": 19.280000000000193,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        0.20852349199215983,
+        0.09313980347298183,
+        0.29311302391358
+      ],
+      "arguments": {
+        "forward_m": 0.3,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        0.4957282093045501,
+        0.17981996471827483
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 21,
+      "sim_time_before_s": 27.99999999999536,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        0.4315869236838859,
+        0.1635074862456084,
+        0.29138341495908365
+      ],
+      "arguments": {
+        "forward_m": 0.3,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        0.7189411341114755,
+        0.24969076623387862
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 27,
+      "sim_time_before_s": 37.78000000000021,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        0.632988718234959,
+        0.24280015462959065,
+        0.33526327952139057
+      ],
+      "arguments": {
+        "forward_m": 0.3,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        0.9162858338487174,
+        0.34150549534084496
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 29,
+      "sim_time_before_s": 41.02000000000417,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        0.8380565680013136,
+        0.3330404486519301,
+        0.34683003545997304
+      ],
+      "arguments": {
+        "forward_m": 0.3,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.1201930575600365,
+        0.435015942077952
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 32,
+      "sim_time_before_s": 46.72000000001113,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.0655827573872863,
+        0.4208139994531741,
+        0.9043521619050194
+      ],
+      "arguments": {
+        "forward_m": 0.25,
+        "lateral_m": 0.15
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.102227764545069,
+        0.7100494458466029
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 33,
+      "sim_time_before_s": 49.18000000001414,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.105943051015919,
+        0.6430375842103591,
+        0.8971138703357209
+      ],
+      "arguments": {
+        "forward_m": 0.15,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.199523274901687,
+        0.7602670246145916
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 40,
+      "sim_time_before_s": 50.740000000016046,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.156229206281399,
+        0.7183448261896133,
+        0.9109930927613676
+      ],
+      "arguments": {
+        "forward_m": 0.35,
+        "lateral_m": 0.05
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.3312600522269074,
+        1.025532395872372
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 42,
+      "sim_time_before_s": 53.18000000001903,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.294536598064545,
+        0.9748343859723845,
+        0.9186230902618847
+      ],
+      "arguments": {
+        "forward_m": 0.45,
+        "lateral_m": 0.1
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.488171701555621,
+        1.3931709092356543
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 44,
+      "sim_time_before_s": 55.960000000022426,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.458218970415649,
+        1.3391672081853334,
+        0.9364026015893208
+      ],
+      "arguments": {
+        "forward_m": 0.4,
+        "lateral_m": 0.09
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.6228058887562242,
+        1.7146817169744784
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 46,
+      "sim_time_before_s": 58.42000000002543,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.5916714497583606,
+        1.6555318772997283,
+        0.9407470488430245
+      ],
+      "arguments": {
+        "forward_m": 0.4,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.8273452798254024,
+        1.9787312674933535
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 50,
+      "sim_time_before_s": 61.040000000028634,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.7824353268252493,
+        1.9307626783126086,
+        0.9509051171145437
+      ],
+      "arguments": {
+        "forward_m": 0.45,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        2.0438613035759934,
+        2.2970364265937535
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 54,
+      "sim_time_before_s": 63.80000000003201,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.9956280666364856,
+        2.2483806031523104,
+        0.9579571156565065
+      ],
+      "arguments": {
+        "forward_m": 0.4,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        2.225704987348743,
+        2.5755878930398763
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 57,
+      "sim_time_before_s": 66.40000000002665,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        2.1760791298234623,
+        2.5319758649508413,
+        0.9649827523848908
+      ],
+      "arguments": {
+        "forward_m": 0.45,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        2.432323104398478,
+        2.901893457792813
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 61,
+      "sim_time_before_s": 72.28000000001295,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        2.3970663304055586,
+        2.8558998012292456,
+        1.5115065346742464
+      ],
+      "arguments": {
+        "forward_m": 0.35,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        2.4178056019402288,
+        3.2052848075134466
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 65,
+      "sim_time_before_s": 74.80000000000707,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        2.400845544851685,
+        3.1410536185210507,
+        1.5194242967090585
+      ],
+      "arguments": {
+        "forward_m": 0.4,
+        "lateral_m": 0
+      },
+      "nominal_center_endpoint_xy_m": [
+        2.421385319733365,
+        3.5405259174953474
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 68,
+      "sim_time_before_s": 77.52000000000073,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        2.404686819852822,
+        3.478893277260641,
+        1.5268325651586014
+      ],
+      "arguments": {
+        "forward_m": 0.35,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        2.420069180105313,
+        3.8285550895780034
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 73,
+      "sim_time_before_s": 81.83999999999067,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        2.420107665016495,
+        3.778226878429823,
+        2.098011662988604
+      ],
+      "arguments": {
+        "forward_m": 0.35,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        2.244012600189588,
+        4.080700890774037
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 76,
+      "sim_time_before_s": 84.17999999998521,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        2.269257437644246,
+        4.019275671925373,
+        2.0989376145096412
+      ],
+      "arguments": {
+        "forward_m": 0.35,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        2.0928823720762924,
+        4.321586499131247
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 77,
+      "sim_time_before_s": 86.53999999997971,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        2.1133769869397856,
+        4.256272918647927,
+        2.115140154726464
+      ],
+      "arguments": {
+        "forward_m": 0.35,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.932127083036146,
+        4.555686465994938
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 78,
+      "sim_time_before_s": 89.05999999997384,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.952375390548568,
+        4.495000077946648,
+        2.118923408160417
+      ],
+      "arguments": {
+        "forward_m": 0.35,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.769994029129931,
+        4.793725769856609
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 80,
+      "sim_time_before_s": 91.15999999996895,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.7938905744414688,
+        4.7429547858905865,
+        2.1385273284505386
+      ],
+      "arguments": {
+        "forward_m": 0.35,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.6056884381701364,
+        5.038047916788116
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 85,
+      "sim_time_before_s": 93.41999999996368,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.6338682309264254,
+        4.972373036238932,
+        2.159988062970463
+      ],
+      "arguments": {
+        "forward_m": 0.4,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.411592542141588,
+        5.304929073885561
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 87,
+      "sim_time_before_s": 95.83999999995804,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.4366571870695066,
+        5.2430035328077365,
+        2.166572861443408
+      ],
+      "arguments": {
+        "forward_m": 0.3,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.2683116856367578,
+        5.491317431225357
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": true,
+      "refusal": null
+    },
+    {
+      "decision": 91,
+      "sim_time_before_s": 98.17999999995259,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.2933443012554733,
+        5.4309142994007376,
+        2.1890964431717115
+      ],
+      "arguments": {
+        "forward_m": 0.3,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        1.1194490543365136,
+        5.6753737911350415
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": false,
+      "refusal": {
+        "status": "failed",
+        "error_code": "BOUNDARY_BLOCKED",
+        "message": "Experimental boundary safety interlock refused this move before execution. Turn or choose a different/inward displacement; no motion was executed. The interlock uses simulator ground truth, not non-GT perception.",
+        "constraint_feedback": {
+          "code": "BOUNDARY_BLOCKED",
+          "experimental": true,
+          "source": "simulator_ground_truth_boundary_safety_interlock",
+          "navigation_measurement": false,
+          "executed": false,
+          "blocked_directions": [
+            "north"
+          ],
+          "requested_body_displacement_m": [
+            0.3,
+            0.0
+          ],
+          "requested_distance_m": 0.3,
+          "safe_distance_along_request_m": 0.26886135495697716,
+          "support_margin_m": 0.35,
+          "blocked_edges": [
+            {
+              "edge": "north",
+              "excess_beyond_safety_limit_m": 0.025373791135041124
+            }
+          ]
+        }
+      }
+    },
+    {
+      "decision": 94,
+      "sim_time_before_s": 103.03999999994126,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.1660859503313012,
+        5.616228530280985,
+        2.652554924665882
+      ],
+      "arguments": {
+        "forward_m": 0.25,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        0.9453896204025112,
+        5.7336726870362815
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": false,
+      "refusal": {
+        "status": "failed",
+        "error_code": "BOUNDARY_BLOCKED",
+        "message": "Experimental boundary safety interlock refused this move before execution. Turn or choose a different/inward displacement; no motion was executed. The interlock uses simulator ground truth, not non-GT perception.",
+        "constraint_feedback": {
+          "code": "BOUNDARY_BLOCKED",
+          "experimental": true,
+          "source": "simulator_ground_truth_boundary_safety_interlock",
+          "navigation_measurement": false,
+          "executed": false,
+          "blocked_directions": [
+            "north"
+          ],
+          "requested_body_displacement_m": [
+            0.25,
+            0.0
+          ],
+          "requested_distance_m": 0.25,
+          "safe_distance_along_request_m": 0.07188835667103649,
+          "support_margin_m": 0.35,
+          "blocked_edges": [
+            {
+              "edge": "north",
+              "excess_beyond_safety_limit_m": 0.08367268703628117
+            }
+          ]
+        }
+      }
+    },
+    {
+      "decision": 97,
+      "sim_time_before_s": 104.83999999993706,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        1.003777016622952,
+        5.70298524650313,
+        2.671639464880934
+      ],
+      "arguments": {
+        "forward_m": 0.25,
+        "lateral_m": 0
+      },
+      "nominal_center_endpoint_xy_m": [
+        0.7808796447703934,
+        5.816196383858172
+      ],
+      "original_status": "succeeded",
+      "original_error_code": null,
+      "allowed_by_experimental_gate": false,
+      "refusal": {
+        "status": "failed",
+        "error_code": "BOUNDARY_BLOCKED",
+        "message": "Experimental boundary safety interlock refused this move before execution. Turn or choose a different/inward displacement; no motion was executed. The interlock uses simulator ground truth, not non-GT perception.",
+        "constraint_feedback": {
+          "code": "BOUNDARY_BLOCKED",
+          "experimental": true,
+          "source": "simulator_ground_truth_boundary_safety_interlock",
+          "navigation_measurement": false,
+          "executed": false,
+          "blocked_directions": [
+            "north"
+          ],
+          "requested_body_displacement_m": [
+            0.25,
+            0
+          ],
+          "requested_distance_m": 0.25,
+          "safe_distance_along_request_m": 0.0,
+          "support_margin_m": 0.35,
+          "blocked_edges": [
+            {
+              "edge": "north",
+              "excess_beyond_safety_limit_m": 0.16619638385817126
+            }
+          ]
+        }
+      }
+    },
+    {
+      "decision": 99,
+      "sim_time_before_s": 106.95999999993212,
+      "pose_source": "recorded_simulator_ground_truth_control_trajectory",
+      "start_base_xy_yaw": [
+        0.83296990631161,
+        5.782508152043785,
+        2.6938054504732527
+      ],
+      "arguments": {
+        "forward_m": 0.3,
+        "lateral_m": 0.0
+      },
+      "nominal_center_endpoint_xy_m": [
+        0.5625476900795292,
+        5.912399741333198
+      ],
+      "original_status": "failed",
+      "original_error_code": "ROBOT_FELL",
+      "allowed_by_experimental_gate": false,
+      "refusal": {
+        "status": "failed",
+        "error_code": "BOUNDARY_BLOCKED",
+        "message": "Experimental boundary safety interlock refused this move before execution. Turn or choose a different/inward displacement; no motion was executed. The interlock uses simulator ground truth, not non-GT perception.",
+        "constraint_feedback": {
+          "code": "BOUNDARY_BLOCKED",
+          "experimental": true,
+          "source": "simulator_ground_truth_boundary_safety_interlock",
+          "navigation_measurement": false,
+          "executed": false,
+          "blocked_directions": [
+            "north"
+          ],
+          "requested_body_displacement_m": [
+            0.3,
+            0.0
+          ],
+          "requested_distance_m": 0.3,
+          "safe_distance_along_request_m": 0.0,
+          "support_margin_m": 0.35,
+          "blocked_edges": [
+            {
+              "edge": "north",
+              "excess_beyond_safety_limit_m": 0.26239974133319777
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "interpretation": "Counterfactual command rejection at recorded GT poses only; no new physics or API. Original later poses are not the route a gated run would follow. This proves rejection, not that a future run succeeds or cannot fall."
+}

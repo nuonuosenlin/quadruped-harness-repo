@@ -1,0 +1,1372 @@
+{
+  "episode": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-rerun-20261111-s0/H2/20261111-013742-api-memory_ab_occluded_v1-s0-9d3a30",
+  "metrics_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-rerun-20261111-s0/H2/20261111-013742-api-memory_ab_occluded_v1-s0-9d3a30/metrics.json",
+  "memory_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-rerun-20261111-s0/H2/20261111-013742-api-memory_ab_occluded_v1-s0-9d3a30/memory.md",
+  "config": {
+    "task": "memory_ab_occluded_v1",
+    "seed": 0,
+    "provider": "compatible",
+    "model": "deepseek-v4.1-flash",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "viewer": true,
+    "budgets": {
+      "max_model_calls": 120,
+      "max_wall_seconds": 2400,
+      "max_sim_seconds": 600,
+      "history_turns": 6,
+      "api_timeout": 90,
+      "max_output_tokens": 8192
+    },
+    "arm": "H2_fixed_only",
+    "memory_v1": true,
+    "protocol_stop": "stop_on_first_protocol_error_no_retry",
+    "H0_reference": "runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/metrics.json",
+    "code_sha256": {
+      "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+      "go2_demo/__main__.py": "8203bb136d92c30033f7ab8366537ffc4b2e7cff088ef043377bc15bb98aa67d",
+      "go2_demo/backend.py": "fc2f0ebd74ffec9eaea12f17e9c8d66cac8ad5253fceb9301d1aa9feea1755b8",
+      "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+      "go2_demo/memory.py": "8519f1a093324745c7689c48dd0096b2b20d8fa9b98cff4c4cf4c8dd5bba9a7d",
+      "go2_demo/memory_perception.py": "ad690d04999235db828e413e2e70d930232548b82abd136ca655965a63c7b989",
+      "go2_demo/memory_planning.py": "073a9e79b57d10c5ae61a74effc941a4bc0df918bd72cecfc1622c0fb86cd3c6",
+      "go2_demo/models.py": "64bcbe9053b0fb221105c5c97a45964ab805d085f344d22ca4aa1c9c57147330",
+      "go2_demo/ordered_evaluation.py": "ff57acbbebd7d4109e809fde17969152ae2a8dc5ebd55116d3716e1116da14ef",
+      "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+      "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+      "go2_demo/runner.py": "2da2d1c79cacfca642a4fb75c21423d64ab7bdd01e7e48b7a8a6cea05f1cf858",
+      "go2_demo/scenarios.py": "5ae3159d9fef9bf13e1b7abe4243ff47999e940065994ea98932731ebaefb4b7",
+      "go2_demo/types.py": "0404381cc7347b9fa611de4112e2a372561a2e4b0489e905e7bd59569285aa00"
+    }
+  },
+  "H0_condition_comparison": {
+    "task": true,
+    "task_id": true,
+    "seed": true,
+    "model": true,
+    "budgets": true,
+    "package_versions": true,
+    "evaluation": true,
+    "asset_lock_sha256": true,
+    "api_settings": true
+  },
+  "product_source_unchanged_during_run": true,
+  "real_episodes_this_request": 1,
+  "metrics": {
+    "mode": "api",
+    "seed": 0,
+    "termination": "model_error",
+    "task_id": "memory_ab_occluded_v1",
+    "scenario_source": "local_memory_ordered_navigation_demo_not_official_benchmark",
+    "success": false,
+    "error": {
+      "type": "ModelProtocolError",
+      "code": "MODEL_PROTOCOL_ERROR",
+      "message": "Model response was truncated; no tool will execute.",
+      "protocol_diagnostics": [
+        {
+          "kind": "TRUNCATED_RESPONSE",
+          "tool_calls_type": "NoneType",
+          "tool_calls_count": null,
+          "usage": {
+            "prompt_tokens": 6308,
+            "completion_tokens": 8192,
+            "total_tokens": 14500
+          },
+          "reasoning_present": true,
+          "reasoning_chars": 34352,
+          "raw_response_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-rerun-20261111-s0/protocol_error/response.raw"
+        }
+      ]
+    },
+    "final_stop": {
+      "status": "succeeded",
+      "error_code": null,
+      "speed_mps": 0.013118114153344625,
+      "yaw_rate_radps": 0.01135286476434242
+    },
+    "model_calls": 45,
+    "decision_calls": 45,
+    "protocol_retries": 0,
+    "motion_calls": 0,
+    "usage": {
+      "prompt_tokens": 249016,
+      "completion_tokens": 142352,
+      "total_tokens": 391368
+    },
+    "reasoning_responses": 45,
+    "reasoning_characters": 569564,
+    "wall_elapsed_s": 787.326501035,
+    "sim_elapsed_s": 0.6000000000000005,
+    "evaluation": {
+      "success": false,
+      "goal_kind": "ordered_standoff",
+      "checkpoints": {
+        "A": {
+          "label": "A",
+          "target_xy_m": [
+            6.4,
+            0.0
+          ],
+          "base_xy_m": [
+            0.0065735920519717364,
+            0.009051973530495739
+          ],
+          "distance_to_target_center_m": 6.393432815950445,
+          "heading_error_rad": 0.025552017040537642,
+          "speed_mps": 0.013118114153344625,
+          "abs_yaw_rate_radps": 0.01135286476434242,
+          "sim_time_s": 1.6000000000000012,
+          "stop_confirmed": true,
+          "stopped": true,
+          "collision": false,
+          "fallen": false,
+          "criteria_pass": false,
+          "failure_reasons": [
+            "DISTANCE_OUT_OF_RANGE"
+          ],
+          "source": "privileged_simulator_evaluator",
+          "stop_index": 1,
+          "achieved_at_checkpoint": false,
+          "passed": false
+        },
+        "B": {
+          "label": "B",
+          "target_xy_m": [
+            1.8,
+            0.6
+          ],
+          "base_xy_m": [
+            0.0065735920519717364,
+            0.009051973530495739
+          ],
+          "distance_to_target_center_m": 1.888279071195137,
+          "heading_error_rad": 0.2941674575132631,
+          "speed_mps": 0.013118114153344625,
+          "abs_yaw_rate_radps": 0.01135286476434242,
+          "sim_time_s": 1.6000000000000012,
+          "stop_confirmed": true,
+          "stopped": true,
+          "collision": false,
+          "fallen": false,
+          "criteria_pass": false,
+          "failure_reasons": [
+            "DISTANCE_OUT_OF_RANGE",
+            "HEADING_OUT_OF_RANGE",
+            "A_NOT_CONFIRMED_BEFORE_B"
+          ],
+          "source": "privileged_simulator_evaluator",
+          "eligible": false,
+          "passed": false
+        }
+      },
+      "checkpoint_order": [
+        "A",
+        "B"
+      ],
+      "order_satisfied": false,
+      "premature_b_stops_ignored": 0,
+      "requires_finish": true,
+      "finish_enforced_by": "episode_runner",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "heading_tolerance_rad": 0.25,
+      "collision": false,
+      "fallen": false,
+      "stopped": true,
+      "source": "privileged_simulator_evaluator"
+    },
+    "simulation_mode": "paused_during_model_inference",
+    "is_llm_result": true,
+    "checkpoints": {
+      "A": {
+        "label": "A",
+        "target_xy_m": [
+          6.4,
+          0.0
+        ],
+        "base_xy_m": [
+          0.0065735920519717364,
+          0.009051973530495739
+        ],
+        "distance_to_target_center_m": 6.393432815950445,
+        "heading_error_rad": 0.025552017040537642,
+        "speed_mps": 0.013118114153344625,
+        "abs_yaw_rate_radps": 0.01135286476434242,
+        "sim_time_s": 1.6000000000000012,
+        "stop_confirmed": true,
+        "stopped": true,
+        "collision": false,
+        "fallen": false,
+        "criteria_pass": false,
+        "failure_reasons": [
+          "DISTANCE_OUT_OF_RANGE"
+        ],
+        "source": "privileged_simulator_evaluator",
+        "stop_index": 1,
+        "achieved_at_checkpoint": false,
+        "passed": false
+      },
+      "B": {
+        "label": "B",
+        "target_xy_m": [
+          1.8,
+          0.6
+        ],
+        "base_xy_m": [
+          0.0065735920519717364,
+          0.009051973530495739
+        ],
+        "distance_to_target_center_m": 1.888279071195137,
+        "heading_error_rad": 0.2941674575132631,
+        "speed_mps": 0.013118114153344625,
+        "abs_yaw_rate_radps": 0.01135286476434242,
+        "sim_time_s": 1.6000000000000012,
+        "stop_confirmed": true,
+        "stopped": true,
+        "collision": false,
+        "fallen": false,
+        "criteria_pass": false,
+        "failure_reasons": [
+          "DISTANCE_OUT_OF_RANGE",
+          "HEADING_OUT_OF_RANGE",
+          "A_NOT_CONFIRMED_BEFORE_B"
+        ],
+        "source": "privileged_simulator_evaluator",
+        "eligible": false,
+        "passed": false
+      }
+    },
+    "order_satisfied": false
+  },
+  "parsed_model_responses": 44,
+  "first_nonempty_object_input": {
+    "decision": 3,
+    "objects": [
+      {
+        "confidence": 1.0,
+        "source": "rgbd_optical_flow",
+        "category": "unclassified_landmark",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00002",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "object_id": "point-001",
+        "pose_covariance": null,
+        "state": "confirmed",
+        "last_seen": 2,
+        "evidence_ids": [
+          "e000004",
+          "e000012"
+        ],
+        "candidate_pose": null
+      },
+      {
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00002",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "object_id": "task:B",
+        "pose_covariance": null,
+        "state": "confirmed",
+        "last_seen": 2,
+        "evidence_ids": [
+          "e000005",
+          "e000013"
+        ],
+        "candidate_pose": null,
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00002",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    ]
+  },
+  "task_target_read_decisions": {
+    "A": [],
+    "B": [
+      3,
+      4,
+      5,
+      6,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ]
+  },
+  "first_track_point_decision": 1,
+  "first_turn_attempt_decision": 3,
+  "first_successful_turn_decision": null,
+  "first_move_relative_attempt_decision": null,
+  "first_successful_move_relative_decision": null,
+  "finish_tool_decisions": [],
+  "tool_counts": {
+    "track_point": 8,
+    "observe": 10,
+    "turn": 26
+  },
+  "failure_counts": {
+    "MEMORY_CONSTRAINT": 26
+  },
+  "failed_motion": [
+    {
+      "decision": 3,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 4,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 5,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 7,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 8,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 9,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 11,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 13,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 16,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 17,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 19,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 21,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 23,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 24,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 25,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 27,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 31,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 32,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 34,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 36,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 38,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 39,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 40,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 41,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 43,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    },
+    {
+      "decision": 44,
+      "tool": "turn",
+      "error_code": "MEMORY_CONSTRAINT",
+      "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+    }
+  ],
+  "plans_in_md": [],
+  "target_objects_in_md": [
+    {
+      "confidence": 0.95,
+      "source": "task_label_rgbd_tracking",
+      "category": "task_target",
+      "pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7354,
+          0.7421
+        ]
+      },
+      "anchor_node": null,
+      "visual_feature": {
+        "image_id": "frame-00011",
+        "pixel_uv": [
+          156.0,
+          248.0
+        ]
+      },
+      "object_id": "task:B",
+      "pose_covariance": null,
+      "state": "unknown",
+      "last_seen": 37,
+      "evidence_ids": [
+        "e000005",
+        "e000013",
+        "e000041",
+        "e000118",
+        "e000159",
+        "e000188",
+        "e000217",
+        "e000275",
+        "e000319",
+        "e000426",
+        "e000470"
+      ],
+      "candidate_pose": null,
+      "task_label": "B",
+      "label_description": "绿方块",
+      "camera_pose": {
+        "frame": "current_camera_optical",
+        "image_id": "frame-00011",
+        "position_m": [
+          -0.746545465871329,
+          0.31277287102254453,
+          1.4235464334487915
+        ],
+        "source": "rgbd_depth_intrinsics"
+      },
+      "measurement_provenance": {
+        "identity": "task_given_label_plus_unique_current_color_component",
+        "tracking": "rgbd_optical_flow",
+        "reference_pose": "existing_public_idealized_simulator_odometry",
+        "motion_delta_used": false
+      }
+    }
+  ],
+  "target_evidence_ledger": [
+    {
+      "evidence_id": "e000005",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 1,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00001",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00001",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00001",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000013",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 2,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00002",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00002",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00002",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000033",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 5,
+      "object_id": "task:B",
+      "old_state": "confirmed",
+      "state": "predicted",
+      "unobserved_steps": 3
+    },
+    {
+      "evidence_id": "e000041",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 6,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00003",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00003",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00003",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000118",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 15,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00004",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00004",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00004",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000159",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 18,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00005",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00005",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00005",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000188",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 20,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00006",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00006",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00006",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000217",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 22,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00007",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00007",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00007",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000258",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 25,
+      "object_id": "task:B",
+      "old_state": "confirmed",
+      "state": "predicted",
+      "unobserved_steps": 3
+    },
+    {
+      "evidence_id": "e000275",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 26,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00008",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00008",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00008",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000319",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 29,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00009",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00009",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00009",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000426",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 35,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00010",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00010",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00010",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000470",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 37,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00011",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00011",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00011",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000532",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 40,
+      "object_id": "task:B",
+      "old_state": "confirmed",
+      "state": "predicted",
+      "unobserved_steps": 3
+    },
+    {
+      "evidence_id": "e000597",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 43,
+      "object_id": "task:B",
+      "old_state": "predicted",
+      "state": "unknown",
+      "unobserved_steps": 6
+    }
+  ],
+  "ledger_size": 643,
+  "final_pose_in_memory": {
+    "frame": "episode_start",
+    "position_m": [
+      0.0,
+      0.0
+    ],
+    "yaw_rad": 0.0,
+    "source": "simulated_proprioception",
+    "provenance": "existing_public_idealized_simulator_odometry"
+  },
+  "B_return_stage_reached": false,
+  "protocol_capture": {
+    "error_code": "MODEL_PROTOCOL_ERROR",
+    "error_message": "Model response was truncated; no tool will execute.",
+    "protocol_diagnostics": [
+      {
+        "kind": "TRUNCATED_RESPONSE",
+        "tool_calls_type": "NoneType",
+        "tool_calls_count": null,
+        "usage": {
+          "prompt_tokens": 6308,
+          "completion_tokens": 8192,
+          "total_tokens": 14500
+        },
+        "reasoning_present": true,
+        "reasoning_chars": 34352,
+        "raw_response_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-rerun-20261111-s0/protocol_error/response.raw"
+      }
+    ],
+    "response_body_available": true,
+    "automatic_retry_sent": false,
+    "response_body_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-rerun-20261111-s0/protocol_error/response.raw",
+    "original_byte_length": 35789,
+    "stored_byte_length": 35789,
+    "original_sha256": "9467272783801588e779f3f535e7c586b963d0ce06cf646cc1e20e2cac516736",
+    "stored_sha256": "9467272783801588e779f3f535e7c586b963d0ce06cf646cc1e20e2cac516736",
+    "credential_redactions_applied": false,
+    "preservation": "complete HTTP response body; credential-only redaction if required"
+  },
+  "protocol_response_structure": {
+    "valid_json": true,
+    "response_type": "dict",
+    "choices_type": "list",
+    "choices_count": 1,
+    "usage": {
+      "completion_tokens": 8192,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8192,
+        "text_tokens": 0
+      },
+      "prompt_tokens": 6308,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536,
+        "image_tokens": 0,
+        "text_tokens": 6308
+      },
+      "total_tokens": 14500
+    },
+    "choices": [
+      {
+        "finish_reason": "length",
+        "message_keys": [
+          "content",
+          "reasoning_content",
+          "role"
+        ],
+        "content_type": "str",
+        "content_chars": 0,
+        "reasoning_chars": 34352,
+        "tool_calls": null
+      }
+    ]
+  },
+  "H0_reference_metrics": {
+    "path": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/metrics.json",
+    "sha256": "cd9ab3c9d5700944f9aec0e2cc84fc223a63815c8a5c339831ac35d33181e156",
+    "metrics": {
+      "mode": "api",
+      "seed": 0,
+      "termination": "budget_exhausted",
+      "task_id": "memory_ab_occluded_v1",
+      "scenario_source": "local_memory_ordered_navigation_demo_not_official_benchmark",
+      "success": false,
+      "error": null,
+      "final_stop": {
+        "status": "succeeded",
+        "error_code": null,
+        "speed_mps": 0.022972177360348227,
+        "yaw_rate_radps": 0.0115557867857252
+      },
+      "model_calls": 120,
+      "motion_calls": 92,
+      "usage": {
+        "prompt_tokens": 1867189,
+        "completion_tokens": 117884,
+        "total_tokens": 1985073
+      },
+      "reasoning_responses": 120,
+      "reasoning_characters": 373249,
+      "wall_elapsed_s": 1247.713095386,
+      "sim_elapsed_s": 254.3800000004913,
+      "evaluation": {
+        "success": false,
+        "goal_kind": "ordered_standoff",
+        "checkpoints": {
+          "A": {
+            "label": "A",
+            "target_xy_m": [
+              6.4,
+              0.0
+            ],
+            "base_xy_m": [
+              5.616655252462496,
+              0.7367996471503488
+            ],
+            "distance_to_target_center_m": 1.0754081613673363,
+            "heading_error_rad": 0.05954000699948547,
+            "speed_mps": 0.012607659892241095,
+            "abs_yaw_rate_radps": 0.00043265034760297237,
+            "sim_time_s": 183.66000000014884,
+            "stop_confirmed": true,
+            "stopped": true,
+            "collision": false,
+            "fallen": false,
+            "criteria_pass": true,
+            "failure_reasons": [],
+            "source": "privileged_simulator_evaluator",
+            "stop_index": 67,
+            "achieved_at_checkpoint": true,
+            "passed": true
+          },
+          "B": {
+            "label": "B",
+            "target_xy_m": [
+              1.8,
+              0.6
+            ],
+            "base_xy_m": [
+              5.117369658396033,
+              -1.7938402901946433
+            ],
+            "distance_to_target_center_m": 4.090893885864774,
+            "heading_error_rad": 1.9420880128677553,
+            "speed_mps": 0.022972177360348227,
+            "abs_yaw_rate_radps": 0.0115557867857252,
+            "sim_time_s": 255.3800000004913,
+            "stop_confirmed": true,
+            "stopped": true,
+            "collision": false,
+            "fallen": false,
+            "criteria_pass": false,
+            "failure_reasons": [
+              "DISTANCE_OUT_OF_RANGE",
+              "HEADING_OUT_OF_RANGE"
+            ],
+            "source": "privileged_simulator_evaluator",
+            "eligible": true,
+            "passed": false
+          }
+        },
+        "checkpoint_order": [
+          "A",
+          "B"
+        ],
+        "order_satisfied": true,
+        "premature_b_stops_ignored": 0,
+        "requires_finish": true,
+        "finish_enforced_by": "episode_runner",
+        "standoff_m": 1.0,
+        "distance_tolerance_m": 0.18,
+        "heading_tolerance_rad": 0.25,
+        "collision": false,
+        "fallen": false,
+        "stopped": true,
+        "source": "privileged_simulator_evaluator"
+      },
+      "simulation_mode": "paused_during_model_inference",
+      "is_llm_result": true,
+      "checkpoints": {
+        "A": {
+          "label": "A",
+          "target_xy_m": [
+            6.4,
+            0.0
+          ],
+          "base_xy_m": [
+            5.616655252462496,
+            0.7367996471503488
+          ],
+          "distance_to_target_center_m": 1.0754081613673363,
+          "heading_error_rad": 0.05954000699948547,
+          "speed_mps": 0.012607659892241095,
+          "abs_yaw_rate_radps": 0.00043265034760297237,
+          "sim_time_s": 183.66000000014884,
+          "stop_confirmed": true,
+          "stopped": true,
+          "collision": false,
+          "fallen": false,
+          "criteria_pass": true,
+          "failure_reasons": [],
+          "source": "privileged_simulator_evaluator",
+          "stop_index": 67,
+          "achieved_at_checkpoint": true,
+          "passed": true
+        },
+        "B": {
+          "label": "B",
+          "target_xy_m": [
+            1.8,
+            0.6
+          ],
+          "base_xy_m": [
+            5.117369658396033,
+            -1.7938402901946433
+          ],
+          "distance_to_target_center_m": 4.090893885864774,
+          "heading_error_rad": 1.9420880128677553,
+          "speed_mps": 0.022972177360348227,
+          "abs_yaw_rate_radps": 0.0115557867857252,
+          "sim_time_s": 255.3800000004913,
+          "stop_confirmed": true,
+          "stopped": true,
+          "collision": false,
+          "fallen": false,
+          "criteria_pass": false,
+          "failure_reasons": [
+            "DISTANCE_OUT_OF_RANGE",
+            "HEADING_OUT_OF_RANGE"
+          ],
+          "source": "privileged_simulator_evaluator",
+          "eligible": true,
+          "passed": false
+        }
+      },
+      "order_satisfied": true
+    }
+  }
+}

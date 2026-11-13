@@ -1,0 +1,1621 @@
+{
+  "scenarios": [
+    {
+      "task_id": "red_marker",
+      "title": "原始红色标记",
+      "category": "baseline",
+      "instruction": "找到红色标记，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "box",
+        "color": "red",
+        "xy": [
+          3.0,
+          0.55
+        ],
+        "z": 0.5,
+        "half_size": [
+          0.08,
+          0.2,
+          0.5
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "blue_distractor",
+          "kind": "box",
+          "position": [
+            3.0,
+            -1.3,
+            0.4
+          ],
+          "size": [
+            0.12,
+            0.18,
+            0.4
+          ],
+          "rgba": [
+            0.04,
+            0.12,
+            0.85,
+            1.0
+          ],
+          "role": "distractor",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.15,
+      "unsupported_reason": null,
+      "source": "original_go2_demo"
+    },
+    {
+      "task_id": "go_to_blue_ball",
+      "title": "接近蓝色球体",
+      "category": "go_to",
+      "instruction": "找到蓝色球体，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "sphere",
+        "color": "blue",
+        "xy": [
+          3.0,
+          -0.55
+        ],
+        "z": 0.12,
+        "half_size": [
+          0.12,
+          0.12,
+          0.12
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "wrong_color_object",
+          "kind": "box",
+          "position": [
+            3.0,
+            0.9900000000000001,
+            0.22
+          ],
+          "size": [
+            0.12,
+            0.15,
+            0.22
+          ],
+          "rgba": [
+            0.85,
+            0.035,
+            0.025,
+            1.0
+          ],
+          "role": "distractor",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "go_to_green_cube",
+      "title": "接近绿色方块",
+      "category": "go_to",
+      "instruction": "找到绿色方块，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "box",
+        "color": "green",
+        "xy": [
+          3.2,
+          0.5
+        ],
+        "z": 0.2,
+        "half_size": [
+          0.08,
+          0.18,
+          0.2
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "wrong_color_object",
+          "kind": "box",
+          "position": [
+            3.0,
+            -0.9,
+            0.22
+          ],
+          "size": [
+            0.12,
+            0.15,
+            0.22
+          ],
+          "rgba": [
+            0.85,
+            0.035,
+            0.025,
+            1.0
+          ],
+          "role": "distractor",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "go_to_red_cube",
+      "title": "接近红色方块",
+      "category": "go_to",
+      "instruction": "找到红色方块，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "box",
+        "color": "red",
+        "xy": [
+          2.8,
+          -0.35
+        ],
+        "z": 0.2,
+        "half_size": [
+          0.08,
+          0.18,
+          0.2
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "wrong_color_object",
+          "kind": "box",
+          "position": [
+            3.0,
+            0.63,
+            0.22
+          ],
+          "size": [
+            0.12,
+            0.15,
+            0.22
+          ],
+          "rgba": [
+            0.04,
+            0.75,
+            0.1,
+            1.0
+          ],
+          "role": "distractor",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "distinguish_texture_a",
+      "title": "识别字母 A",
+      "category": "distinguish",
+      "instruction": "图中有三块白色字母标牌。只选择字母 A 的标牌，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "sign",
+        "color": "white",
+        "xy": [
+          3.2,
+          0.8
+        ],
+        "z": 0.65,
+        "half_size": [
+          0.025,
+          0.2,
+          0.25
+        ],
+        "letter": "A"
+      },
+      "objects": [
+        {
+          "name": "sign_B",
+          "kind": "sign",
+          "position": [
+            3.2,
+            0.0,
+            0.65
+          ],
+          "size": [
+            0.025,
+            0.2,
+            0.25
+          ],
+          "rgba": [
+            0.95,
+            0.95,
+            0.95,
+            1.0
+          ],
+          "role": "distractor",
+          "euler": null,
+          "letter": "B"
+        },
+        {
+          "name": "sign_C",
+          "kind": "sign",
+          "position": [
+            3.2,
+            -0.8,
+            0.65
+          ],
+          "size": [
+            0.025,
+            0.2,
+            0.25
+          ],
+          "rgba": [
+            0.95,
+            0.95,
+            0.95,
+            1.0
+          ],
+          "role": "distractor",
+          "euler": null,
+          "letter": "C"
+        },
+        {
+          "name": "sign_support_A",
+          "kind": "box",
+          "position": [
+            3.2,
+            0.8,
+            0.2
+          ],
+          "size": [
+            0.025,
+            0.025,
+            0.2
+          ],
+          "rgba": [
+            0.25,
+            0.25,
+            0.25,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "sign_support_B",
+          "kind": "box",
+          "position": [
+            3.2,
+            0.0,
+            0.2
+          ],
+          "size": [
+            0.025,
+            0.025,
+            0.2
+          ],
+          "rgba": [
+            0.25,
+            0.25,
+            0.25,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "sign_support_C",
+          "kind": "box",
+          "position": [
+            3.2,
+            -0.8,
+            0.2
+          ],
+          "size": [
+            0.025,
+            0.025,
+            0.2
+          ],
+          "rgba": [
+            0.25,
+            0.25,
+            0.25,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "distinguish_texture_b",
+      "title": "识别字母 B",
+      "category": "distinguish",
+      "instruction": "图中有三块白色字母标牌。只选择字母 B 的标牌，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "sign",
+        "color": "white",
+        "xy": [
+          3.2,
+          0.0
+        ],
+        "z": 0.65,
+        "half_size": [
+          0.025,
+          0.2,
+          0.25
+        ],
+        "letter": "B"
+      },
+      "objects": [
+        {
+          "name": "sign_A",
+          "kind": "sign",
+          "position": [
+            3.2,
+            0.8,
+            0.65
+          ],
+          "size": [
+            0.025,
+            0.2,
+            0.25
+          ],
+          "rgba": [
+            0.95,
+            0.95,
+            0.95,
+            1.0
+          ],
+          "role": "distractor",
+          "euler": null,
+          "letter": "A"
+        },
+        {
+          "name": "sign_C",
+          "kind": "sign",
+          "position": [
+            3.2,
+            -0.8,
+            0.65
+          ],
+          "size": [
+            0.025,
+            0.2,
+            0.25
+          ],
+          "rgba": [
+            0.95,
+            0.95,
+            0.95,
+            1.0
+          ],
+          "role": "distractor",
+          "euler": null,
+          "letter": "C"
+        },
+        {
+          "name": "sign_support_A",
+          "kind": "box",
+          "position": [
+            3.2,
+            0.8,
+            0.2
+          ],
+          "size": [
+            0.025,
+            0.025,
+            0.2
+          ],
+          "rgba": [
+            0.25,
+            0.25,
+            0.25,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "sign_support_B",
+          "kind": "box",
+          "position": [
+            3.2,
+            0.0,
+            0.2
+          ],
+          "size": [
+            0.025,
+            0.025,
+            0.2
+          ],
+          "rgba": [
+            0.25,
+            0.25,
+            0.25,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "sign_support_C",
+          "kind": "box",
+          "position": [
+            3.2,
+            -0.8,
+            0.2
+          ],
+          "size": [
+            0.025,
+            0.025,
+            0.2
+          ],
+          "rgba": [
+            0.25,
+            0.25,
+            0.25,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "distinguish_texture_c",
+      "title": "识别字母 C",
+      "category": "distinguish",
+      "instruction": "图中有三块白色字母标牌。只选择字母 C 的标牌，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "sign",
+        "color": "white",
+        "xy": [
+          3.2,
+          -0.8
+        ],
+        "z": 0.65,
+        "half_size": [
+          0.025,
+          0.2,
+          0.25
+        ],
+        "letter": "C"
+      },
+      "objects": [
+        {
+          "name": "sign_A",
+          "kind": "sign",
+          "position": [
+            3.2,
+            0.8,
+            0.65
+          ],
+          "size": [
+            0.025,
+            0.2,
+            0.25
+          ],
+          "rgba": [
+            0.95,
+            0.95,
+            0.95,
+            1.0
+          ],
+          "role": "distractor",
+          "euler": null,
+          "letter": "A"
+        },
+        {
+          "name": "sign_B",
+          "kind": "sign",
+          "position": [
+            3.2,
+            0.0,
+            0.65
+          ],
+          "size": [
+            0.025,
+            0.2,
+            0.25
+          ],
+          "rgba": [
+            0.95,
+            0.95,
+            0.95,
+            1.0
+          ],
+          "role": "distractor",
+          "euler": null,
+          "letter": "B"
+        },
+        {
+          "name": "sign_support_A",
+          "kind": "box",
+          "position": [
+            3.2,
+            0.8,
+            0.2
+          ],
+          "size": [
+            0.025,
+            0.025,
+            0.2
+          ],
+          "rgba": [
+            0.25,
+            0.25,
+            0.25,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "sign_support_B",
+          "kind": "box",
+          "position": [
+            3.2,
+            0.0,
+            0.2
+          ],
+          "size": [
+            0.025,
+            0.025,
+            0.2
+          ],
+          "rgba": [
+            0.25,
+            0.25,
+            0.25,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "sign_support_C",
+          "kind": "box",
+          "position": [
+            3.2,
+            -0.8,
+            0.2
+          ],
+          "size": [
+            0.025,
+            0.025,
+            0.2
+          ],
+          "rgba": [
+            0.25,
+            0.25,
+            0.25,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "go_avoid_texture_cooker",
+      "title": "绕过炉台",
+      "category": "go_avoid",
+      "instruction": "绕过前方的炉台，不得接触它。找到其后方的红色标记，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "box",
+        "color": "red",
+        "xy": [
+          3.5,
+          0.0
+        ],
+        "z": 0.8,
+        "half_size": [
+          0.06,
+          0.14,
+          0.55
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "cooker_body",
+          "kind": "box",
+          "position": [
+            1.65,
+            0.0,
+            0.25
+          ],
+          "size": [
+            0.23,
+            0.32,
+            0.25
+          ],
+          "rgba": [
+            0.32,
+            0.36,
+            0.42,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "cooker_top",
+          "kind": "box",
+          "position": [
+            1.65,
+            0.0,
+            0.515
+          ],
+          "size": [
+            0.24,
+            0.33,
+            0.015
+          ],
+          "rgba": [
+            0.06,
+            0.07,
+            0.08,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "target_support",
+          "kind": "box",
+          "position": [
+            3.5,
+            0.0,
+            0.125
+          ],
+          "size": [
+            0.025,
+            0.04,
+            0.125
+          ],
+          "rgba": [
+            0.32,
+            0.36,
+            0.42,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "go_avoid_texture_drawers",
+      "title": "绕过抽屉柜",
+      "category": "go_avoid",
+      "instruction": "绕过前方的抽屉柜，不得接触它。找到其后方的红色标记，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "box",
+        "color": "red",
+        "xy": [
+          3.5,
+          0.0
+        ],
+        "z": 0.8,
+        "half_size": [
+          0.06,
+          0.14,
+          0.55
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "drawers_body",
+          "kind": "box",
+          "position": [
+            1.65,
+            0.0,
+            0.28
+          ],
+          "size": [
+            0.22,
+            0.33,
+            0.28
+          ],
+          "rgba": [
+            0.55,
+            0.33,
+            0.14,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "drawer_handle_0",
+          "kind": "box",
+          "position": [
+            1.42,
+            0.0,
+            0.12
+          ],
+          "size": [
+            0.02,
+            0.14,
+            0.02
+          ],
+          "rgba": [
+            0.06,
+            0.07,
+            0.08,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "drawer_handle_1",
+          "kind": "box",
+          "position": [
+            1.42,
+            0.0,
+            0.29000000000000004
+          ],
+          "size": [
+            0.02,
+            0.14,
+            0.02
+          ],
+          "rgba": [
+            0.06,
+            0.07,
+            0.08,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "drawer_handle_2",
+          "kind": "box",
+          "position": [
+            1.42,
+            0.0,
+            0.46
+          ],
+          "size": [
+            0.02,
+            0.14,
+            0.02
+          ],
+          "rgba": [
+            0.06,
+            0.07,
+            0.08,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "target_support",
+          "kind": "box",
+          "position": [
+            3.5,
+            0.0,
+            0.125
+          ],
+          "size": [
+            0.025,
+            0.04,
+            0.125
+          ],
+          "rgba": [
+            0.32,
+            0.36,
+            0.42,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "go_avoid_texture_fan",
+      "title": "绕过落地扇",
+      "category": "go_avoid",
+      "instruction": "绕过前方的落地扇，不得接触它。找到其后方的红色标记，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "box",
+        "color": "red",
+        "xy": [
+          3.5,
+          0.0
+        ],
+        "z": 0.8,
+        "half_size": [
+          0.06,
+          0.14,
+          0.55
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "fan_base",
+          "kind": "box",
+          "position": [
+            1.65,
+            0.0,
+            0.08
+          ],
+          "size": [
+            0.24,
+            0.28,
+            0.08
+          ],
+          "rgba": [
+            0.06,
+            0.07,
+            0.08,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "fan_stand",
+          "kind": "cylinder",
+          "position": [
+            1.65,
+            0.0,
+            0.27
+          ],
+          "size": [
+            0.035,
+            0.22
+          ],
+          "rgba": [
+            0.32,
+            0.36,
+            0.42,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "fan_head",
+          "kind": "cylinder",
+          "position": [
+            1.65,
+            0.0,
+            0.45
+          ],
+          "size": [
+            0.24,
+            0.055
+          ],
+          "rgba": [
+            0.32,
+            0.36,
+            0.42,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": [
+            0.0,
+            1.5707963267948966,
+            0.0
+          ],
+          "letter": null
+        },
+        {
+          "name": "target_support",
+          "kind": "box",
+          "position": [
+            3.5,
+            0.0,
+            0.125
+          ],
+          "size": [
+            0.025,
+            0.04,
+            0.125
+          ],
+          "rgba": [
+            0.32,
+            0.36,
+            0.42,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "go_avoid_texture_sofa",
+      "title": "绕过沙发",
+      "category": "go_avoid",
+      "instruction": "绕过前方的沙发，不得接触它。找到其后方的红色标记，移动到距离目标中心约1米处，面向目标并停止，然后调用 finish。",
+      "target": {
+        "kind": "box",
+        "color": "red",
+        "xy": [
+          3.5,
+          0.0
+        ],
+        "z": 0.8,
+        "half_size": [
+          0.06,
+          0.14,
+          0.55
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "sofa_seat",
+          "kind": "box",
+          "position": [
+            1.65,
+            0.0,
+            0.2
+          ],
+          "size": [
+            0.32,
+            0.48,
+            0.2
+          ],
+          "rgba": [
+            0.4,
+            0.2,
+            0.09,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "sofa_back",
+          "kind": "box",
+          "position": [
+            1.91,
+            0.0,
+            0.4
+          ],
+          "size": [
+            0.07,
+            0.48,
+            0.15
+          ],
+          "rgba": [
+            0.52,
+            0.29,
+            0.13,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "sofa_arm_0",
+          "kind": "box",
+          "position": [
+            1.65,
+            -0.45,
+            0.35
+          ],
+          "size": [
+            0.32,
+            0.07,
+            0.15
+          ],
+          "rgba": [
+            0.52,
+            0.29,
+            0.13,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "sofa_arm_1",
+          "kind": "box",
+          "position": [
+            1.65,
+            0.45,
+            0.35
+          ],
+          "size": [
+            0.32,
+            0.07,
+            0.15
+          ],
+          "rgba": [
+            0.52,
+            0.29,
+            0.13,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "target_support",
+          "kind": "box",
+          "position": [
+            3.5,
+            0.0,
+            0.125
+          ],
+          "size": [
+            0.025,
+            0.04,
+            0.125
+          ],
+          "rgba": [
+            0.32,
+            0.36,
+            0.42,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "go_through_green_rectangle_tunnel",
+      "title": "穿过绿色矩形门框",
+      "category": "go_through",
+      "instruction": "从绿色矩形门框的开口中穿过，不得碰到门框。以机身 base 原点为完成判据：机身原点跨过门框平面时须位于开口内，随后沿穿门方向继续前进至少0.8米，再停止并调用 finish。为门框厚度、测量误差和运动跟踪误差留出保守余量。前置相机在机身原点前方0.32米；门框移出画面不代表机身已经穿过。趁门框仍可见时，用可靠的门框表面选点估计门框平面，结合后续 local_odometry 与实际运动反馈确认机身是否越过平面并达到余量，不能累加命令距离代替实测位移。已跟踪点会自动更新；门框点丢失时不得据此判定通过。开口后方同色带白色十字的标记仅为视觉参照，本任务不要求停在距该标记1米处。",
+      "target": {
+        "kind": "box",
+        "color": "green",
+        "xy": [
+          4.4,
+          0.0
+        ],
+        "z": 0.6,
+        "half_size": [
+          0.06,
+          0.16,
+          0.45
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "gate_post_0",
+          "kind": "box",
+          "position": [
+            2.2,
+            -0.8,
+            0.65
+          ],
+          "size": [
+            0.1,
+            0.1,
+            0.65
+          ],
+          "rgba": [
+            0.04,
+            0.75,
+            0.1,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "gate_post_1",
+          "kind": "box",
+          "position": [
+            2.2,
+            0.8,
+            0.65
+          ],
+          "size": [
+            0.1,
+            0.1,
+            0.65
+          ],
+          "rgba": [
+            0.04,
+            0.75,
+            0.1,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "gate_top",
+          "kind": "box",
+          "position": [
+            2.2,
+            0.0,
+            1.35
+          ],
+          "size": [
+            0.1,
+            0.9,
+            0.08
+          ],
+          "rgba": [
+            0.04,
+            0.75,
+            0.1,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        },
+        {
+          "name": "target_support",
+          "kind": "box",
+          "position": [
+            4.4,
+            0.0,
+            0.075
+          ],
+          "size": [
+            0.02,
+            0.04,
+            0.075
+          ],
+          "rgba": [
+            0.32,
+            0.36,
+            0.42,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "passage",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": 2.2,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.6,
+      "finish_x_min": 3.0,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "go_through_red_triangle_tunnel",
+      "title": "穿过红色三角形门框",
+      "category": "go_through",
+      "instruction": "从红色三角形门框的开口中穿过，不得碰到门框。以机身 base 原点为完成判据：机身原点跨过门框平面时须位于开口内，随后沿穿门方向继续前进至少0.8米，再停止并调用 finish。为门框厚度、测量误差和运动跟踪误差留出保守余量。前置相机在机身原点前方0.32米；门框移出画面不代表机身已经穿过。趁门框仍可见时，用可靠的门框表面选点估计门框平面，结合后续 local_odometry 与实际运动反馈确认机身是否越过平面并达到余量，不能累加命令距离代替实测位移。已跟踪点会自动更新；门框点丢失时不得据此判定通过。开口后方同色带白色十字的标记仅为视觉参照，本任务不要求停在距该标记1米处。",
+      "target": {
+        "kind": "box",
+        "color": "red",
+        "xy": [
+          4.4,
+          0.0
+        ],
+        "z": 0.6,
+        "half_size": [
+          0.06,
+          0.16,
+          0.45
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "gate_slope_0",
+          "kind": "box",
+          "position": [
+            2.2,
+            -0.6,
+            0.85
+          ],
+          "size": [
+            0.1,
+            0.08,
+            1.0404326023342405
+          ],
+          "rgba": [
+            0.85,
+            0.035,
+            0.025,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": [
+            -0.6146629519221655,
+            0.0,
+            0.0
+          ],
+          "letter": null
+        },
+        {
+          "name": "gate_slope_1",
+          "kind": "box",
+          "position": [
+            2.2,
+            0.6,
+            0.85
+          ],
+          "size": [
+            0.1,
+            0.08,
+            1.0404326023342405
+          ],
+          "rgba": [
+            0.85,
+            0.035,
+            0.025,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": [
+            0.6146629519221655,
+            0.0,
+            0.0
+          ],
+          "letter": null
+        },
+        {
+          "name": "target_support",
+          "kind": "box",
+          "position": [
+            4.4,
+            0.0,
+            0.075
+          ],
+          "size": [
+            0.02,
+            0.04,
+            0.075
+          ],
+          "rgba": [
+            0.32,
+            0.36,
+            0.42,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "passage",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": 2.2,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.6,
+      "finish_x_min": 3.0,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "go_through_yellow_triangle_tunnel",
+      "title": "穿过黄色三角形门框",
+      "category": "go_through",
+      "instruction": "从黄色三角形门框的开口中穿过，不得碰到门框。以机身 base 原点为完成判据：机身原点跨过门框平面时须位于开口内，随后沿穿门方向继续前进至少0.8米，再停止并调用 finish。为门框厚度、测量误差和运动跟踪误差留出保守余量。前置相机在机身原点前方0.32米；门框移出画面不代表机身已经穿过。趁门框仍可见时，用可靠的门框表面选点估计门框平面，结合后续 local_odometry 与实际运动反馈确认机身是否越过平面并达到余量，不能累加命令距离代替实测位移。已跟踪点会自动更新；门框点丢失时不得据此判定通过。开口后方同色带白色十字的标记仅为视觉参照，本任务不要求停在距该标记1米处。",
+      "target": {
+        "kind": "box",
+        "color": "yellow",
+        "xy": [
+          4.4,
+          0.0
+        ],
+        "z": 0.6,
+        "half_size": [
+          0.06,
+          0.16,
+          0.45
+        ],
+        "letter": null
+      },
+      "objects": [
+        {
+          "name": "gate_slope_0",
+          "kind": "box",
+          "position": [
+            2.2,
+            -0.6,
+            0.85
+          ],
+          "size": [
+            0.1,
+            0.08,
+            1.0404326023342405
+          ],
+          "rgba": [
+            0.95,
+            0.8,
+            0.04,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": [
+            -0.6146629519221655,
+            0.0,
+            0.0
+          ],
+          "letter": null
+        },
+        {
+          "name": "gate_slope_1",
+          "kind": "box",
+          "position": [
+            2.2,
+            0.6,
+            0.85
+          ],
+          "size": [
+            0.1,
+            0.08,
+            1.0404326023342405
+          ],
+          "rgba": [
+            0.95,
+            0.8,
+            0.04,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": [
+            0.6146629519221655,
+            0.0,
+            0.0
+          ],
+          "letter": null
+        },
+        {
+          "name": "target_support",
+          "kind": "box",
+          "position": [
+            4.4,
+            0.0,
+            0.075
+          ],
+          "size": [
+            0.02,
+            0.04,
+            0.075
+          ],
+          "rgba": [
+            0.32,
+            0.36,
+            0.42,
+            1.0
+          ],
+          "role": "obstacle",
+          "euler": null,
+          "letter": null
+        }
+      ],
+      "goal_kind": "passage",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": 2.2,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.6,
+      "finish_x_min": 3.0,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": null,
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "crawl_red_gate2",
+      "title": "低姿态穿过红色横杆 2",
+      "category": "crawl",
+      "instruction": "降低机身并从低矮横杆下爬过。",
+      "target": {
+        "kind": "box",
+        "color": "red",
+        "xy": [
+          3.0,
+          0.0
+        ],
+        "z": 0.5,
+        "half_size": [
+          0.08,
+          0.2,
+          0.5
+        ],
+        "letter": null
+      },
+      "objects": [],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": "当前预训练步态不支持行走中保持高度／俯仰目标，不能执行低姿态爬行。",
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    },
+    {
+      "task_id": "crawl_red_gate3",
+      "title": "低姿态穿过红色横杆 3",
+      "category": "crawl",
+      "instruction": "降低机身并从低矮横杆下爬过。",
+      "target": {
+        "kind": "box",
+        "color": "red",
+        "xy": [
+          3.0,
+          0.0
+        ],
+        "z": 0.5,
+        "half_size": [
+          0.08,
+          0.2,
+          0.5
+        ],
+        "letter": null
+      },
+      "objects": [],
+      "goal_kind": "standoff",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "passage_x": null,
+      "passage_center_y": 0.0,
+      "passage_half_width": 0.65,
+      "finish_x_min": null,
+      "target_jitter_m": 0.0,
+      "unsupported_reason": "当前预训练步态不支持行走中保持高度／俯仰目标，不能执行低姿态爬行。",
+      "source": "local_mujoco_adaptation_not_official_QUARD_environment"
+    }
+  ],
+  "sha256": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "1e63161c71de9127e682c39fbdeed06f7e3c813e87c4bc6e52073afd3c90f67f",
+    "go2_demo/backend.py": "ff2d036c79312c49b46c43a9d117734db0fddaf433851f0237ee366f57f61713",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "ce06dafcd1a6a65f510e1abefa824dd6cda5b6dcf47b8e82322c25d8daaaa386",
+    "go2_demo/memory_planning.py": "87ef0c43d23134d471388be9a1dfdb9d50d0176bf662b83f46155e28d895729c",
+    "go2_demo/models.py": "ab3b574e12d0ae56d1025d3d6a51c98b83093bfeb35cfa13a560f970fab6753f",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "a18273036a6d2aeffb4b857c1bdbfe756466164c4d433c85c2ebc4af31f6279a",
+    "go2_demo/scenarios.py": "98929a741a33e59b5cf8bee7864f38080096fa0cbb1ff39c51e24202eb932ab6",
+    "go2_demo/types.py": "26189f055ab6becd6e8f436c8ba0d34d58f720e59bc724a0aab28096712ad1ee"
+  },
+  "git_status": " M go2_demo/__main__.py\n M go2_demo/models.py\n M go2_demo/runner.py\n?? docs/memory-v1.md\n?? go2_demo/memory.py\n?? go2_demo/memory_planning.py\n?? scripts/write_memory_example.py\n?? tests/test_memory.py\n?? tests/test_memory_runner.py\n"
+}

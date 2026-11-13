@@ -1,0 +1,286 @@
+{
+  "supported_legacy_scene_count": 14,
+  "all_legacy_compiled_geometry_unchanged": true,
+  "scenes": [
+    {
+      "scene": "red_marker",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "go_to_blue_ball",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "go_to_green_cube",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "go_to_red_cube",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "distinguish_texture_a",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "distinguish_texture_b",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "distinguish_texture_c",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "go_avoid_texture_cooker",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "go_avoid_texture_drawers",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "go_avoid_texture_fan",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "go_avoid_texture_sofa",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "go_through_green_rectangle_tunnel",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "go_through_red_triangle_tunnel",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    },
+    {
+      "scene": "go_through_yellow_triangle_tunnel",
+      "same_model_names": true,
+      "exact_equal_compiled_fields": {
+        "geom_pos": true,
+        "geom_quat": true,
+        "geom_size": true,
+        "geom_rgba": true,
+        "geom_contype": true,
+        "geom_conaffinity": true,
+        "geom_type": true,
+        "body_pos": true,
+        "body_quat": true,
+        "jnt_axis": true,
+        "jnt_pos": true,
+        "cam_pos": true,
+        "cam_quat": true,
+        "cam_fovy": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "error_code": "MODEL_PROTOCOL_ERROR",
+  "error_message": "Model response was truncated; no tool will execute.",
+  "protocol_diagnostics": [
+    {
+      "kind": "TRUNCATED_RESPONSE",
+      "tool_calls_type": "NoneType",
+      "tool_calls_count": null,
+      "usage": {
+        "prompt_tokens": 6308,
+        "completion_tokens": 8192,
+        "total_tokens": 14500
+      },
+      "reasoning_present": true,
+      "reasoning_chars": 34352,
+      "raw_response_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-rerun-20261111-s0/protocol_error/response.raw"
+    }
+  ],
+  "response_body_available": true,
+  "automatic_retry_sent": false,
+  "response_body_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-rerun-20261111-s0/protocol_error/response.raw",
+  "original_byte_length": 35789,
+  "stored_byte_length": 35789,
+  "original_sha256": "9467272783801588e779f3f535e7c586b963d0ce06cf646cc1e20e2cac516736",
+  "stored_sha256": "9467272783801588e779f3f535e7c586b963d0ce06cf646cc1e20e2cac516736",
+  "credential_redactions_applied": false,
+  "preservation": "complete HTTP response body; credential-only redaction if required"
+}

@@ -50,7 +50,7 @@ def _run_single(args, scenario, run_dir: Path) -> tuple[dict, int]:
         metrics = run_episode(backend, model, mode=args.mode, run_dir=run_dir, seed=args.seed,
                               max_model_calls=args.max_model_calls, max_wall_seconds=args.max_wall_seconds,
                               max_sim_seconds=args.max_sim_seconds, history_turns=args.history_turns,
-                              task=scenario.instruction)
+                              task=scenario.instruction, memory_v1=args.memory_v1)
         backend, model = None, None  # run_episode closed both owned resources.
         print(f"Success: {metrics['success']} | Termination: {metrics['termination']}", flush=True)
         if metrics.get("error"):
@@ -167,6 +167,8 @@ def main(argv=None) -> int:
     parser.add_argument("--max-output-tokens", type=int, default=8192,
                         help="per-request output budget, including model reasoning (default: 8192)")
     parser.add_argument("--history-turns", type=int, default=6)
+    parser.add_argument("--memory-v1", action="store_true",
+                        help="enable asynchronous rule memory and task-level planning; H0 remains default")
     args = parser.parse_args(argv)
     if not 1 <= args.max_model_calls <= 1000 or not 0 <= args.history_turns <= 100:
         parser.error("max-model-calls must be 1..1000 and history-turns 0..100")
@@ -175,8 +177,9 @@ def main(argv=None) -> int:
     from .scenarios import get_scenario, list_scenarios
     if args.list_tasks:
         print("Task ID | category | status | visible scenario")
-        for scenario in list_scenarios():
-            status = "supported" if scenario.supported else "unsupported: " + scenario.unsupported_reason
+        for scenario in list_scenarios(include_demo=True):
+            status = ("offline-only: sequential task not implemented" if scenario.offline_only else
+                      "supported" if scenario.supported else "unsupported: " + scenario.unsupported_reason)
             print(f"{scenario.task_id} | {scenario.category} | {status} | {scenario.title}")
         print("Source: local MuJoCo adaptations, not the original QUARD simulator or published evaluation split.")
         return 0
@@ -186,6 +189,9 @@ def main(argv=None) -> int:
         scenario = get_scenario(args.task or "go_to_blue_ball")
     except ValueError as exc:
         parser.error(str(exc))
+    if scenario.offline_only:
+        print(f"Offline-only scene {scenario.task_id}: sequential task execution and scoring are not implemented.", file=sys.stderr)
+        return 2
     if not scenario.supported:
         print(f"Unsupported task {scenario.task_id}: {scenario.unsupported_reason}", file=sys.stderr)
         return 2

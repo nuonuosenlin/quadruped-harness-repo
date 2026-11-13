@@ -1,0 +1,31 @@
+{
+  "A_passed": false,
+  "B_passed": false,
+  "decision_calls": 99,
+  "model_calls": 99,
+  "usage": {
+    "prompt_tokens": 555810,
+    "completion_tokens": 137608,
+    "total_tokens": 693418
+  },
+  "reasoning_responses": 99,
+  "reasoning_characters": 493125,
+  "finish": false,
+  "termination": "execution_failure",
+  "first_move_decision": 7,
+  "review_steps": [
+    12,
+    24,
+    36,
+    48,
+    60,
+    72,
+    84,
+    96
+  ],
+  "first_review_input_decision": 13,
+  "protocol_errors": 0,
+  "length_truncations": 0,
+  "retries": 0,
+  "memory_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-search-budget-rerun-20261111-s0/H2/20261111-152723-api-memory_ab_occluded_v1-s0-62de9d/memory.md"
+}

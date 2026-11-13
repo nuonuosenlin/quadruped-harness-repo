@@ -1,0 +1,172 @@
+{
+  "A_first_matching_tool_decision": 89,
+  "A_witness_sim_time_s": 183.66000000014884,
+  "after_A_model_inputs": 31,
+  "after_A_frames_with_B_green_pixels_ge8": 0,
+  "color_check_scope": "Given green B color fixture only; offline evidence, not a general detector or model feedback",
+  "after_A_tool_counts": {
+    "get_geometry": 1,
+    "stop": 1,
+    "turn": 20,
+    "track_point": 4,
+    "move_relative": 5
+  },
+  "observations": [
+    {
+      "decision": 90,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/089-frame-00069.png"
+    },
+    {
+      "decision": 91,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/090-frame-00069.png"
+    },
+    {
+      "decision": 92,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/091-frame-00070.png"
+    },
+    {
+      "decision": 93,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/092-frame-00071.png"
+    },
+    {
+      "decision": 94,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/093-frame-00072.png"
+    },
+    {
+      "decision": 95,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/094-frame-00073.png"
+    },
+    {
+      "decision": 96,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/095-frame-00074.png"
+    },
+    {
+      "decision": 97,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/096-frame-00075.png"
+    },
+    {
+      "decision": 98,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/097-frame-00076.png"
+    },
+    {
+      "decision": 99,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/098-frame-00077.png"
+    },
+    {
+      "decision": 100,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/099-frame-00078.png"
+    },
+    {
+      "decision": 101,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/100-frame-00079.png"
+    },
+    {
+      "decision": 102,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/101-frame-00080.png"
+    },
+    {
+      "decision": 103,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/102-frame-00080.png"
+    },
+    {
+      "decision": 104,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/103-frame-00081.png"
+    },
+    {
+      "decision": 105,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/104-frame-00082.png"
+    },
+    {
+      "decision": 106,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/105-frame-00083.png"
+    },
+    {
+      "decision": 107,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/106-frame-00084.png"
+    },
+    {
+      "decision": 108,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/107-frame-00084.png"
+    },
+    {
+      "decision": 109,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/108-frame-00085.png"
+    },
+    {
+      "decision": 110,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/109-frame-00086.png"
+    },
+    {
+      "decision": 111,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/110-frame-00087.png"
+    },
+    {
+      "decision": 112,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/111-frame-00088.png"
+    },
+    {
+      "decision": 113,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/112-frame-00089.png"
+    },
+    {
+      "decision": 114,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/113-frame-00089.png"
+    },
+    {
+      "decision": 115,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/114-frame-00089.png"
+    },
+    {
+      "decision": 116,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/115-frame-00090.png"
+    },
+    {
+      "decision": 117,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/116-frame-00091.png"
+    },
+    {
+      "decision": 118,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/117-frame-00092.png"
+    },
+    {
+      "decision": 119,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/118-frame-00093.png"
+    },
+    {
+      "decision": 120,
+      "green_pixels": 0,
+      "image": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/frames/119-frame-00094.png"
+    }
+  ],
+  "conclusion": "Read together with independent B distance/heading and termination; lack of green pixels does not alone prove memory was the causal failure."
+}

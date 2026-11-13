@@ -1,0 +1,223 @@
+{
+  "diagnosis": {
+    "inputs": 83,
+    "successfully_parsed_responses": 82,
+    "last_input_zero_based_turn": 82,
+    "last_parsed_response_zero_based_turn": 81,
+    "tool_counts": {
+      "observe": 83
+    },
+    "file_object_count": 0,
+    "ledger_entries": 338,
+    "inputs_with_task_target_labels": 0,
+    "inputs_with_fresh_current_observation": 0,
+    "inputs_with_last_tool_feedback": 0,
+    "raw_error_response_retained": false,
+    "historical_error_exact_subcase": "unknown: missing/non-list/empty/or over-16 tool_calls; raw response unavailable",
+    "historical_error_not_this_branch": [
+      "outer bad JSON",
+      "tool argument bad JSON",
+      "unknown tool name",
+      "missing tool parameters"
+    ],
+    "historical_constraint_feedback": [
+      {
+        "decision": 17,
+        "error_code": "MEMORY_CONSTRAINT",
+        "feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      {
+        "decision": 33,
+        "error_code": "MEMORY_CONSTRAINT",
+        "feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      {
+        "decision": 40,
+        "error_code": "MEMORY_CONSTRAINT",
+        "feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      {
+        "decision": 72,
+        "error_code": "MEMORY_CONSTRAINT",
+        "feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      {
+        "decision": 78,
+        "error_code": "MEMORY_CONSTRAINT",
+        "feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      }
+    ]
+  },
+  "synthetic_rule_transitions": [
+    {
+      "step": 0,
+      "frame": "synthetic-f1",
+      "task_objects": {
+        "task:A": "unknown",
+        "task:B": "unknown"
+      }
+    },
+    {
+      "step": 1,
+      "frame": "synthetic-f1",
+      "task_objects": {
+        "task:A": "unknown",
+        "task:B": "unknown"
+      }
+    },
+    {
+      "step": 2,
+      "frame": "synthetic-f2",
+      "task_objects": {
+        "task:A": "confirmed",
+        "task:B": "confirmed"
+      }
+    }
+  ],
+  "synthetic_effective_task_objects": [
+    {
+      "visual_feature": {
+        "image_id": "synthetic-f2",
+        "pixel_uv": [
+          31,
+          37
+        ]
+      },
+      "object_id": "task:A",
+      "pose_covariance": null,
+      "pose": {
+        "frame": "episode_start",
+        "position_m": [
+          2.0,
+          -0.3
+        ]
+      },
+      "confidence": 0.95,
+      "source": "task_label_rgbd_tracking",
+      "anchor_node": null,
+      "category": "task_target",
+      "state": "confirmed",
+      "last_seen": 2,
+      "evidence_ids": [
+        "e000002",
+        "e000014"
+      ],
+      "candidate_pose": null,
+      "task_label": "A",
+      "label_description": "蓝球",
+      "camera_pose": {
+        "frame": "current_camera_optical",
+        "image_id": "synthetic-f2",
+        "position_m": [
+          -0.38,
+          -0.06,
+          2.0
+        ],
+        "source": "rgbd_depth_intrinsics"
+      },
+      "measurement_provenance": {
+        "identity": "task_given_label_plus_unique_current_color_component",
+        "tracking": "synthetic_rgbd_tracking",
+        "reference_pose": "existing_public_idealized_simulator_odometry",
+        "motion_delta_used": false
+      }
+    },
+    {
+      "visual_feature": {
+        "image_id": "synthetic-f2",
+        "pixel_uv": [
+          85,
+          45
+        ]
+      },
+      "object_id": "task:B",
+      "pose_covariance": null,
+      "pose": {
+        "frame": "episode_start",
+        "position_m": [
+          2.0,
+          0.3
+        ]
+      },
+      "confidence": 0.95,
+      "source": "task_label_rgbd_tracking",
+      "anchor_node": null,
+      "category": "task_target",
+      "state": "confirmed",
+      "last_seen": 2,
+      "evidence_ids": [
+        "e000004",
+        "e000016"
+      ],
+      "candidate_pose": null,
+      "task_label": "B",
+      "label_description": "绿方块",
+      "camera_pose": {
+        "frame": "current_camera_optical",
+        "image_id": "synthetic-f2",
+        "position_m": [
+          0.7,
+          0.1,
+          2.0
+        ],
+        "source": "rgbd_depth_intrinsics"
+      },
+      "measurement_provenance": {
+        "identity": "task_given_label_plus_unique_current_color_component",
+        "tracking": "synthetic_rgbd_tracking",
+        "reference_pose": "existing_public_idealized_simulator_odometry",
+        "motion_delta_used": false
+      }
+    }
+  ],
+  "task_scene_scoring_files_unchanged": [
+    "go2_demo/scenarios.py",
+    "go2_demo/backend.py",
+    "go2_demo/harness.py",
+    "go2_demo/ordered_evaluation.py",
+    "go2_demo/__main__.py",
+    "go2_demo/perception.py"
+  ],
+  "H0_system_prompt_unchanged": true,
+  "previous_experiment_files_unchanged": true,
+  "pytest": {
+    "passed": 295,
+    "skipped": 15,
+    "new_tests": 28
+  },
+  "list_tasks": "passed",
+  "actual_API_requests_this_turn": 0,
+  "real_key_files_read": 0,
+  "demo_or_ablation_runs": 0,
+  "source_sha256_before": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "8203bb136d92c30033f7ab8366537ffc4b2e7cff088ef043377bc15bb98aa67d",
+    "go2_demo/backend.py": "fc2f0ebd74ffec9eaea12f17e9c8d66cac8ad5253fceb9301d1aa9feea1755b8",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "ce06dafcd1a6a65f510e1abefa824dd6cda5b6dcf47b8e82322c25d8daaaa386",
+    "go2_demo/memory_planning.py": "87ef0c43d23134d471388be9a1dfdb9d50d0176bf662b83f46155e28d895729c",
+    "go2_demo/models.py": "ab3b574e12d0ae56d1025d3d6a51c98b83093bfeb35cfa13a560f970fab6753f",
+    "go2_demo/ordered_evaluation.py": "ff57acbbebd7d4109e809fde17969152ae2a8dc5ebd55116d3716e1116da14ef",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "cca86ee3ad5c30588273065f474fbd0287bcb384877014fc44389ddeffc152a3",
+    "go2_demo/scenarios.py": "5ae3159d9fef9bf13e1b7abe4243ff47999e940065994ea98932731ebaefb4b7",
+    "go2_demo/types.py": "26189f055ab6becd6e8f436c8ba0d34d58f720e59bc724a0aab28096712ad1ee"
+  },
+  "source_sha256_after": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "8203bb136d92c30033f7ab8366537ffc4b2e7cff088ef043377bc15bb98aa67d",
+    "go2_demo/backend.py": "fc2f0ebd74ffec9eaea12f17e9c8d66cac8ad5253fceb9301d1aa9feea1755b8",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "8519f1a093324745c7689c48dd0096b2b20d8fa9b98cff4c4cf4c8dd5bba9a7d",
+    "go2_demo/memory_perception.py": "ad690d04999235db828e413e2e70d930232548b82abd136ca655965a63c7b989",
+    "go2_demo/memory_planning.py": "073a9e79b57d10c5ae61a74effc941a4bc0df918bd72cecfc1622c0fb86cd3c6",
+    "go2_demo/models.py": "64bcbe9053b0fb221105c5c97a45964ab805d085f344d22ca4aa1c9c57147330",
+    "go2_demo/ordered_evaluation.py": "ff57acbbebd7d4109e809fde17969152ae2a8dc5ebd55116d3716e1116da14ef",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "2da2d1c79cacfca642a4fb75c21423d64ab7bdd01e7e48b7a8a6cea05f1cf858",
+    "go2_demo/scenarios.py": "5ae3159d9fef9bf13e1b7abe4243ff47999e940065994ea98932731ebaefb4b7",
+    "go2_demo/types.py": "0404381cc7347b9fa611de4112e2a372561a2e4b0489e905e7bd59569285aa00"
+  }
+}

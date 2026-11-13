@@ -1,0 +1,2958 @@
+{
+  "conclusion": "不通过",
+  "branch": "memory-v1",
+  "api_calls": 0,
+  "key_reads": 0,
+  "task_implemented": false,
+  "demo_executed": false,
+  "scene_modified": false,
+  "baseline": {
+    "run_dir": "/home/nuonuosenlin/Agent-harness/runs/dashscope-validation-20261109-132737-c60cc5/20261109-212737-api-go_to_blue_ball-s0-e43663",
+    "file_sha256": {
+      "manifest.json": "9e9f141c11cb563b38e525d200a752a2303fcc0cd71dc0fc2e3cd4dff1abe6fa",
+      "metrics.json": "7a70d52f305f617d0224727ab22c6a77921264ce489fe238f928be0ca93ad072",
+      "events.jsonl": "f0980933e74a05c1174564e8df461d8aa5c48aab50693fa55c85d8039843fd32",
+      "trajectory.jsonl": "25ecf7dc8836159135f6b1d4cbbe540cde3b87adea17a84609b3d0b07d2980d4"
+    },
+    "metrics": {
+      "success": true,
+      "termination": "finish",
+      "model_calls": 12,
+      "motion_calls": 6,
+      "usage": {
+        "prompt_tokens": 81626,
+        "completion_tokens": 4297,
+        "total_tokens": 85923
+      }
+    },
+    "initial_image": "/home/nuonuosenlin/Agent-harness/runs/dashscope-validation-20261109-132737-c60cc5/20261109-212737-api-go_to_blue_ball-s0-e43663/frames/000-frame-00001.png",
+    "blue_stop_image": "/home/nuonuosenlin/Agent-harness/runs/dashscope-validation-20261109-132737-c60cc5/20261109-212737-api-go_to_blue_ball-s0-e43663/frames/011-frame-00008.png"
+  },
+  "checks": {
+    "1_history_window": {
+      "result": "通过",
+      "baseline_run": "/home/nuonuosenlin/Agent-harness/runs/dashscope-validation-20261109-132737-c60cc5/20261109-212737-api-go_to_blue_ball-s0-e43663",
+      "model": "deepseek-v4.1-flash",
+      "seed": 0,
+      "model_calls": 12,
+      "history_turns": 6,
+      "turns": [
+        {
+          "decision": 1,
+          "zero_based_turn": 0,
+          "tool": "track_point",
+          "arguments": {
+            "image_id": "frame-00001",
+            "u": 390,
+            "v": 205
+          },
+          "status": "succeeded",
+          "history_turns_logged": 0,
+          "retained_raw_decisions_at_input": [],
+          "input_jsonl_line": 1,
+          "response_jsonl_line": 2,
+          "result_jsonl_line": 3,
+          "next_local_odometry": {
+            "translation_m": [
+              0.0,
+              0.0
+            ],
+            "yaw_rad": 0.0,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 3.052575231566217,
+          "blue_heading_error_rad": 0.20155148765854938,
+          "blue_geometric_and_stop_criteria_pass": false,
+          "distance_to_start_m": 0.0,
+          "command_integration_error_m": 0.0,
+          "measured_integration_error_m": 0.0
+        },
+        {
+          "decision": 2,
+          "zero_based_turn": 1,
+          "tool": "turn",
+          "arguments": {
+            "yaw_rad": -0.2
+          },
+          "status": "succeeded",
+          "history_turns_logged": 1,
+          "retained_raw_decisions_at_input": [
+            1
+          ],
+          "input_jsonl_line": 4,
+          "response_jsonl_line": 5,
+          "result_jsonl_line": 6,
+          "next_local_odometry": {
+            "translation_m": [
+              0.016448975632415135,
+              0.0007436867020568754
+            ],
+            "yaw_rad": -0.16106349482665383,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 3.0366107711862127,
+          "blue_heading_error_rad": 0.04181234704318071,
+          "blue_geometric_and_stop_criteria_pass": false,
+          "distance_to_start_m": 0.016465778732468232,
+          "command_integration_error_m": 0.016465778732468232,
+          "measured_integration_error_m": 0.0
+        },
+        {
+          "decision": 3,
+          "zero_based_turn": 2,
+          "tool": "move_relative",
+          "arguments": {
+            "forward_m": 0.6,
+            "lateral_m": 0.0
+          },
+          "status": "succeeded",
+          "history_turns_logged": 2,
+          "retained_raw_decisions_at_input": [
+            1,
+            2
+          ],
+          "input_jsonl_line": 7,
+          "response_jsonl_line": 8,
+          "result_jsonl_line": 9,
+          "next_local_odometry": {
+            "translation_m": [
+              0.5455494387233576,
+              -0.07323286101910975
+            ],
+            "yaw_rad": -0.1522062870834876,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 2.5036890952767914,
+          "blue_heading_error_rad": 0.06430885172435108,
+          "blue_geometric_and_stop_criteria_pass": false,
+          "distance_to_start_m": 0.5504427690726936,
+          "command_integration_error_m": 0.06259846716966924,
+          "measured_integration_error_m": 0.0
+        },
+        {
+          "decision": 4,
+          "zero_based_turn": 3,
+          "tool": "track_point",
+          "arguments": {
+            "image_id": "frame-00003",
+            "u": 340,
+            "v": 228
+          },
+          "status": "succeeded",
+          "history_turns_logged": 3,
+          "retained_raw_decisions_at_input": [
+            1,
+            2,
+            3
+          ],
+          "input_jsonl_line": 10,
+          "response_jsonl_line": 11,
+          "result_jsonl_line": 12,
+          "next_local_odometry": {
+            "translation_m": [
+              0.5455494387233576,
+              -0.07323286101910975
+            ],
+            "yaw_rad": -0.1522062870834876,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 2.5036890952767914,
+          "blue_heading_error_rad": 0.06430885172435108,
+          "blue_geometric_and_stop_criteria_pass": false,
+          "distance_to_start_m": 0.5504427690726936,
+          "command_integration_error_m": 0.06259846716966924,
+          "measured_integration_error_m": 0.0
+        },
+        {
+          "decision": 5,
+          "zero_based_turn": 4,
+          "tool": "move_relative",
+          "arguments": {
+            "forward_m": 0.6,
+            "lateral_m": -0.03
+          },
+          "status": "failed",
+          "history_turns_logged": 4,
+          "retained_raw_decisions_at_input": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "input_jsonl_line": 13,
+          "response_jsonl_line": 14,
+          "result_jsonl_line": 15,
+          "next_local_odometry": {
+            "translation_m": [
+              0.5455494387233576,
+              -0.07323286101910975
+            ],
+            "yaw_rad": -0.1522062870834876,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 2.5036890952767914,
+          "blue_heading_error_rad": 0.06430885172435108,
+          "blue_geometric_and_stop_criteria_pass": false,
+          "distance_to_start_m": 0.5504427690726936,
+          "command_integration_error_m": 0.06259846716966924,
+          "measured_integration_error_m": 0.0
+        },
+        {
+          "decision": 6,
+          "zero_based_turn": 5,
+          "tool": "move_relative",
+          "arguments": {
+            "forward_m": 0.55,
+            "lateral_m": -0.03
+          },
+          "status": "succeeded",
+          "history_turns_logged": 5,
+          "retained_raw_decisions_at_input": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "input_jsonl_line": 16,
+          "response_jsonl_line": 17,
+          "result_jsonl_line": 18,
+          "next_local_odometry": {
+            "translation_m": [
+              1.0205902626507364,
+              -0.16181897887753036
+            ],
+            "yaw_rad": -0.14304898619235937,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 2.020768492460061,
+          "blue_heading_error_rad": 0.08115339879663072,
+          "blue_geometric_and_stop_criteria_pass": false,
+          "distance_to_start_m": 1.0333391825254985,
+          "command_integration_error_m": 0.13903831077790688,
+          "measured_integration_error_m": 2.237726045655905e-16
+        },
+        {
+          "decision": 7,
+          "zero_based_turn": 6,
+          "tool": "track_point",
+          "arguments": {
+            "image_id": "frame-00004",
+            "u": 350,
+            "v": 246
+          },
+          "status": "succeeded",
+          "history_turns_logged": 6,
+          "retained_raw_decisions_at_input": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "input_jsonl_line": 19,
+          "response_jsonl_line": 20,
+          "result_jsonl_line": 21,
+          "next_local_odometry": {
+            "translation_m": [
+              1.0205902626507364,
+              -0.16181897887753036
+            ],
+            "yaw_rad": -0.14304898619235937,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 2.020768492460061,
+          "blue_heading_error_rad": 0.08115339879663072,
+          "blue_geometric_and_stop_criteria_pass": false,
+          "distance_to_start_m": 1.0333391825254985,
+          "command_integration_error_m": 0.13903831077790688,
+          "measured_integration_error_m": 2.237726045655905e-16
+        },
+        {
+          "decision": 8,
+          "zero_based_turn": 7,
+          "tool": "move_relative",
+          "arguments": {
+            "forward_m": 0.6,
+            "lateral_m": 0.0
+          },
+          "status": "succeeded",
+          "history_turns_logged": 6,
+          "retained_raw_decisions_at_input": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "input_jsonl_line": 22,
+          "response_jsonl_line": 23,
+          "result_jsonl_line": 24,
+          "next_local_odometry": {
+            "translation_m": [
+              1.5462129002137286,
+              -0.2224418075491983
+            ],
+            "yaw_rad": -0.1406204562454652,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 1.495938403850228,
+          "blue_heading_error_rad": 0.12219973054672506,
+          "blue_geometric_and_stop_criteria_pass": false,
+          "distance_to_start_m": 1.5621314575070513,
+          "command_integration_error_m": 0.22463637481671012,
+          "measured_integration_error_m": 1.1102230246251565e-16
+        },
+        {
+          "decision": 9,
+          "zero_based_turn": 8,
+          "tool": "move_relative",
+          "arguments": {
+            "forward_m": 0.42,
+            "lateral_m": 0.0
+          },
+          "status": "succeeded",
+          "history_turns_logged": 6,
+          "retained_raw_decisions_at_input": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "input_jsonl_line": 25,
+          "response_jsonl_line": 26,
+          "result_jsonl_line": 27,
+          "next_local_odometry": {
+            "translation_m": [
+              1.8929541453295136,
+              -0.26022447558945005
+            ],
+            "yaw_rad": -0.13794670807895557,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 1.152534773763641,
+          "blue_heading_error_rad": 0.17139630052710064,
+          "blue_geometric_and_stop_criteria_pass": true,
+          "distance_to_start_m": 1.910756963618344,
+          "command_integration_error_m": 0.3033524255980618,
+          "measured_integration_error_m": 3.554447978966673e-16
+        },
+        {
+          "decision": 10,
+          "zero_based_turn": 9,
+          "tool": "turn",
+          "arguments": {
+            "yaw_rad": -0.16
+          },
+          "status": "succeeded",
+          "history_turns_logged": 6,
+          "retained_raw_decisions_at_input": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "input_jsonl_line": 28,
+          "response_jsonl_line": 29,
+          "result_jsonl_line": 30,
+          "next_local_odometry": {
+            "translation_m": [
+              1.8974721895908702,
+              -0.259642874472575
+            ],
+            "yaw_rad": -0.2538460915473534,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 1.1484098632912911,
+          "blue_heading_error_rad": 0.05717701140488197,
+          "blue_geometric_and_stop_criteria_pass": true,
+          "distance_to_start_m": 1.9151540754036351,
+          "command_integration_error_m": 0.30036266170243997,
+          "measured_integration_error_m": 3.1401849173675503e-16
+        },
+        {
+          "decision": 11,
+          "zero_based_turn": 10,
+          "tool": "stop",
+          "arguments": {},
+          "status": "succeeded",
+          "history_turns_logged": 6,
+          "retained_raw_decisions_at_input": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "input_jsonl_line": 31,
+          "response_jsonl_line": 32,
+          "result_jsonl_line": 33,
+          "next_local_odometry": {
+            "translation_m": [
+              1.898825086820971,
+              -0.2572085822984704
+            ],
+            "yaw_rad": -0.2535618466876602,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 1.1478701000875262,
+          "blue_heading_error_rad": 0.059840907678367077,
+          "blue_geometric_and_stop_criteria_pass": true,
+          "distance_to_start_m": 1.916166215428259,
+          "command_integration_error_m": 0.30099702309784887,
+          "measured_integration_error_m": 0.002784979228670008
+        },
+        {
+          "decision": 12,
+          "zero_based_turn": 11,
+          "tool": "finish",
+          "arguments": {},
+          "status": "succeeded",
+          "history_turns_logged": 6,
+          "retained_raw_decisions_at_input": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "input_jsonl_line": 34,
+          "response_jsonl_line": 35,
+          "result_jsonl_line": 36,
+          "next_local_odometry": {
+            "translation_m": [
+              1.9092130118672612,
+              -0.25575674237619683
+            ],
+            "yaw_rad": -0.24283044067571696,
+            "reference": "episode_start_body_horizontal",
+            "source": "simulated_proprioception"
+          },
+          "blue_distance_m": 1.1384449968140276,
+          "blue_heading_error_rad": 0.07459859842850164,
+          "blue_geometric_and_stop_criteria_pass": true,
+          "distance_to_start_m": 1.9262673324214745,
+          "command_integration_error_m": 0.29442854240636074,
+          "measured_integration_error_m": 0.012367252338183615
+        }
+      ],
+      "logged_input_history_sizes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "retained_before_decision_12": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "hypothetical_retained_after_decision_12": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "dropped_after_decision_12": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "first_physical_blue_acceptance_decision": 9,
+      "history_if_return_started_after_first_acceptance": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "notes": [
+        "12 is the observed run length including track requests, one rejected motion, stop and finish; not a minimum motion count.",
+        "Existing finish terminates the episode; a return transition is not implemented or run.",
+        "Raw early turns are truncated, but current cumulative odometry remains. Logged private reasoning has only counts, so no claim that all old facts are forgotten."
+      ]
+    },
+    "2_start_visibility": {
+      "result": "通过",
+      "start_world_xy_m_scoring_only": [
+        -0.0014892782250553998,
+        0.006127374862611664
+      ],
+      "start_world_yaw_rad_scoring_only": 0.018345315476731544,
+      "origin_reconstruction_spread_m": 1.241873016165035e-16,
+      "no_unique_start_marker": true,
+      "fixed_scene_objects": [
+        "scenario_target (blue sphere)",
+        "wrong_color_object (red box)",
+        "floor (repeating checker texture)"
+      ],
+      "floor_material": {
+        "builtin": "checker",
+        "texrepeat": "12 12"
+      },
+      "poses": [
+        {
+          "name": "first_blue_criteria",
+          "decision": 9,
+          "turn_rad": 0.0,
+          "body_world_xy_m": [
+            1.895919970938857,
+            -0.21932841948127257
+          ],
+          "body_world_yaw_rad": -0.11960139260222402,
+          "camera_world_xyz_m": [
+            2.2136531140471423,
+            -0.25637425824266685,
+            0.43874002771324216
+          ],
+          "origin_point": {
+            "point_world_xyz_m": [
+              -0.0014892782250553998,
+              0.006127374862611664,
+              0.0
+            ],
+            "camera_coordinates_m": [
+              -0.0024730881647077917,
+              0.43550942224543915,
+              -2.231273440058954
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": null,
+            "ray_first_hit_geom": "unnamed_robot_geom_7",
+            "ray_first_hit_geom_id": 7,
+            "ray_hit_distance_m": 0.031595966606240436,
+            "ray_target_distance_m": 2.2733798049032963,
+            "ray_reaches_point_without_earlier_occluder": false
+          },
+          "home_disk_radius_m": 1.0,
+          "home_disk_max_camera_forward_depth_m": -1.231274494050321,
+          "entire_home_disk_behind_camera": true,
+          "home_region_height_range_m": [
+            0.0,
+            1.0
+          ],
+          "home_cylinder_max_camera_forward_depth_m": -1.2298226050660173,
+          "entire_home_cylinder_behind_camera": true,
+          "initial_selected_point_projection": {
+            "point_world_xyz_m": [
+              2.8879563086637887,
+              -0.5230729410859578,
+              0.1534834993690125
+            ],
+            "camera_coordinates_m": [
+              0.1802774226607158,
+              0.2888487603952343,
+              0.7008928000489872
+            ],
+            "inside_frustum": true,
+            "pixel_uv_if_in_front": [
+              399.6904913092827,
+              307.98488550762136
+            ],
+            "ray_first_hit_geom": "scenario_target",
+            "ray_first_hit_geom_id": 1,
+            "ray_hit_distance_m": 0.7792202979026902,
+            "ray_target_distance_m": 0.7792202979026942,
+            "ray_reaches_point_without_earlier_occluder": true
+          },
+          "existing_named_object_views": {
+            "blue_sphere": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 216,
+              "unoccluded_unique_sampled_pixels": 211,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                347.36521980899187,
+                442.6836420153719
+              ],
+              "B_projected_v_range": [
+                255.84078505534342,
+                355.5333978010698
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    3.017932575896832,
+                    -0.55,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    391.5993397993227,
+                    255.84078505534342
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8792704566719585
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0173215381906386,
+                    -0.5453587078301535,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    390.0008517714347,
+                    255.9226243762516
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.877171565355951
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.015530066281949,
+                    -0.5410337120515841,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    388.6629674561511,
+                    256.1110589536595
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8741124974329663
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.012680246020792,
+                    -0.5373197539792077,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    387.67434202871266,
+                    256.3947685343539
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8702929025362768
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.008966287948416,
+                    -0.5344699337180511,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    387.10376274164776,
+                    256.7562935355016
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8659649278691169
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0046412921698464,
+                    -0.5326784618093613,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    386.9951656427892,
+                    257.17274234637415
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8614182014787184
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.2136531140471423,
+                -0.25637425824266685,
+                0.43874002771324216
+              ]
+            },
+            "wrong_color_object": {
+              "visible_positive_certificate": false,
+              "frustum_surface_samples": 0,
+              "unoccluded_unique_sampled_pixels": 0,
+              "visible_geom_count": 0,
+              "B_projected_u_range": [
+                -602.3447810236944,
+                -169.143824352695
+              ],
+              "B_projected_v_range": [
+                166.36965561525358,
+                440.0303703724202
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [],
+              "camera_world_xyz_m": [
+                2.2136531140471423,
+                -0.25637425824266685,
+                0.43874002771324216
+              ]
+            }
+          }
+        },
+        {
+          "name": "first_blue_criteria",
+          "decision": 9,
+          "turn_rad": 0.6,
+          "body_world_xy_m": [
+            1.895919970938857,
+            -0.21932841948127257
+          ],
+          "body_world_yaw_rad": 0.48039860739777596,
+          "camera_world_xyz_m": [
+            2.179074104010546,
+            -0.07049804179101166,
+            0.43874002771324216
+          ],
+          "origin_point": {
+            "point_world_xyz_m": [
+              -0.0014892782250553998,
+              0.006127374862611664,
+              0.0
+            ],
+            "camera_coordinates_m": [
+              -1.0817107398778236,
+              0.4207515902028886,
+              -1.898971012131737
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": null,
+            "ray_first_hit_geom": "unnamed_robot_geom_7",
+            "ray_first_hit_geom_id": 7,
+            "ray_hit_distance_m": 0.0840162153148257,
+            "ray_target_distance_m": 2.2255832786804275,
+            "ray_reaches_point_without_earlier_occluder": false
+          },
+          "home_disk_radius_m": 1.0,
+          "home_disk_max_camera_forward_depth_m": -0.898972066123104,
+          "entire_home_disk_behind_camera": true,
+          "home_region_height_range_m": [
+            0.0,
+            1.0
+          ],
+          "home_cylinder_max_camera_forward_depth_m": -0.8975201771388001,
+          "entire_home_cylinder_behind_camera": true,
+          "initial_selected_point_projection": {
+            "point_world_xyz_m": [
+              2.8879563086637887,
+              -0.5230729410859578,
+              0.1534834993690125
+            ],
+            "camera_coordinates_m": [
+              0.7248368636380731,
+              0.29612950029154034,
+              0.41908011963976405
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": [
+              858.7328552780172,
+              399.80164852927896
+            ],
+            "ray_first_hit_geom": "scenario_target",
+            "ray_first_hit_geom_id": 1,
+            "ray_hit_distance_m": 0.8880930731116349,
+            "ray_target_distance_m": 0.8880930731116391,
+            "ray_reaches_point_without_earlier_occluder": true
+          },
+          "existing_named_object_views": {
+            "blue_sphere": {
+              "visible_positive_certificate": false,
+              "frustum_surface_samples": 0,
+              "unoccluded_unique_sampled_pixels": 0,
+              "visible_geom_count": 0,
+              "B_projected_u_range": [
+                697.1990677357896,
+                985.4165617080914
+              ],
+              "B_projected_v_range": [
+                304.32044595457364,
+                486.78200701434184
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [],
+              "camera_world_xyz_m": [
+                2.179074104010546,
+                -0.07049804179101166,
+                0.43874002771324216
+              ]
+            },
+            "wrong_color_object": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 150,
+              "unoccluded_unique_sampled_pixels": 140,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                121.1127949161878,
+                225.8325528999831
+              ],
+              "B_projected_v_range": [
+                176.86600825293183,
+                308.10628638103066
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.01100000000000001
+                  ],
+                  "pixel_uv": [
+                    171.49603593922723,
+                    305.4642287136089
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.2316570333127956
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.1155
+                  ],
+                  "pixel_uv": [
+                    171.95758494791033,
+                    274.28276366024033
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.1993755174743268
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.22
+                  ],
+                  "pixel_uv": [
+                    172.41899999798486,
+                    243.1103486223519
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.1755274204053012
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.32449999999999996
+                  ],
+                  "pixel_uv": [
+                    172.88028114776188,
+                    211.94697966054113
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.160632715518856
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.429
+                  ],
+                  "pixel_uv": [
+                    173.3414284555188,
+                    180.7926528376914
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.1550378281859892
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.9187500000000001,
+                    0.01100000000000001
+                  ],
+                  "pixel_uv": [
+                    157.74616882373422,
+                    301.37301293752705
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.2856400472776568
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.179074104010546,
+                -0.07049804179101166,
+                0.43874002771324216
+              ]
+            }
+          }
+        },
+        {
+          "name": "first_blue_criteria",
+          "decision": 9,
+          "turn_rad": -0.6,
+          "body_world_xy_m": [
+            1.895919970938857,
+            -0.21932841948127257
+          ],
+          "body_world_yaw_rad": -0.719601392602224,
+          "camera_world_xyz_m": [
+            2.1372387959560912,
+            -0.42930929739949375,
+            0.43874002771324216
+          ],
+          "origin_point": {
+            "point_world_xyz_m": [
+              -0.0014892782250553998,
+              0.006127374862611664,
+              0.0
+            ],
+            "camera_coordinates_m": [
+              1.075861245951106,
+              0.4512237042548729,
+              -1.8960947842705942
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": null,
+            "ray_first_hit_geom": "unnamed_robot_geom_7",
+            "ray_first_hit_geom_id": 7,
+            "ray_hit_distance_m": 0.07718228848497256,
+            "ray_target_distance_m": 2.2262649623885986,
+            "ray_reaches_point_without_earlier_occluder": false
+          },
+          "home_disk_radius_m": 1.0,
+          "home_disk_max_camera_forward_depth_m": -0.8960958382619612,
+          "entire_home_disk_behind_camera": true,
+          "home_region_height_range_m": [
+            0.0,
+            1.0
+          ],
+          "home_cylinder_max_camera_forward_depth_m": -0.8946439492776572,
+          "entire_home_cylinder_behind_camera": true,
+          "initial_selected_point_projection": {
+            "point_world_xyz_m": [
+              2.8879563086637887,
+              -0.5230729410859578,
+              0.1534834993690125
+            ],
+            "camera_coordinates_m": [
+              -0.4282682875372433,
+              0.28014645864141824,
+              0.6259743823248564
+            ],
+            "inside_frustum": true,
+            "pixel_uv_if_in_front": [
+              106.19919766459083,
+              319.02810922158585
+            ],
+            "ray_first_hit_geom": "scenario_target",
+            "ray_first_hit_geom_id": 1,
+            "ray_hit_distance_m": 0.80854170685648,
+            "ray_target_distance_m": 0.808541706856484,
+            "ray_reaches_point_without_earlier_occluder": true
+          },
+          "existing_named_object_views": {
+            "blue_sphere": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 170,
+              "unoccluded_unique_sampled_pixels": 168,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                44.38150849232551,
+                169.917083540899
+              ],
+              "B_projected_v_range": [
+                260.7518322904667,
+                373.9987726591768
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    3.017932575896832,
+                    -0.55,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    112.46170910172376,
+                    261.1548570636694
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9111656198084114
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0173215381906386,
+                    -0.5453587078301535,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    110.17055532297675,
+                    261.52354519153624
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9099714862789369
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.015530066281949,
+                    -0.5410337120515841,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    108.0930832721427,
+                    261.9777080989961
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.907696484162125
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.012680246020792,
+                    -0.5373197539792077,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    106.3711912112505,
+                    262.4885557551367
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9044882521195409
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.008966287948416,
+                    -0.5344699337180511,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    105.1282686215477,
+                    263.02249377845544
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9005568203764147
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0046412921698464,
+                    -0.5326784618093613,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    104.45933155359876,
+                    263.54305696375707
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8961625307883488
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.1372387959560912,
+                -0.42930929739949375,
+                0.43874002771324216
+              ]
+            },
+            "wrong_color_object": {
+              "visible_positive_certificate": false,
+              "frustum_surface_samples": 0,
+              "unoccluded_unique_sampled_pixels": 0,
+              "visible_geom_count": 0,
+              "B_projected_u_range": null,
+              "B_projected_v_range": null,
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [],
+              "camera_world_xyz_m": [
+                2.1372387959560912,
+                -0.42930929739949375,
+                0.43874002771324216
+              ]
+            }
+          }
+        },
+        {
+          "name": "explicit_stop_before_finish",
+          "decision": 11,
+          "turn_rad": 0.0,
+          "body_world_xy_m": [
+            1.90173460011308,
+            -0.2162053354438231
+          ],
+          "body_world_yaw_rad": -0.23521653121092864,
+          "camera_world_xyz_m": [
+            2.2134149846768603,
+            -0.29047035639330443,
+            0.4347229936834085
+          ],
+          "origin_point": {
+            "point_world_xyz_m": [
+              -0.0014892782250553998,
+              0.006127374862611664,
+              0.0
+            ],
+            "camera_coordinates_m": [
+              0.2254257646539554,
+              0.44729077574692905,
+              -2.2207812534795472
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": null,
+            "ray_first_hit_geom": "unnamed_robot_geom_7",
+            "ray_first_hit_geom_id": 7,
+            "ray_hit_distance_m": 0.03171289604046837,
+            "ray_target_distance_m": 2.2765665352113693,
+            "ray_reaches_point_without_earlier_occluder": false
+          },
+          "home_disk_radius_m": 1.0,
+          "home_disk_max_camera_forward_depth_m": -1.2207943771048868,
+          "entire_home_disk_behind_camera": true,
+          "home_region_height_range_m": [
+            0.0,
+            1.0
+          ],
+          "home_cylinder_max_camera_forward_depth_m": -1.2207943771048868,
+          "entire_home_cylinder_behind_camera": true,
+          "initial_selected_point_projection": {
+            "point_world_xyz_m": [
+              2.8879563086637887,
+              -0.5230729410859578,
+              0.1534834993690125
+            ],
+            "camera_coordinates_m": [
+              0.06754137696452338,
+              0.2779542824371732,
+              0.7116074708759955
+            ],
+            "inside_frustum": true,
+            "pixel_uv_if_in_front": [
+              349.091197724368,
+              301.2772053159866
+            ],
+            "ray_first_hit_geom": "scenario_target",
+            "ray_first_hit_geom_id": 1,
+            "ray_hit_distance_m": 0.7669456390996384,
+            "ray_target_distance_m": 0.7669456390996422,
+            "ray_reaches_point_without_earlier_occluder": true
+          },
+          "existing_named_object_views": {
+            "blue_sphere": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 216,
+              "unoccluded_unique_sampled_pixels": 211,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                299.77954314625896,
+                391.25477900478097
+              ],
+              "B_projected_v_range": [
+                250.4360649389542,
+                348.10520097219955
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    3.017932575896832,
+                    -0.55,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    343.1029515645903,
+                    250.46897266244247
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8677832779421322
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0173215381906386,
+                    -0.5453587078301535,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    341.53175406492994,
+                    250.604916648936
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8658391568089288
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.015530066281949,
+                    -0.5410337120515841,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    340.19687110462695,
+                    250.835745692045
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8629103234520243
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.012680246020792,
+                    -0.5373197539792077,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    339.1873999379444,
+                    251.14736259210133
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8591875290428294
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.008966287948416,
+                    -0.5344699337180511,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    338.57403301273484,
+                    251.52026918762988
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.854915958942595
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0046412921698464,
+                    -0.5326784618093613,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    338.40381958283564,
+                    251.9304412393434
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8503807752890612
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.2134149846768603,
+                -0.29047035639330443,
+                0.4347229936834085
+              ]
+            },
+            "wrong_color_object": {
+              "visible_positive_certificate": false,
+              "frustum_surface_samples": 0,
+              "unoccluded_unique_sampled_pixels": 0,
+              "visible_geom_count": 0,
+              "B_projected_u_range": [
+                -1196.024808387545,
+                -345.84425766603897
+              ],
+              "B_projected_v_range": [
+                165.01288448555582,
+                587.6325845044387
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [],
+              "camera_world_xyz_m": [
+                2.2134149846768603,
+                -0.29047035639330443,
+                0.4347229936834085
+              ]
+            }
+          }
+        },
+        {
+          "name": "explicit_stop_before_finish",
+          "decision": 11,
+          "turn_rad": 0.6,
+          "body_world_xy_m": [
+            1.90173460011308,
+            -0.2162053354438231
+          ],
+          "body_world_yaw_rad": 0.3647834687890713,
+          "camera_world_xyz_m": [
+            2.2009087070779616,
+            -0.10151091892663484,
+            0.4347229936834085
+          ],
+          "origin_point": {
+            "point_world_xyz_m": [
+              -0.0014892782250553998,
+              0.006127374862611664,
+              0.0
+            ],
+            "camera_coordinates_m": [
+              -0.8885690117780465,
+              0.44042277662256074,
+              -2.0168291594316
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": null,
+            "ray_first_hit_geom": "unnamed_robot_geom_7",
+            "ray_first_hit_geom_id": 7,
+            "ray_hit_distance_m": 0.04202833953109487,
+            "ray_target_distance_m": 2.247471238791214,
+            "ray_reaches_point_without_earlier_occluder": false
+          },
+          "home_disk_radius_m": 1.0,
+          "home_disk_max_camera_forward_depth_m": -1.0168422830569392,
+          "entire_home_disk_behind_camera": true,
+          "home_region_height_range_m": [
+            0.0,
+            1.0
+          ],
+          "home_cylinder_max_camera_forward_depth_m": -1.0168422830569392,
+          "entire_home_cylinder_behind_camera": true,
+          "initial_selected_point_projection": {
+            "point_world_xyz_m": [
+              2.8879563086637887,
+              -0.5230729410859578,
+              0.1534834993690125
+            ],
+            "camera_coordinates_m": [
+              0.6374602324615208,
+              0.2820539606439555,
+              0.4928839760524521
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": [
+              722.7195030334972,
+              357.9105926111248
+            ],
+            "ray_first_hit_geom": "scenario_target",
+            "ray_first_hit_geom_id": 1,
+            "ray_hit_distance_m": 0.8537239592128744,
+            "ray_target_distance_m": 0.8537239592128781,
+            "ray_reaches_point_without_earlier_occluder": true
+          },
+          "existing_named_object_views": {
+            "blue_sphere": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 25,
+              "unoccluded_unique_sampled_pixels": 25,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                606.0467929474282,
+                809.5752199581971
+              ],
+              "B_projected_v_range": [
+                280.78400958585297,
+                426.5373814645193
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    3.0787842999293478,
+                    -0.5045138632278748,
+                    0.19825628055427938
+                  ],
+                  "pixel_uv": [
+                    636.2815819006354,
+                    288.370585899368
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9294691970940018
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.064327111523097,
+                    -0.48567288847690304,
+                    0.19825628055427938
+                  ],
+                  "pixel_uv": [
+                    628.9074238216724,
+                    289.4326126586406
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.948858134085855
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.045486136772125,
+                    -0.4712157000706522,
+                    0.19825628055427938
+                  ],
+                  "pixel_uv": [
+                    625.1764409790403,
+                    291.4906825074372
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9517926068044608
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.023545356969528,
+                    -0.46212753150737484,
+                    0.19825628055427938
+                  ],
+                  "pixel_uv": [
+                    625.4681307335502,
+                    294.50651053965083
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9288120937154712
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0,
+                    -0.4590277264557497,
+                    0.19825628055427938
+                  ],
+                  "pixel_uv": [
+                    630.0957621538865,
+                    298.4045277380085
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9067974793236443
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.1086756120655963,
+                    -0.5208804575100656,
+                    0.16173324319226792
+                  ],
+                  "pixel_uv": [
+                    637.6768828069178,
+                    301.18627371552157
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8917469636646717
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.2009087070779616,
+                -0.10151091892663484,
+                0.4347229936834085
+              ]
+            },
+            "wrong_color_object": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 150,
+              "unoccluded_unique_sampled_pixels": 145,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                55.23482667869132,
+                174.2737149532893
+              ],
+              "B_projected_v_range": [
+                175.00920744702654,
+                315.0242933145606
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.01100000000000001
+                  ],
+                  "pixel_uv": [
+                    112.80446104722535,
+                    312.29988210227543
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.241502268922829
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.1155
+                  ],
+                  "pixel_uv": [
+                    112.86565416461488,
+                    278.94432081582147
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.2098305782466814
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.22
+                  ],
+                  "pixel_uv": [
+                    112.92691454980857,
+                    245.55209273641867
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.1865465319071424
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.32449999999999996
+                  ],
+                  "pixel_uv": [
+                    112.9882423137858,
+                    212.12313737071804
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.1721500828396658
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.429
+                  ],
+                  "pixel_uv": [
+                    113.04963756777005,
+                    178.6573940922272
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.166970205712726
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.9187500000000001,
+                    0.01100000000000001
+                  ],
+                  "pixel_uv": [
+                    97.31517131938443,
+                    308.7772212649569
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.2967800515845302
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.2009087070779616,
+                -0.10151091892663484,
+                0.4347229936834085
+              ]
+            }
+          }
+        },
+        {
+          "name": "explicit_stop_before_finish",
+          "decision": 11,
+          "turn_rad": -0.6,
+          "body_world_xy_m": [
+            1.90173460011308,
+            -0.2162053354438231
+          ],
+          "body_world_yaw_rad": -0.8352165312109286,
+          "camera_world_xyz_m": [
+            2.117042336846663,
+            -0.453486885424252,
+            0.4347229936834085
+          ],
+          "origin_point": {
+            "point_world_xyz_m": [
+              -0.0014892782250553998,
+              0.006127374862611664,
+              0.0
+            ],
+            "camera_coordinates_m": [
+              1.2600221262865652,
+              0.4503385980170462,
+              -1.7600979921466915
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": null,
+            "ray_first_hit_geom": "unnamed_robot_geom_7",
+            "ray_first_hit_geom_id": 7,
+            "ray_hit_distance_m": 0.09806684176775311,
+            "ray_target_distance_m": 2.210973892553797,
+            "ray_reaches_point_without_earlier_occluder": false
+          },
+          "home_disk_radius_m": 1.0,
+          "home_disk_max_camera_forward_depth_m": -0.760111115772031,
+          "entire_home_disk_behind_camera": true,
+          "home_region_height_range_m": [
+            0.0,
+            1.0
+          ],
+          "home_cylinder_max_camera_forward_depth_m": -0.760111115772031,
+          "entire_home_cylinder_behind_camera": true,
+          "initial_selected_point_projection": {
+            "point_world_xyz_m": [
+              2.8879563086637887,
+              -0.5230729410859578,
+              0.1534834993690125
+            ],
+            "camera_coordinates_m": [
+              -0.5263420786549283,
+              0.2755737703649116,
+              0.5703238883053237
+            ],
+            "inside_frustum": true,
+            "pixel_uv_if_in_front": [
+              31.77363363979356,
+              330.14317071875354
+            ],
+            "ray_first_hit_geom": "scenario_target",
+            "ray_first_hit_geom_id": 1,
+            "ray_hit_distance_m": 0.8235570558544325,
+            "ray_target_distance_m": 0.8235570558544363,
+            "ray_reaches_point_without_earlier_occluder": true
+          },
+          "existing_named_object_views": {
+            "blue_sphere": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 126,
+              "unoccluded_unique_sampled_pixels": 123,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                -43.830712840654826,
+                110.1388767724566
+              ],
+              "B_projected_v_range": [
+                266.0005335903794,
+                391.4972747342136
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    3.017932575896832,
+                    -0.55,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    41.28669087737751,
+                    266.735400412745
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9270176002018562
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0173215381906386,
+                    -0.5453587078301535,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    38.46263043263747,
+                    267.2371360636276
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9259517801201816
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.015530066281949,
+                    -0.5410337120515841,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    35.87631242390387,
+                    267.8221940843048
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.923790167614534
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.012680246020792,
+                    -0.5373197539792077,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    33.705681639640545,
+                    268.45298947245317
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.920673037067427
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.008966287948416,
+                    -0.5344699337180511,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    32.10787213665503,
+                    269.087312578231
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9168043497076805
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0046412921698464,
+                    -0.5326784618093613,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    31.206252327066807,
+                    269.6809446742212
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9124400463834182
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.117042336846663,
+                -0.453486885424252,
+                0.4347229936834085
+              ]
+            },
+            "wrong_color_object": {
+              "visible_positive_certificate": false,
+              "frustum_surface_samples": 0,
+              "unoccluded_unique_sampled_pixels": 0,
+              "visible_geom_count": 0,
+              "B_projected_u_range": null,
+              "B_projected_v_range": null,
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [],
+              "camera_world_xyz_m": [
+                2.117042336846663,
+                -0.453486885424252,
+                0.4347229936834085
+              ]
+            }
+          }
+        },
+        {
+          "name": "after_finish_stop",
+          "decision": 12,
+          "turn_rad": 0.0,
+          "body_world_xy_m": [
+            1.9120941442097443,
+            -0.2145631807505881
+          ],
+          "body_world_yaw_rad": -0.22448512519898542,
+          "camera_world_xyz_m": [
+            2.2262491962440376,
+            -0.2845208567547227,
+            0.42778749944166794
+          ],
+          "origin_point": {
+            "point_world_xyz_m": [
+              -0.0014892782250553998,
+              0.006127374862611664,
+              0.0
+            ],
+            "camera_coordinates_m": [
+              0.2020784971024051,
+              0.4863809809434355,
+              -2.2255100701268584
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": null,
+            "ray_first_hit_geom": "unnamed_robot_geom_7",
+            "ray_first_hit_geom_id": 7,
+            "ray_hit_distance_m": 0.03053703261779083,
+            "ray_target_distance_m": 2.2869843134247163,
+            "ray_reaches_point_without_earlier_occluder": false
+          },
+          "home_disk_radius_m": 1.0,
+          "home_disk_max_camera_forward_depth_m": -1.2258041402061948,
+          "entire_home_disk_behind_camera": true,
+          "home_region_height_range_m": [
+            0.0,
+            1.0
+          ],
+          "home_cylinder_max_camera_forward_depth_m": -1.2258041402061948,
+          "entire_home_cylinder_behind_camera": true,
+          "initial_selected_point_projection": {
+            "point_world_xyz_m": [
+              2.8879563086637887,
+              -0.5230729410859578,
+              0.1534834993690125
+            ],
+            "camera_coordinates_m": [
+              0.07968388177083201,
+              0.2590756413198868,
+              0.704653372291755
+            ],
+            "inside_frustum": true,
+            "pixel_uv_if_in_front": [
+              354.75559756856546,
+              294.1262750660242
+            ],
+            "ray_first_hit_geom": "scenario_target",
+            "ray_first_hit_geom_id": 1,
+            "ray_hit_distance_m": 0.7549874727580032,
+            "ray_target_distance_m": 0.7549874727580063,
+            "ray_reaches_point_without_earlier_occluder": true
+          },
+          "existing_named_object_views": {
+            "blue_sphere": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 216,
+              "unoccluded_unique_sampled_pixels": 210,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                304.55415223474546,
+                396.89826757676224
+              ],
+              "B_projected_v_range": [
+                243.206725006372,
+                340.8843859496643
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    3.017932575896832,
+                    -0.55,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    348.95528976790695,
+                    243.206725006372
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8561622428181558
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0173215381906386,
+                    -0.5453587078301535,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    347.3715180799582,
+                    243.31044419051977
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8541685264965116
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.015530066281949,
+                    -0.5410337120515841,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    346.02973989417836,
+                    243.5121119768188
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8511963191009755
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.012680246020792,
+                    -0.5373197539792077,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    345.0194597649631,
+                    243.79956518005412
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8474391514448566
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.008966287948416,
+                    -0.5344699337180511,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    344.41144351179184,
+                    244.1549811067366
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8431444856201565
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0046412921698464,
+                    -0.5326784618093613,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    344.25247216170413,
+                    244.55563273876783
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.838599122857235
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.2262491962440376,
+                -0.2845208567547227,
+                0.42778749944166794
+              ]
+            },
+            "wrong_color_object": {
+              "visible_positive_certificate": false,
+              "frustum_surface_samples": 0,
+              "unoccluded_unique_sampled_pixels": 0,
+              "visible_geom_count": 0,
+              "B_projected_u_range": [
+                -1159.4150798282506,
+                -330.01780523071693
+              ],
+              "B_projected_v_range": [
+                128.83366285986898,
+                536.0250215083395
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [],
+              "camera_world_xyz_m": [
+                2.2262491962440376,
+                -0.2845208567547227,
+                0.42778749944166794
+              ]
+            }
+          }
+        },
+        {
+          "name": "after_finish_stop",
+          "decision": 12,
+          "turn_rad": 0.6,
+          "body_world_xy_m": [
+            1.9120941442097443,
+            -0.2145631807505881
+          ],
+          "body_world_yaw_rad": 0.37551487480101453,
+          "camera_world_xyz_m": [
+            2.210878572469393,
+            -0.09491645668292319,
+            0.42778749944166794
+          ],
+          "origin_point": {
+            "point_world_xyz_m": [
+              -0.0014892782250553998,
+              0.006127374862611664,
+              0.0
+            ],
+            "camera_coordinates_m": [
+              -0.9154884561885752,
+              0.45698419771082743,
+              -2.0101815432906505
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": null,
+            "ray_first_hit_geom": "unnamed_robot_geom_7",
+            "ray_first_hit_geom_id": 7,
+            "ray_hit_distance_m": 0.042465382371925556,
+            "ray_target_distance_m": 2.2556115595018413,
+            "ray_reaches_point_without_earlier_occluder": false
+          },
+          "home_disk_radius_m": 1.0,
+          "home_disk_max_camera_forward_depth_m": -1.0104756133699868,
+          "entire_home_disk_behind_camera": true,
+          "home_region_height_range_m": [
+            0.0,
+            1.0
+          ],
+          "home_cylinder_max_camera_forward_depth_m": -1.0104756133699868,
+          "entire_home_cylinder_behind_camera": true,
+          "initial_selected_point_projection": {
+            "point_world_xyz_m": [
+              2.8879563086637887,
+              -0.5230729410859578,
+              0.1534834993690125
+            ],
+            "camera_coordinates_m": [
+              0.6408082523991572,
+              0.27667807564541236,
+              0.4793839239655861
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": [
+              736.252066984205,
+              359.43863138112965
+            ],
+            "ray_first_hit_geom": "scenario_target",
+            "ray_first_hit_geom_id": 1,
+            "ray_hit_distance_m": 0.846755525781998,
+            "ray_target_distance_m": 0.8467555257820012,
+            "ray_reaches_point_without_earlier_occluder": true
+          },
+          "existing_named_object_views": {
+            "blue_sphere": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 19,
+              "unoccluded_unique_sampled_pixels": 19,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                613.8758171309623,
+                826.0327011563097
+              ],
+              "B_projected_v_range": [
+                279.93192239682986,
+                429.4228496338211
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    3.045486136772125,
+                    -0.4712157000706522,
+                    0.19825628055427938
+                  ],
+                  "pixel_uv": [
+                    634.9349421761096,
+                    289.9670821304841
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9438514117219142
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.023545356969528,
+                    -0.46212753150737484,
+                    0.19825628055427938
+                  ],
+                  "pixel_uv": [
+                    635.3168499331204,
+                    293.004881651977
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9208451859826668
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.097435888200864,
+                    -0.493745363718501,
+                    0.16173324319226792
+                  ],
+                  "pixel_uv": [
+                    633.9388452966797,
+                    299.93408460208616
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9030259666591426
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0795560695756614,
+                    -0.4704439304243384,
+                    0.16173324319226792
+                  ],
+                  "pixel_uv": [
+                    624.6882359955302,
+                    301.1822053424347
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9258306664855067
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.056254636281499,
+                    -0.452564111799136,
+                    0.16173324319226792
+                  ],
+                  "pixel_uv": [
+                    619.794160323198,
+                    303.8786517412151
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9523379081087304
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0291195424899344,
+                    -0.441324387934404,
+                    0.16173324319226792
+                  ],
+                  "pixel_uv": [
+                    619.7571784633542,
+                    308.0139503371278
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9275244509566934
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.210878572469393,
+                -0.09491645668292319,
+                0.42778749944166794
+              ]
+            },
+            "wrong_color_object": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 150,
+              "unoccluded_unique_sampled_pixels": 145,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                58.91815539417951,
+                177.73725660031556
+              ],
+              "B_projected_v_range": [
+                162.81092610173621,
+                303.20328267937987
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.01100000000000001
+                  ],
+                  "pixel_uv": [
+                    115.56435901081582,
+                    300.4659288160742
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.228651326576516
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.1155
+                  ],
+                  "pixel_uv": [
+                    115.75660288778144,
+                    267.3968620734931
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.197245064685975
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.22
+                  ],
+                  "pixel_uv": [
+                    115.94984825472301,
+                    234.15552280198244
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.1743287050615832
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.32449999999999996
+                  ],
+                  "pixel_uv": [
+                    116.1441029579359,
+                    200.74056131139392
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.160405347345619
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.8475000000000001,
+                    0.429
+                  ],
+                  "pixel_uv": [
+                    116.3393749258938,
+                    167.15061377557925
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.155800040130211
+                },
+                {
+                  "sample_world_xyz_m": [
+                    2.88,
+                    0.9187500000000001,
+                    0.01100000000000001
+                  ],
+                  "pixel_uv": [
+                    100.29746995351485,
+                    296.67693449280426
+                  ],
+                  "ray_first_hit": "wrong_color_object",
+                  "ray_distance_m": 1.284116423801031
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.210878572469393,
+                -0.09491645668292319,
+                0.42778749944166794
+              ]
+            }
+          }
+        },
+        {
+          "name": "after_finish_stop",
+          "decision": 12,
+          "turn_rad": -0.6,
+          "body_world_xy_m": [
+            1.9120941442097443,
+            -0.2145631807505881
+          ],
+          "body_world_yaw_rad": -0.8244851251989854,
+          "camera_world_xyz_m": [
+            2.1318764220455066,
+            -0.44968702790330206,
+            0.42778749944166794
+          ],
+          "origin_point": {
+            "point_world_xyz_m": [
+              -0.0014892782250553998,
+              0.006127374862611664,
+              0.0
+            ],
+            "camera_coordinates_m": [
+              1.2463682763004047,
+              0.49796933079939276,
+              -1.7721768509247242
+            ],
+            "inside_frustum": false,
+            "pixel_uv_if_in_front": null,
+            "ray_first_hit_geom": "unnamed_robot_geom_7",
+            "ray_first_hit_geom_id": 7,
+            "ray_hit_distance_m": 0.08985671717574562,
+            "ray_target_distance_m": 2.223065029534293,
+            "ray_reaches_point_without_earlier_occluder": false
+          },
+          "home_disk_radius_m": 1.0,
+          "home_disk_max_camera_forward_depth_m": -0.7724709210040603,
+          "entire_home_disk_behind_camera": true,
+          "home_region_height_range_m": [
+            0.0,
+            1.0
+          ],
+          "home_cylinder_max_camera_forward_depth_m": -0.7724709210040603,
+          "entire_home_cylinder_behind_camera": true,
+          "initial_selected_point_projection": {
+            "point_world_xyz_m": [
+              2.8879563086637887,
+              -0.5230729410859578,
+              0.1534834993690125
+            ],
+            "camera_coordinates_m": [
+              -0.5108026261699977,
+              0.2494811668276409,
+              0.5736939917363424
+            ],
+            "inside_frustum": true,
+            "pixel_uv_if_in_front": [
+              41.908635084542254,
+              315.07842906887845
+            ],
+            "ray_first_hit_geom": "scenario_target",
+            "ray_first_hit_geom_id": 1,
+            "ray_hit_distance_m": 0.807641610900664,
+            "ray_target_distance_m": 0.8076416109006679,
+            "ray_reaches_point_without_earlier_occluder": true
+          },
+          "existing_named_object_views": {
+            "blue_sphere": {
+              "visible_positive_certificate": true,
+              "frustum_surface_samples": 145,
+              "unoccluded_unique_sampled_pixels": 143,
+              "visible_geom_count": 1,
+              "B_projected_u_range": [
+                -32.26896306955689,
+                118.28144603715171
+              ],
+              "B_projected_v_range": [
+                252.37551206627288,
+                375.05032224460126
+              ],
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [
+                {
+                  "sample_world_xyz_m": [
+                    3.017932575896832,
+                    -0.55,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    50.659704476491356,
+                    252.93147229818058
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9115537488592576
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0173215381906386,
+                    -0.5453587078301535,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    47.892097002762,
+                    253.3624944031112
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9104604115259419
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.015530066281949,
+                    -0.5410337120515841,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    45.36234498139646,
+                    253.87865767640315
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9082730958186188
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.012680246020792,
+                    -0.5373197539792077,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    43.24443704524839,
+                    254.44704264985506
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9051336409170121
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.008966287948416,
+                    -0.5344699337180511,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    41.69165134065497,
+                    255.0298722820324
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.9012473638789049
+                },
+                {
+                  "sample_world_xyz_m": [
+                    3.0046412921698464,
+                    -0.5326784618093613,
+                    0.23865252935232506
+                  ],
+                  "pixel_uv": [
+                    40.82392977885945,
+                    255.58678416197301
+                  ],
+                  "ray_first_hit": "scenario_target",
+                  "ray_distance_m": 0.8968713026603313
+                }
+              ],
+              "camera_world_xyz_m": [
+                2.1318764220455066,
+                -0.44968702790330206,
+                0.42778749944166794
+              ]
+            },
+            "wrong_color_object": {
+              "visible_positive_certificate": false,
+              "frustum_surface_samples": 0,
+              "unoccluded_unique_sampled_pixels": 0,
+              "visible_geom_count": 0,
+              "B_projected_u_range": null,
+              "B_projected_v_range": null,
+              "occluding_geom_samples": {},
+              "unoccluded_rays": [],
+              "camera_world_xyz_m": [
+                2.1318764220455066,
+                -0.44968702790330206,
+                0.42778749944166794
+              ]
+            }
+          }
+        }
+      ],
+      "scope": "Actual logged baseline blue-stop poses. All ground points within 1m of the start have negative optical depth even after +/-0.6rad. Existing goal objects can remain visible but are not home markers.",
+      "limitations": [
+        "No unique home descriptor is present; checker texture is repetitive.",
+        "Robot joints were not logged: frozen model uses default joints and logged body pose; behind-camera disk proof does not depend on joints.",
+        "This is offline geometry using archived GT for diagnostics, not a navigation implementation."
+      ]
+    },
+    "3_memory_data": {
+      "result": "不通过",
+      "initial_observation_tracked_points": [],
+      "first_track_point_request": {
+        "call_id": "call_a1c7c303e55146dfa2540254",
+        "name": "track_point",
+        "arguments": {
+          "image_id": "frame-00001",
+          "u": 390,
+          "v": 205
+        }
+      },
+      "first_track_point_public_result": {
+        "point_id": "point-001",
+        "image_id": "frame-00001",
+        "timestamp_s": 1.0000000000000007,
+        "valid": true,
+        "pixel_uv": [
+          390.0,
+          205.0
+        ],
+        "relative_xy_m": [
+          2.8799,
+          -0.5823
+        ],
+        "range_m": 2.9382,
+        "bearing_rad": -0.1995,
+        "confidence": 1.0,
+        "loss_reason": null,
+        "source": "rgbd_optical_flow"
+      },
+      "public_point_has_xyz": false,
+      "public_point_has_xy": true,
+      "raw_motion_call_count_including_rejected": 7,
+      "executed_measured_motion_count": 6,
+      "motion_raw_and_memory_adapter_comparison": [
+        {
+          "decision": 2,
+          "tool": "turn",
+          "arguments": {
+            "yaw_rad": -0.2
+          },
+          "measured": {
+            "translation_start_frame_m": [
+              0.016448975632415135,
+              0.0007436867020568754
+            ],
+            "yaw_delta_rad": -0.16106349482665383,
+            "position_error_m": 0.01646577873246823,
+            "heading_error_rad": 0.0389365051733459,
+            "elapsed_sim_s": 1.7399999999999192
+          },
+          "memory_adapter_action": {
+            "call_id": "call_81315db9036943049040a222",
+            "tool": "turn",
+            "status": "succeeded",
+            "error_code": null,
+            "stuck": false
+          },
+          "command_vs_measured_position_error_m": 0.01646577873246823,
+          "integrated_command_error_m": 0.016465778732468232,
+          "integrated_measured_error_m": 0.0
+        },
+        {
+          "decision": 3,
+          "tool": "move_relative",
+          "arguments": {
+            "forward_m": 0.6,
+            "lateral_m": 0.0
+          },
+          "measured": {
+            "translation_start_frame_m": [
+              0.5341159428161346,
+              0.011831706784039192
+            ],
+            "yaw_delta_rad": 0.008857207743166118,
+            "position_error_m": 0.06693801816927603,
+            "heading_error_rad": 0.008857207743166118,
+            "elapsed_sim_s": 3.299999999999637
+          },
+          "memory_adapter_action": {
+            "call_id": "call_0dee26587a0b472a94ed3901",
+            "tool": "move_relative",
+            "status": "succeeded",
+            "error_code": null,
+            "stuck": false
+          },
+          "command_vs_measured_position_error_m": 0.06693801816927603,
+          "integrated_command_error_m": 0.06259846716966924,
+          "integrated_measured_error_m": 0.0
+        },
+        {
+          "decision": 6,
+          "tool": "move_relative",
+          "arguments": {
+            "forward_m": 0.55,
+            "lateral_m": -0.03
+          },
+          "measured": {
+            "translation_start_frame_m": [
+              0.48298022527927365,
+              -0.01553662331431327
+            ],
+            "yaw_delta_rad": 0.009157300891128095,
+            "position_error_m": 0.06856266818589375,
+            "heading_error_rad": 0.00915730089112854,
+            "elapsed_sim_s": 3.280000000000225
+          },
+          "memory_adapter_action": {
+            "call_id": "call_2ff6fa7ab2da4441ad13c177",
+            "tool": "move_relative",
+            "status": "succeeded",
+            "error_code": null,
+            "stuck": false
+          },
+          "command_vs_measured_position_error_m": 0.06856266818589375,
+          "integrated_command_error_m": 0.13903831077790688,
+          "integrated_measured_error_m": 2.237726045655905e-16
+        },
+        {
+          "decision": 8,
+          "tool": "move_relative",
+          "arguments": {
+            "forward_m": 0.6,
+            "lateral_m": 0.0
+          },
+          "measured": {
+            "translation_start_frame_m": [
+              0.5288963791473282,
+              0.014929989942293012
+            ],
+            "yaw_delta_rad": 0.0024285299468940202,
+            "position_error_m": 0.07265417743005181,
+            "heading_error_rad": 0.0024285299468940202,
+            "elapsed_sim_s": 3.300000000001102
+          },
+          "memory_adapter_action": {
+            "call_id": "call_dd83b62a2b62437d98a832ca",
+            "tool": "move_relative",
+            "status": "succeeded",
+            "error_code": null,
+            "stuck": false
+          },
+          "command_vs_measured_position_error_m": 0.07265417743005181,
+          "integrated_command_error_m": 0.22463637481671012,
+          "integrated_measured_error_m": 1.1102230246251565e-16
+        },
+        {
+          "decision": 9,
+          "tool": "move_relative",
+          "arguments": {
+            "forward_m": 0.42,
+            "lateral_m": 0.0
+          },
+          "measured": {
+            "translation_start_frame_m": [
+              0.348614163671333,
+              0.011188653020882622
+            ],
+            "yaw_delta_rad": 0.0026737481665097818,
+            "position_error_m": 0.07225734277403882,
+            "heading_error_rad": 0.0026737481665097818,
+            "elapsed_sim_s": 2.7000000000009017
+          },
+          "memory_adapter_action": {
+            "call_id": "call_71271570dfe54b24adab9b4c",
+            "tool": "move_relative",
+            "status": "succeeded",
+            "error_code": null,
+            "stuck": false
+          },
+          "command_vs_measured_position_error_m": 0.07225734277403882,
+          "integrated_command_error_m": 0.3033524255980618,
+          "integrated_measured_error_m": 3.554447978966673e-16
+        },
+        {
+          "decision": 10,
+          "tool": "turn",
+          "arguments": {
+            "yaw_rad": -0.16
+          },
+          "measured": {
+            "translation_start_frame_m": [
+              0.004395149041650247,
+              0.0011973507040163166
+            ],
+            "yaw_delta_rad": -0.11589938346839768,
+            "position_error_m": 0.004555324775109613,
+            "heading_error_rad": 0.04410061653160202,
+            "elapsed_sim_s": 1.7999999999996046
+          },
+          "memory_adapter_action": {
+            "call_id": "call_724e666bb30b466bbfafdd55",
+            "tool": "turn",
+            "status": "succeeded",
+            "error_code": null,
+            "stuck": false
+          },
+          "command_vs_measured_position_error_m": 0.004555324775109613,
+          "integrated_command_error_m": 0.30036266170243997,
+          "integrated_measured_error_m": 3.1401849173675503e-16
+        }
+      ],
+      "memory_action_ledger_sample": [
+        {
+          "call_id": "call_a1c7c303e55146dfa2540254",
+          "tool": "track_point",
+          "status": "succeeded"
+        },
+        {
+          "call_id": "call_81315db9036943049040a222",
+          "tool": "turn",
+          "status": "succeeded",
+          "error_code": null,
+          "stuck": false
+        },
+        {
+          "call_id": "call_0dee26587a0b472a94ed3901",
+          "tool": "move_relative",
+          "status": "succeeded",
+          "error_code": null,
+          "stuck": false
+        },
+        {
+          "call_id": "call_011fd9f4be284a529b76e052",
+          "tool": "track_point",
+          "status": "succeeded"
+        },
+        {
+          "call_id": "call_e2615743bd1d413892394a35",
+          "tool": "move_relative",
+          "status": "failed",
+          "error_code": "INVALID_ARGUMENTS"
+        },
+        {
+          "call_id": "call_2ff6fa7ab2da4441ad13c177",
+          "tool": "move_relative",
+          "status": "succeeded",
+          "error_code": null,
+          "stuck": false
+        },
+        {
+          "call_id": "call_576c4ad4db5e40009396a2a1",
+          "tool": "track_point",
+          "status": "succeeded"
+        },
+        {
+          "call_id": "call_dd83b62a2b62437d98a832ca",
+          "tool": "move_relative",
+          "status": "succeeded",
+          "error_code": null,
+          "stuck": false
+        },
+        {
+          "call_id": "call_71271570dfe54b24adab9b4c",
+          "tool": "move_relative",
+          "status": "succeeded",
+          "error_code": null,
+          "stuck": false
+        },
+        {
+          "call_id": "call_724e666bb30b466bbfafdd55",
+          "tool": "turn",
+          "status": "succeeded",
+          "error_code": null,
+          "stuck": false
+        },
+        {
+          "call_id": "call_5217146473734069b0544ce5",
+          "tool": "stop",
+          "status": "succeeded",
+          "error_code": null
+        },
+        {
+          "call_id": "call_71e82897b53d4fc2bf798404",
+          "tool": "finish",
+          "status": "succeeded"
+        }
+      ],
+      "memory_object_pose_dimensions": {
+        "point-001": 2,
+        "point-002": 2,
+        "point-003": 2
+      },
+      "memory_objects_at_return_boundary": [
+        {
+          "object_id": "point-001",
+          "state": "stale",
+          "last_seen": 2,
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              2.8802609253716662,
+              -0.5844947574646516
+            ]
+          },
+          "visual_feature": {
+            "image_id": "frame-00002",
+            "pixel_uv": [
+              333.74,
+              208.24
+            ]
+          }
+        },
+        {
+          "object_id": "point-002",
+          "state": "confirmed",
+          "last_seen": 12,
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              2.9004721635000457,
+              -0.5557061119442176
+            ]
+          },
+          "visual_feature": {
+            "image_id": "frame-00009",
+            "pixel_uv": [
+              339.82,
+              329.36
+            ]
+          }
+        },
+        {
+          "object_id": "point-003",
+          "state": "confirmed",
+          "last_seen": 12,
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              2.886355294026161,
+              -0.5889881490852538
+            ]
+          },
+          "visual_feature": {
+            "image_id": "frame-00009",
+            "pixel_uv": [
+              355.56,
+              330.11
+            ]
+          }
+        }
+      ],
+      "planner_packet_contains_ledger": false,
+      "planner_packet_object_ids": [
+        "point-002",
+        "point-003"
+      ],
+      "gaps": [
+        "Runner has call arguments and full measured signed translation/yaw, but adapter receives only results and discards arguments/full vector/yaw.",
+        "Initial observation has zero tracked points. First selected point belongs to the blue goal, not a home landmark.",
+        "TrackedPoint.world is internal 3D; track_point/get_geometry expose only XY, and memory objects store two coordinates.",
+        "No saved origin landmark descriptor/relocalization path; visual_feature is only image_id/pixel_uv.",
+        "Current planner packet omits the action ledger and filters stale home candidates; no route/old-landmark retrieval tool exists."
+      ],
+      "first_selected_point_offline_identity": {
+        "method": "Diagnostic MuJoCo ray at the logged initial pixel; not data available to memory/planner",
+        "first_hit_geom": "scenario_target",
+        "world_xyz_m": [
+          2.8879563086637887,
+          -0.5230729410859578,
+          0.1534834993690125
+        ],
+        "horizontal_distance_to_start_m": 2.937507238117292
+      }
+    },
+    "4_independent_scoring": {
+      "result": "通过",
+      "feasible_not_implemented": true,
+      "origin_definition": "First Harness capture after 1s initialization settling, not nominal reset [0,0].",
+      "formula": "norm(current_base_xy_GT - saved_initial_base_xy_GT) <= 1.0",
+      "return_radius_m": 1.0,
+      "start_to_blue_center_m": 3.052575231566217,
+      "minimum_start_distance_of_any_blue_standoff_pose_m": 1.872575231566217,
+      "blue_end_score_distance_to_start_m": 1.932186037629639,
+      "return_radius_overlaps_blue_acceptance_region": false,
+      "required_phase_and_stop_gates": [
+        "First pass blue independent distance/heading/stop/no-collision/no-fall checkpoint.",
+        "Only then evaluate return distance <=1m, stopped speed<0.12m/s, abs yaw rate<0.25rad/s, no collision/fall over the whole round.",
+        "Do not count the initial pose inside the 1m disk as return success; model finish is only a declaration."
+      ],
+      "interpretation": "1m is a meaningful coarse return region, not precise pose or visual relocalization. Independent GT scoring remains meaningful even if navigation drifts."
+    }
+  },
+  "navigation": {
+    "recommended_if_data_were_complete": "Measured-motion dead reckoning as primary; visual corrections only after real home landmarks are saved and relocalization is supported.",
+    "command_inverse_only": "Technically can issue inverse bounded move_relative/turn commands, but requested displacement differs from measured travel; full directional measured ledger and frame composition are required, not scalar length sums.",
+    "visual_homing_current_status": "Unavailable: no initial home track, no exposed XYZ, no distinctive saved descriptor or lost-track relocalization, and stale landmarks are filtered.",
+    "combined_current_status": "Not supported by current memory state and tools without additional data plumbing/retrieval/relocalization. No changes made.",
+    "public_current_odometry_bypass": {
+      "observation_before_finish": {
+        "translation_m": [
+          1.898825086820971,
+          -0.2572085822984704
+        ],
+        "yaw_rad": -0.2535618466876602,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      },
+      "home_vector_in_current_body_frame_m": [
+        -1.9026319463380248,
+        -0.22734256513604612
+      ],
+      "distance_from_current_observation_m": 1.9161662154282593,
+      "formula": "-R(local_yaw).T @ local_translation",
+      "requires_early_history_or_memory": false,
+      "source_audit": "backend.capture uses _base_pose(); Harness.observation subtracts initial ground-truth base pose and rotates into initial yaw. Both H0 and H2 receive this ideal cumulative odometry.",
+      "requires_private_evaluator_GT_access": false,
+      "cumulative_pose_is_ideal_GT_derived": true,
+      "strict_ban_on_ideal_cumulative_pose_would_be_met": false
+    },
+    "no_private_GT_navigation_possible_with_public_feedback": true,
+    "memory_directional_route_retrieval_implemented": false,
+    "GT_boundary_note": "Public sensor/tool feedback is permitted by the existing interface. Simulator-derived measurements do not by themselves mean secret evaluator-GT access. The ideal cumulative start-relative pose nevertheless bypasses memory and makes this unsuitable as a memory-necessity or realistic drift test."
+  },
+  "drift": {
+    "successful_move_translation_error_m": [
+      0.06693801816927603,
+      0.06856266818589375,
+      0.07265417743005181,
+      0.07225734277403882
+    ],
+    "successful_turn_yaw_error_rad": [
+      0.0389365051733459,
+      0.04410061653160202
+    ],
+    "command_integrated_xy_m": [
+      2.1207843939916424,
+      -0.46051444516052004
+    ],
+    "command_integrated_yaw_rad": -0.36,
+    "measured_motion_integrated_xy_m": [
+      1.89747218959087,
+      -0.2596428744725752
+    ],
+    "measured_motion_integrated_yaw_rad": -0.2538460915473535,
+    "command_error_before_explicit_stop_m": 0.30036266170243997,
+    "measured_error_before_explicit_stop_m": 3.1401849173675503e-16,
+    "command_error_after_finish_m": 0.29442854240636074,
+    "measured_motion_error_after_stop_and_finish_m": 0.012367252338183615,
+    "command_yaw_error_before_stop_rad": 0.1061539084526466,
+    "critical_distinction": "Execution tracking error is not odometry measurement drift. Signed measured feedback and cumulative odometry are computed from ideal simulator poses, not a noisy estimator.",
+    "risk_assessment": "Command-only integration already differs by about 0.30m outbound; blindly reversing commands has no guaranteed round-trip bound. Current ideal measured feedback removes observed motion accumulation error, except stop/finish settling not included in motion results. One seed/outbound log cannot estimate return noise, covariance or success probability. A 1m independent scoring disk remains meaningful but broad; current GT-derived cumulative odometry makes it an easy closed-loop signal for H0 as well."
+  },
+  "source_locations": {
+    "history_crop_runner": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/runner.py",
+      "line": 221,
+      "needle": "history = history[-history_turns:]"
+    },
+    "history_crop_model": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/models.py",
+      "line": 253,
+      "needle": "selected = history[-self.history_turns:]"
+    },
+    "initial_origin_private_storage": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/harness.py",
+      "line": 90,
+      "needle": "self._initial_base_xy_yaw = tuple"
+    },
+    "public_ideal_odom": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/harness.py",
+      "line": 96,
+      "needle": "initial_x, initial_y, initial_yaw ="
+    },
+    "sensor_frame_from_true_pose": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/backend.py",
+      "line": 314,
+      "needle": "base_xy_yaw=np.array"
+    },
+    "measured_motion_from_true_pose": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/backend.py",
+      "line": 358,
+      "needle": "translation_start_frame_m"
+    },
+    "internal_3d_backprojection": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/perception.py",
+      "line": 16,
+      "needle": "def backproject"
+    },
+    "public_point_xy_only": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/perception.py",
+      "line": 120,
+      "needle": "def describe"
+    },
+    "adapter_drops_full_motion_and_arguments": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/memory_planning.py",
+      "line": 76,
+      "needle": "action = {k: deepcopy(result[k])"
+    },
+    "memory_packet_filters_history": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/memory.py",
+      "line": 323,
+      "needle": "def state_packet"
+    },
+    "scoring_true_base_pose": {
+      "path": "/home/nuonuosenlin/Agent-harness/go2_demo/backend.py",
+      "line": 386,
+      "needle": "def evaluate"
+    }
+  },
+  "source_sha256_before": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "1e63161c71de9127e682c39fbdeed06f7e3c813e87c4bc6e52073afd3c90f67f",
+    "go2_demo/backend.py": "ff2d036c79312c49b46c43a9d117734db0fddaf433851f0237ee366f57f61713",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "ce06dafcd1a6a65f510e1abefa824dd6cda5b6dcf47b8e82322c25d8daaaa386",
+    "go2_demo/memory_planning.py": "87ef0c43d23134d471388be9a1dfdb9d50d0176bf662b83f46155e28d895729c",
+    "go2_demo/models.py": "ab3b574e12d0ae56d1025d3d6a51c98b83093bfeb35cfa13a560f970fab6753f",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "a18273036a6d2aeffb4b857c1bdbfe756466164c4d433c85c2ebc4af31f6279a",
+    "go2_demo/scenarios.py": "98929a741a33e59b5cf8bee7864f38080096fa0cbb1ff39c51e24202eb932ab6",
+    "go2_demo/types.py": "26189f055ab6becd6e8f436c8ba0d34d58f720e59bc724a0aab28096712ad1ee",
+    "tests/test_api_only_cli.py": "fe03464e8a02cf80375ae0545b9207188e4bcee37a1cba45d433264d780993b6",
+    "tests/test_backend.py": "35216b1b117ee2e63f5386c5c3aa733668f73f20b319cfc0b3199a12c2a5b719",
+    "tests/test_fetch_quard.py": "8d530b375c664b9fb57ca2dbfc0e042fdf9b16f0f27014e8b151d809a215f71b",
+    "tests/test_harness.py": "a8094ea8f56293067fe98803da65f5097bba36803a4decd6f713be19eda4b545",
+    "tests/test_memory.py": "a9faf56d70777269dddbec929fccf10d76901b18cad0ffe4d1e7c3194d376fec",
+    "tests/test_memory_runner.py": "3436f6d3c31a141583b32893458a53bb73f77836dd970ac0672d07342753978a",
+    "tests/test_models.py": "f32b20a3021f5c6411a5d49c154c963ab6a895fd09230c536e1a635a661f7168",
+    "tests/test_passage_instruction.py": "db502b50e85cde794bcd8f6f9fd2016dbc500a3cc8f44813a1564e39c8658f28",
+    "tests/test_perception.py": "5e3d95109ee8d67cd433435a91d187b6fb8f40d8e5ae0a118f4847d03c2b803e",
+    "tests/test_quard.py": "80e0656aa60b52b3d3e4efdf68c5a0ec0c4ad2a4e5f1734c0383b4328fc2c822",
+    "tests/test_quard_dataset.py": "9e193ea1d85a107be795764aaa26adff0e9664a7fc8c0cd19749d6c24b009876",
+    "tests/test_runner.py": "08992c2963c6406b8d54124e12d36ec4fcb91cdb18711c482b8b6f34319a6403",
+    "tests/test_scenario_backend.py": "57e1cdef64fd77f0d24088e1a0f358d591de085754a1922770f4544962afdb86",
+    "tests/test_scenario_cli.py": "20f9f92e37d9f0fbfc5036039ab177a3b1be1d2f17beb2d3bb56b38c5a1877a1",
+    "tests/test_scenario_runner.py": "686976d2b7511c99be1c1d25792eb64b3439c4d86fd3f53fc4f1287341c7e405",
+    "tests/test_scenarios.py": "0b38de48c054ede771c7360ff748be76d58ba6e72d3726d9f78b93c0b5dfbaab",
+    "scripts/fetch_assets.py": "106031eada74dafdd06ed96750b16ccf23c7a8e5b5458a291954b9f2063221e3",
+    "scripts/fetch_quard.py": "09c5fb7b5a1f65ab9fde43097f3cd2ffef04a01f2aa5c3c9f91f0d1ff8bbd3fa",
+    "scripts/run_deepseek.sh": "ab9cb5a81d2af368e2d6ed697c6e22bd39bb9338aee4bf670d45aab610bca956",
+    "scripts/write_memory_example.py": "625b51e21b8744bfe7da3718490d5e386da563a3dd60798944e0fd44185faa2c",
+    "docs/demo.md": "694193433da1da221100850658ebd3d33c8ce5297fbaf2856bee50ad18e44fe1",
+    "docs/design-plan.md": "70a42deb168e091c13ac7c25b25c936f6d740c2c745a122ca79ee3769227799c",
+    "docs/memory-v1.md": "e55c7be8ad40f54b4cf0b62c9e9fe7c7c96737d4287bb11ff76c5086ef9aa3e4",
+    "docs/passage-solution.md": "850bef5e08c16772f705ece5662cbf85169be8d0d0ab05f10f04db2145ba7c88",
+    "docs/quard.md": "8e4e04776b7d08ff83c050f191e442c15eeeda24238204cb3d6496a706726817",
+    "docs/scenarios.md": "b432b15ac147571e3c16974c4d22aee0b86b5e4f8ddb13e2ea900f07b1446090",
+    "docs/validation.md": "3535966b4c2110a8e3d5fb12b756e281702d4710b723fe9b5b0e735261d12b76"
+  },
+  "source_sha256_after": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "1e63161c71de9127e682c39fbdeed06f7e3c813e87c4bc6e52073afd3c90f67f",
+    "go2_demo/backend.py": "ff2d036c79312c49b46c43a9d117734db0fddaf433851f0237ee366f57f61713",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "ce06dafcd1a6a65f510e1abefa824dd6cda5b6dcf47b8e82322c25d8daaaa386",
+    "go2_demo/memory_planning.py": "87ef0c43d23134d471388be9a1dfdb9d50d0176bf662b83f46155e28d895729c",
+    "go2_demo/models.py": "ab3b574e12d0ae56d1025d3d6a51c98b83093bfeb35cfa13a560f970fab6753f",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "a18273036a6d2aeffb4b857c1bdbfe756466164c4d433c85c2ebc4af31f6279a",
+    "go2_demo/scenarios.py": "98929a741a33e59b5cf8bee7864f38080096fa0cbb1ff39c51e24202eb932ab6",
+    "go2_demo/types.py": "26189f055ab6becd6e8f436c8ba0d34d58f720e59bc724a0aab28096712ad1ee",
+    "tests/test_api_only_cli.py": "fe03464e8a02cf80375ae0545b9207188e4bcee37a1cba45d433264d780993b6",
+    "tests/test_backend.py": "35216b1b117ee2e63f5386c5c3aa733668f73f20b319cfc0b3199a12c2a5b719",
+    "tests/test_fetch_quard.py": "8d530b375c664b9fb57ca2dbfc0e042fdf9b16f0f27014e8b151d809a215f71b",
+    "tests/test_harness.py": "a8094ea8f56293067fe98803da65f5097bba36803a4decd6f713be19eda4b545",
+    "tests/test_memory.py": "a9faf56d70777269dddbec929fccf10d76901b18cad0ffe4d1e7c3194d376fec",
+    "tests/test_memory_runner.py": "3436f6d3c31a141583b32893458a53bb73f77836dd970ac0672d07342753978a",
+    "tests/test_models.py": "f32b20a3021f5c6411a5d49c154c963ab6a895fd09230c536e1a635a661f7168",
+    "tests/test_passage_instruction.py": "db502b50e85cde794bcd8f6f9fd2016dbc500a3cc8f44813a1564e39c8658f28",
+    "tests/test_perception.py": "5e3d95109ee8d67cd433435a91d187b6fb8f40d8e5ae0a118f4847d03c2b803e",
+    "tests/test_quard.py": "80e0656aa60b52b3d3e4efdf68c5a0ec0c4ad2a4e5f1734c0383b4328fc2c822",
+    "tests/test_quard_dataset.py": "9e193ea1d85a107be795764aaa26adff0e9664a7fc8c0cd19749d6c24b009876",
+    "tests/test_runner.py": "08992c2963c6406b8d54124e12d36ec4fcb91cdb18711c482b8b6f34319a6403",
+    "tests/test_scenario_backend.py": "57e1cdef64fd77f0d24088e1a0f358d591de085754a1922770f4544962afdb86",
+    "tests/test_scenario_cli.py": "20f9f92e37d9f0fbfc5036039ab177a3b1be1d2f17beb2d3bb56b38c5a1877a1",
+    "tests/test_scenario_runner.py": "686976d2b7511c99be1c1d25792eb64b3439c4d86fd3f53fc4f1287341c7e405",
+    "tests/test_scenarios.py": "0b38de48c054ede771c7360ff748be76d58ba6e72d3726d9f78b93c0b5dfbaab",
+    "scripts/fetch_assets.py": "106031eada74dafdd06ed96750b16ccf23c7a8e5b5458a291954b9f2063221e3",
+    "scripts/fetch_quard.py": "09c5fb7b5a1f65ab9fde43097f3cd2ffef04a01f2aa5c3c9f91f0d1ff8bbd3fa",
+    "scripts/run_deepseek.sh": "ab9cb5a81d2af368e2d6ed697c6e22bd39bb9338aee4bf670d45aab610bca956",
+    "scripts/write_memory_example.py": "625b51e21b8744bfe7da3718490d5e386da563a3dd60798944e0fd44185faa2c",
+    "docs/demo.md": "694193433da1da221100850658ebd3d33c8ce5297fbaf2856bee50ad18e44fe1",
+    "docs/design-plan.md": "70a42deb168e091c13ac7c25b25c936f6d740c2c745a122ca79ee3769227799c",
+    "docs/memory-v1.md": "e55c7be8ad40f54b4cf0b62c9e9fe7c7c96737d4287bb11ff76c5086ef9aa3e4",
+    "docs/passage-solution.md": "850bef5e08c16772f705ece5662cbf85169be8d0d0ab05f10f04db2145ba7c88",
+    "docs/quard.md": "8e4e04776b7d08ff83c050f191e442c15eeeda24238204cb3d6496a706726817",
+    "docs/scenarios.md": "b432b15ac147571e3c16974c4d22aee0b86b5e4f8ddb13e2ea900f07b1446090",
+    "docs/validation.md": "3535966b4c2110a8e3d5fb12b756e281702d4710b723fe9b5b0e735261d12b76"
+  },
+  "reasons": [
+    "Required directional command/result memory ledger is incomplete in current adapter.",
+    "Initial home tracks with exposed 3D position do not exist, and visual home relocalization/retrieval is missing.",
+    "Current H0 already receives ideal start-relative cumulative pose through its permitted public sensor interface, so history truncation does not establish external-memory necessity. If GT-only-scoring is intended to exclude this ideal cumulative channel, the current observation contract also fails that stricter condition."
+  ]
+}

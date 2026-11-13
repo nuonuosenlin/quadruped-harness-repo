@@ -1,0 +1,153 @@
+{
+  "task_id": "memory_ab_occluded_v1",
+  "title": "蓝球 A／绿方块 B 遮挡布局（仅离线场景）",
+  "category": "memory_demo",
+  "instruction": "离线场景复核条目：蓝球标作 A，绿方块标作 B；双目标顺序任务尚未实现。",
+  "target": {
+    "kind": "sphere",
+    "color": "blue",
+    "xy": [
+      6.4,
+      0.0
+    ],
+    "z": 0.12,
+    "half_size": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "letter": null
+  },
+  "objects": [
+    {
+      "name": "memory_goal_b",
+      "kind": "box",
+      "position": [
+        1.8,
+        0.6,
+        0.2
+      ],
+      "size": [
+        0.08,
+        0.18,
+        0.2
+      ],
+      "rgba": [
+        0.04,
+        0.75,
+        0.1,
+        1.0
+      ],
+      "role": "demo_target",
+      "euler": null,
+      "letter": null
+    },
+    {
+      "name": "memory_drawers_body",
+      "kind": "box",
+      "position": [
+        3.7999999999999994,
+        0.0,
+        1.0
+      ],
+      "size": [
+        0.22,
+        2.0,
+        1.0
+      ],
+      "rgba": [
+        0.55,
+        0.33,
+        0.14,
+        1.0
+      ],
+      "role": "obstacle",
+      "euler": null,
+      "letter": null
+    },
+    {
+      "name": "memory_drawer_handle_0",
+      "kind": "box",
+      "position": [
+        3.57,
+        0.0,
+        0.4285714285714285
+      ],
+      "size": [
+        0.02,
+        0.8484848484848485,
+        0.07142857142857142
+      ],
+      "rgba": [
+        0.06,
+        0.07,
+        0.08,
+        1.0
+      ],
+      "role": "obstacle",
+      "euler": null,
+      "letter": null
+    },
+    {
+      "name": "memory_drawer_handle_1",
+      "kind": "box",
+      "position": [
+        3.57,
+        0.0,
+        1.0357142857142858
+      ],
+      "size": [
+        0.02,
+        0.8484848484848485,
+        0.07142857142857142
+      ],
+      "rgba": [
+        0.06,
+        0.07,
+        0.08,
+        1.0
+      ],
+      "role": "obstacle",
+      "euler": null,
+      "letter": null
+    },
+    {
+      "name": "memory_drawer_handle_2",
+      "kind": "box",
+      "position": [
+        3.57,
+        0.0,
+        1.6428571428571428
+      ],
+      "size": [
+        0.02,
+        0.8484848484848485,
+        0.07142857142857142
+      ],
+      "rgba": [
+        0.06,
+        0.07,
+        0.08,
+        1.0
+      ],
+      "role": "obstacle",
+      "euler": null,
+      "letter": null
+    }
+  ],
+  "goal_kind": "standoff",
+  "standoff_m": 1.0,
+  "distance_tolerance_m": 0.18,
+  "passage_x": null,
+  "passage_center_y": 0.0,
+  "passage_half_width": 0.65,
+  "finish_x_min": null,
+  "target_jitter_m": 0.0,
+  "unsupported_reason": null,
+  "source": "local_memory_scene_geometry_only_not_a_benchmark_result",
+  "floor_half_size_m": [
+    8.0,
+    6.0
+  ],
+  "offline_only": true
+}

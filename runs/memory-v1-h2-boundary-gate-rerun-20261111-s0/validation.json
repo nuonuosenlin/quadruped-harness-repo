@@ -1,0 +1,43 @@
+{
+  "protocol_diagnostic_counts": {
+    "OK": 120
+  },
+  "real_api_episodes": 1,
+  "source_hashes_match_offline_passed_version": true,
+  "source_unchanged_during_run": true,
+  "boundary_gate_actions_in_memory": 0,
+  "boundary_max_attempt_streak": 1,
+  "state_before_recovery_active_plan": {
+    "plan_id": "plan-0036",
+    "branches": [
+      {
+        "on": "skill_stuck",
+        "subgoal_id": "explore_viewpoint_034"
+      },
+      {
+        "on": "search_review_due",
+        "subgoal_id": "explore_viewpoint_034"
+      }
+    ],
+    "recovery": "Stop, observe fresh geometry; if point-033 is lost or the leg is rejected, re-track a visible floor landmark and commit a short leg in a different direction; abort if no safe reference remains."
+  },
+  "state_before_recovery_active_beliefs": [
+    {
+      "plan_id": "plan-0036",
+      "subgoal_id": "explore_viewpoint_034",
+      "description": "Commit a 0.5 m forward-right leg along freshly tracked floor reference point-033 (bearing -0.14 rad right of forward, range 1.89 m) into the open floor ahead; endpoint point-033.range_m <= 1.45 m, then inspect the new view for blue A / green B candidates.",
+      "status": "待做",
+      "preconditions": [],
+      "completion": [
+        {
+          "measurement": "point-033.range_m",
+          "op": "le",
+          "value": 1.45
+        }
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "original_api_response_errors_to_archive": 0,
+  "truth_disclosure": "experimental boundary gate uses simulator ground truth base pose; safety interlock, not navigation measurement"
+}

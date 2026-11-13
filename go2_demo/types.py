@@ -34,3 +34,8 @@ class Decision:
     raw_text: str = ""
     reasoning_content: str | None = field(default=None, repr=False)
     assistant_content: str | None = field(default=None, repr=False)
+    request_attempts: int = 1
+    protocol_diagnostics: list[dict] = field(default_factory=list, repr=False)
+    reasoning_response_count: int | None = None
+    reasoning_character_count: int | None = None
+    planning_envelope: dict | None = field(default=None, repr=False)

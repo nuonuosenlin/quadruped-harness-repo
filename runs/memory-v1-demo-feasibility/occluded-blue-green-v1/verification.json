@@ -1,0 +1,66 @@
+{
+  "conclusion": "通过",
+  "geometry_conclusion": "通过",
+  "physical_conclusion": "通过",
+  "pytest": {
+    "command": "source .venv/bin/activate && python -m pytest -q",
+    "passed": 248,
+    "skipped": 15,
+    "new_tests": 3,
+    "original_245_tests_passed": true
+  },
+  "list_tasks": {
+    "command": "./scripts/run_deepseek.sh --list-tasks",
+    "exit_code": 0,
+    "demo_entry": "memory_ab_occluded_v1 | memory_demo | offline-only: sequential task not implemented"
+  },
+  "legacy_geometry": {
+    "supported_scenes": 14,
+    "exact_compiled_comparison_passed": true
+  },
+  "changed_source_files_this_turn": [
+    "go2_demo/__main__.py",
+    "go2_demo/backend.py",
+    "go2_demo/scenarios.py"
+  ],
+  "new_test_file": "tests/test_memory_scene.py",
+  "prior_memory_source_files_unchanged": true,
+  "source_sha256_before": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "1e63161c71de9127e682c39fbdeed06f7e3c813e87c4bc6e52073afd3c90f67f",
+    "go2_demo/backend.py": "ff2d036c79312c49b46c43a9d117734db0fddaf433851f0237ee366f57f61713",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "ce06dafcd1a6a65f510e1abefa824dd6cda5b6dcf47b8e82322c25d8daaaa386",
+    "go2_demo/memory_planning.py": "87ef0c43d23134d471388be9a1dfdb9d50d0176bf662b83f46155e28d895729c",
+    "go2_demo/models.py": "ab3b574e12d0ae56d1025d3d6a51c98b83093bfeb35cfa13a560f970fab6753f",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "a18273036a6d2aeffb4b857c1bdbfe756466164c4d433c85c2ebc4af31f6279a",
+    "go2_demo/scenarios.py": "98929a741a33e59b5cf8bee7864f38080096fa0cbb1ff39c51e24202eb932ab6",
+    "go2_demo/types.py": "26189f055ab6becd6e8f436c8ba0d34d58f720e59bc724a0aab28096712ad1ee"
+  },
+  "source_sha256_after": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "8203bb136d92c30033f7ab8366537ffc4b2e7cff088ef043377bc15bb98aa67d",
+    "go2_demo/backend.py": "6ebcfcac2241ad0e6e436fdb5f731e777040c998e5e7e9550f1a47d52fa6b15f",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "ce06dafcd1a6a65f510e1abefa824dd6cda5b6dcf47b8e82322c25d8daaaa386",
+    "go2_demo/memory_planning.py": "87ef0c43d23134d471388be9a1dfdb9d50d0176bf662b83f46155e28d895729c",
+    "go2_demo/models.py": "ab3b574e12d0ae56d1025d3d6a51c98b83093bfeb35cfa13a560f970fab6753f",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "a18273036a6d2aeffb4b857c1bdbfe756466164c4d433c85c2ebc4af31f6279a",
+    "go2_demo/scenarios.py": "f0ac765e2df9c7fe5ac63a6531a7f38660e1f77396cbcc6501ec84b30092abb6",
+    "go2_demo/types.py": "26189f055ab6becd6e8f436c8ba0d34d58f720e59bc724a0aab28096712ad1ee"
+  },
+  "api_calls": 0,
+  "key_reads": 0,
+  "sequential_task_implemented": false,
+  "ablation_runs": 0,
+  "limitations": [
+    "Grounded planar stops only, using a kinematic camera-height bound; no teleported/airborne poses.",
+    "Geometry/history requirements pass; no empirical claim that H0 must fail or that H2 memory improves results.",
+    "Robot dynamics used a fixed local-waypoint offline fixture with existing public ideal local_odometry; no private GT in its controller.",
+    "The unresolved memory data-chain and ideal-odometry design questions were not changed."
+  ]
+}

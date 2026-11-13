@@ -1,0 +1,19 @@
+Task ID | category | status | visible scenario
+red_marker | baseline | supported | 原始红色标记
+go_to_blue_ball | go_to | supported | 接近蓝色球体
+go_to_green_cube | go_to | supported | 接近绿色方块
+go_to_red_cube | go_to | supported | 接近红色方块
+distinguish_texture_a | distinguish | supported | 识别字母 A
+distinguish_texture_b | distinguish | supported | 识别字母 B
+distinguish_texture_c | distinguish | supported | 识别字母 C
+go_avoid_texture_cooker | go_avoid | supported | 绕过炉台
+go_avoid_texture_drawers | go_avoid | supported | 绕过抽屉柜
+go_avoid_texture_fan | go_avoid | supported | 绕过落地扇
+go_avoid_texture_sofa | go_avoid | supported | 绕过沙发
+go_through_green_rectangle_tunnel | go_through | supported | 穿过绿色矩形门框
+go_through_red_triangle_tunnel | go_through | supported | 穿过红色三角形门框
+go_through_yellow_triangle_tunnel | go_through | supported | 穿过黄色三角形门框
+crawl_red_gate2 | crawl | unsupported: 当前预训练步态不支持行走中保持高度／俯仰目标，不能执行低姿态爬行。 | 低姿态穿过红色横杆 2
+crawl_red_gate3 | crawl | unsupported: 当前预训练步态不支持行走中保持高度／俯仰目标，不能执行低姿态爬行。 | 低姿态穿过红色横杆 3
+memory_ab_occluded_v1 | memory_demo | supported | 先到蓝球 A，再到绿方块 B
+Source: local MuJoCo adaptations, not the original QUARD simulator or published evaluation split.

@@ -241,6 +241,13 @@ class APIModel:
         return value
 
     def build_messages(self, observation: dict, image_data_url: str, history: list) -> list[dict]:
+        if "memory_state" in observation:
+            from .memory_planning import MEMORY_SYSTEM_PROMPT
+            from .memory_context import compact_observation
+            # Rule memory is the only state authority. Historical beliefs and
+            # camera pixels are deliberately excluded in memory-v1 mode.
+            return [{"role": "system", "content": MEMORY_SYSTEM_PROMPT},
+                    {"role": "user", "content": _json_text(compact_observation(observation))}]
         if not isinstance(image_data_url, str) or len(image_data_url) > MAX_IMAGE_CHARS or not image_data_url.startswith(("data:image/png;base64,", "data:image/jpeg;base64,")):
             raise ModelProtocolError("Expected a bounded PNG or JPEG data URL for the current observation.")
         messages: list[dict] = [{"role": "system", "content": SYSTEM_PROMPT}]
@@ -309,9 +316,108 @@ class APIModel:
     async def _bounded_request(self, payload: dict, timeout_s: float) -> bytes:
         return await asyncio.wait_for(self._request(payload, timeout_s), timeout=timeout_s)
 
-    def decide(
+    def decide(self, observation, image_data_url, tools, history, *, timeout_s=None, max_requests=None):
+        # H0 retains its original single request, auto tool choice and parser.
+        if "memory_state" not in observation:
+            return self._decide_once(observation, image_data_url, tools, history, timeout_s=timeout_s)
+        limit = 2 if max_requests is None else max_requests
+        if type(limit) is not int or not 1 <= limit <= 2:
+            raise ModelError("max_requests must be 1 or 2.", "MODEL_CONFIG_ERROR")
+        total_timeout = self.timeout_s if timeout_s is None else min(self.timeout_s, timeout_s)
+        if not math.isfinite(total_timeout) or total_timeout <= 0:
+            raise ModelError("No model request time remains.", "MODEL_TIMEOUT")
+        started = time.monotonic()
+        usage, diagnostics = {}, []
+        reasoning_count = reasoning_chars = attempts = 0
+        error = None
+        repair = None
+        request_observation = observation
+        for _ in range(limit):
+            remaining = total_timeout - (time.monotonic() - started)
+            if remaining <= 0:
+                error = ModelError("Model protocol repair exceeded its time budget.", "MODEL_TIMEOUT")
+                break
+            attempts += 1
+            self._last_protocol_metadata = None
+            try:
+                decision = self._decide_once(request_observation, image_data_url, tools, history,
+                    timeout_s=remaining, force_tool=True, repair_hint=repair)
+                error = None
+            except ModelError as exc:
+                decision = None
+                error = exc
+            metadata = self._last_protocol_metadata
+            if metadata:
+                diagnostics.append(metadata)
+                for key, value in metadata.get("usage", {}).items():
+                    usage[key] = usage.get(key, 0) + value
+                reasoning_count += int(metadata.get("reasoning_present", False))
+                reasoning_chars += metadata.get("reasoning_chars", 0)
+            if decision is not None:
+                decision.usage = usage
+                decision.request_attempts = attempts
+                decision.protocol_diagnostics = diagnostics
+                decision.reasoning_response_count = reasoning_count
+                decision.reasoning_character_count = reasoning_chars
+                decision.latency_s = time.monotonic() - started
+                return decision
+            if not isinstance(error, ModelProtocolError) or metadata is None:
+                break  # No retry for transport/config/input errors.
+            from .memory_context import compact_observation
+            request_observation = compact_observation(observation, retry=True)
+            repair = ("The previous response violated the tool protocol: " + metadata["kind"]
+                      + ". Return exactly one supplied function tool call with valid JSON arguments. "
+                        "For motion/finish include planning in the tool arguments. "
+                        "Use one small subgoal, brief descriptions and recovery; do not write an essay. "
+                        "Use the reduced current state; if unable to act, call observe/stop/abort. "
+                        "Do not repeat the previous reasoning or answer with text alone.")
+        error.request_attempts = max(1, attempts)
+        error.usage = usage
+        error.protocol_diagnostics = diagnostics
+        error.reasoning_response_count = reasoning_count
+        error.reasoning_character_count = reasoning_chars
+        raise error
+
+    @staticmethod
+    def _response_metadata(response):
+        choices = response.get("choices") if isinstance(response, dict) else None
+        choice = choices[0] if isinstance(choices, list) and len(choices) == 1 and isinstance(choices[0], dict) else {}
+        message = choice.get("message") if isinstance(choice.get("message"), dict) else {}
+        calls = message.get("tool_calls")
+        if "tool_calls" not in message:
+            kind = "MISSING_TOOL_CALLS"
+        elif not isinstance(calls, list):
+            kind = "NON_LIST_TOOL_CALLS"
+        elif not calls:
+            kind = "EMPTY_TOOL_CALLS"
+        elif len(calls) > MAX_TOOL_CALLS:
+            kind = "TOO_MANY_TOOL_CALLS"
+        elif len(calls) != 1:
+            kind = "MULTIPLE_TOOL_CALLS"
+        else:
+            kind = "TOOL_CALL_FORMAT"
+        if not isinstance(response, dict):
+            kind = "INVALID_RESPONSE_SHAPE"
+        elif not isinstance(choices, list) or len(choices) != 1 or not isinstance(choices[0], dict):
+            kind = "INVALID_CHOICES"
+        elif not isinstance(choice.get("message"), dict):
+            kind = "INVALID_ASSISTANT_MESSAGE"
+        elif choice.get("finish_reason") == "length":
+            kind = "TRUNCATED_RESPONSE"
+        elif message.get("reasoning_content") is not None and not isinstance(message.get("reasoning_content"), str):
+            kind = "INVALID_REASONING_TYPE"
+        elif message.get("content") is not None and not isinstance(message.get("content"), str):
+            kind = "INVALID_ASSISTANT_CONTENT"
+        reasoning = message.get("reasoning_content")
+        return {"kind": kind, "tool_calls_type": type(calls).__name__,
+                "tool_calls_count": len(calls) if isinstance(calls, list) else None,
+                "usage": _usage_counters(response.get("usage")) if isinstance(response, dict) else {},
+                "reasoning_present": isinstance(reasoning, str) and bool(reasoning),
+                "reasoning_chars": len(reasoning) if isinstance(reasoning, str) else 0}
+
+    def _decide_once(
         self, observation: dict, image_data_url: str, tools: list, history: list,
-        *, timeout_s: float | None = None,
+        *, timeout_s: float | None = None, force_tool: bool = False, repair_hint: str | None = None,
     ) -> Decision:
         effective_timeout = self.timeout_s if timeout_s is None else min(self.timeout_s, timeout_s)
         if not math.isfinite(effective_timeout) or effective_timeout <= 0:
@@ -325,6 +431,12 @@ class APIModel:
             "max_tokens": self.max_output_tokens,
         }
         payload.update(self.extra_body)
+        if force_tool:
+            from .memory_protocol import planning_tools
+            payload['tools'] = planning_tools(tools)
+            payload.update(tool_choice="required", parallel_tool_calls=False)
+            if repair_hint:
+                payload["messages"].append({"role": "user", "content": repair_hint})
         _json_text(payload)
         started = time.monotonic()
         try:
@@ -334,7 +446,16 @@ class APIModel:
         except httpx.HTTPError:
             raise ModelError("Model API transport failed; check network and endpoint configuration.", "MODEL_TRANSPORT_ERROR") from None
         # Errors intentionally never include response bodies, URLs or auth headers.
-        response = _load_json(body)
+        try:
+            response = _load_json(body)
+        except ModelProtocolError:
+            if force_tool:
+                self._last_protocol_metadata = {"kind": "INVALID_RESPONSE_JSON", "usage": {},
+                                                "reasoning_present": False, "reasoning_chars": 0}
+            raise
+        planning_envelope = None
+        if force_tool:
+            self._last_protocol_metadata = self._response_metadata(response)
         if not isinstance(response, dict) or not isinstance(response.get("choices"), list) or len(response["choices"]) != 1:
             raise ModelProtocolError("Expected exactly one model choice.")
         choice = response["choices"][0]
@@ -354,6 +475,8 @@ class APIModel:
         wire_calls = message.get("tool_calls")
         if not isinstance(wire_calls, list) or not 1 <= len(wire_calls) <= MAX_TOOL_CALLS:
             raise ModelProtocolError("Model must return at least one bounded tool call.")
+        if force_tool and len(wire_calls) != 1:
+            raise ModelProtocolError("Memory planning requires exactly one tool call.")
         calls, seen = [], set()
         for wire in wire_calls:
             if not isinstance(wire, dict) or wire.get("type") != "function" or not isinstance(wire.get("function"), dict):
@@ -367,10 +490,46 @@ class APIModel:
             raw_args = function.get("arguments")
             if not isinstance(raw_args, str) or len(raw_args.encode("utf-8")) > MAX_ARGUMENT_BYTES:
                 raise ModelProtocolError("Tool arguments must be a bounded JSON string.")
+            if force_tool:
+                self._last_protocol_metadata["kind"] = "INVALID_ARGUMENT_JSON"
             arguments = _load_json(raw_args)
             if not isinstance(arguments, dict):
                 raise ModelProtocolError("Tool arguments must be a JSON object.")
             calls.append(ToolCall(call_id=self._redact(call_id), name=self._redact(name), arguments=self._redact(arguments)))
+        if force_tool:
+            self._last_protocol_metadata["kind"] = "INVALID_TOOL_SCHEMA"
+            from .harness import Harness
+            allowed = {t["function"]["name"]: t["function"].get("parameters", {}) for t in tools}
+            for call in calls:
+                if call.name not in allowed:
+                    self._last_protocol_metadata["kind"] = "UNKNOWN_TOOL"
+                    raise ModelProtocolError("Unknown tool; no tool executed.")
+                schema = allowed[call.name]
+                from .memory_protocol import MOTION_TOOLS, validate_envelope, PlanEnvelopeError
+                required = set(schema.get("required", []))
+                properties = set(schema.get("properties", {}))
+                names = set(call.arguments) - ({'planning'} if call.name in MOTION_TOOLS else set())
+                if not required.issubset(names) or names - properties:
+                    self._last_protocol_metadata["kind"] = "PARAMETERS_MISMATCH"
+                    self._last_protocol_metadata["missing_required_parameters"] = sorted(required - names)
+                    self._last_protocol_metadata["unexpected_parameter_count"] = len(names - properties)
+                    raise ModelProtocolError("Tool parameters do not match the schema; no tool executed.")
+                if call.name in MOTION_TOOLS:
+                    if 'planning' not in call.arguments:
+                        self._last_protocol_metadata['kind'] = 'MISSING_PLANNING_ENVELOPE'
+                        raise ModelProtocolError('Motion/finish needs planning in tool arguments; no tool executed.')
+                    self._last_protocol_metadata['kind'] = 'INVALID_PLANNING_ENVELOPE'
+                    try:
+                        planning_envelope = validate_envelope(call.arguments.pop('planning'))
+                    except PlanEnvelopeError as exc:
+                        self._last_protocol_metadata['plan_code'] = exc.code
+                        raise ModelProtocolError('Invalid planning envelope; no tool executed.') from None
+                self._last_protocol_metadata["kind"] = "INVALID_ARGUMENT_VALUE"
+                try:
+                    Harness._validate(call)
+                except (ValueError, TypeError, OverflowError):
+                    raise ModelProtocolError("Tool call failed schema validation; no tool executed.") from None
+            self._last_protocol_metadata["kind"] = "OK"
         return Decision(
             calls=calls,
             usage=_usage_counters(response.get("usage")),
@@ -379,6 +538,7 @@ class APIModel:
             raw_text=self._redact(content[:4096]) if isinstance(content, str) else "",
             reasoning_content=self._redact(reasoning) if reasoning is not None else None,
             assistant_content=self._redact(content) if content is not None else None,
+            planning_envelope=self._redact(planning_envelope),
         )
 
     def close(self) -> None:

@@ -1,0 +1,1 @@
+{"success": false, "termination": "startup_error", "task_id": "memory_ab_occluded_v1", "scenario_source": "local_memory_ordered_navigation_demo_not_official_benchmark", "mode": "api", "is_llm_result": true, "error": {"type": "ImportError", "code": "RUNTIME_ERROR", "message": "Failed to load GLFW3 shared library."}}

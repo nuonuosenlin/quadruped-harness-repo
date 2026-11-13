@@ -1,0 +1,39 @@
+{
+  "task": "memory_ab_occluded_v1",
+  "seed": 0,
+  "provider": "compatible",
+  "model": "deepseek-v4.1-flash",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "viewer": true,
+  "budgets": {
+    "max_model_calls": 120,
+    "max_wall_seconds": 2400,
+    "max_sim_seconds": 600,
+    "history_turns": 6,
+    "api_timeout": 90,
+    "max_output_tokens": 8192
+  },
+  "H0_reference": "runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/metrics.json",
+  "memory_v1": true,
+  "entrypoint": "python -m go2_demo",
+  "protocol_retry": "default at most 2 requests per decision; shared budget",
+  "consecutive_gate_stop": 2,
+  "code_sha256": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "8203bb136d92c30033f7ab8366537ffc4b2e7cff088ef043377bc15bb98aa67d",
+    "go2_demo/backend.py": "fc2f0ebd74ffec9eaea12f17e9c8d66cac8ad5253fceb9301d1aa9feea1755b8",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "8519f1a093324745c7689c48dd0096b2b20d8fa9b98cff4c4cf4c8dd5bba9a7d",
+    "go2_demo/memory_context.py": "ffb9dbfe8882d888e9ed8b8c27b1c0cfb097d5b1812e03e8166b09997c228a0d",
+    "go2_demo/memory_perception.py": "ad690d04999235db828e413e2e70d930232548b82abd136ca655965a63c7b989",
+    "go2_demo/memory_planning.py": "95fcec7e9399db9e3102c6a372897d6080e006ebcea036b8b0e3ecf8315558bd",
+    "go2_demo/memory_protocol.py": "0a7ac4322ba5af2d36609134ce0a0839802518090de638489d3ff4fca145c931",
+    "go2_demo/models.py": "875ae500f08f2c4192bdf5ca58beac88e5c9c31c07391a1b1fc2a073128d2c39",
+    "go2_demo/ordered_evaluation.py": "ff57acbbebd7d4109e809fde17969152ae2a8dc5ebd55116d3716e1116da14ef",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "9dfa0f10c0ff535eda673349c634575d04695db4debcdb657102e9a92e557fbe",
+    "go2_demo/scenarios.py": "5ae3159d9fef9bf13e1b7abe4243ff47999e940065994ea98932731ebaefb4b7",
+    "go2_demo/types.py": "5aeacfff31e2f9eae78796cd27bdc4d38700897f916c40680aafe8d6a75b941b"
+  }
+}

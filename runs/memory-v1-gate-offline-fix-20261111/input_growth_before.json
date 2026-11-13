@@ -1,0 +1,1308 @@
+[
+  {
+    "decision": 1,
+    "input_chars": 6369,
+    "state_chars": 6070,
+    "sections": {
+      "world": 5673,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 2,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 1,
+      "revision": 1,
+      "active_plan_id": 4,
+      "public_context": 3674,
+      "active_plan": 4,
+      "decision_step": 1,
+      "snapshot_lag_steps": 1,
+      "measurements": 296,
+      "task_targets": 151,
+      "current_observation": 1144,
+      "last_tool_feedback": 2,
+      "bootstrap_hint": 188
+    }
+  },
+  {
+    "decision": 2,
+    "input_chars": 7230,
+    "state_chars": 6931,
+    "sections": {
+      "world": 6534,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 2,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 1,
+      "revision": 1,
+      "active_plan_id": 4,
+      "public_context": 3929,
+      "active_plan": 4,
+      "decision_step": 1,
+      "snapshot_lag_steps": 1,
+      "measurements": 504,
+      "task_targets": 151,
+      "current_observation": 1399,
+      "last_tool_feedback": 351
+    }
+  },
+  {
+    "decision": 3,
+    "input_chars": 8426,
+    "state_chars": 8127,
+    "sections": {
+      "world": 6291,
+      "pose": 158,
+      "objects": 1179,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 264,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 2,
+    "world_sections": {
+      "step": 1,
+      "revision": 1,
+      "active_plan_id": 4,
+      "public_context": 3929,
+      "active_plan": 4,
+      "decision_step": 1,
+      "snapshot_lag_steps": 1,
+      "measurements": 504,
+      "task_targets": 151,
+      "current_observation": 1399,
+      "last_tool_feedback": 108
+    }
+  },
+  {
+    "decision": 4,
+    "input_chars": 8783,
+    "state_chars": 8484,
+    "sections": {
+      "world": 6387,
+      "pose": 158,
+      "objects": 1179,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 525,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 2,
+    "world_sections": {
+      "step": 1,
+      "revision": 1,
+      "active_plan_id": 4,
+      "public_context": 3929,
+      "active_plan": 4,
+      "decision_step": 1,
+      "snapshot_lag_steps": 1,
+      "measurements": 504,
+      "task_targets": 151,
+      "current_observation": 1399,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 5,
+    "input_chars": 9044,
+    "state_chars": 8745,
+    "sections": {
+      "world": 6387,
+      "pose": 158,
+      "objects": 1179,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 786,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 2,
+    "world_sections": {
+      "step": 1,
+      "revision": 1,
+      "active_plan_id": 4,
+      "public_context": 3929,
+      "active_plan": 4,
+      "decision_step": 1,
+      "snapshot_lag_steps": 1,
+      "measurements": 504,
+      "task_targets": 151,
+      "current_observation": 1399,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 6,
+    "input_chars": 9679,
+    "state_chars": 9380,
+    "sections": {
+      "world": 6387,
+      "pose": 158,
+      "objects": 1286,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1314,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 2,
+    "world_sections": {
+      "step": 1,
+      "revision": 1,
+      "active_plan_id": 4,
+      "public_context": 3929,
+      "active_plan": 4,
+      "decision_step": 1,
+      "snapshot_lag_steps": 1,
+      "measurements": 504,
+      "task_targets": 151,
+      "current_observation": 1399,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 7,
+    "input_chars": 8560,
+    "state_chars": 8261,
+    "sections": {
+      "world": 6291,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1575,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 1,
+      "revision": 1,
+      "active_plan_id": 4,
+      "public_context": 3929,
+      "active_plan": 4,
+      "decision_step": 1,
+      "snapshot_lag_steps": 1,
+      "measurements": 504,
+      "task_targets": 151,
+      "current_observation": 1399,
+      "last_tool_feedback": 108
+    }
+  },
+  {
+    "decision": 8,
+    "input_chars": 8657,
+    "state_chars": 8358,
+    "sections": {
+      "world": 6387,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1576,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 1,
+      "revision": 1,
+      "active_plan_id": 4,
+      "public_context": 3929,
+      "active_plan": 4,
+      "decision_step": 1,
+      "snapshot_lag_steps": 1,
+      "measurements": 504,
+      "task_targets": 151,
+      "current_observation": 1399,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 9,
+    "input_chars": 8660,
+    "state_chars": 8361,
+    "sections": {
+      "world": 6387,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1579,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 1,
+      "revision": 1,
+      "active_plan_id": 4,
+      "public_context": 3929,
+      "active_plan": 4,
+      "decision_step": 1,
+      "snapshot_lag_steps": 1,
+      "measurements": 504,
+      "task_targets": 151,
+      "current_observation": 1399,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 10,
+    "input_chars": 8664,
+    "state_chars": 8365,
+    "sections": {
+      "world": 6388,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1582,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 1,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 3929,
+      "active_plan": 4,
+      "decision_step": 1,
+      "snapshot_lag_steps": 1,
+      "measurements": 504,
+      "task_targets": 151,
+      "current_observation": 1399,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 11,
+    "input_chars": 9540,
+    "state_chars": 9241,
+    "sections": {
+      "world": 7264,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1582,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4185,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 719,
+      "task_targets": 151,
+      "current_observation": 1655,
+      "last_tool_feedback": 351
+    }
+  },
+  {
+    "decision": 12,
+    "input_chars": 9315,
+    "state_chars": 9016,
+    "sections": {
+      "world": 7117,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1504,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4185,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 719,
+      "task_targets": 151,
+      "current_observation": 1655,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 13,
+    "input_chars": 10184,
+    "state_chars": 9885,
+    "sections": {
+      "world": 7986,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1504,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4441,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 929,
+      "task_targets": 151,
+      "current_observation": 1911,
+      "last_tool_feedback": 351
+    }
+  },
+  {
+    "decision": 14,
+    "input_chars": 9989,
+    "state_chars": 9690,
+    "sections": {
+      "world": 7839,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1456,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4441,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 929,
+      "task_targets": 151,
+      "current_observation": 1911,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 15,
+    "input_chars": 10858,
+    "state_chars": 10559,
+    "sections": {
+      "world": 8708,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1456,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 351
+    }
+  },
+  {
+    "decision": 16,
+    "input_chars": 10994,
+    "state_chars": 10695,
+    "sections": {
+      "world": 8465,
+      "pose": 158,
+      "objects": 375,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1462,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 108
+    }
+  },
+  {
+    "decision": 17,
+    "input_chars": 11093,
+    "state_chars": 10794,
+    "sections": {
+      "world": 8561,
+      "pose": 158,
+      "objects": 375,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1465,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 18,
+    "input_chars": 11096,
+    "state_chars": 10797,
+    "sections": {
+      "world": 8561,
+      "pose": 158,
+      "objects": 375,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1468,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 19,
+    "input_chars": 10679,
+    "state_chars": 10380,
+    "sections": {
+      "world": 8465,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1520,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 108
+    }
+  },
+  {
+    "decision": 20,
+    "input_chars": 10777,
+    "state_chars": 10478,
+    "sections": {
+      "world": 8561,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1522,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 21,
+    "input_chars": 13202,
+    "state_chars": 12903,
+    "sections": {
+      "world": 8465,
+      "pose": 158,
+      "objects": 2303,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1742,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 5,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 108
+    }
+  },
+  {
+    "decision": 22,
+    "input_chars": 13249,
+    "state_chars": 12950,
+    "sections": {
+      "world": 8561,
+      "pose": 158,
+      "objects": 2303,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1693,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 5,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 23,
+    "input_chars": 13153,
+    "state_chars": 12854,
+    "sections": {
+      "world": 8465,
+      "pose": 158,
+      "objects": 2303,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1693,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 5,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 108
+    }
+  },
+  {
+    "decision": 24,
+    "input_chars": 13249,
+    "state_chars": 12950,
+    "sections": {
+      "world": 8561,
+      "pose": 158,
+      "objects": 2303,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1693,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 5,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 25,
+    "input_chars": 13215,
+    "state_chars": 12916,
+    "sections": {
+      "world": 8561,
+      "pose": 158,
+      "objects": 2303,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1659,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 5,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 26,
+    "input_chars": 13481,
+    "state_chars": 13182,
+    "sections": {
+      "world": 8561,
+      "pose": 158,
+      "objects": 2569,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1659,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 5,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 27,
+    "input_chars": 11028,
+    "state_chars": 10729,
+    "sections": {
+      "world": 8465,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1869,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 108
+    }
+  },
+  {
+    "decision": 28,
+    "input_chars": 11124,
+    "state_chars": 10825,
+    "sections": {
+      "world": 8561,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1869,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4697,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1139,
+      "task_targets": 151,
+      "current_observation": 2167,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 29,
+    "input_chars": 11993,
+    "state_chars": 11694,
+    "sections": {
+      "world": 9430,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1869,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4953,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1349,
+      "task_targets": 151,
+      "current_observation": 2423,
+      "last_tool_feedback": 351
+    }
+  },
+  {
+    "decision": 30,
+    "input_chars": 12123,
+    "state_chars": 11824,
+    "sections": {
+      "world": 9187,
+      "pose": 158,
+      "objects": 375,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1869,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 4953,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1349,
+      "task_targets": 151,
+      "current_observation": 2423,
+      "last_tool_feedback": 108
+    }
+  },
+  {
+    "decision": 31,
+    "input_chars": 13088,
+    "state_chars": 12789,
+    "sections": {
+      "world": 10152,
+      "pose": 158,
+      "objects": 375,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1869,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5209,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1559,
+      "task_targets": 151,
+      "current_observation": 2679,
+      "last_tool_feedback": 351
+    }
+  },
+  {
+    "decision": 32,
+    "input_chars": 12806,
+    "state_chars": 12507,
+    "sections": {
+      "world": 10005,
+      "pose": 158,
+      "objects": 375,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1734,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5209,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1559,
+      "task_targets": 151,
+      "current_observation": 2679,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 33,
+    "input_chars": 12859,
+    "state_chars": 12560,
+    "sections": {
+      "world": 10005,
+      "pose": 158,
+      "objects": 428,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1734,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5209,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1559,
+      "task_targets": 151,
+      "current_observation": 2679,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 34,
+    "input_chars": 13728,
+    "state_chars": 13429,
+    "sections": {
+      "world": 10874,
+      "pose": 158,
+      "objects": 428,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1734,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5465,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1769,
+      "task_targets": 151,
+      "current_observation": 2935,
+      "last_tool_feedback": 351
+    }
+  },
+  {
+    "decision": 35,
+    "input_chars": 13452,
+    "state_chars": 13153,
+    "sections": {
+      "world": 10727,
+      "pose": 158,
+      "objects": 428,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1605,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5465,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1769,
+      "task_targets": 151,
+      "current_observation": 2935,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 36,
+    "input_chars": 13305,
+    "state_chars": 13006,
+    "sections": {
+      "world": 10631,
+      "pose": 158,
+      "objects": 375,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1607,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5465,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1769,
+      "task_targets": 151,
+      "current_observation": 2935,
+      "last_tool_feedback": 108
+    }
+  },
+  {
+    "decision": 37,
+    "input_chars": 13401,
+    "state_chars": 13102,
+    "sections": {
+      "world": 10727,
+      "pose": 158,
+      "objects": 375,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1607,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 1,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5465,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1769,
+      "task_targets": 151,
+      "current_observation": 2935,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 38,
+    "input_chars": 16579,
+    "state_chars": 16280,
+    "sections": {
+      "world": 10631,
+      "pose": 158,
+      "objects": 3425,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1831,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 8,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5465,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1769,
+      "task_targets": 151,
+      "current_observation": 2935,
+      "last_tool_feedback": 108
+    }
+  },
+  {
+    "decision": 39,
+    "input_chars": 16675,
+    "state_chars": 16376,
+    "sections": {
+      "world": 10727,
+      "pose": 158,
+      "objects": 3425,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1831,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 8,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5465,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1769,
+      "task_targets": 151,
+      "current_observation": 2935,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 40,
+    "input_chars": 16589,
+    "state_chars": 16290,
+    "sections": {
+      "world": 10727,
+      "pose": 158,
+      "objects": 3425,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1745,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 8,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5465,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1769,
+      "task_targets": 151,
+      "current_observation": 2935,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 41,
+    "input_chars": 17078,
+    "state_chars": 16779,
+    "sections": {
+      "world": 10727,
+      "pose": 158,
+      "objects": 3850,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1809,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 8,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5465,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1769,
+      "task_targets": 151,
+      "current_observation": 2935,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 42,
+    "input_chars": 17081,
+    "state_chars": 16782,
+    "sections": {
+      "world": 10727,
+      "pose": 158,
+      "objects": 3850,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1812,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 8,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5465,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1769,
+      "task_targets": 151,
+      "current_observation": 2935,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 43,
+    "input_chars": 17950,
+    "state_chars": 17651,
+    "sections": {
+      "world": 11596,
+      "pose": 158,
+      "objects": 3850,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1812,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 8,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5721,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1979,
+      "task_targets": 151,
+      "current_observation": 3191,
+      "last_tool_feedback": 351
+    }
+  },
+  {
+    "decision": 44,
+    "input_chars": 13940,
+    "state_chars": 13641,
+    "sections": {
+      "world": 11449,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1797,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5721,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1979,
+      "task_targets": 151,
+      "current_observation": 3191,
+      "last_tool_feedback": 204
+    }
+  },
+  {
+    "decision": 45,
+    "input_chars": 13940,
+    "state_chars": 13641,
+    "sections": {
+      "world": 11449,
+      "pose": 158,
+      "objects": 2,
+      "active_beliefs": 2,
+      "invalidated": 2,
+      "events": 1797,
+      "topology": 4,
+      "confidence_thresholds": 118
+    },
+    "objects": 0,
+    "world_sections": {
+      "step": 2,
+      "revision": 2,
+      "active_plan_id": 4,
+      "public_context": 5721,
+      "active_plan": 4,
+      "decision_step": 2,
+      "snapshot_lag_steps": 1,
+      "measurements": 1979,
+      "task_targets": 151,
+      "current_observation": 3191,
+      "last_tool_feedback": 204
+    }
+  }
+]

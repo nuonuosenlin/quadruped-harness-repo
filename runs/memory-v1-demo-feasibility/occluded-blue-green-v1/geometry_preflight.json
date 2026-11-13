@@ -1,0 +1,389 @@
+{
+  "conclusion": "通过",
+  "scene_id": "memory_ab_occluded_v1",
+  "seed": 0,
+  "scene": {
+    "task_id": "memory_ab_occluded_v1",
+    "title": "蓝球 A／绿方块 B 遮挡布局（仅离线场景）",
+    "category": "memory_demo",
+    "instruction": "离线场景复核条目：蓝球标作 A，绿方块标作 B；双目标顺序任务尚未实现。",
+    "target": {
+      "kind": "sphere",
+      "color": "blue",
+      "xy": [
+        6.4,
+        0.0
+      ],
+      "z": 0.12,
+      "half_size": [
+        0.12,
+        0.12,
+        0.12
+      ],
+      "letter": null
+    },
+    "objects": [
+      {
+        "name": "memory_goal_b",
+        "kind": "box",
+        "position": [
+          1.8,
+          0.6,
+          0.2
+        ],
+        "size": [
+          0.08,
+          0.18,
+          0.2
+        ],
+        "rgba": [
+          0.04,
+          0.75,
+          0.1,
+          1.0
+        ],
+        "role": "demo_target",
+        "euler": null,
+        "letter": null
+      },
+      {
+        "name": "memory_drawers_body",
+        "kind": "box",
+        "position": [
+          3.7999999999999994,
+          0.0,
+          1.0
+        ],
+        "size": [
+          0.22,
+          2.0,
+          1.0
+        ],
+        "rgba": [
+          0.55,
+          0.33,
+          0.14,
+          1.0
+        ],
+        "role": "obstacle",
+        "euler": null,
+        "letter": null
+      },
+      {
+        "name": "memory_drawer_handle_0",
+        "kind": "box",
+        "position": [
+          3.57,
+          0.0,
+          0.4285714285714285
+        ],
+        "size": [
+          0.02,
+          0.8484848484848485,
+          0.07142857142857142
+        ],
+        "rgba": [
+          0.06,
+          0.07,
+          0.08,
+          1.0
+        ],
+        "role": "obstacle",
+        "euler": null,
+        "letter": null
+      },
+      {
+        "name": "memory_drawer_handle_1",
+        "kind": "box",
+        "position": [
+          3.57,
+          0.0,
+          1.0357142857142858
+        ],
+        "size": [
+          0.02,
+          0.8484848484848485,
+          0.07142857142857142
+        ],
+        "rgba": [
+          0.06,
+          0.07,
+          0.08,
+          1.0
+        ],
+        "role": "obstacle",
+        "euler": null,
+        "letter": null
+      },
+      {
+        "name": "memory_drawer_handle_2",
+        "kind": "box",
+        "position": [
+          3.57,
+          0.0,
+          1.6428571428571428
+        ],
+        "size": [
+          0.02,
+          0.8484848484848485,
+          0.07142857142857142
+        ],
+        "rgba": [
+          0.06,
+          0.07,
+          0.08,
+          1.0
+        ],
+        "role": "obstacle",
+        "euler": null,
+        "letter": null
+      }
+    ],
+    "goal_kind": "standoff",
+    "standoff_m": 1.0,
+    "distance_tolerance_m": 0.18,
+    "passage_x": null,
+    "passage_center_y": 0.0,
+    "passage_half_width": 0.65,
+    "finish_x_min": null,
+    "target_jitter_m": 0.0,
+    "unsupported_reason": null,
+    "source": "local_memory_scene_geometry_only_not_a_benchmark_result",
+    "floor_half_size_m": [
+      8.0,
+      6.0
+    ],
+    "offline_only": true
+  },
+  "platform_dimensions_m": [
+    16.0,
+    12.0
+  ],
+  "target_asset_dimensions_unchanged": true,
+  "cabinet_source": "existing _PROPS[drawers] with size/position scaling",
+  "A_B_center_distance_m": 4.6389654018972815,
+  "initial_B_visibility": {
+    "visible_positive_certificate": true,
+    "frustum_surface_samples": 150,
+    "unoccluded_unique_sampled_pixels": 148,
+    "visible_geom_count": 1,
+    "B_projected_u_range": [
+      146.29491924311225,
+      235.3463746451111
+    ],
+    "B_projected_v_range": [
+      183.50731549308995,
+      272.7642742537088
+    ],
+    "occluding_geom_samples": {},
+    "unoccluded_rays": [
+      {
+        "sample_world_xyz_m": [
+          1.72,
+          0.429,
+          0.010000000000000009
+        ],
+        "pixel_uv": [
+          223.96502617109377,
+          270.8038211418451
+        ],
+        "ray_first_hit": "memory_goal_b",
+        "ray_distance_m": 1.5205725895201452
+      },
+      {
+        "sample_world_xyz_m": [
+          1.72,
+          0.429,
+          0.10500000000000001
+        ],
+        "pixel_uv": [
+          223.96502617109377,
+          249.64805770653953
+        ],
+        "ray_first_hit": "memory_goal_b",
+        "ray_distance_m": 1.497753651305848
+      },
+      {
+        "sample_world_xyz_m": [
+          1.72,
+          0.429,
+          0.2
+        ],
+        "pixel_uv": [
+          223.96502617109377,
+          228.49229427123396
+        ],
+        "ray_first_hit": "memory_goal_b",
+        "ray_distance_m": 1.4806893664776553
+      },
+      {
+        "sample_world_xyz_m": [
+          1.72,
+          0.429,
+          0.295
+        ],
+        "pixel_uv": [
+          223.96502617109377,
+          207.3365308359284
+        ],
+        "ray_first_hit": "memory_goal_b",
+        "ray_distance_m": 1.469580212169448
+      },
+      {
+        "sample_world_xyz_m": [
+          1.72,
+          0.429,
+          0.39
+        ],
+        "pixel_uv": [
+          223.96502617109377,
+          186.1807674006228
+        ],
+        "ray_first_hit": "memory_goal_b",
+        "ray_distance_m": 1.4645617091812826
+      },
+      {
+        "sample_world_xyz_m": [
+          1.72,
+          0.5145,
+          0.010000000000000009
+        ],
+        "pixel_uv": [
+          204.92483907931876,
+          270.8038211418451
+        ],
+        "ray_first_hit": "memory_goal_b",
+        "ray_distance_m": 1.5468711161567403
+      }
+    ],
+    "camera_world_xyz_m": [
+      0.32,
+      0.0,
+      0.42000000000000004
+    ]
+  },
+  "continuous_occlusion_proof": {
+    "camera_mount_full_norm_m": 0.3298484500494129,
+    "camera_xy_disk_radius_m": 1.5098484500494127,
+    "camera_x_interval_m": [
+      4.890151549950588,
+      7.909848450049413
+    ],
+    "camera_y_interval_m": [
+      -1.5098484500494127,
+      1.5098484500494127
+    ],
+    "B_x_interval_m": [
+      1.72,
+      1.88
+    ],
+    "B_y_interval_m": [
+      0.42,
+      0.78
+    ],
+    "B_z_interval_m": [
+      0.0,
+      0.4
+    ],
+    "separating_cabinet_plane_x_m": 3.8,
+    "segment_fraction_interval": [
+      0.3184159628397072,
+      0.6561200520626278
+    ],
+    "all_possible_ray_crossing_y_interval_m": [
+      -0.8462122655194023,
+      1.2588682030442488
+    ],
+    "cabinet_body_position_m": [
+      3.7999999999999994,
+      0.0,
+      1.0
+    ],
+    "cabinet_body_half_size_m": [
+      0.22,
+      2.0,
+      1.0
+    ],
+    "grounded_root_height_bound_m": 0.7424209527280858,
+    "grounded_camera_height_bound_m": 1.0722694027774988,
+    "cabinet_height_m": 2.0,
+    "minimum_y_edge_margin_m": 0.7411317969557512,
+    "top_margin_m": 0.9277305972225012,
+    "continuous_domain": "r in [0.82,1.18], all azimuths, heading error in [-0.25,0.25], turn in [-0.6,0.6]; bound actually covers every yaw.",
+    "proof": "All B-to-camera line segments cross x=3.8 strictly inside the solid cabinet Y/Z bounds. Thus every B surface is occluded, regardless of camera frustum. Camera height is bounded by grounded robot kinematics; if a camera were below z=0, the finite ground platform blocks the ray instead.",
+    "scope": "Physically grounded planar locomotion stops on the flat platform; no airborne/teleported poses or new height-control capabilities.",
+    "passed": true
+  },
+  "supplementary_ray_sweep": {
+    "view_count": 1944,
+    "B_visible_view_count": 0,
+    "frustum_ray_first_hits": {
+      "memory_drawers_body": 29474
+    }
+  },
+  "history_window": {
+    "start_to_A_center_m": 6.4,
+    "minimum_net_travel_to_A_region_m": 5.220000000000001,
+    "tool_requested_translation_limit_m": 0.6,
+    "successful_position_error_limit_m": 0.1,
+    "maximum_net_translation_per_successful_motion_m": 0.7,
+    "minimum_successful_motion_decisions": 8,
+    "request_length_only_lower_bound": 9,
+    "passed": true,
+    "scope": "Normal successful bounded motions; not a bound for uncontrolled failed actions. Actual physical probe call count is reported separately."
+  },
+  "reachability_geometry": {
+    "paths_in_initial_local_coordinates_m": {
+      "to_A": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -2.8
+        ],
+        [
+          5.4,
+          -2.8
+        ],
+        [
+          5.4,
+          0.0
+        ]
+      ],
+      "to_B": [
+        [
+          5.4,
+          0.0
+        ],
+        [
+          5.4,
+          -2.8
+        ],
+        [
+          0.8,
+          -2.8
+        ],
+        [
+          0.8,
+          0.6
+        ]
+      ]
+    },
+    "static_pose_samples": 224,
+    "environment_contact_failures": [],
+    "platform_clearance_failures": [],
+    "passed": true,
+    "cabinet_lower_route_lateral_gap_m": 0.8,
+    "note": "Static geometric clearance is preliminary; dynamic movement is checked separately."
+  },
+  "original_catalog": {
+    "original_catalog_entries_unchanged": 16,
+    "original_supported_scenes_unchanged": 14,
+    "demo_excluded_from_default_catalog_and_suite": true
+  },
+  "api_calls": 0,
+  "key_reads": 0,
+  "sequential_task_implemented": false
+}

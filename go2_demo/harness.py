@@ -179,9 +179,15 @@ class Harness:
                 self.refresh()
                 result = self._result(call, image_id=self.frame.frame_id)
             elif call.name in {"move_relative", "turn", "stop"}:
-                data = getattr(self.backend, call.name)(**call.arguments)
+                data = None
+                if call.name == "move_relative":
+                    from .experimental_boundary_gate import experimental_boundary_gate
+                    data = experimental_boundary_gate(getattr(self.backend, "scenario", None),
+                                                       self.frame.base_xy_yaw, **call.arguments)
+                if data is None:
+                    data = getattr(self.backend, call.name)(**call.arguments)
+                    self.refresh()
                 result = {**self._result(call), **data}
-                self.refresh()
             else:
                 stopped = self.backend.stop()
                 self.refresh()

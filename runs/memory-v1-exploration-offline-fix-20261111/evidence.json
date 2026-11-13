@@ -1,0 +1,2809 @@
+{
+  "replay_source": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-gate-rerun-20261111-s0/H2/20261111-083939-api-memory_ab_occluded_v1-s0-76696f",
+  "source": "saved adapter observations and public tool feedback only",
+  "archived_original_gate_accepts_target_free_exploration": true,
+  "before": {
+    "B_relocations": [
+      {
+        "evidence_id": "e000035",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 6,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7393738185676924,
+            0.382003556520252
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            2.4023327436808373,
+            1.0034175641810097
+          ]
+        },
+        "evidence_ids": [
+          "e000034"
+        ]
+      },
+      {
+        "evidence_id": "e000100",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 20,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7393738185676924,
+            0.382003556520252
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7289053975452315,
+            0.38859899143529847
+          ]
+        },
+        "evidence_ids": [
+          "e000099"
+        ]
+      },
+      {
+        "evidence_id": "e000323",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 66,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7315112103171602,
+            0.3821811098989973
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            2.8030046064675997,
+            0.414336577286907
+          ]
+        },
+        "evidence_ids": [
+          "e000322"
+        ]
+      },
+      {
+        "evidence_id": "e000381",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 78,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7315112103171602,
+            0.3821811098989973
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7479145956059345,
+            0.3818201308927221
+          ]
+        },
+        "evidence_ids": [
+          "e000380"
+        ]
+      },
+      {
+        "evidence_id": "e000397",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 80,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7315112103171602,
+            0.3821811098989973
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            3.5644271928668174,
+            0.6707092282798046
+          ]
+        },
+        "evidence_ids": [
+          "e000396"
+        ]
+      },
+      {
+        "evidence_id": "e000412",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 82,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7315112103171602,
+            0.3821811098989973
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7339286944445838,
+            0.6625421118502557
+          ]
+        },
+        "evidence_ids": [
+          "e000411"
+        ]
+      }
+    ],
+    "candidate_rejections": [],
+    "search_stalls": [],
+    "replan_reasons": {
+      "positive_position_contradiction": 6,
+      "verification_expired": 24
+    },
+    "skill_stuck_count": 0
+  },
+  "after": {
+    "B_relocations": [
+      {
+        "evidence_id": "e000035",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 6,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7393738185676924,
+            0.382003556520252
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            2.4023327436808373,
+            1.0034175641810097
+          ]
+        },
+        "evidence_ids": [
+          "e000034"
+        ]
+      },
+      {
+        "evidence_id": "e000324",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 66,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7315112103171602,
+            0.3821811098989973
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            2.8030046064675997,
+            0.414336577286907
+          ]
+        },
+        "evidence_ids": [
+          "e000323"
+        ]
+      },
+      {
+        "evidence_id": "e000398",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 80,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7479145956059345,
+            0.3818201308927221
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            3.5644271928668174,
+            0.6707092282798046
+          ]
+        },
+        "evidence_ids": [
+          "e000397"
+        ]
+      }
+    ],
+    "candidate_rejections": [
+      {
+        "evidence_id": "e000101",
+        "kind": "relocation_candidate_rejected",
+        "source": "memory_rules",
+        "step": 20,
+        "object_id": "task:B",
+        "rejected_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            2.4023327436808373,
+            1.0034175641810097
+          ]
+        },
+        "supporting_observation": "e000100"
+      },
+      {
+        "evidence_id": "e000382",
+        "kind": "relocation_candidate_rejected",
+        "source": "memory_rules",
+        "step": 78,
+        "object_id": "task:B",
+        "rejected_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            2.8030046064675997,
+            0.414336577286907
+          ]
+        },
+        "supporting_observation": "e000381"
+      },
+      {
+        "evidence_id": "e000413",
+        "kind": "relocation_candidate_rejected",
+        "source": "memory_rules",
+        "step": 82,
+        "object_id": "task:B",
+        "rejected_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            3.5644271928668174,
+            0.6707092282798046
+          ]
+        },
+        "supporting_observation": "e000412"
+      }
+    ],
+    "search_stalls": [
+      {
+        "evidence_id": "e000058",
+        "kind": "search_stalled",
+        "source": "memory_verifier",
+        "step": 10,
+        "reason": "repeated_turns_without_search_progress",
+        "turn_count": 6,
+        "action_evidence_ids": [
+          "e000016",
+          "e000020",
+          "e000032",
+          "e000045",
+          "e000049",
+          "e000057"
+        ]
+      }
+    ],
+    "replan_reasons": {
+      "positive_position_contradiction": 3,
+      "search_stalled": 1,
+      "verification_expired": 24
+    },
+    "skill_stuck_count": 1
+  },
+  "progress_snapshots": [
+    {
+      "step": 0,
+      "exploration": {
+        "successful_turns_without_search_progress": 0,
+        "turn_limit": 6,
+        "stalled": false,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 1,
+      "exploration": {
+        "successful_turns_without_search_progress": 0,
+        "turn_limit": 6,
+        "stalled": false,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 2,
+      "exploration": {
+        "successful_turns_without_search_progress": 1,
+        "turn_limit": 6,
+        "stalled": false,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000016"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 3,
+      "exploration": {
+        "successful_turns_without_search_progress": 2,
+        "turn_limit": 6,
+        "stalled": false,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000016",
+          "e000020"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 4,
+      "exploration": {
+        "successful_turns_without_search_progress": 2,
+        "turn_limit": 6,
+        "stalled": false,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000016",
+          "e000020"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 5,
+      "exploration": {
+        "successful_turns_without_search_progress": 3,
+        "turn_limit": 6,
+        "stalled": false,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000016",
+          "e000020",
+          "e000032"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 6,
+      "exploration": {
+        "successful_turns_without_search_progress": 3,
+        "turn_limit": 6,
+        "stalled": false,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000016",
+          "e000020",
+          "e000032"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 7,
+      "exploration": {
+        "successful_turns_without_search_progress": 4,
+        "turn_limit": 6,
+        "stalled": false,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000016",
+          "e000020",
+          "e000032",
+          "e000045"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 8,
+      "exploration": {
+        "successful_turns_without_search_progress": 5,
+        "turn_limit": 6,
+        "stalled": false,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000016",
+          "e000020",
+          "e000032",
+          "e000045",
+          "e000049"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 9,
+      "exploration": {
+        "successful_turns_without_search_progress": 5,
+        "turn_limit": 6,
+        "stalled": false,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000016",
+          "e000020",
+          "e000032",
+          "e000045",
+          "e000049"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 10,
+      "exploration": {
+        "successful_turns_without_search_progress": 6,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000016",
+          "e000020",
+          "e000032",
+          "e000045",
+          "e000049",
+          "e000057"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 11,
+      "exploration": {
+        "successful_turns_without_search_progress": 7,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000020",
+          "e000032",
+          "e000045",
+          "e000049",
+          "e000057",
+          "e000063"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 12,
+      "exploration": {
+        "successful_turns_without_search_progress": 8,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000032",
+          "e000045",
+          "e000049",
+          "e000057",
+          "e000063",
+          "e000067"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 13,
+      "exploration": {
+        "successful_turns_without_search_progress": 9,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000045",
+          "e000049",
+          "e000057",
+          "e000063",
+          "e000067",
+          "e000071"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 14,
+      "exploration": {
+        "successful_turns_without_search_progress": 10,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000049",
+          "e000057",
+          "e000063",
+          "e000067",
+          "e000071",
+          "e000076"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 15,
+      "exploration": {
+        "successful_turns_without_search_progress": 10,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000049",
+          "e000057",
+          "e000063",
+          "e000067",
+          "e000071",
+          "e000076"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 16,
+      "exploration": {
+        "successful_turns_without_search_progress": 11,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000057",
+          "e000063",
+          "e000067",
+          "e000071",
+          "e000076",
+          "e000086"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 17,
+      "exploration": {
+        "successful_turns_without_search_progress": 11,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000057",
+          "e000063",
+          "e000067",
+          "e000071",
+          "e000076",
+          "e000086"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 18,
+      "exploration": {
+        "successful_turns_without_search_progress": 12,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000063",
+          "e000067",
+          "e000071",
+          "e000076",
+          "e000086",
+          "e000094"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 19,
+      "exploration": {
+        "successful_turns_without_search_progress": 13,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000067",
+          "e000071",
+          "e000076",
+          "e000086",
+          "e000094",
+          "e000098"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 20,
+      "exploration": {
+        "successful_turns_without_search_progress": 13,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000067",
+          "e000071",
+          "e000076",
+          "e000086",
+          "e000094",
+          "e000098"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 21,
+      "exploration": {
+        "successful_turns_without_search_progress": 14,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000071",
+          "e000076",
+          "e000086",
+          "e000094",
+          "e000098",
+          "e000111"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 22,
+      "exploration": {
+        "successful_turns_without_search_progress": 15,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000076",
+          "e000086",
+          "e000094",
+          "e000098",
+          "e000111",
+          "e000115"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 23,
+      "exploration": {
+        "successful_turns_without_search_progress": 15,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000076",
+          "e000086",
+          "e000094",
+          "e000098",
+          "e000111",
+          "e000115"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 24,
+      "exploration": {
+        "successful_turns_without_search_progress": 16,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000086",
+          "e000094",
+          "e000098",
+          "e000111",
+          "e000115",
+          "e000127"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 25,
+      "exploration": {
+        "successful_turns_without_search_progress": 17,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000094",
+          "e000098",
+          "e000111",
+          "e000115",
+          "e000127",
+          "e000131"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 26,
+      "exploration": {
+        "successful_turns_without_search_progress": 17,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000094",
+          "e000098",
+          "e000111",
+          "e000115",
+          "e000127",
+          "e000131"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 27,
+      "exploration": {
+        "successful_turns_without_search_progress": 18,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000098",
+          "e000111",
+          "e000115",
+          "e000127",
+          "e000131",
+          "e000139"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 28,
+      "exploration": {
+        "successful_turns_without_search_progress": 18,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000098",
+          "e000111",
+          "e000115",
+          "e000127",
+          "e000131",
+          "e000139"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 29,
+      "exploration": {
+        "successful_turns_without_search_progress": 19,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000111",
+          "e000115",
+          "e000127",
+          "e000131",
+          "e000139",
+          "e000147"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 30,
+      "exploration": {
+        "successful_turns_without_search_progress": 20,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000115",
+          "e000127",
+          "e000131",
+          "e000139",
+          "e000147",
+          "e000152"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 31,
+      "exploration": {
+        "successful_turns_without_search_progress": 21,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000127",
+          "e000131",
+          "e000139",
+          "e000147",
+          "e000152",
+          "e000156"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 32,
+      "exploration": {
+        "successful_turns_without_search_progress": 22,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000131",
+          "e000139",
+          "e000147",
+          "e000152",
+          "e000156",
+          "e000160"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 33,
+      "exploration": {
+        "successful_turns_without_search_progress": 22,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000131",
+          "e000139",
+          "e000147",
+          "e000152",
+          "e000156",
+          "e000160"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 34,
+      "exploration": {
+        "successful_turns_without_search_progress": 23,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000139",
+          "e000147",
+          "e000152",
+          "e000156",
+          "e000160",
+          "e000170"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 35,
+      "exploration": {
+        "successful_turns_without_search_progress": 23,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000139",
+          "e000147",
+          "e000152",
+          "e000156",
+          "e000160",
+          "e000170"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 36,
+      "exploration": {
+        "successful_turns_without_search_progress": 24,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000147",
+          "e000152",
+          "e000156",
+          "e000160",
+          "e000170",
+          "e000179"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 37,
+      "exploration": {
+        "successful_turns_without_search_progress": 24,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000147",
+          "e000152",
+          "e000156",
+          "e000160",
+          "e000170",
+          "e000179"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 38,
+      "exploration": {
+        "successful_turns_without_search_progress": 25,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000152",
+          "e000156",
+          "e000160",
+          "e000170",
+          "e000179",
+          "e000187"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 39,
+      "exploration": {
+        "successful_turns_without_search_progress": 25,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000152",
+          "e000156",
+          "e000160",
+          "e000170",
+          "e000179",
+          "e000187"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 40,
+      "exploration": {
+        "successful_turns_without_search_progress": 26,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000156",
+          "e000160",
+          "e000170",
+          "e000179",
+          "e000187",
+          "e000199"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 41,
+      "exploration": {
+        "successful_turns_without_search_progress": 26,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000156",
+          "e000160",
+          "e000170",
+          "e000179",
+          "e000187",
+          "e000199"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 42,
+      "exploration": {
+        "successful_turns_without_search_progress": 27,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000160",
+          "e000170",
+          "e000179",
+          "e000187",
+          "e000199",
+          "e000211"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 43,
+      "exploration": {
+        "successful_turns_without_search_progress": 28,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000170",
+          "e000179",
+          "e000187",
+          "e000199",
+          "e000211",
+          "e000215"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 44,
+      "exploration": {
+        "successful_turns_without_search_progress": 29,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000179",
+          "e000187",
+          "e000199",
+          "e000211",
+          "e000215",
+          "e000220"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 45,
+      "exploration": {
+        "successful_turns_without_search_progress": 30,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000187",
+          "e000199",
+          "e000211",
+          "e000215",
+          "e000220",
+          "e000224"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 46,
+      "exploration": {
+        "successful_turns_without_search_progress": 30,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000187",
+          "e000199",
+          "e000211",
+          "e000215",
+          "e000220",
+          "e000224"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 47,
+      "exploration": {
+        "successful_turns_without_search_progress": 31,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000199",
+          "e000211",
+          "e000215",
+          "e000220",
+          "e000224",
+          "e000236"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 48,
+      "exploration": {
+        "successful_turns_without_search_progress": 32,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000211",
+          "e000215",
+          "e000220",
+          "e000224",
+          "e000236",
+          "e000240"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 49,
+      "exploration": {
+        "successful_turns_without_search_progress": 33,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000215",
+          "e000220",
+          "e000224",
+          "e000236",
+          "e000240",
+          "e000245"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 50,
+      "exploration": {
+        "successful_turns_without_search_progress": 34,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000220",
+          "e000224",
+          "e000236",
+          "e000240",
+          "e000245",
+          "e000249"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 51,
+      "exploration": {
+        "successful_turns_without_search_progress": 35,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000224",
+          "e000236",
+          "e000240",
+          "e000245",
+          "e000249",
+          "e000254"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 52,
+      "exploration": {
+        "successful_turns_without_search_progress": 36,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000236",
+          "e000240",
+          "e000245",
+          "e000249",
+          "e000254",
+          "e000258"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 53,
+      "exploration": {
+        "successful_turns_without_search_progress": 36,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000236",
+          "e000240",
+          "e000245",
+          "e000249",
+          "e000254",
+          "e000258"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 54,
+      "exploration": {
+        "successful_turns_without_search_progress": 37,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000240",
+          "e000245",
+          "e000249",
+          "e000254",
+          "e000258",
+          "e000266"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 55,
+      "exploration": {
+        "successful_turns_without_search_progress": 38,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000245",
+          "e000249",
+          "e000254",
+          "e000258",
+          "e000266",
+          "e000270"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 56,
+      "exploration": {
+        "successful_turns_without_search_progress": 39,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000249",
+          "e000254",
+          "e000258",
+          "e000266",
+          "e000270",
+          "e000276"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 57,
+      "exploration": {
+        "successful_turns_without_search_progress": 40,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000254",
+          "e000258",
+          "e000266",
+          "e000270",
+          "e000276",
+          "e000280"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 58,
+      "exploration": {
+        "successful_turns_without_search_progress": 40,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000254",
+          "e000258",
+          "e000266",
+          "e000270",
+          "e000276",
+          "e000280"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 59,
+      "exploration": {
+        "successful_turns_without_search_progress": 41,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000258",
+          "e000266",
+          "e000270",
+          "e000276",
+          "e000280",
+          "e000292"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 60,
+      "exploration": {
+        "successful_turns_without_search_progress": 41,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000258",
+          "e000266",
+          "e000270",
+          "e000276",
+          "e000280",
+          "e000292"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 61,
+      "exploration": {
+        "successful_turns_without_search_progress": 42,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000266",
+          "e000270",
+          "e000276",
+          "e000280",
+          "e000292",
+          "e000304"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 62,
+      "exploration": {
+        "successful_turns_without_search_progress": 43,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000270",
+          "e000276",
+          "e000280",
+          "e000292",
+          "e000304",
+          "e000308"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 63,
+      "exploration": {
+        "successful_turns_without_search_progress": 44,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000276",
+          "e000280",
+          "e000292",
+          "e000304",
+          "e000308",
+          "e000313"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 64,
+      "exploration": {
+        "successful_turns_without_search_progress": 45,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000280",
+          "e000292",
+          "e000304",
+          "e000308",
+          "e000313",
+          "e000317"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 65,
+      "exploration": {
+        "successful_turns_without_search_progress": 46,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000292",
+          "e000304",
+          "e000308",
+          "e000313",
+          "e000317",
+          "e000321"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 66,
+      "exploration": {
+        "successful_turns_without_search_progress": 46,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000292",
+          "e000304",
+          "e000308",
+          "e000313",
+          "e000317",
+          "e000321"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 67,
+      "exploration": {
+        "successful_turns_without_search_progress": 47,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000304",
+          "e000308",
+          "e000313",
+          "e000317",
+          "e000321",
+          "e000335"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 68,
+      "exploration": {
+        "successful_turns_without_search_progress": 48,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000308",
+          "e000313",
+          "e000317",
+          "e000321",
+          "e000335",
+          "e000340"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 69,
+      "exploration": {
+        "successful_turns_without_search_progress": 49,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000313",
+          "e000317",
+          "e000321",
+          "e000335",
+          "e000340",
+          "e000344"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 70,
+      "exploration": {
+        "successful_turns_without_search_progress": 50,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000317",
+          "e000321",
+          "e000335",
+          "e000340",
+          "e000344",
+          "e000349"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 71,
+      "exploration": {
+        "successful_turns_without_search_progress": 51,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000321",
+          "e000335",
+          "e000340",
+          "e000344",
+          "e000349",
+          "e000353"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 72,
+      "exploration": {
+        "successful_turns_without_search_progress": 52,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000335",
+          "e000340",
+          "e000344",
+          "e000349",
+          "e000353",
+          "e000357"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 73,
+      "exploration": {
+        "successful_turns_without_search_progress": 53,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000340",
+          "e000344",
+          "e000349",
+          "e000353",
+          "e000357",
+          "e000361"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 74,
+      "exploration": {
+        "successful_turns_without_search_progress": 54,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000344",
+          "e000349",
+          "e000353",
+          "e000357",
+          "e000361",
+          "e000365"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 75,
+      "exploration": {
+        "successful_turns_without_search_progress": 55,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000349",
+          "e000353",
+          "e000357",
+          "e000361",
+          "e000365",
+          "e000369"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 76,
+      "exploration": {
+        "successful_turns_without_search_progress": 56,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000353",
+          "e000357",
+          "e000361",
+          "e000365",
+          "e000369",
+          "e000375"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 77,
+      "exploration": {
+        "successful_turns_without_search_progress": 57,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000357",
+          "e000361",
+          "e000365",
+          "e000369",
+          "e000375",
+          "e000379"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 78,
+      "exploration": {
+        "successful_turns_without_search_progress": 57,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000357",
+          "e000361",
+          "e000365",
+          "e000369",
+          "e000375",
+          "e000379"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 79,
+      "exploration": {
+        "successful_turns_without_search_progress": 58,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000361",
+          "e000365",
+          "e000369",
+          "e000375",
+          "e000379",
+          "e000395"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 80,
+      "exploration": {
+        "successful_turns_without_search_progress": 58,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000361",
+          "e000365",
+          "e000369",
+          "e000375",
+          "e000379",
+          "e000395"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 81,
+      "exploration": {
+        "successful_turns_without_search_progress": 59,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000365",
+          "e000369",
+          "e000375",
+          "e000379",
+          "e000395",
+          "e000410"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 82,
+      "exploration": {
+        "successful_turns_without_search_progress": 59,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000365",
+          "e000369",
+          "e000375",
+          "e000379",
+          "e000395",
+          "e000410"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 83,
+      "exploration": {
+        "successful_turns_without_search_progress": 60,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000369",
+          "e000375",
+          "e000379",
+          "e000395",
+          "e000410",
+          "e000423"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 84,
+      "exploration": {
+        "successful_turns_without_search_progress": 61,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000375",
+          "e000379",
+          "e000395",
+          "e000410",
+          "e000423",
+          "e000427"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 85,
+      "exploration": {
+        "successful_turns_without_search_progress": 62,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000379",
+          "e000395",
+          "e000410",
+          "e000423",
+          "e000427",
+          "e000431"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 86,
+      "exploration": {
+        "successful_turns_without_search_progress": 63,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000395",
+          "e000410",
+          "e000423",
+          "e000427",
+          "e000431",
+          "e000435"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 87,
+      "exploration": {
+        "successful_turns_without_search_progress": 64,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000410",
+          "e000423",
+          "e000427",
+          "e000431",
+          "e000435",
+          "e000439"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 88,
+      "exploration": {
+        "successful_turns_without_search_progress": 65,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000423",
+          "e000427",
+          "e000431",
+          "e000435",
+          "e000439",
+          "e000443"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 89,
+      "exploration": {
+        "successful_turns_without_search_progress": 66,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000427",
+          "e000431",
+          "e000435",
+          "e000439",
+          "e000443",
+          "e000448"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 90,
+      "exploration": {
+        "successful_turns_without_search_progress": 67,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000431",
+          "e000435",
+          "e000439",
+          "e000443",
+          "e000448",
+          "e000453"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 91,
+      "exploration": {
+        "successful_turns_without_search_progress": 68,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000435",
+          "e000439",
+          "e000443",
+          "e000448",
+          "e000453",
+          "e000457"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 92,
+      "exploration": {
+        "successful_turns_without_search_progress": 69,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000439",
+          "e000443",
+          "e000448",
+          "e000453",
+          "e000457",
+          "e000463"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 93,
+      "exploration": {
+        "successful_turns_without_search_progress": 70,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000443",
+          "e000448",
+          "e000453",
+          "e000457",
+          "e000463",
+          "e000467"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 94,
+      "exploration": {
+        "successful_turns_without_search_progress": 71,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000448",
+          "e000453",
+          "e000457",
+          "e000463",
+          "e000467",
+          "e000471"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 95,
+      "exploration": {
+        "successful_turns_without_search_progress": 71,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000448",
+          "e000453",
+          "e000457",
+          "e000463",
+          "e000467",
+          "e000471"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 96,
+      "exploration": {
+        "successful_turns_without_search_progress": 72,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000453",
+          "e000457",
+          "e000463",
+          "e000467",
+          "e000471",
+          "e000483"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 97,
+      "exploration": {
+        "successful_turns_without_search_progress": 73,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000457",
+          "e000463",
+          "e000467",
+          "e000471",
+          "e000483",
+          "e000487"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 98,
+      "exploration": {
+        "successful_turns_without_search_progress": 73,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000457",
+          "e000463",
+          "e000467",
+          "e000471",
+          "e000483",
+          "e000487"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 99,
+      "exploration": {
+        "successful_turns_without_search_progress": 74,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000463",
+          "e000467",
+          "e000471",
+          "e000483",
+          "e000487",
+          "e000499"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 100,
+      "exploration": {
+        "successful_turns_without_search_progress": 74,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000463",
+          "e000467",
+          "e000471",
+          "e000483",
+          "e000487",
+          "e000499"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 101,
+      "exploration": {
+        "successful_turns_without_search_progress": 75,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000467",
+          "e000471",
+          "e000483",
+          "e000487",
+          "e000499",
+          "e000511"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 102,
+      "exploration": {
+        "successful_turns_without_search_progress": 76,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000471",
+          "e000483",
+          "e000487",
+          "e000499",
+          "e000511",
+          "e000515"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 103,
+      "exploration": {
+        "successful_turns_without_search_progress": 77,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000483",
+          "e000487",
+          "e000499",
+          "e000511",
+          "e000515",
+          "e000521"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 104,
+      "exploration": {
+        "successful_turns_without_search_progress": 77,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000483",
+          "e000487",
+          "e000499",
+          "e000511",
+          "e000515",
+          "e000521"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 105,
+      "exploration": {
+        "successful_turns_without_search_progress": 77,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000483",
+          "e000487",
+          "e000499",
+          "e000511",
+          "e000515",
+          "e000521"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 106,
+      "exploration": {
+        "successful_turns_without_search_progress": 78,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000487",
+          "e000499",
+          "e000511",
+          "e000515",
+          "e000521",
+          "e000540"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 107,
+      "exploration": {
+        "successful_turns_without_search_progress": 79,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000499",
+          "e000511",
+          "e000515",
+          "e000521",
+          "e000540",
+          "e000544"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 108,
+      "exploration": {
+        "successful_turns_without_search_progress": 79,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000499",
+          "e000511",
+          "e000515",
+          "e000521",
+          "e000540",
+          "e000544"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 109,
+      "exploration": {
+        "successful_turns_without_search_progress": 80,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000511",
+          "e000515",
+          "e000521",
+          "e000540",
+          "e000544",
+          "e000553"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 110,
+      "exploration": {
+        "successful_turns_without_search_progress": 81,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000515",
+          "e000521",
+          "e000540",
+          "e000544",
+          "e000553",
+          "e000558"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 111,
+      "exploration": {
+        "successful_turns_without_search_progress": 82,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000521",
+          "e000540",
+          "e000544",
+          "e000553",
+          "e000558",
+          "e000562"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 112,
+      "exploration": {
+        "successful_turns_without_search_progress": 83,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000540",
+          "e000544",
+          "e000553",
+          "e000558",
+          "e000562",
+          "e000566"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 113,
+      "exploration": {
+        "successful_turns_without_search_progress": 84,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000544",
+          "e000553",
+          "e000558",
+          "e000562",
+          "e000566",
+          "e000570"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 114,
+      "exploration": {
+        "successful_turns_without_search_progress": 85,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000553",
+          "e000558",
+          "e000562",
+          "e000566",
+          "e000570",
+          "e000576"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 115,
+      "exploration": {
+        "successful_turns_without_search_progress": 86,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000558",
+          "e000562",
+          "e000566",
+          "e000570",
+          "e000576",
+          "e000580"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 116,
+      "exploration": {
+        "successful_turns_without_search_progress": 87,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000562",
+          "e000566",
+          "e000570",
+          "e000576",
+          "e000580",
+          "e000584"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 117,
+      "exploration": {
+        "successful_turns_without_search_progress": 88,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000566",
+          "e000570",
+          "e000576",
+          "e000580",
+          "e000584",
+          "e000588"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 118,
+      "exploration": {
+        "successful_turns_without_search_progress": 88,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000566",
+          "e000570",
+          "e000576",
+          "e000580",
+          "e000584",
+          "e000588"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 119,
+      "exploration": {
+        "successful_turns_without_search_progress": 89,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000570",
+          "e000576",
+          "e000580",
+          "e000584",
+          "e000588",
+          "e000600"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    },
+    {
+      "step": 120,
+      "exploration": {
+        "successful_turns_without_search_progress": 89,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000570",
+          "e000576",
+          "e000580",
+          "e000584",
+          "e000588",
+          "e000600"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      }
+    }
+  ],
+  "unchanged_contract_hashes": {
+    "go2_demo/scenarios.py": true,
+    "go2_demo/backend.py": true,
+    "go2_demo/harness.py": true,
+    "go2_demo/ordered_evaluation.py": true,
+    "go2_demo/runner.py": true,
+    "go2_demo/models.py": true,
+    "go2_demo/__main__.py": true,
+    "go2_demo/memory_perception.py": true
+  },
+  "changed_product_files": [
+    "go2_demo/memory.py",
+    "go2_demo/memory_context.py",
+    "go2_demo/memory_planning.py"
+  ],
+  "after_hashes": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "8203bb136d92c30033f7ab8366537ffc4b2e7cff088ef043377bc15bb98aa67d",
+    "go2_demo/backend.py": "fc2f0ebd74ffec9eaea12f17e9c8d66cac8ad5253fceb9301d1aa9feea1755b8",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "162498c86f9f829650f7234193aa37c02fed5d9cecb002f1e9e7dcba9d4da652",
+    "go2_demo/memory_context.py": "4b7126bedad486994a749b649b34d32011019d10eeef1dca19189f256eb55854",
+    "go2_demo/memory_perception.py": "ad690d04999235db828e413e2e70d930232548b82abd136ca655965a63c7b989",
+    "go2_demo/memory_planning.py": "d3b55cd538b34b3b61a5b0d092bf084c0003821ede5d11441d3894769852522c",
+    "go2_demo/memory_protocol.py": "0a7ac4322ba5af2d36609134ce0a0839802518090de638489d3ff4fca145c931",
+    "go2_demo/models.py": "875ae500f08f2c4192bdf5ca58beac88e5c9c31c07391a1b1fc2a073128d2c39",
+    "go2_demo/ordered_evaluation.py": "ff57acbbebd7d4109e809fde17969152ae2a8dc5ebd55116d3716e1116da14ef",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "9dfa0f10c0ff535eda673349c634575d04695db4debcdb657102e9a92e557fbe",
+    "go2_demo/scenarios.py": "5ae3159d9fef9bf13e1b7abe4243ff47999e940065994ea98932731ebaefb4b7",
+    "go2_demo/types.py": "5aeacfff31e2f9eae78796cd27bdc4d38700897f916c40680aafe8d6a75b941b"
+  },
+  "final_prompt_state": {
+    "world": {
+      "step": 120,
+      "revision": 125,
+      "decision_step": 120,
+      "snapshot_lag_steps": 0,
+      "active_plan_id": "plan-0004",
+      "active_plan": {
+        "plan_id": "plan-0004",
+        "branches": [
+          {
+            "on": "skill_stuck",
+            "subgoal_id": "scan_A"
+          }
+        ],
+        "recovery": "stop, observe current view, then resume conservative scanning or abort if no target visible"
+      },
+      "exploration": {
+        "successful_turns_without_search_progress": 89,
+        "turn_limit": 6,
+        "stalled": true,
+        "progress_basis": "successful_translation_tool_or_first_task_observation_not_motion_gt",
+        "evidence_ids": [
+          "e000570",
+          "e000576",
+          "e000580",
+          "e000584",
+          "e000588",
+          "e000600"
+        ],
+        "recovery": "change_viewpoint_with_translation; inspect_geometry_or_abort_if_motion_unsupported"
+      },
+      "task_targets": [],
+      "completion_requirements": {
+        "goal_kind": "ordered_standoff",
+        "reference_body": "base",
+        "stop_required": true,
+        "collision_free_required": true,
+        "max_stopped_speed_mps": 0.12,
+        "max_stopped_yaw_rate_radps": 0.25,
+        "standoff_m": 1.0,
+        "distance_tolerance_m": 0.18,
+        "heading_tolerance_rad": 0.25
+      },
+      "current_observation": {
+        "image_id": "frame-00100",
+        "image_size": {
+          "width": 640,
+          "height": 360
+        },
+        "sensor_calibration": {
+          "camera_frame": "front_rgbd_optical",
+          "body_frame": "base",
+          "optical_axes": "x right, y down, z forward",
+          "body_axes": "x forward, y left, z up",
+          "camera_position_in_body_m": [
+            0.32,
+            0.0,
+            0.08
+          ],
+          "camera_optical_to_body_rotation": [
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          ]
+        },
+        "source": "current_public_rgbd_and_tool_geometry",
+        "target_candidates": [
+          {
+            "object_id": "task:B",
+            "task_label": "B",
+            "description": "绿方块",
+            "image_id": "frame-00100",
+            "pixel_uv": [
+              317,
+              183
+            ],
+            "camera_xyz_m": [
+              -0.012096744867433333,
+              0.016935442814406666,
+              1.5085567235946655
+            ],
+            "coordinate_frame": "current_camera_optical",
+            "status": "candidate_not_confirmed",
+            "source": "task_label_color_rgbd_v1"
+          }
+        ],
+        "tracked_points": [
+          {
+            "point_id": "point-020",
+            "image_id": "frame-00100",
+            "valid": true,
+            "pixel_uv": [
+              317.0,
+              183.0
+            ],
+            "relative_xy_m": [
+              1.8293,
+              0.0127
+            ],
+            "range_m": 1.8294,
+            "bearing_rad": 0.007,
+            "confidence": 1.0,
+            "source": "rgbd_optical_flow"
+          }
+        ],
+        "visual_candidates": []
+      },
+      "last_tool_feedback": [],
+      "measurements": {
+        "pose.x_m": {
+          "value": -0.08491613033242727,
+          "source": "simulated_proprioception",
+          "step": 120,
+          "evidence_ids": [
+            "e000603"
+          ]
+        },
+        "pose.y_m": {
+          "value": 0.14496089750037075,
+          "source": "simulated_proprioception",
+          "step": 120,
+          "evidence_ids": [
+            "e000604"
+          ]
+        },
+        "pose.yaw_rad": {
+          "value": 0.12384347185088797,
+          "source": "simulated_proprioception",
+          "step": 120,
+          "evidence_ids": [
+            "e000605"
+          ]
+        },
+        "point-020.range_m": {
+          "value": 1.8294,
+          "source": "rgbd_optical_flow",
+          "step": 120,
+          "evidence_ids": [
+            "e000606"
+          ]
+        },
+        "point-020.bearing_rad": {
+          "value": 0.007,
+          "source": "rgbd_optical_flow",
+          "step": 120,
+          "evidence_ids": [
+            "e000607"
+          ]
+        }
+      },
+      "context_limits": {
+        "state_char_limit": 12000,
+        "retry": false,
+        "projection": "bounded_prompt_view_full_checks_in_md",
+        "omitted_items": 0
+      }
+    },
+    "pose": null,
+    "objects": [
+      {
+        "object_id": "task:B",
+        "category": "task_target",
+        "state": "confirmed",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7288048201410928,
+            0.38353183834067883
+          ]
+        },
+        "pose_covariance": null,
+        "last_seen": 120,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00100",
+          "position_m": [
+            -0.012096744867433333,
+            0.016935442814406666,
+            1.5085567235946655
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        },
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00100",
+          "pixel_uv": [
+            317.0,
+            183.0
+          ]
+        },
+        "evidence_ids": [
+          "e000590",
+          "e000602"
+        ]
+      }
+    ],
+    "active_beliefs": [
+      {
+        "plan_id": "plan-0004",
+        "subgoal_id": "scan_A",
+        "description": "turn conservatively to search for blue ball A",
+        "status": "进行中",
+        "preconditions": [],
+        "completion": [],
+        "evidence_ids": [
+          "e000521"
+        ]
+      },
+      {
+        "plan_id": "plan-0004",
+        "subgoal_id": "approach_A",
+        "description": "stand 1.0 m from A facing it, then stop",
+        "status": "待做",
+        "preconditions": [
+          {
+            "object_id": "task:A"
+          }
+        ],
+        "completion": [],
+        "evidence_ids": []
+      }
+    ],
+    "invalidated": [
+      {
+        "object_id": "point-015",
+        "state": "stale",
+        "evidence_ids": [
+          "e000472"
+        ]
+      },
+      {
+        "object_id": "point-016",
+        "state": "stale",
+        "evidence_ids": [
+          "e000488"
+        ]
+      },
+      {
+        "object_id": "point-017",
+        "state": "stale",
+        "evidence_ids": [
+          "e000500"
+        ]
+      },
+      {
+        "object_id": "point-018",
+        "state": "stale",
+        "evidence_ids": [
+          "e000522"
+        ]
+      }
+    ],
+    "events": [
+      {
+        "event_id": "event-69",
+        "kind": "target_state_changed",
+        "step": 114,
+        "evidence_ids": [
+          "e000572"
+        ],
+        "object_id": "point-018",
+        "state": "stale"
+      },
+      {
+        "event_id": "event-70",
+        "kind": "replan_required",
+        "step": 114,
+        "evidence_ids": [
+          "e000572"
+        ],
+        "object_id": "point-018",
+        "reason": "verification_expired"
+      },
+      {
+        "event_id": "event-71",
+        "kind": "target_state_changed",
+        "step": 118,
+        "evidence_ids": [
+          "e000590"
+        ],
+        "object_id": "task:B",
+        "state": "unknown"
+      },
+      {
+        "event_id": "event-72",
+        "kind": "target_state_changed",
+        "step": 120,
+        "evidence_ids": [
+          "e000602"
+        ],
+        "object_id": "task:B",
+        "state": "confirmed"
+      }
+    ],
+    "topology": null,
+    "confidence_thresholds": {
+      "confirmed": 0.8,
+      "predicted_after_steps": 3,
+      "unknown_after_steps": 6,
+      "stale_after_steps": 10,
+      "relocation_distance_m": 0.5
+    }
+  }
+}

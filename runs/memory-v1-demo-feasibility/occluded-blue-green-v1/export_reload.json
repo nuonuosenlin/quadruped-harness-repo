@@ -1,0 +1,20 @@
+{
+  "saved_xml_loads_with_existing_mesh_assets": true,
+  "ngeom": 67,
+  "physical_size_equal": true,
+  "other_fields_equal": {
+    "geom_pos": true,
+    "geom_type": true,
+    "geom_contype": true,
+    "geom_conaffinity": true,
+    "cam_pos": true,
+    "cam_fovy": true
+  },
+  "maximum_position_roundtrip_error_m": 4.285714285900966e-06,
+  "position_comparison_tolerance_m": 1e-05,
+  "notes": [
+    "MuJoCo text export rounds some coordinates to a few micrometres.",
+    "Sphere size uses radius only; unused input size entries are omitted by the exporter, with no physical radius change.",
+    "Canonical scene.json and registry retain the original precision; no layout or acceptance standard changed."
+  ]
+}

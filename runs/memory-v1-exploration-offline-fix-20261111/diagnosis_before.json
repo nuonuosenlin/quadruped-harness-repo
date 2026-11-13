@@ -1,0 +1,475 @@
+{
+  "old_episode": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-gate-rerun-20261111-s0/H2/20261111-083939-api-memory_ab_occluded_v1-s0-76696f",
+  "plans": [
+    {
+      "subgoals": [
+        {
+          "subgoal_id": "scan_A",
+          "description": "scan scene to locate blue ball A before approaching B",
+          "preconditions": [],
+          "completion": [],
+          "active": false,
+          "status": "进行中",
+          "evidence_ids": [
+            "e000016"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "on": "skill_stuck",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "recovery": "observe and re-plan a safe scan",
+      "plan_id": "plan-0001",
+      "active": false
+    },
+    {
+      "subgoals": [
+        {
+          "subgoal_id": "scan_A",
+          "description": "rotate conservatively to visually locate blue ball A",
+          "preconditions": [],
+          "completion": [],
+          "active": false,
+          "status": "进行中",
+          "evidence_ids": [
+            "e000178"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "on": "skill_stuck",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "recovery": "observe, then continue safe scan or replan exploration",
+      "plan_id": "plan-0002",
+      "active": false
+    },
+    {
+      "subgoals": [
+        {
+          "subgoal_id": "scan_A",
+          "description": "rotate conservatively to look for blue ball A before approaching B",
+          "preconditions": [],
+          "completion": [],
+          "active": false,
+          "status": "进行中",
+          "evidence_ids": [
+            "e000334"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "on": "skill_stuck",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "recovery": "observe current view, then continue safe scan or abort if no target appears",
+      "plan_id": "plan-0003",
+      "active": false
+    },
+    {
+      "subgoals": [
+        {
+          "subgoal_id": "scan_A",
+          "description": "turn conservatively to search for blue ball A",
+          "preconditions": [],
+          "completion": [],
+          "active": true,
+          "status": "进行中",
+          "evidence_ids": [
+            "e000520"
+          ]
+        },
+        {
+          "subgoal_id": "approach_A",
+          "description": "stand 1.0 m from A facing it, then stop",
+          "preconditions": [
+            {
+              "object_id": "task:A"
+            }
+          ],
+          "completion": [],
+          "active": true,
+          "status": "待做",
+          "evidence_ids": []
+        }
+      ],
+      "branches": [
+        {
+          "on": "skill_stuck",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "recovery": "stop, observe current view, then resume conservative scanning or abort if no target visible",
+      "plan_id": "plan-0004",
+      "active": true
+    }
+  ],
+  "B_relocations": [
+    {
+      "ledger": {
+        "evidence_id": "e000035",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 6,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7393738185676924,
+            0.382003556520252
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            2.4023327436808373,
+            1.0034175641810097
+          ]
+        },
+        "evidence_ids": [
+          "e000034"
+        ]
+      },
+      "pixel_uv": [
+        384.0,
+        235.0
+      ],
+      "point_ids": [
+        "point-003"
+      ],
+      "camera_z_m": 2.222640037536621,
+      "trigger_tool": "track_point",
+      "jump_m": 0.9086638021315588
+    },
+    {
+      "ledger": {
+        "evidence_id": "e000100",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 20,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7393738185676924,
+            0.382003556520252
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7289053975452315,
+            0.38859899143529847
+          ]
+        },
+        "evidence_ids": [
+          "e000099"
+        ]
+      },
+      "pixel_uv": [
+        127.0,
+        282.0
+      ],
+      "point_ids": [
+        "point-004"
+      ],
+      "camera_z_m": 1.2302515506744385,
+      "trigger_tool": "track_point",
+      "jump_m": 0.01237285740732972
+    },
+    {
+      "ledger": {
+        "evidence_id": "e000323",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 66,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7315112103171602,
+            0.3821811098989973
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            2.8030046064675997,
+            0.414336577286907
+          ]
+        },
+        "evidence_ids": [
+          "e000322"
+        ]
+      },
+      "pixel_uv": [
+        552.0,
+        244.0
+      ],
+      "point_ids": [
+        "point-011"
+      ],
+      "camera_z_m": 2.0328361988067627,
+      "trigger_tool": "track_point",
+      "jump_m": 1.071975779613018
+    },
+    {
+      "ledger": {
+        "evidence_id": "e000381",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 78,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7315112103171602,
+            0.3821811098989973
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7479145956059345,
+            0.3818201308927221
+          ]
+        },
+        "evidence_ids": [
+          "e000380"
+        ]
+      },
+      "pixel_uv": [
+        219.0,
+        281.0
+      ],
+      "point_ids": [
+        "point-012"
+      ],
+      "camera_z_m": 1.3705612421035767,
+      "trigger_tool": "track_point",
+      "jump_m": 0.01640735672724133
+    },
+    {
+      "ledger": {
+        "evidence_id": "e000397",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 80,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7315112103171602,
+            0.3821811098989973
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            3.5644271928668174,
+            0.6707092282798046
+          ]
+        },
+        "evidence_ids": [
+          "e000396"
+        ]
+      },
+      "pixel_uv": [
+        386.0,
+        177.0
+      ],
+      "point_ids": [
+        "point-013"
+      ],
+      "camera_z_m": 3.192317247390747,
+      "trigger_tool": "track_point",
+      "jump_m": 1.855486317433342
+    },
+    {
+      "ledger": {
+        "evidence_id": "e000412",
+        "kind": "target_relocated",
+        "source": "task_label_rgbd_tracking",
+        "step": 82,
+        "object_id": "task:B",
+        "old_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7315112103171602,
+            0.3821811098989973
+          ]
+        },
+        "new_pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7339286944445838,
+            0.6625421118502557
+          ]
+        },
+        "evidence_ids": [
+          "e000411"
+        ]
+      },
+      "pixel_uv": [
+        617.0,
+        304.0
+      ],
+      "point_ids": [
+        "point-014"
+      ],
+      "camera_z_m": 1.1164026260375977,
+      "trigger_tool": "track_point",
+      "jump_m": 0.28037142444375435
+    }
+  ],
+  "replan_reason_counts": {
+    "positive_position_contradiction": 6,
+    "verification_expired": 24
+  },
+  "replan_object_counts": {
+    "task:B": 12,
+    "point-001": 1,
+    "point-002": 1,
+    "point-003": 1,
+    "point-004": 1,
+    "point-005": 1,
+    "point-006": 1,
+    "point-007": 1,
+    "point-008": 1,
+    "point-009": 1,
+    "point-010": 1,
+    "point-011": 1,
+    "point-012": 1,
+    "point-013": 1,
+    "point-014": 1,
+    "point-015": 1,
+    "point-016": 1,
+    "point-017": 1,
+    "point-018": 1
+  },
+  "key_precondition_invalidated_count": 0,
+  "replan_in_prompt_decisions": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120
+  ],
+  "baseline_empty_target_move_gate_feedback": null,
+  "baseline_binding": {
+    "plan_id": "plan-0001",
+    "subgoal_id": "explore"
+  }
+}

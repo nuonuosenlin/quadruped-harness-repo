@@ -151,6 +151,11 @@ class MujocoGo2Backend:
         self._fallen_ever = False
         self._collision_steps = 0
         self.trajectory.clear()
+        self._ordered_evaluator = None
+        if scenario is not None and scenario.goal_kind == "ordered_standoff":
+            from .ordered_evaluation import OrderedStandoffEvaluator
+            second = next(item for item in scenario.objects if item.name == "memory_goal_b")
+            self._ordered_evaluator = OrderedStandoffEvaluator(self._target_xy, second.position[:2])
         self._renderer = mujoco.Renderer(self.model, height=self.height, width=self.width)
         if viewer:
             from mujoco import viewer as viewer_module
@@ -188,7 +193,14 @@ class MujocoGo2Backend:
         ET.SubElement(asset, "material", name="floor_material", texture="floor_texture", texrepeat="12 12", texuniform="true", reflectance="0")
         world = root.find("worldbody")
         ET.SubElement(world, "light", pos="0 0 4", dir="0 0 -1", diffuse="0.8 0.8 0.8", directional="true")
-        ET.SubElement(world, "geom", name="floor", type="plane", size="10 10 .1", material="floor_material", friction="1 .005 .0001")
+        floor_size = getattr(self.scenario, "floor_half_size_m", None)
+        if floor_size is None:
+            ET.SubElement(world, "geom", name="floor", type="plane", size="10 10 .1", material="floor_material", friction="1 .005 .0001")
+        else:
+            # New scene only: a finite flat 16x12m platform with top at z=0.
+            ET.SubElement(world, "geom", name="floor", type="box", pos="0 0 -.1",
+                          size=f"{floor_size[0]} {floor_size[1]} .1",
+                          material="floor_material", friction="1 .005 .0001")
         if self.scenario is None:
             target_x, target_y = self._target_xy
             ET.SubElement(world, "geom", name="red_target", type="box", pos=f"{target_x} {target_y} .5", size=".08 .20 .5", rgba=".85 .035 .025 1", friction="1 .005 .0001")
@@ -381,11 +393,26 @@ class MujocoGo2Backend:
         speed = float(np.linalg.norm(self.data.qvel[:2]))
         angular_speed = abs(float(self.data.qvel[5]))
         stopped = speed < 0.12 and angular_speed < 0.25 and not self._fallen_ever
+        evaluator = getattr(self, "_ordered_evaluator", None)
+        if evaluator is not None:
+            evaluator.note_stop(self._ordered_score_sample(bool(stopped)))
         return {"status": "succeeded" if stopped else "failed", "error_code": None if stopped else "STOP_NOT_CONFIRMED", "speed_mps": speed, "yaw_rate_radps": angular_speed}
+
+    def _ordered_score_sample(self, stop_confirmed: bool) -> dict:
+        """Privileged scorer input. Never returned by tools/capture/observation."""
+        position, yaw, _ = self._base_pose()
+        return {"base_xy_m": position[:2].tolist(), "yaw_rad": float(yaw),
+                "speed_mps": float(np.linalg.norm(self.data.qvel[:2])),
+                "abs_yaw_rate_radps": abs(float(self.data.qvel[5])),
+                "sim_time_s": float(self.data.time), "stop_confirmed": stop_confirmed,
+                "collision": bool(self._collision_steps), "fallen": bool(self._fallen_ever)}
 
     def evaluate(self, standoff_m: float = 1.0, tolerance_m: float = 0.18) -> dict:
         """Privileged state: only the independent evaluator may consume this result."""
         scenario = getattr(self, "scenario", None)
+        if scenario is not None and scenario.goal_kind == "ordered_standoff":
+            evaluator = self._ordered_evaluator
+            return evaluator.evaluate(self._ordered_score_sample(True))
         if scenario is not None:
             standoff_m, tolerance_m = scenario.standoff_m, scenario.distance_tolerance_m
         position, yaw, _ = self._base_pose()

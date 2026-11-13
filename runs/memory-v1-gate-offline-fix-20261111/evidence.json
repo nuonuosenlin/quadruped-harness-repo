@@ -1,0 +1,1237 @@
+{
+  "old_episode": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-rerun-20261111-s0/H2/20261111-013742-api-memory_ab_occluded_v1-s0-9d3a30",
+  "raw_error_sha256": "9467272783801588e779f3f535e7c586b963d0ce06cf646cc1e20e2cac516736",
+  "raw_error_structure": {
+    "valid_json": true,
+    "finish_reason": "length",
+    "content_chars": 0,
+    "tool_calls_present": false,
+    "usage": {
+      "completion_tokens": 8192,
+      "completion_tokens_details": {
+        "reasoning_tokens": 8192,
+        "text_tokens": 0
+      },
+      "prompt_tokens": 6308,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536,
+        "image_tokens": 0,
+        "text_tokens": 6308
+      },
+      "total_tokens": 14500
+    }
+  },
+  "constraint_evidence": [
+    {
+      "decision": 3,
+      "feedback": {
+        "call_id": "call_d7fe424ce06b4f5089684f3b",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "confirmed",
+          "last_seen": 2,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "task:B",
+          "state": "confirmed",
+          "last_seen": 2,
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "decision": 4,
+      "feedback": {
+        "call_id": "call_696e12b2bb7843f7923d0e87",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "confirmed",
+          "last_seen": 2,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "task:B",
+          "state": "confirmed",
+          "last_seen": 2,
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "decision": 5,
+      "feedback": {
+        "call_id": "call_2850df94a12b430188ba6897",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "confirmed",
+          "last_seen": 2,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "task:B",
+          "state": "confirmed",
+          "last_seen": 2,
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "decision": 7,
+      "feedback": {
+        "call_id": "call_36097fb1af024935a5bed45a",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": []
+    },
+    {
+      "decision": 8,
+      "feedback": {
+        "call_id": "call_b64cb61dd9f343c68bef007f",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": []
+    },
+    {
+      "decision": 9,
+      "feedback": {
+        "call_id": "call_c502e9b0719f4b919effed3d",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": []
+    },
+    {
+      "decision": 11,
+      "feedback": {
+        "call_id": "call_108832cb62f14dc6a1209973",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": []
+    },
+    {
+      "decision": 13,
+      "feedback": {
+        "call_id": "call_9ee5a4d2fce84682879b407e",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": []
+    },
+    {
+      "decision": 16,
+      "feedback": {
+        "call_id": "call_0eb54e00e1084b35980d16f5",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-004",
+          "state": "confirmed",
+          "last_seen": 15,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 17,
+      "feedback": {
+        "call_id": "call_5d8558d81cf1483d9e7e315e",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-004",
+          "state": "confirmed",
+          "last_seen": 15,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 19,
+      "feedback": {
+        "call_id": "call_a41a03d2bca24780bc2db058",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": []
+    },
+    {
+      "decision": 21,
+      "feedback": {
+        "call_id": "call_a60c0a9e35ad41879ad6fbe7",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "confirmed",
+          "last_seen": 20,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "task:B",
+          "state": "confirmed",
+          "last_seen": 20,
+          "confidence": 0.95
+        },
+        {
+          "object_id": "point-002",
+          "state": "confirmed",
+          "last_seen": 20,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-003",
+          "state": "confirmed",
+          "last_seen": 20,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-004",
+          "state": "confirmed",
+          "last_seen": 20,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 23,
+      "feedback": {
+        "call_id": "call_9b66df4a5374420384bb2a7d",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "task:B",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 0.95
+        },
+        {
+          "object_id": "point-002",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-003",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-004",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 24,
+      "feedback": {
+        "call_id": "call_e60ce0cbd98c448da8f20021",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "task:B",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 0.95
+        },
+        {
+          "object_id": "point-002",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-003",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-004",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 25,
+      "feedback": {
+        "call_id": "call_0b21ce9a8c2748e5b86456a8",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "task:B",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 0.95
+        },
+        {
+          "object_id": "point-002",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-003",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-004",
+          "state": "confirmed",
+          "last_seen": 22,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 27,
+      "feedback": {
+        "call_id": "call_ef024b2b85b04ebdb6a6edfd",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": []
+    },
+    {
+      "decision": 31,
+      "feedback": {
+        "call_id": "call_ae3949e5a07d494298097aa8",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-005",
+          "state": "confirmed",
+          "last_seen": 29,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 32,
+      "feedback": {
+        "call_id": "call_43fa5ec71d6b4d83a879e3da",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-005",
+          "state": "confirmed",
+          "last_seen": 29,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 34,
+      "feedback": {
+        "call_id": "call_6a43c813f1244ec0be79e48e",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-005",
+          "state": "predicted",
+          "last_seen": 29,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "decision": 36,
+      "feedback": {
+        "call_id": "call_eaf8edcd98ee4916896a0f4c",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-007",
+          "state": "confirmed",
+          "last_seen": 35,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 38,
+      "feedback": {
+        "call_id": "call_e6722900328845d0bdb35640",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "task:B",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 0.95
+        },
+        {
+          "object_id": "point-002",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-003",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-004",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-005",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-006",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-007",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 39,
+      "feedback": {
+        "call_id": "call_9e0b03c8c1d741fea76db218",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "task:B",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 0.95
+        },
+        {
+          "object_id": "point-002",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-003",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-004",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-005",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-006",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-007",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 40,
+      "feedback": {
+        "call_id": "call_647b21bd09cf4148a9af4c10",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "task:B",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 0.95
+        },
+        {
+          "object_id": "point-002",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-003",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-004",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-005",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-006",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        },
+        {
+          "object_id": "point-007",
+          "state": "confirmed",
+          "last_seen": 37,
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "decision": 41,
+      "feedback": {
+        "call_id": "call_5183015e4abe40dda154381b",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "task:B",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.475
+        },
+        {
+          "object_id": "point-002",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "point-003",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "point-004",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "point-005",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "point-006",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "point-007",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "decision": 43,
+      "feedback": {
+        "call_id": "call_35ef5b06367b47a1a0e0a4f7",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": [
+        {
+          "object_id": "point-001",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "task:B",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.475
+        },
+        {
+          "object_id": "point-002",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "point-003",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "point-004",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "point-005",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "point-006",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        },
+        {
+          "object_id": "point-007",
+          "state": "predicted",
+          "last_seen": 37,
+          "confidence": 0.5
+        }
+      ]
+    },
+    {
+      "decision": 44,
+      "feedback": {
+        "call_id": "call_48c1b44783624f26aa981f0d",
+        "tool": "turn",
+        "status": "failed",
+        "error_code": "MEMORY_CONSTRAINT",
+        "constraint_feedback": "Invalid plan envelope or binding. Observe or submit a valid new plan."
+      },
+      "input_active_plan_id": null,
+      "input_objects": []
+    }
+  ],
+  "old_md_plan_count": 0,
+  "exact_old_envelope_subcase_recoverable": false,
+  "old_input_max_chars": 17950,
+  "old_input_decrease_count": 12,
+  "input_reductions": [
+    {
+      "decision": 1,
+      "before_input_chars": 6369,
+      "normal_input_chars": 3434,
+      "retry_input_chars": 3062,
+      "normal_state_chars": 3135,
+      "retry_state_chars": 2763
+    },
+    {
+      "decision": 2,
+      "before_input_chars": 7230,
+      "normal_input_chars": 3682,
+      "retry_input_chars": 3310,
+      "normal_state_chars": 3383,
+      "retry_state_chars": 3011
+    },
+    {
+      "decision": 3,
+      "before_input_chars": 8426,
+      "normal_input_chars": 5098,
+      "retry_input_chars": 4726,
+      "normal_state_chars": 4799,
+      "retry_state_chars": 4427
+    },
+    {
+      "decision": 4,
+      "before_input_chars": 8783,
+      "normal_input_chars": 5322,
+      "retry_input_chars": 4740,
+      "normal_state_chars": 5023,
+      "retry_state_chars": 4441
+    },
+    {
+      "decision": 5,
+      "before_input_chars": 9044,
+      "normal_input_chars": 5276,
+      "retry_input_chars": 4740,
+      "normal_state_chars": 4977,
+      "retry_state_chars": 4441
+    },
+    {
+      "decision": 6,
+      "before_input_chars": 9679,
+      "normal_input_chars": 5433,
+      "retry_input_chars": 4849,
+      "normal_state_chars": 5134,
+      "retry_state_chars": 4550
+    },
+    {
+      "decision": 7,
+      "before_input_chars": 8560,
+      "normal_input_chars": 4146,
+      "retry_input_chars": 3591,
+      "normal_state_chars": 3847,
+      "retry_state_chars": 3292
+    },
+    {
+      "decision": 8,
+      "before_input_chars": 8657,
+      "normal_input_chars": 4191,
+      "retry_input_chars": 3609,
+      "normal_state_chars": 3892,
+      "retry_state_chars": 3310
+    },
+    {
+      "decision": 9,
+      "before_input_chars": 8660,
+      "normal_input_chars": 4147,
+      "retry_input_chars": 3609,
+      "normal_state_chars": 3848,
+      "retry_state_chars": 3310
+    },
+    {
+      "decision": 10,
+      "before_input_chars": 8664,
+      "normal_input_chars": 4148,
+      "retry_input_chars": 3610,
+      "normal_state_chars": 3849,
+      "retry_state_chars": 3311
+    },
+    {
+      "decision": 11,
+      "before_input_chars": 9540,
+      "normal_input_chars": 4038,
+      "retry_input_chars": 3500,
+      "normal_state_chars": 3739,
+      "retry_state_chars": 3201
+    },
+    {
+      "decision": 12,
+      "before_input_chars": 9315,
+      "normal_input_chars": 4158,
+      "retry_input_chars": 3619,
+      "normal_state_chars": 3859,
+      "retry_state_chars": 3320
+    },
+    {
+      "decision": 13,
+      "before_input_chars": 10184,
+      "normal_input_chars": 4041,
+      "retry_input_chars": 3502,
+      "normal_state_chars": 3742,
+      "retry_state_chars": 3203
+    },
+    {
+      "decision": 14,
+      "before_input_chars": 9989,
+      "normal_input_chars": 4159,
+      "retry_input_chars": 3619,
+      "normal_state_chars": 3860,
+      "retry_state_chars": 3320
+    },
+    {
+      "decision": 15,
+      "before_input_chars": 10858,
+      "normal_input_chars": 4042,
+      "retry_input_chars": 3502,
+      "normal_state_chars": 3743,
+      "retry_state_chars": 3203
+    },
+    {
+      "decision": 16,
+      "before_input_chars": 10994,
+      "normal_input_chars": 4463,
+      "retry_input_chars": 3910,
+      "normal_state_chars": 4164,
+      "retry_state_chars": 3611
+    },
+    {
+      "decision": 17,
+      "before_input_chars": 11093,
+      "normal_input_chars": 4559,
+      "retry_input_chars": 3970,
+      "normal_state_chars": 4260,
+      "retry_state_chars": 3671
+    },
+    {
+      "decision": 18,
+      "before_input_chars": 11096,
+      "normal_input_chars": 4510,
+      "retry_input_chars": 3970,
+      "normal_state_chars": 4211,
+      "retry_state_chars": 3671
+    },
+    {
+      "decision": 19,
+      "before_input_chars": 10679,
+      "normal_input_chars": 4110,
+      "retry_input_chars": 3557,
+      "normal_state_chars": 3811,
+      "retry_state_chars": 3258
+    },
+    {
+      "decision": 20,
+      "before_input_chars": 10777,
+      "normal_input_chars": 4206,
+      "retry_input_chars": 3619,
+      "normal_state_chars": 3907,
+      "retry_state_chars": 3320
+    },
+    {
+      "decision": 21,
+      "before_input_chars": 13202,
+      "normal_input_chars": 6438,
+      "retry_input_chars": 5447,
+      "normal_state_chars": 6139,
+      "retry_state_chars": 5148
+    },
+    {
+      "decision": 22,
+      "before_input_chars": 13249,
+      "normal_input_chars": 6399,
+      "retry_input_chars": 5458,
+      "normal_state_chars": 6100,
+      "retry_state_chars": 5159
+    },
+    {
+      "decision": 23,
+      "before_input_chars": 13153,
+      "normal_input_chars": 6303,
+      "retry_input_chars": 5362,
+      "normal_state_chars": 6004,
+      "retry_state_chars": 5063
+    },
+    {
+      "decision": 24,
+      "before_input_chars": 13249,
+      "normal_input_chars": 6350,
+      "retry_input_chars": 5458,
+      "normal_state_chars": 6051,
+      "retry_state_chars": 5159
+    },
+    {
+      "decision": 25,
+      "before_input_chars": 13215,
+      "normal_input_chars": 6350,
+      "retry_input_chars": 5458,
+      "normal_state_chars": 6051,
+      "retry_state_chars": 5159
+    },
+    {
+      "decision": 26,
+      "before_input_chars": 13481,
+      "normal_input_chars": 6665,
+      "retry_input_chars": 5671,
+      "normal_state_chars": 6366,
+      "retry_state_chars": 5372
+    },
+    {
+      "decision": 27,
+      "before_input_chars": 11028,
+      "normal_input_chars": 4239,
+      "retry_input_chars": 3604,
+      "normal_state_chars": 3940,
+      "retry_state_chars": 3305
+    },
+    {
+      "decision": 28,
+      "before_input_chars": 11124,
+      "normal_input_chars": 4206,
+      "retry_input_chars": 3619,
+      "normal_state_chars": 3907,
+      "retry_state_chars": 3320
+    },
+    {
+      "decision": 29,
+      "before_input_chars": 11993,
+      "normal_input_chars": 4089,
+      "retry_input_chars": 3502,
+      "normal_state_chars": 3790,
+      "retry_state_chars": 3203
+    },
+    {
+      "decision": 30,
+      "before_input_chars": 12123,
+      "normal_input_chars": 4463,
+      "retry_input_chars": 3910,
+      "normal_state_chars": 4164,
+      "retry_state_chars": 3611
+    },
+    {
+      "decision": 31,
+      "before_input_chars": 13088,
+      "normal_input_chars": 4442,
+      "retry_input_chars": 3889,
+      "normal_state_chars": 4143,
+      "retry_state_chars": 3590
+    },
+    {
+      "decision": 32,
+      "before_input_chars": 12806,
+      "normal_input_chars": 4559,
+      "retry_input_chars": 3970,
+      "normal_state_chars": 4260,
+      "retry_state_chars": 3671
+    },
+    {
+      "decision": 33,
+      "before_input_chars": 12859,
+      "normal_input_chars": 4612,
+      "retry_input_chars": 4023,
+      "normal_state_chars": 4313,
+      "retry_state_chars": 3724
+    },
+    {
+      "decision": 34,
+      "before_input_chars": 13728,
+      "normal_input_chars": 4495,
+      "retry_input_chars": 3906,
+      "normal_state_chars": 4196,
+      "retry_state_chars": 3607
+    },
+    {
+      "decision": 35,
+      "before_input_chars": 13452,
+      "normal_input_chars": 4563,
+      "retry_input_chars": 4023,
+      "normal_state_chars": 4264,
+      "retry_state_chars": 3724
+    },
+    {
+      "decision": 36,
+      "before_input_chars": 13305,
+      "normal_input_chars": 4514,
+      "retry_input_chars": 3957,
+      "normal_state_chars": 4215,
+      "retry_state_chars": 3658
+    },
+    {
+      "decision": 37,
+      "before_input_chars": 13401,
+      "normal_input_chars": 4559,
+      "retry_input_chars": 3970,
+      "normal_state_chars": 4260,
+      "retry_state_chars": 3671
+    },
+    {
+      "decision": 38,
+      "before_input_chars": 16579,
+      "normal_input_chars": 7497,
+      "retry_input_chars": 5447,
+      "normal_state_chars": 7198,
+      "retry_state_chars": 5148
+    },
+    {
+      "decision": 39,
+      "before_input_chars": 16675,
+      "normal_input_chars": 7455,
+      "retry_input_chars": 5458,
+      "normal_state_chars": 7156,
+      "retry_state_chars": 5159
+    },
+    {
+      "decision": 40,
+      "before_input_chars": 16589,
+      "normal_input_chars": 7407,
+      "retry_input_chars": 5459,
+      "normal_state_chars": 7108,
+      "retry_state_chars": 5160
+    },
+    {
+      "decision": 41,
+      "before_input_chars": 17078,
+      "normal_input_chars": 7884,
+      "retry_input_chars": 5673,
+      "normal_state_chars": 7585,
+      "retry_state_chars": 5374
+    },
+    {
+      "decision": 42,
+      "before_input_chars": 17081,
+      "normal_input_chars": 7835,
+      "retry_input_chars": 5673,
+      "normal_state_chars": 7536,
+      "retry_state_chars": 5374
+    },
+    {
+      "decision": 43,
+      "before_input_chars": 17950,
+      "normal_input_chars": 7718,
+      "retry_input_chars": 5556,
+      "normal_state_chars": 7419,
+      "retry_state_chars": 5257
+    },
+    {
+      "decision": 44,
+      "before_input_chars": 13940,
+      "normal_input_chars": 4210,
+      "retry_input_chars": 3621,
+      "normal_state_chars": 3911,
+      "retry_state_chars": 3322
+    },
+    {
+      "decision": 45,
+      "before_input_chars": 13940,
+      "normal_input_chars": 4163,
+      "retry_input_chars": 3621,
+      "normal_state_chars": 3864,
+      "retry_state_chars": 3322
+    }
+  ],
+  "decision45_prompt_char_comparison": {
+    "scope": "serialized messages+tools only; characters, not token estimates",
+    "before": 21325,
+    "normal": 15710,
+    "retry": 15545
+  },
+  "offline_raw_response_replay": {
+    "network": "MockTransport only",
+    "requests": 2,
+    "usage": {
+      "prompt_tokens": 6318,
+      "completion_tokens": 8194,
+      "total_tokens": 14512
+    },
+    "diagnostics": [
+      {
+        "kind": "TRUNCATED_RESPONSE",
+        "tool_calls_type": "NoneType",
+        "tool_calls_count": null,
+        "usage": {
+          "prompt_tokens": 6308,
+          "completion_tokens": 8192,
+          "total_tokens": 14500
+        },
+        "reasoning_present": true,
+        "reasoning_chars": 34352
+      },
+      {
+        "kind": "OK",
+        "tool_calls_type": "list",
+        "tool_calls_count": 1,
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 2,
+          "total_tokens": 12
+        },
+        "reasoning_present": true,
+        "reasoning_chars": 9
+      }
+    ],
+    "retry_user_message_chars": 3621,
+    "first_user_message_chars": 4163,
+    "plan_gate_feedback": null,
+    "plan_binding": {
+      "plan_id": "plan-0001",
+      "subgoal_id": "scan"
+    }
+  },
+  "unchanged_contract_hashes": {
+    "go2_demo/scenarios.py": true,
+    "go2_demo/backend.py": true,
+    "go2_demo/harness.py": true,
+    "go2_demo/ordered_evaluation.py": true,
+    "go2_demo/__main__.py": true,
+    "go2_demo/memory_perception.py": true,
+    "go2_demo/memory.py": true
+  },
+  "changed_product_files": [
+    "go2_demo/memory_context.py",
+    "go2_demo/memory_planning.py",
+    "go2_demo/memory_protocol.py",
+    "go2_demo/models.py",
+    "go2_demo/runner.py",
+    "go2_demo/types.py"
+  ],
+  "after_hashes": {
+    "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+    "go2_demo/__main__.py": "8203bb136d92c30033f7ab8366537ffc4b2e7cff088ef043377bc15bb98aa67d",
+    "go2_demo/backend.py": "fc2f0ebd74ffec9eaea12f17e9c8d66cac8ad5253fceb9301d1aa9feea1755b8",
+    "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+    "go2_demo/memory.py": "8519f1a093324745c7689c48dd0096b2b20d8fa9b98cff4c4cf4c8dd5bba9a7d",
+    "go2_demo/memory_context.py": "ffb9dbfe8882d888e9ed8b8c27b1c0cfb097d5b1812e03e8166b09997c228a0d",
+    "go2_demo/memory_perception.py": "ad690d04999235db828e413e2e70d930232548b82abd136ca655965a63c7b989",
+    "go2_demo/memory_planning.py": "95fcec7e9399db9e3102c6a372897d6080e006ebcea036b8b0e3ecf8315558bd",
+    "go2_demo/memory_protocol.py": "0a7ac4322ba5af2d36609134ce0a0839802518090de638489d3ff4fca145c931",
+    "go2_demo/models.py": "875ae500f08f2c4192bdf5ca58beac88e5c9c31c07391a1b1fc2a073128d2c39",
+    "go2_demo/ordered_evaluation.py": "ff57acbbebd7d4109e809fde17969152ae2a8dc5ebd55116d3716e1116da14ef",
+    "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+    "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+    "go2_demo/runner.py": "9dfa0f10c0ff535eda673349c634575d04695db4debcdb657102e9a92e557fbe",
+    "go2_demo/scenarios.py": "5ae3159d9fef9bf13e1b7abe4243ff47999e940065994ea98932731ebaefb4b7",
+    "go2_demo/types.py": "5aeacfff31e2f9eae78796cd27bdc4d38700897f916c40680aafe8d6a75b941b"
+  }
+}

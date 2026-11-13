@@ -1,0 +1,21 @@
+{
+  "pytest": {
+    "passed": 352,
+    "skipped": 15,
+    "new_tests": 13,
+    "exit_code": 0
+  },
+  "list_tasks": {
+    "exit_code": 0,
+    "demo_supported": true
+  },
+  "git_diff_check": {
+    "exit_code": 0
+  },
+  "first_ten_moves_all_allowed": true,
+  "fatal_move_99_blocked": true,
+  "paid_api_requests": 0,
+  "credentials_read": false,
+  "new_simulation_episodes": 0,
+  "branch": "memory-v1"
+}

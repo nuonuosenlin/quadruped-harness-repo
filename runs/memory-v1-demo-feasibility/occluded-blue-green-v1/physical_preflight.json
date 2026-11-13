@@ -1,0 +1,3069 @@
+{
+  "conclusion": "通过",
+  "seed": 0,
+  "api_calls": 0,
+  "key_reads": 0,
+  "probe_type": "offline fixed-waypoint sensor/dynamics fixture, not a sequential task implementation",
+  "navigation_data": "existing public local_odometry only; known fixed local clearance waypoints; no private GT in controller",
+  "GT_scope": "Static geometry and independent checkpoint distance/heading diagnostics only. Existing public odometry remains ideal simulator-derived; its design is unchanged.",
+  "actions": [
+    {
+      "index": 1,
+      "tool": "track_point",
+      "arguments": {
+        "image_id": "frame-00001",
+        "u": 200,
+        "v": 218
+      },
+      "result": {
+        "call_id": "offline-probe-001",
+        "tool": "track_point",
+        "status": "succeeded",
+        "point": {
+          "point_id": "point-001",
+          "image_id": "frame-00001",
+          "timestamp_s": 1.0000000000000007,
+          "valid": true,
+          "pixel_uv": [
+            200.0,
+            218.0
+          ],
+          "relative_xy_m": [
+            1.7317,
+            0.5408
+          ],
+          "range_m": 1.8142,
+          "bearing_rad": 0.3027,
+          "confidence": 1.0,
+          "loss_reason": null,
+          "source": "rgbd_optical_flow"
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.0,
+          0.0
+        ],
+        "yaw_rad": 0.0,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 2,
+      "tool": "get_geometry",
+      "arguments": {},
+      "result": {
+        "call_id": "offline-probe-002",
+        "tool": "get_geometry",
+        "status": "succeeded",
+        "points": [
+          {
+            "point_id": "point-001",
+            "image_id": "frame-00001",
+            "timestamp_s": 1.0000000000000007,
+            "valid": true,
+            "pixel_uv": [
+              200.0,
+              218.0
+            ],
+            "relative_xy_m": [
+              1.7317,
+              0.5408
+            ],
+            "range_m": 1.8142,
+            "bearing_rad": 0.3027,
+            "confidence": 1.0,
+            "loss_reason": null,
+            "source": "rgbd_optical_flow"
+          }
+        ]
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.0,
+          0.0
+        ],
+        "yaw_rad": 0.0,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 3,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.0,
+        "lateral_m": -0.55
+      },
+      "result": {
+        "call_id": "offline-probe-003",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.0034987324966034806,
+            -0.47992125351819864
+          ],
+          "yaw_delta_rad": 0.02046362324325468,
+          "position_error_m": 0.07016603051009355,
+          "heading_error_rad": 0.02046362324325468,
+          "elapsed_sim_s": 7.1599999999993935
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.012364022253510453,
+          "yaw_rate_radps": 0.009727996222284882
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          -0.0034987324966034806,
+          -0.47992125351819864
+        ],
+        "yaw_rad": 0.02046362324325479,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 4,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.010424956338176642,
+        "lateral_m": -0.5499011913838223
+      },
+      "result": {
+        "call_id": "offline-probe-004",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.018682411804960053,
+            -0.47578370950374266
+          ],
+          "yaw_delta_rad": -0.013266612993287907,
+          "position_error_m": 0.07962813573394785,
+          "heading_error_rad": 0.013266612993287907,
+          "elapsed_sim_s": 8.260000000002384
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.026940227590324696,
+          "yaw_rate_radps": 0.00624735906533229
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.02491534678768413,
+          -0.9552230637802868
+        ],
+        "yaw_rad": 0.007197010249966704,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 5,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.011385327978920431,
+        "lateral_m": -0.5498821458338253
+      },
+      "result": {
+        "call_id": "offline-probe-005",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.0007784141588906661,
+            -0.4720342215665682
+          ],
+          "yaw_delta_rad": 0.042872415307756206,
+          "position_error_m": 0.07879248654228252,
+          "heading_error_rad": 0.042872415307756206,
+          "elapsed_sim_s": 5.419999999996996
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.02385610727468234,
+          "yaw_rate_radps": 0.04649662347414419
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.029090946590205162,
+          -1.4272394582252763
+        ],
+        "yaw_rad": 0.050069425557722716,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 6,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.039158642675715005,
+        "lateral_m": -0.5486042295715515
+      },
+      "result": {
+        "call_id": "offline-probe-006",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.02578674592187353,
+            -0.47097532633605416
+          ],
+          "yaw_delta_rad": 0.03050579632248107,
+          "position_error_m": 0.07877216666019542,
+          "heading_error_rad": 0.03050579632248107,
+          "elapsed_sim_s": 5.419999999996996
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.02063721595964135,
+          "yaw_rate_radps": 0.021965431698297243
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.02690812928530229,
+          -1.8989151408624094
+        ],
+        "yaw_rad": 0.0805752218802039,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 7,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.0805752218802039
+      },
+      "result": {
+        "call_id": "offline-probe-007",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.005283022165147142,
+            0.010194683599239347
+          ],
+          "yaw_delta_rad": -0.026315569676464978,
+          "position_error_m": 0.011482242676674087,
+          "heading_error_rad": 0.05425965220373863,
+          "elapsed_sim_s": 1.2399999999993128
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.019403476231850063,
+          "yaw_rate_radps": 0.013613762274490574
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.03135346073472603,
+          -1.8883283129526527
+        ],
+        "yaw_rad": 0.054259652203738726,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 8,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.04868669286235574,
+        "lateral_m": -0.5478408582226473
+      },
+      "result": {
+        "call_id": "offline-probe-008",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.03392078868615157,
+            -0.4709237996959652
+          ],
+          "yaw_delta_rad": 0.0394083351011556,
+          "position_error_m": 0.07832155398444217,
+          "heading_error_rad": 0.0394083351011556,
+          "elapsed_sim_s": 5.200000000000138
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.023129125006115556,
+          "yaw_rate_radps": 0.04432833308498533
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.02302221843290244,
+          -2.3603986842182985
+        ],
+        "yaw_rad": 0.09366798730489433,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 9,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.09366798730489433
+      },
+      "result": {
+        "call_id": "offline-probe-009",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.01910178945087752,
+            0.011980416174026433
+          ],
+          "yaw_delta_rad": -0.040237871295600414,
+          "position_error_m": 0.022547920789477018,
+          "heading_error_rad": 0.053430116009293815,
+          "elapsed_sim_s": 1.5000000000018332
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.01881897231678642,
+          "yaw_rate_radps": 0.02557414813855221
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.040919731281758985,
+          -2.346684174903214
+        ],
+        "yaw_rad": 0.0534301160092938,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 10,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.06507053145878805,
+        "lateral_m": -0.4504836152703248
+      },
+      "result": {
+        "call_id": "offline-probe-010",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.05099767447097214,
+            -0.37305674953151874
+          ],
+          "yaw_delta_rad": -0.007697605046815159,
+          "position_error_m": 0.07869539276180411,
+          "heading_error_rad": 0.007697605046814715,
+          "elapsed_sim_s": 7.3400000000089705
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.027408810280829563,
+          "yaw_rate_radps": 0.011614905996950944
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.009917815964146877,
+          -2.7219320695263667
+        ],
+        "yaw_rad": 0.04573251096247883,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 11,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.5490031894413524,
+        "lateral_m": -0.03309830786041182
+      },
+      "result": {
+        "call_id": "offline-probe-011",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.485562721319888,
+            -0.01360040537207767
+          ],
+          "yaw_delta_rad": 0.012121575568988963,
+          "position_error_m": 0.06636912834228832,
+          "heading_error_rad": 0.012121575568988963,
+          "elapsed_sim_s": 3.380000000004131
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.007573085848241267,
+          "yaw_rate_radps": 0.02870736533694421
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.4955946215524307,
+          -2.7133199922264093
+        ],
+        "yaw_rad": 0.057854086531467806,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 12,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.5484320905235779,
+        "lateral_m": -0.041499904625651056
+      },
+      "result": {
+        "call_id": "offline-probe-012",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.4850734705301737,
+            -0.017488972814064183
+          ],
+          "yaw_delta_rad": 0.0015328206455085258,
+          "position_error_m": 0.06775573462024653,
+          "heading_error_rad": 0.0015328206455085258,
+          "elapsed_sim_s": 3.1400000000038375
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.011505180021010702,
+          "yaw_rate_radps": 0.0005409063123617793
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.980867769117356,
+          -2.702731874607651
+        ],
+        "yaw_rad": 0.05938690717697652,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 13,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.5481791335004618,
+        "lateral_m": -0.044717307551807355
+      },
+      "result": {
+        "call_id": "offline-probe-013",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.4730320953351872,
+            -0.03319765401374597
+          ],
+          "yaw_delta_rad": 0.014526609101217058,
+          "position_error_m": 0.07602486279270879,
+          "heading_error_rad": 0.014526609101217058,
+          "elapsed_sim_s": 3.3200000000040575
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.03001892800500152,
+          "yaw_rate_radps": 0.020485201099779197
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          1.4550363110095412,
+          -2.7077956014024993
+        ],
+        "yaw_rad": 0.07391351627819344,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 14,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.5473995130584555,
+        "lateral_m": -0.053420717922598615
+      },
+      "result": {
+        "call_id": "offline-probe-014",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.47170104469223856,
+            -0.04061402135184568
+          ],
+          "yaw_delta_rad": 0.01669868510653183,
+          "position_error_m": 0.07677414662532207,
+          "heading_error_rad": 0.01669868510653183,
+          "elapsed_sim_s": 3.4000000000041553
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.03626987377945115,
+          "yaw_rate_radps": 0.02306845684978134
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          1.9284486342909153,
+          -2.713465386182287
+        ],
+        "yaw_rad": 0.0906122013847254,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 15,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.0906122013847254
+      },
+      "result": {
+        "call_id": "offline-probe-015",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.0006085495843472813,
+            0.0064906054001852165
+          ],
+          "yaw_delta_rad": -0.02426566038619704,
+          "position_error_m": 0.006519071333980228,
+          "heading_error_rad": 0.06634654099852844,
+          "elapsed_sim_s": 1.6000000000019554
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.0037995041177443256,
+          "yaw_rate_radps": 0.03475910481386721
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          1.9284673637515668,
+          -2.7069463417534747
+        ],
+        "yaw_rad": 0.06634654099852853,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 16,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.5476158320317964,
+        "lateral_m": -0.051155649816255866
+      },
+      "result": {
+        "call_id": "offline-probe-016",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.4820830619130941,
+            -0.028148772063220688
+          ],
+          "yaw_delta_rad": 0.0031093527731878012,
+          "position_error_m": 0.06945401632284356,
+          "heading_error_rad": 0.0031093527731882453,
+          "elapsed_sim_s": 3.0600000000037397
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.017412648504017136,
+          "yaw_rate_radps": 0.004110221621550864
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          2.4113559867268872,
+          -2.703072099483042
+        ],
+        "yaw_rad": 0.06945589377171642,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 17,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.5471482865109414,
+        "lateral_m": -0.05593525335726008
+      },
+      "result": {
+        "call_id": "offline-probe-017",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.47515877825092023,
+            -0.04033479633837894
+          ],
+          "yaw_delta_rad": 0.018391840387639746,
+          "position_error_m": 0.07366046129856665,
+          "heading_error_rad": 0.018391840387639302,
+          "elapsed_sim_s": 3.200000000003911
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.02898892941230966,
+          "yaw_rate_radps": 0.03538941448653222
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          2.8881683513083267,
+          -2.7103335956664902
+        ],
+        "yaw_rad": 0.08784773415935607,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 18,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.08784773415935607
+      },
+      "result": {
+        "call_id": "offline-probe-018",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.0047057708894511175,
+            0.00640409206165417
+          ],
+          "yaw_delta_rad": -0.032221485988445764,
+          "position_error_m": 0.007947117389226582,
+          "heading_error_rad": 0.05562624817091022,
+          "elapsed_sim_s": 1.9399999999967505
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.013961829146670358,
+          "yaw_rate_radps": 0.01669628569826915
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          2.8829188648325164,
+          -2.704367058434692
+        ],
+        "yaw_rad": 0.0556262481709101,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 19,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.5475924137475381,
+        "lateral_m": -0.05140572347652646
+      },
+      "result": {
+        "call_id": "offline-probe-019",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.47720941662107236,
+            -0.029900703423196243
+          ],
+          "yaw_delta_rad": 0.019803408945398893,
+          "position_error_m": 0.07359505535019463,
+          "heading_error_rad": 0.019803408945398893,
+          "elapsed_sim_s": 2.939999999993148
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.01588586574768767,
+          "yaw_rate_radps": 0.02518705362764183
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          3.361052568472452,
+          -2.707689831461024
+        ],
+        "yaw_rad": 0.075429657116309,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 20,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.5460003672168631,
+        "lateral_m": -0.06620875319057667
+      },
+      "result": {
+        "call_id": "offline-probe-020",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.4681454043877962,
+            -0.049145976688339615
+          ],
+          "yaw_delta_rad": 0.027725913286046122,
+          "position_error_m": 0.07970278275619162,
+          "heading_error_rad": 0.027725913286046122,
+          "elapsed_sim_s": 2.939999999993148
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.034249918424295395,
+          "yaw_rate_radps": 0.03178560595159682
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          3.8315703662422296,
+          -2.721417491711139
+        ],
+        "yaw_rad": 0.10315557040235526,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 21,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.10315557040235526
+      },
+      "result": {
+        "call_id": "offline-probe-021",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.0021108638531960183,
+            0.007717251621653449
+          ],
+          "yaw_delta_rad": -0.034137550784888226,
+          "position_error_m": 0.008000732391390323,
+          "heading_error_rad": 0.06901801961746701,
+          "elapsed_sim_s": 1.6399999999961778
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.0041620373923112255,
+          "yaw_rate_radps": 0.030481254695448753
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          3.8286760569692713,
+          -2.7139586249988894
+        ],
+        "yaw_rad": 0.06901801961746708,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 22,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.5457959975681823,
+        "lateral_m": -0.0678728888331177
+      },
+      "result": {
+        "call_id": "offline-probe-022",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.48003867118844273,
+            -0.039815752427359026
+          ],
+          "yaw_delta_rad": 0.00016411203826383058,
+          "position_error_m": 0.0714928589154398,
+          "heading_error_rad": 0.00016411203826427467,
+          "elapsed_sim_s": 3.079999999992822
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.010043359972816792,
+          "yaw_rate_radps": 0.006846131351207456
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          4.310317676167017,
+          -2.720574562898871
+        ],
+        "yaw_rad": 0.06918213165573113,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 23,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.5444687189268774,
+        "lateral_m": -0.07780626009599104
+      },
+      "result": {
+        "call_id": "offline-probe-023",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.46764000700129144,
+            -0.063687051316027
+          ],
+          "yaw_delta_rad": 0.01613713312972509,
+          "position_error_m": 0.07811531880954552,
+          "heading_error_rad": 0.01613713312972509,
+          "elapsed_sim_s": 3.5199999999917964
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.032993876357113316,
+          "yaw_rate_radps": 0.02076853084556986
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          4.781241519946384,
+          -2.7517827351228985
+        ],
+        "yaw_rad": 0.08531926478545615,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 24,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.08531926478545615
+      },
+      "result": {
+        "call_id": "offline-probe-024",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.0008636544448850758,
+            0.007573600736230471
+          ],
+          "yaw_delta_rad": -0.019670736772032793,
+          "position_error_m": 0.007622685032978897,
+          "heading_error_rad": 0.06564852801342358,
+          "elapsed_sim_s": 1.439999999996644
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.00366750966258271,
+          "yaw_rate_radps": 0.03395999969443399
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          4.7814566424900615,
+          -2.744163086220016
+        ],
+        "yaw_rad": 0.06564852801342344,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 25,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.54334880749627,
+        "lateral_m": -0.08527645274272058
+      },
+      "result": {
+        "call_id": "offline-probe-025",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.48092330120271864,
+            -0.054805429072502417
+          ],
+          "yaw_delta_rad": 0.003142627338013959,
+          "position_error_m": 0.06946529435277181,
+          "heading_error_rad": 0.003142627338013959,
+          "elapsed_sim_s": 3.2799999999923557
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.011685605686269274,
+          "yaw_rate_radps": 0.0035319700294586327
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.264939303201323,
+          -2.7673012254516163
+        ],
+        "yaw_rad": 0.06879115535143761,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 26,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.13249364133001615,
+        "lateral_m": -0.0419050913830691
+      },
+      "result": {
+        "call_id": "offline-probe-026",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.06766362266639621,
+            -0.006870052898947632
+          ],
+          "yaw_delta_rad": 0.01907493555440487,
+          "position_error_m": 0.07369114764684576,
+          "heading_error_rad": 0.01907493555440487,
+          "elapsed_sim_s": 2.3599999999945
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.023080220985734787,
+          "yaw_rate_radps": 0.0004791761568728985
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.332915115539686,
+          -2.769504040948751
+        ],
+        "yaw_rad": 0.08786609090584235,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 27,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.08786609090584235
+      },
+      "result": {
+        "call_id": "offline-probe-027",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.007214802496366278,
+            0.0031904882567957288
+          ],
+          "yaw_delta_rad": -0.027981929416251994,
+          "position_error_m": 0.007888763551934139,
+          "heading_error_rad": 0.059884161489590415,
+          "elapsed_sim_s": 1.2199999999971567
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.009084280509609764,
+          "yaw_rate_radps": 0.016412778477460872
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.325448170739519,
+          -2.766958981867006
+        ],
+        "yaw_rad": 0.059884161489590464,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 28,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.04769171420140491,
+        "lateral_m": 0.547928371592977
+      },
+      "result": {
+        "call_id": "offline-probe-028",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.05911445663285172,
+            0.47048977053952085
+          ],
+          "yaw_delta_rad": 0.03142089704829765,
+          "position_error_m": 0.0782765352948857,
+          "heading_error_rad": 0.03142089704829765,
+          "elapsed_sim_s": 3.759999999991237
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.013163988567257106,
+          "yaw_rate_radps": 0.009631031358276735
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.356298614791994,
+          -2.2937746697146553
+        ],
+        "yaw_rad": 0.09130505853788795,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 29,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.09130505853788795
+      },
+      "result": {
+        "call_id": "offline-probe-029",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.004556575106542564,
+            -0.008012339662906329
+          ],
+          "yaw_delta_rad": -0.034949270199235105,
+          "position_error_m": 0.009217372921572898,
+          "heading_error_rad": 0.05635578833865296,
+          "elapsed_sim_s": 1.8799999999956185
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.004707562366129227,
+          "yaw_rate_radps": 0.005806370824838633
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.361566760986637,
+          -2.3013381741436363
+        ],
+        "yaw_rad": 0.05635578833865267,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 30,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.04014431239872278,
+        "lateral_m": 0.5485329836774028
+      },
+      "result": {
+        "call_id": "offline-probe-030",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.052407001765912384,
+            0.47261051031618406
+          ],
+          "yaw_delta_rad": 0.03288852570250089,
+          "position_error_m": 0.07690640748208918,
+          "heading_error_rad": 0.03288852570250045,
+          "elapsed_sim_s": 3.7199999999913302
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.013119338701782352,
+          "yaw_rate_radps": 0.01695240141630328
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.387270321322203,
+          -1.8265260899655984
+        ],
+        "yaw_rad": 0.08924431404115335,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 31,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.08924431404115335
+      },
+      "result": {
+        "call_id": "offline-probe-031",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.005882767356443531,
+            -0.00801038843431012
+          ],
+          "yaw_delta_rad": -0.03136101579783368,
+          "position_error_m": 0.009938474462339123,
+          "heading_error_rad": 0.057883298243319725,
+          "elapsed_sim_s": 1.6599999999961312
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.00815854112555205,
+          "yaw_rate_radps": 0.0054602071922980515
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.393843610480287,
+          -1.8339802930942213
+        ],
+        "yaw_rad": 0.057883298243319795,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 32,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.03366102309817559,
+        "lateral_m": 0.5489689750104136
+      },
+      "result": {
+        "call_id": "offline-probe-032",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.04607606736892869,
+            0.47196937489853824
+          ],
+          "yaw_delta_rad": 0.027828829335212024,
+          "position_error_m": 0.07799404939887063,
+          "heading_error_rad": 0.02782882933521247,
+          "elapsed_sim_s": 3.699999999991377
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.014697522552497034,
+          "yaw_rate_radps": 0.007406931438727916
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.412538619727069,
+          -1.3601358128524803
+        ],
+        "yaw_rad": 0.08571212757853193,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 33,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.08571212757853193
+      },
+      "result": {
+        "call_id": "offline-probe-033",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.005154847322500997,
+            -0.005228226263569765
+          ],
+          "yaw_delta_rad": -0.022729470141622077,
+          "position_error_m": 0.007342125086197889,
+          "heading_error_rad": 0.06298265743690967,
+          "elapsed_sim_s": 1.799999999995805
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.015524236409111764,
+          "yaw_rate_radps": 0.016103789133784976
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.4181221173232075,
+          -1.3649035539712175
+        ],
+        "yaw_rad": 0.06298265743690966,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 34,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.027327166492005086,
+        "lateral_m": 0.5493206950147776
+      },
+      "result": {
+        "call_id": "offline-probe-034",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.040014473924373864,
+            0.4720377124182888
+          ],
+          "yaw_delta_rad": 0.02584656968644783,
+          "position_error_m": 0.07831747677812813,
+          "heading_error_rad": 0.02584656968644783,
+          "elapsed_sim_s": 3.699999999991377
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.015659689982698365,
+          "yaw_rate_radps": 0.006375426441670356
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.42834671472681,
+          -0.8912832232457831
+        ],
+        "yaw_rad": 0.08882922712335743,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 35,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.08882922712335743
+      },
+      "result": {
+        "call_id": "offline-probe-035",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.0047443021431085265,
+            -0.00532163348345355
+          ],
+          "yaw_delta_rad": -0.026273011948793723,
+          "position_error_m": 0.007129388876847589,
+          "heading_error_rad": 0.06255621517456378,
+          "elapsed_sim_s": 1.8599999999956651
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.015869171526270362,
+          "yaw_rate_radps": 0.015340566297150984
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.433544406566933,
+          -0.8961629963237491
+        ],
+        "yaw_rad": 0.06255621517456375,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 36,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.013826938750183823,
+        "lateral_m": 0.5498261686795188
+      },
+      "result": {
+        "call_id": "offline-probe-036",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.027519575836621554,
+            0.47376532879941025
+          ],
+          "yaw_delta_rad": 0.03135941677278575,
+          "position_error_m": 0.0772835019499532,
+          "heading_error_rad": 0.03135941677278575,
+          "elapsed_sim_s": 3.759999999991237
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.013980500517165564,
+          "yaw_rate_radps": 0.01412207521221975
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.43139251404931,
+          -0.42160395554459207
+        ],
+        "yaw_rad": 0.09391563194734942,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 37,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.09391563194734942
+      },
+      "result": {
+        "call_id": "offline-probe-037",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.007287475426060333,
+            -0.008991390956746165
+          ],
+          "yaw_delta_rad": -0.04037936545550336,
+          "position_error_m": 0.011573781120381097,
+          "heading_error_rad": 0.053536266491846174,
+          "elapsed_sim_s": 1.8199999999957583
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.007809797162867285,
+          "yaw_rate_radps": 0.0024659953645206367
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.439491066167421,
+          -0.4298723207404883
+        ],
+        "yaw_rad": 0.053536266491846105,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 38,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.01643171909755354,
+        "lateral_m": 0.43136962694811043
+      },
+      "result": {
+        "call_id": "offline-probe-038",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.0017410593536598962,
+            0.3552597853882743
+          ],
+          "yaw_delta_rad": 0.028974303065088858,
+          "position_error_m": 0.07751466613470141,
+          "heading_error_rad": 0.028974303065088858,
+          "elapsed_sim_s": 3.099999999992775
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.013379319903267331,
+          "yaw_rate_radps": 0.008566867057940648
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.418742302719609,
+          -0.07521468975366978
+        ],
+        "yaw_rad": 0.082510569556935,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 39,
+      "tool": "stop",
+      "arguments": {},
+      "result": {
+        "call_id": "offline-probe-039",
+        "tool": "stop",
+        "status": "succeeded",
+        "error_code": null,
+        "speed_mps": 0.008951590022702021,
+        "yaw_rate_radps": 0.013134786866322717
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.424011809001031,
+          -0.07188202505344968
+        ],
+        "yaw_rad": 0.09447985176701001,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 40,
+      "tool": "track_point",
+      "arguments": {
+        "image_id": "frame-00038",
+        "u": 386,
+        "v": 317
+      },
+      "result": {
+        "call_id": "offline-probe-040",
+        "tool": "track_point",
+        "status": "succeeded",
+        "point": {
+          "point_id": "point-002",
+          "image_id": "frame-00038",
+          "timestamp_s": 119.35999999990322,
+          "valid": true,
+          "pixel_uv": [
+            386.0,
+            317.0
+          ],
+          "relative_xy_m": [
+            0.8658,
+            -0.1215
+          ],
+          "range_m": 0.8743,
+          "bearing_rad": -0.1394,
+          "confidence": 1.0,
+          "loss_reason": null,
+          "source": "rgbd_optical_flow"
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.424011809001031,
+          -0.07188202505344968
+        ],
+        "yaw_rad": 0.09447985176701001,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 41,
+      "tool": "get_geometry",
+      "arguments": {},
+      "result": {
+        "call_id": "offline-probe-041",
+        "tool": "get_geometry",
+        "status": "succeeded",
+        "points": [
+          {
+            "point_id": "point-001",
+            "image_id": "frame-00038",
+            "timestamp_s": 119.35999999990322,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-002",
+            "image_id": "frame-00038",
+            "timestamp_s": 119.35999999990322,
+            "valid": true,
+            "pixel_uv": [
+              386.0,
+              317.0
+            ],
+            "relative_xy_m": [
+              0.8658,
+              -0.1215
+            ],
+            "range_m": 0.8743,
+            "bearing_rad": -0.1394,
+            "confidence": 1.0,
+            "loss_reason": null,
+            "source": "rgbd_optical_flow"
+          }
+        ]
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.424011809001031,
+          -0.07188202505344968
+        ],
+        "yaw_rad": 0.09447985176701001,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 42,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.09447985176701001
+      },
+      "result": {
+        "call_id": "offline-probe-042",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.0033802767433219793,
+            -0.011494296013652804
+          ],
+          "yaw_delta_rad": -0.03740996548939668,
+          "position_error_m": 0.011981031329185238,
+          "heading_error_rad": 0.05706988627761378,
+          "elapsed_sim_s": 1.5199999999964575
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.002199128176734388,
+          "yaw_rate_radps": 0.009250357418136861
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.428461374490005,
+          -0.08300616451096471
+        ],
+        "yaw_rad": 0.05706988627761348,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 43,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.03712141008983927,
+        "lateral_m": -0.5487458436406987
+      },
+      "result": {
+        "call_id": "offline-probe-043",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.014352875688574303,
+            -0.47277112662259574
+          ],
+          "yaw_delta_rad": 0.019000495496201086,
+          "position_error_m": 0.07931307448814717,
+          "heading_error_rad": 0.019000495496200642,
+          "elapsed_sim_s": 5.0199999999883005
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.024256782951066,
+          "yaw_rate_radps": 0.010765989353298207
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.441098216674495,
+          -0.5558262713466771
+        ],
+        "yaw_rad": 0.07607038177381453,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 44,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.051832863085476424,
+        "lateral_m": -0.5475521475662042
+      },
+      "result": {
+        "call_id": "offline-probe-044",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.03052701087818487,
+            -0.4693218054547098
+          ],
+          "yaw_delta_rad": 0.028219112673741886,
+          "position_error_m": 0.08107974941476082,
+          "heading_error_rad": 0.02821911267374233,
+          "elapsed_sim_s": 5.320000000010467
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.02474885702967853,
+          "yaw_rate_radps": 0.020331369059977126
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.446326555142347,
+          -1.0261107809207124
+        ],
+        "yaw_rad": 0.10428949444755646,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 45,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.10428949444755646
+      },
+      "result": {
+        "call_id": "offline-probe-045",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.008511375007733524,
+            0.005969391145297636
+          ],
+          "yaw_delta_rad": -0.0439974323384833,
+          "position_error_m": 0.010396015350499856,
+          "heading_error_rad": 0.06029206210907345,
+          "elapsed_sim_s": 1.6600000000079262
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.004751384796956876,
+          "yaw_rate_radps": 0.015559095879143474
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.454170269057354,
+          -1.019287783984809
+        ],
+        "yaw_rad": 0.06029206210907332,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 46,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.04981841022021071,
+        "lateral_m": -0.547739103956556
+      },
+      "result": {
+        "call_id": "offline-probe-046",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.05168214066079856,
+            -0.47576361394157324
+          ],
+          "yaw_delta_rad": 0.02435017202867007,
+          "position_error_m": 0.07199961565211317,
+          "heading_error_rad": 0.02435017202867007,
+          "elapsed_sim_s": 6.000000000028649
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.010998486463152744,
+          "yaw_rate_radps": 0.006844284929992868
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.43124942936075,
+          -1.4973010632162875
+        ],
+        "yaw_rad": 0.08464223413774355,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 47,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.08464223413774355
+      },
+      "result": {
+        "call_id": "offline-probe-047",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.002489883163331089,
+            0.00400548669967268
+          ],
+          "yaw_delta_rad": -0.03894300437706866,
+          "position_error_m": 0.004716295354226066,
+          "heading_error_rad": 0.045699229760674864,
+          "elapsed_sim_s": 1.2600000000060163
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.004071236499520283,
+          "yaw_rate_radps": 0.0024236637159985607
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.433391770038229,
+          -1.4930994185038076
+        ],
+        "yaw_rad": 0.045699229760674684,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 48,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.03915107372200284,
+        "lateral_m": -0.5486047697809547
+      },
+      "result": {
+        "call_id": "offline-probe-048",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.018368791062960094,
+            -0.4741992456646066
+          ],
+          "yaw_delta_rad": -0.010319235001330362,
+          "position_error_m": 0.07725338368996391,
+          "heading_error_rad": 0.010319235001330362,
+          "elapsed_sim_s": 7.620000000036384
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.03745426050959891,
+          "yaw_rate_radps": 0.00139202819972233
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.436705154713055,
+          -1.967642734288566
+        ],
+        "yaw_rad": 0.035379994759344426,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 49,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.04365114788484673,
+        "lateral_m": -0.5482650611595957
+      },
+      "result": {
+        "call_id": "offline-probe-049",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.029841824314813338,
+            -0.47360997508534497
+          ],
+          "yaw_delta_rad": 0.03274550970883183,
+          "position_error_m": 0.07592153379783424,
+          "heading_error_rad": 0.03274550970883183,
+          "elapsed_sim_s": 4.760000000022728
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.020103599695471944,
+          "yaw_rate_radps": 0.036551398725943235
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.42363482849779,
+          -2.44201190439915
+        ],
+        "yaw_rad": 0.06812550446817633,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 50,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.0479492635201179,
+        "lateral_m": -0.35554880092319435
+      },
+      "result": {
+        "call_id": "offline-probe-050",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.03405528874185703,
+            -0.2801467258916431
+          ],
+          "yaw_delta_rad": 0.026721299689957068,
+          "position_error_m": 0.07667147744893568,
+          "heading_error_rad": 0.026721299689957068,
+          "elapsed_sim_s": 6.240000000029795
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.02089767368271837,
+          "yaw_rate_radps": 0.04114308427471504
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.408728913760481,
+          -2.723827028948814
+        ],
+        "yaw_rad": 0.0948468041581333,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 51,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.0948468041581333
+      },
+      "result": {
+        "call_id": "offline-probe-051",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.020814839697221327,
+            0.012114416903492485
+          ],
+          "yaw_delta_rad": -0.048843934277775336,
+          "position_error_m": 0.024083534801449837,
+          "heading_error_rad": 0.046002869880358066,
+          "elapsed_sim_s": 1.3400000000063983
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.011837769504647714,
+          "yaw_rate_radps": 0.005885770391414244
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          5.4283029075818705,
+          -2.7097957989808874
+        ],
+        "yaw_rad": 0.04600286988035815,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 52,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.5498066644933899,
+        "lateral_m": 0.014581895578180546
+      },
+      "result": {
+        "call_id": "offline-probe-052",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.4722309326758501,
+            0.020139487526513993
+          ],
+          "yaw_delta_rad": 0.012920735476517287,
+          "position_error_m": 0.07777455236316733,
+          "heading_error_rad": 0.012920735476517287,
+          "elapsed_sim_s": 3.540000000016903
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.025755789383215433,
+          "yaw_rate_radps": 0.019988190773594663
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          4.955645421979207,
+          -2.7113939346142013
+        ],
+        "yaw_rad": 0.05892360535687524,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 53,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.5496111588018487,
+        "lateral_m": 0.020677865472261563
+      },
+      "result": {
+        "call_id": "offline-probe-053",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.4679815653293535,
+            0.02273068089354033
+          ],
+          "yaw_delta_rad": 0.010595311587049405,
+          "position_error_m": 0.08165540142353515,
+          "heading_error_rad": 0.010595311587049405,
+          "elapsed_sim_s": 4.300000000020532
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.044861416308011645,
+          "yaw_rate_radps": 0.008630837865756351
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          4.48713743681742,
+          -2.716261909720817
+        ],
+        "yaw_rad": 0.06951891694392463,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 54,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.5493974863364345,
+        "lateral_m": 0.02573717170178813
+      },
+      "result": {
+        "call_id": "offline-probe-054",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.4644621285766463,
+            0.03154816600680982
+          ],
+          "yaw_delta_rad": 0.0009404883384691587,
+          "position_error_m": 0.0851339101216206,
+          "heading_error_rad": 0.0009404883384691587,
+          "elapsed_sim_s": 4.560000000021773
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.03627011926078495,
+          "yaw_rate_radps": 0.007413969574251375
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          4.021605772937922,
+          -2.717052849622277
+        ],
+        "yaw_rad": 0.07045940528239383,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 55,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.5494501755523223,
+        "lateral_m": 0.02458667495864967
+      },
+      "result": {
+        "call_id": "offline-probe-055",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.4640337389389176,
+            0.02576149109718466
+          ],
+          "yaw_delta_rad": 0.003084612068236403,
+          "position_error_m": 0.08542451543140979,
+          "heading_error_rad": 0.003084612068236403,
+          "elapsed_sim_s": 3.980000000019004
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.04716329010540608,
+          "yaw_rate_radps": 0.009078521247592647
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          3.556909773910668,
+          -2.724023773897103
+        ],
+        "yaw_rad": 0.07354401735063004,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 56,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.5494183918424189,
+        "lateral_m": 0.02528696710343552
+      },
+      "result": {
+        "call_id": "offline-probe-056",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.4696930998527109,
+            0.030028667183490558
+          ],
+          "yaw_delta_rad": -0.00012828128782604864,
+          "position_error_m": 0.07986617495844782,
+          "heading_error_rad": 0.00012828128782649273,
+          "elapsed_sim_s": 4.820000000023015
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.0425658657978223,
+          "yaw_rate_radps": 0.011294388873087277
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          3.0862798828925575,
+          -2.7285882653635065
+        ],
+        "yaw_rad": 0.07341573606280387,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 57,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.5495105508724076,
+        "lateral_m": 0.023198156821247932
+      },
+      "result": {
+        "call_id": "offline-probe-057",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.46665742715234493,
+            0.027079425053379604
+          ],
+          "yaw_delta_rad": 0.0008622024752518165,
+          "position_error_m": 0.08294398322519704,
+          "heading_error_rad": 0.0008622024752518165,
+          "elapsed_sim_s": 4.720000000022537
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.05070362280066121,
+          "yaw_rate_radps": 0.007941253297926495
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          2.6188932319721903,
+          -2.7358110154706723
+        ],
+        "yaw_rad": 0.07427793853805569,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 58,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.5495817255933237,
+        "lateral_m": 0.021445906226238334
+      },
+      "result": {
+        "call_id": "offline-probe-058",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.4735703250337102,
+            0.028644201401387577
+          ],
+          "yaw_delta_rad": 0.008770408707209576,
+          "position_error_m": 0.07635147980532252,
+          "heading_error_rad": 0.00877040870721002,
+          "elapsed_sim_s": 5.440000000025975
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.022721049142614032,
+          "yaw_rate_radps": 0.015419452358965514
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          2.144503024049873,
+          -2.7423892868148543
+        ],
+        "yaw_rad": 0.08304834724526541,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 59,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.08304834724526541
+      },
+      "result": {
+        "call_id": "offline-probe-059",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.022087448882322603,
+            -0.0018638656028587728
+          ],
+          "yaw_delta_rad": -0.03225051198778317,
+          "position_error_m": 0.022165951211593288,
+          "heading_error_rad": 0.05079783525748249,
+          "elapsed_sim_s": 1.2400000000059208
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.02055295162008784,
+          "yaw_rate_radps": 0.0007792960993756213
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          2.166668960910123,
+          -2.742414510259386
+        ],
+        "yaw_rad": 0.05079783525748234,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 60,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.5499792471026836,
+        "lateral_m": 0.004777840136004367
+      },
+      "result": {
+        "call_id": "offline-probe-060",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.46607614523188556,
+            0.004177950029481795
+          ],
+          "yaw_delta_rad": 0.00668718028339832,
+          "position_error_m": 0.08390524638949237,
+          "heading_error_rad": 0.00668718028339832,
+          "elapsed_sim_s": 4.020000000019195
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.047207623679735466,
+          "yaw_rate_radps": 0.006532332397457503
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          1.7009818829449839,
+          -2.7619074278694526
+        ],
+        "yaw_rad": 0.05748501554088069,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 61,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.5499362039216973,
+        "lateral_m": 0.008376850016175282
+      },
+      "result": {
+        "call_id": "offline-probe-061",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.4715283714274392,
+            0.01398164670764757
+          ],
+          "yaw_delta_rad": 0.002471560117032645,
+          "position_error_m": 0.07860789999993877,
+          "heading_error_rad": 0.002471560117032645,
+          "elapsed_sim_s": 4.640000000022155
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.04275285478357956,
+          "yaw_rate_radps": 0.0007802664517028448
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          1.229429093527204,
+          -2.7750397657413486
+        ],
+        "yaw_rad": 0.05995657565791329,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 62,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.43015310452399746,
+        "lateral_m": 0.0008162905180474286
+      },
+      "result": {
+        "call_id": "offline-probe-062",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.3508803168642918,
+            0.001559690010117954
+          ],
+          "yaw_delta_rad": 0.005012838314585988,
+          "position_error_m": 0.07927627328618321,
+          "heading_error_rad": 0.005012838314585544,
+          "elapsed_sim_s": 3.5600000000169985
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.04549647428026292,
+          "yaw_rate_radps": 0.011672265196262936
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8790858007993232,
+          -2.794507858516446
+        ],
+        "yaw_rad": 0.06496941397249907,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 63,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.02291487062025499,
+        "lateral_m": 0.549522436943622
+      },
+      "result": {
+        "call_id": "offline-probe-063",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.03650475930225997,
+            0.4731718120745696
+          ],
+          "yaw_delta_rad": 0.029487291129527193,
+          "position_error_m": 0.0775506479165973,
+          "heading_error_rad": 0.029487291129527193,
+          "elapsed_sim_s": 3.6800000000175714
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.013640829484513088,
+          "yaw_rate_radps": 0.008733253808061326
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8847934704585507,
+          -2.319964305509234
+        ],
+        "yaw_rad": 0.09445670510202608,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 64,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.09445670510202608
+      },
+      "result": {
+        "call_id": "offline-probe-064",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.006314563743956319,
+            -0.008632077944534834
+          ],
+          "yaw_delta_rad": -0.03921647151624086,
+          "position_error_m": 0.010695161752727835,
+          "heading_error_rad": 0.05524023358578534,
+          "elapsed_sim_s": 1.8200000000086902
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.008221271809905851,
+          "yaw_rate_radps": 0.0010392336992034587
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8918940313886817,
+          -2.3279623377293808
+        ],
+        "yaw_rad": 0.05524023358578534,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 65,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.013124809344633873,
+        "lateral_m": 0.5498433771354049
+      },
+      "result": {
+        "call_id": "offline-probe-065",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.026310224105050455,
+            0.4724619461849326
+          ],
+          "yaw_delta_rad": 0.02359790791319094,
+          "position_error_m": 0.07849675801169699,
+          "heading_error_rad": 0.02359790791319094,
+          "elapsed_sim_s": 3.6800000000175714
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.01663338168493516,
+          "yaw_rate_radps": 0.0054011102696836545
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8920784861993323,
+          -1.8547684192755032
+        ],
+        "yaw_rad": 0.07883814149897617,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 66,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.02273363954649851,
+        "lateral_m": 0.5495299642721677
+      },
+      "result": {
+        "call_id": "offline-probe-066",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.03349658573056422,
+            0.4784466808617952
+          ],
+          "yaw_delta_rad": 0.0322197071099235,
+          "position_error_m": 0.07189349199308942,
+          "heading_error_rad": 0.0322197071099235,
+          "elapsed_sim_s": 3.5200000000168075
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.032289761138365625,
+          "yaw_rate_radps": 0.026186778631429444
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8877902426702758,
+          -1.3751697759801857
+        ],
+        "yaw_rad": 0.11105784860889976,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 67,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.11105784860889976
+      },
+      "result": {
+        "call_id": "offline-probe-067",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.0036422275463821024,
+            -0.014001187346816182
+          ],
+          "yaw_delta_rad": -0.06702478348531482,
+          "position_error_m": 0.014467172101702189,
+          "heading_error_rad": 0.0440330651235854,
+          "elapsed_sim_s": 1.4800000000070668
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.0042114904363297805,
+          "yaw_rate_radps": 9.961591026918587e-05
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8929617792704312,
+          -1.3886810408289525
+        ],
+        "yaw_rad": 0.044033065123585166,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 68,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.0014731048064425736,
+        "lateral_m": 0.5499980272348522
+      },
+      "result": {
+        "call_id": "offline-probe-068",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.012174362883751715,
+            0.47416667307031346
+          ],
+          "yaw_delta_rad": 0.023849184981465044,
+          "position_error_m": 0.0770496440535751,
+          "heading_error_rad": 0.023849184981465044,
+          "elapsed_sim_s": 3.5600000000169985
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.01956191514532064,
+          "yaw_rate_radps": 0.005851167275221168
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8842520760006566,
+          -0.9144380756400664
+        ],
+        "yaw_rad": 0.06788225010505014,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 69,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": 0.006768663636041005,
+        "lateral_m": 0.5499583485979481
+      },
+      "result": {
+        "call_id": "offline-probe-069",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.020001130164425594,
+            0.47617511481196334
+          ],
+          "yaw_delta_rad": 0.02195430567958523,
+          "position_error_m": 0.0749604146089261,
+          "heading_error_rad": 0.02195430567958523,
+          "elapsed_sim_s": 3.6400000000173804
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.0224761639614071,
+          "yaw_rate_radps": 0.00028732278330534454
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.871908122006056,
+          -0.4380029678091888
+        ],
+        "yaw_rad": 0.08983655578463548,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 70,
+      "tool": "turn",
+      "arguments": {
+        "yaw_rad": -0.08983655578463548
+      },
+      "result": {
+        "call_id": "offline-probe-070",
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.0036638782338351706,
+            -0.010355849095461013
+          ],
+          "yaw_delta_rad": -0.0483693988871603,
+          "position_error_m": 0.01098488116459763,
+          "heading_error_rad": 0.04146715689747538,
+          "elapsed_sim_s": 1.2000000000057298
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.003084958243441057,
+          "yaw_rate_radps": 0.006187383827367195
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8764863082473482,
+          -0.44798834836980717
+        ],
+        "yaw_rad": 0.041467156897475384,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 71,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.017260345010426344,
+        "lateral_m": 0.5497290973653488
+      },
+      "result": {
+        "call_id": "offline-probe-071",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            -0.0038365663160369184,
+            0.4825980798102828
+          ],
+          "yaw_delta_rad": 0.033876880778962004,
+          "position_error_m": 0.06845999819175072,
+          "heading_error_rad": 0.033876880778962004,
+          "elapsed_sim_s": 3.4800000000166165
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.01977920939740244,
+          "yaw_rate_radps": 0.0298845666073973
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8526468043886115,
+          0.03403582522881927
+        ],
+        "yaw_rad": 0.07534403767643744,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 72,
+      "tool": "move_relative",
+      "arguments": {
+        "forward_m": -0.009575283278008438,
+        "lateral_m": 0.5499166427288285
+      },
+      "result": {
+        "call_id": "offline-probe-072",
+        "tool": "move_relative",
+        "status": "succeeded",
+        "error_code": null,
+        "measured": {
+          "translation_start_frame_m": [
+            0.004649478236570151,
+            0.48397114635981314
+          ],
+          "yaw_delta_rad": 0.03722488784792066,
+          "position_error_m": 0.06746222892480246,
+          "heading_error_rad": 0.037224887847921106,
+          "elapsed_sim_s": 3.580000000017094
+        },
+        "stop": {
+          "status": "succeeded",
+          "error_code": null,
+          "speed_mps": 0.013630424546982947,
+          "yaw_rate_radps": 0.036731931895046956
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8208532415540029,
+          0.5169839151090733
+        ],
+        "yaw_rad": 0.11256892552435828,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 73,
+      "tool": "stop",
+      "arguments": {},
+      "result": {
+        "call_id": "offline-probe-073",
+        "tool": "stop",
+        "status": "succeeded",
+        "error_code": null,
+        "speed_mps": 0.0066703574060154956,
+        "yaw_rate_radps": 0.033873810653819066
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8243897261967229,
+          0.5145601736917204
+        ],
+        "yaw_rad": 0.13167964113243763,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 74,
+      "tool": "track_point",
+      "arguments": {
+        "image_id": "frame-00070",
+        "u": 360,
+        "v": 275
+      },
+      "result": {
+        "call_id": "offline-probe-074",
+        "tool": "track_point",
+        "status": "succeeded",
+        "point": {
+          "point_id": "point-003",
+          "image_id": "frame-00070",
+          "timestamp_s": 235.16000000039475,
+          "valid": true,
+          "pixel_uv": [
+            360.0,
+            275.0
+          ],
+          "relative_xy_m": [
+            0.9051,
+            -0.0785
+          ],
+          "range_m": 0.9085,
+          "bearing_rad": -0.0865,
+          "confidence": 1.0,
+          "loss_reason": null,
+          "source": "rgbd_optical_flow"
+        }
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8243897261967229,
+          0.5145601736917204
+        ],
+        "yaw_rad": 0.13167964113243763,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    },
+    {
+      "index": 75,
+      "tool": "get_geometry",
+      "arguments": {},
+      "result": {
+        "call_id": "offline-probe-075",
+        "tool": "get_geometry",
+        "status": "succeeded",
+        "points": [
+          {
+            "point_id": "point-001",
+            "image_id": "frame-00070",
+            "timestamp_s": 235.16000000039475,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-002",
+            "image_id": "frame-00070",
+            "timestamp_s": 235.16000000039475,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-003",
+            "image_id": "frame-00070",
+            "timestamp_s": 235.16000000039475,
+            "valid": true,
+            "pixel_uv": [
+              360.0,
+              275.0
+            ],
+            "relative_xy_m": [
+              0.9051,
+              -0.0785
+            ],
+            "range_m": 0.9085,
+            "bearing_rad": -0.0865,
+            "confidence": 1.0,
+            "loss_reason": null,
+            "source": "rgbd_optical_flow"
+          }
+        ]
+      },
+      "local_odometry": {
+        "translation_m": [
+          0.8243897261967229,
+          0.5145601736917204
+        ],
+        "yaw_rad": 0.13167964113243763,
+        "reference": "episode_start_body_horizontal",
+        "source": "simulated_proprioception"
+      }
+    }
+  ],
+  "points": [
+    {
+      "label": "initial_B",
+      "color_fixture": "green",
+      "method": "Task-given color mask only, not a generic semantic detector or scene-GT pixel selector",
+      "pixel_uv": [
+        200,
+        218
+      ],
+      "point": {
+        "point_id": "point-001",
+        "image_id": "frame-00001",
+        "timestamp_s": 1.0000000000000007,
+        "valid": true,
+        "pixel_uv": [
+          200.0,
+          218.0
+        ],
+        "relative_xy_m": [
+          1.7317,
+          0.5408
+        ],
+        "range_m": 1.8142,
+        "bearing_rad": 0.3027,
+        "confidence": 1.0,
+        "loss_reason": null,
+        "source": "rgbd_optical_flow"
+      }
+    },
+    {
+      "label": "at_A",
+      "color_fixture": "blue",
+      "method": "Task-given color mask only, not a generic semantic detector or scene-GT pixel selector",
+      "pixel_uv": [
+        386,
+        317
+      ],
+      "point": {
+        "point_id": "point-002",
+        "image_id": "frame-00038",
+        "timestamp_s": 119.35999999990322,
+        "valid": true,
+        "pixel_uv": [
+          386.0,
+          317.0
+        ],
+        "relative_xy_m": [
+          0.8658,
+          -0.1215
+        ],
+        "range_m": 0.8743,
+        "bearing_rad": -0.1394,
+        "confidence": 1.0,
+        "loss_reason": null,
+        "source": "rgbd_optical_flow"
+      }
+    },
+    {
+      "label": "at_B",
+      "color_fixture": "green",
+      "method": "Task-given color mask only, not a generic semantic detector or scene-GT pixel selector",
+      "pixel_uv": [
+        360,
+        275
+      ],
+      "point": {
+        "point_id": "point-003",
+        "image_id": "frame-00070",
+        "timestamp_s": 235.16000000039475,
+        "valid": true,
+        "pixel_uv": [
+          360.0,
+          275.0
+        ],
+        "relative_xy_m": [
+          0.9051,
+          -0.0785
+        ],
+        "range_m": 0.9085,
+        "bearing_rad": -0.0865,
+        "confidence": 1.0,
+        "loss_reason": null,
+        "source": "rgbd_optical_flow"
+      }
+    }
+  ],
+  "checkpoint_diagnostics": [
+    {
+      "label": "A",
+      "distance_m": 0.9776779912055246,
+      "heading_error_rad": 0.14716860663568276,
+      "speed_mps": 0.008951590022702021,
+      "abs_yaw_rate_radps": 0.013134786866322717,
+      "collision": false,
+      "fallen": false,
+      "base_xy_m_scoring_only": [
+        5.422899411943155,
+        0.033596060879770684
+      ],
+      "target_xy_m_scoring_only": [
+        6.4,
+        0.0
+      ],
+      "checkpoint_criteria_pass": true,
+      "not_a_task_success_metric": true
+    },
+    {
+      "label": "B",
+      "distance_m": 0.9887871800634658,
+      "heading_error_rad": 0.08490790701012285,
+      "speed_mps": 0.0066703574060154956,
+      "abs_yaw_rate_radps": 0.033873810653819066,
+      "collision": false,
+      "fallen": false,
+      "base_xy_m_scoring_only": [
+        0.8133067209522941,
+        0.535684678808651
+      ],
+      "target_xy_m_scoring_only": [
+        1.8,
+        0.6
+      ],
+      "checkpoint_criteria_pass": true,
+      "not_a_task_success_metric": true
+    }
+  ],
+  "successful_motion_calls_before_A": 36,
+  "cleanup_stop": {
+    "status": "succeeded",
+    "error_code": null,
+    "speed_mps": 0.006351403669198606,
+    "yaw_rate_radps": 0.014350741639126283
+  },
+  "physics_trace_rows": 11738,
+  "total_collision_steps": 0,
+  "fallen": false
+}

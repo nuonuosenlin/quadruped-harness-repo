@@ -1,0 +1,503 @@
+{
+  "method": "Unmodified MuJoCo model + actual camera frustum + nearest-surface ray intersections",
+  "scene_id": "go_through_green_rectangle_tunnel",
+  "category": "go_through",
+  "seed": 0,
+  "camera_horizontal_half_fov_deg": 45.74642225983861,
+  "pairs": [
+    {
+      "A": "gate",
+      "B": "reference_marker",
+      "A_xy_m": [
+        2.2,
+        0.0
+      ],
+      "B_xy_m": [
+        4.4,
+        0.0
+      ],
+      "target_separation_m": 2.2,
+      "B_geom_names": [
+        "scenario_target"
+      ],
+      "condition_a_positive_certificate": true,
+      "condition_b_rejected_by_counterexample": true,
+      "condition_c_scene_unchanged": true,
+      "status": "rejected_b",
+      "reason": "B has unobstructed rays inside the frustum at a valid A stop pose without turning",
+      "poses": [
+        {
+          "name": "initial",
+          "body_xy_m": [
+            0.0,
+            0.0
+          ],
+          "yaw_rad": 0.0,
+          "visible_positive_certificate": true,
+          "frustum_surface_samples": 150,
+          "unoccluded_unique_sampled_pixels": 67,
+          "visible_geom_count": 1,
+          "B_projected_u_range": [
+            307.100531131498,
+            331.899468868502
+          ],
+          "B_projected_v_range": [
+            130.67709133027324,
+            200.4241037155972
+          ],
+          "occluding_geom_samples": {
+            "target_cross_h": 4
+          },
+          "unoccluded_rays": [
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.152,
+                0.1725
+              ],
+              "pixel_uv": [
+                331.2882860933046,
+                198.69474215850585
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 4.030478910749937
+            },
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.152,
+                0.38625
+              ],
+              "pixel_uv": [
+                331.2882860933046,
+                182.11746483979624
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 4.023014176273805
+            },
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.152,
+                0.6
+              ],
+              "pixel_uv": [
+                331.2882860933046,
+                165.54018752108666
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 4.026897565123802
+            },
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.152,
+                0.81375
+              ],
+              "pixel_uv": [
+                331.2882860933046,
+                148.9629102023771
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 4.042096369769034
+            },
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.152,
+                1.0274999999999999
+              ],
+              "pixel_uv": [
+                331.2882860933046,
+                132.38563288366748
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 4.068483777772747
+            },
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.076,
+                0.1725
+              ],
+              "pixel_uv": [
+                325.3941430466523,
+                198.69474215850585
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 4.028328716726082
+            }
+          ],
+          "camera_world_xyz_m": [
+            0.32,
+            0.0,
+            0.42000000000000004
+          ]
+        },
+        {
+          "name": "A_stop_counterexample",
+          "body_xy_m": [
+            1.2000000000000002,
+            0.0
+          ],
+          "yaw_before_turn_rad": 0.0,
+          "turn_rad": 0.0,
+          "yaw_after_turn_rad": 0.0,
+          "A_distance_m": 1.0,
+          "A_heading_error_rad": 0.0,
+          "A_distance_heading_pass_before_turn": true,
+          "static_environment_contact_free": true,
+          "velocity_set_to_zero": true,
+          "body_height_m": 0.34,
+          "evaluated_view_count": 1,
+          "visible_positive_certificate": true,
+          "frustum_surface_samples": 150,
+          "unoccluded_unique_sampled_pixels": 82,
+          "visible_geom_count": 1,
+          "B_projected_u_range": [
+            301.8297685944089,
+            337.1702314055911
+          ],
+          "B_projected_v_range": [
+            109.92346384048504,
+            209.318515496935
+          ],
+          "occluding_geom_samples": {
+            "target_cross_h": 4
+          },
+          "unoccluded_rays": [
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.152,
+                0.1725
+              ],
+              "pixel_uv": [
+                336.3045780479023,
+                206.8627175451041
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.8349180323247443
+            },
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.152,
+                0.38625
+              ],
+              "pixel_uv": [
+                336.3045780479023,
+                183.23127966524146
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.8242951443678828
+            },
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.152,
+                0.6
+              ],
+              "pixel_uv": [
+                336.3045780479023,
+                159.59984178537886
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.8298240227971774
+            },
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.152,
+                0.81375
+              ],
+              "pixel_uv": [
+                336.3045780479023,
+                135.96840390551625
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.8514107144534613
+            },
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.152,
+                1.0274999999999999
+              ],
+              "pixel_uv": [
+                336.3045780479023,
+                112.33696602565367
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.888695250454779
+            },
+            {
+              "sample_world_xyz_m": [
+                4.340000000000001,
+                -0.076,
+                0.1725
+              ],
+              "pixel_uv": [
+                327.90228902395114,
+                206.8627175451041
+              ],
+              "ray_first_hit": "scenario_target",
+              "ray_distance_m": 2.8318602101798738
+            }
+          ],
+          "camera_world_xyz_m": [
+            1.5200000000000002,
+            0.0,
+            0.42000000000000004
+          ]
+        }
+      ]
+    },
+    {
+      "A": "reference_marker",
+      "B": "gate",
+      "A_xy_m": [
+        4.4,
+        0.0
+      ],
+      "B_xy_m": [
+        2.2,
+        0.0
+      ],
+      "target_separation_m": 2.2,
+      "B_geom_names": [
+        "gate_post_0",
+        "gate_post_1",
+        "gate_top"
+      ],
+      "condition_a_positive_certificate": true,
+      "condition_b_rejected_by_counterexample": true,
+      "condition_c_scene_unchanged": true,
+      "status": "rejected_b",
+      "reason": "B has unobstructed rays inside the frustum at a valid A stop pose after one permitted turn",
+      "poses": [
+        {
+          "name": "initial",
+          "body_xy_m": [
+            0.0,
+            0.0
+          ],
+          "yaw_rad": 0.0,
+          "visible_positive_certificate": true,
+          "frustum_surface_samples": 450,
+          "unoccluded_unique_sampled_pixels": 437,
+          "visible_geom_count": 3,
+          "B_projected_u_range": [
+            162.30547292652204,
+            476.69452707347796
+          ],
+          "B_projected_v_range": [
+            3.0928085064302593,
+            252.85744596762305
+          ],
+          "occluding_geom_samples": {},
+          "unoccluded_rays": [
+            {
+              "sample_world_xyz_m": [
+                2.1,
+                -0.895,
+                0.032500000000000084
+              ],
+              "pixel_uv": [
+                476.2603287074978,
+                247.37109203816246
+              ],
+              "ray_first_hit": "gate_post_0",
+              "ray_distance_m": 2.0296751587384616
+            },
+            {
+              "sample_world_xyz_m": [
+                2.1,
+                -0.895,
+                0.34125000000000005
+              ],
+              "pixel_uv": [
+                476.2603287074978,
+                193.2931574142072
+              ],
+              "ray_first_hit": "gate_post_0",
+              "ray_distance_m": 1.9938973299796556
+            },
+            {
+              "sample_world_xyz_m": [
+                2.1,
+                -0.895,
+                0.65
+              ],
+              "pixel_uv": [
+                476.2603287074978,
+                139.21522279025197
+              ],
+              "ray_first_hit": "gate_post_0",
+              "ray_distance_m": 2.0055734840688335
+            },
+            {
+              "sample_world_xyz_m": [
+                2.1,
+                -0.895,
+                0.95875
+              ],
+              "pixel_uv": [
+                476.2603287074978,
+                85.13728816629671
+              ],
+              "ray_first_hit": "gate_post_0",
+              "ray_distance_m": 2.0638983895773553
+            },
+            {
+              "sample_world_xyz_m": [
+                2.1,
+                -0.895,
+                1.2675
+              ],
+              "pixel_uv": [
+                476.2603287074978,
+                31.059353542341455
+              ],
+              "ray_first_hit": "gate_post_0",
+              "ray_distance_m": 2.1651053669509945
+            },
+            {
+              "sample_world_xyz_m": [
+                2.1,
+                -0.8475,
+                0.032500000000000084
+              ],
+              "pixel_uv": [
+                467.94064645765854,
+                247.37109203816246
+              ],
+              "ray_first_hit": "gate_post_0",
+              "ray_distance_m": 2.0091820475009228
+            }
+          ],
+          "camera_world_xyz_m": [
+            0.32,
+            0.0,
+            0.42000000000000004
+          ]
+        },
+        {
+          "name": "A_stop_counterexample",
+          "body_xy_m": [
+            3.703293290652835,
+            -0.7173560908995228
+          ],
+          "yaw_before_turn_rad": 1.04,
+          "turn_rad": 0.6,
+          "yaw_after_turn_rad": 1.6400000000000006,
+          "A_distance_m": 0.9999999999999999,
+          "A_heading_error_rad": 0.23999999999999977,
+          "A_distance_heading_pass_before_turn": true,
+          "static_environment_contact_free": true,
+          "velocity_set_to_zero": true,
+          "body_height_m": 0.34,
+          "evaluated_view_count": 86,
+          "visible_positive_certificate": true,
+          "frustum_surface_samples": 30,
+          "unoccluded_unique_sampled_pixels": 28,
+          "visible_geom_count": 1,
+          "B_projected_u_range": [
+            -6179.314967261115,
+            29.64900134940865
+          ],
+          "B_projected_v_range": [
+            -4558.415319145557,
+            288.9536905261464
+          ],
+          "occluding_geom_samples": {},
+          "unoccluded_rays": [
+            {
+              "sample_world_xyz_m": [
+                2.3000000000000003,
+                0.8,
+                0.032500000000000084
+              ],
+              "pixel_uv": [
+                6.703866193427132,
+                273.09646597927207
+              ],
+              "ray_first_hit": "gate_post_1",
+              "ray_distance_m": 1.8690295945800937
+            },
+            {
+              "sample_world_xyz_m": [
+                2.3000000000000003,
+                0.8,
+                0.34125000000000005
+              ],
+              "pixel_uv": [
+                6.703866193427132,
+                198.52121727965852
+              ],
+              "ray_first_hit": "gate_post_1",
+              "ray_distance_m": 1.8301139139179914
+            },
+            {
+              "sample_world_xyz_m": [
+                2.3000000000000003,
+                0.8,
+                0.65
+              ],
+              "pixel_uv": [
+                6.703866193427132,
+                123.94596858004496
+              ],
+              "ray_first_hit": "gate_post_1",
+              "ray_distance_m": 1.8428280916613544
+            },
+            {
+              "sample_world_xyz_m": [
+                2.3000000000000003,
+                0.8,
+                0.95875
+              ],
+              "pixel_uv": [
+                6.703866193427132,
+                49.37071988043144
+              ],
+              "ray_first_hit": "gate_post_1",
+              "ray_distance_m": 1.906139275581989
+            },
+            {
+              "sample_world_xyz_m": [
+                2.3000000000000003,
+                0.8475,
+                0.032500000000000084
+              ],
+              "pixel_uv": [
+                18.54582846527137,
+                269.78203647299404
+              ],
+              "ray_first_hit": "gate_post_1",
+              "ray_distance_m": 1.8998288001974233
+            },
+            {
+              "sample_world_xyz_m": [
+                2.3000000000000003,
+                0.8475,
+                0.34125000000000005
+              ],
+              "pixel_uv": [
+                18.54582846527137,
+                197.84763967031813
+              ],
+              "ray_first_hit": "gate_post_1",
+              "ray_distance_m": 1.8615570854957901
+            }
+          ],
+          "camera_world_xyz_m": [
+            3.6811657870835353,
+            -0.3981220488773872,
+            0.42000000000000004
+          ]
+        }
+      ]
+    }
+  ]
+}

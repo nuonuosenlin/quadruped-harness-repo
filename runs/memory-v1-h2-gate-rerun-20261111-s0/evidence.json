@@ -1,0 +1,4111 @@
+{
+  "episode": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-gate-rerun-20261111-s0/H2/20261111-083939-api-memory_ab_occluded_v1-s0-76696f",
+  "metrics_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-gate-rerun-20261111-s0/H2/20261111-083939-api-memory_ab_occluded_v1-s0-76696f/metrics.json",
+  "memory_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-gate-rerun-20261111-s0/H2/20261111-083939-api-memory_ab_occluded_v1-s0-76696f/memory.md",
+  "metrics": {
+    "mode": "api",
+    "seed": 0,
+    "termination": "budget_exhausted",
+    "task_id": "memory_ab_occluded_v1",
+    "scenario_source": "local_memory_ordered_navigation_demo_not_official_benchmark",
+    "success": false,
+    "error": null,
+    "final_stop": {
+      "status": "succeeded",
+      "error_code": null,
+      "speed_mps": 0.00047205716938952303,
+      "yaw_rate_radps": 0.012364987333005055
+    },
+    "model_calls": 120,
+    "decision_calls": 120,
+    "protocol_retries": 0,
+    "motion_calls": 89,
+    "usage": {
+      "prompt_tokens": 552887,
+      "completion_tokens": 66105,
+      "total_tokens": 618992
+    },
+    "reasoning_responses": 119,
+    "reasoning_characters": 221831,
+    "wall_elapsed_s": 688.990620916,
+    "sim_elapsed_s": 235.7200000004022,
+    "evaluation": {
+      "success": false,
+      "goal_kind": "ordered_standoff",
+      "checkpoints": {
+        "A": {
+          "label": "A",
+          "target_xy_m": [
+            6.4,
+            0.0
+          ],
+          "base_xy_m": [
+            0.06034515925771801,
+            0.022750398653108968
+          ],
+          "distance_to_target_center_m": 6.3396956614955835,
+          "heading_error_rad": 0.3452060762966425,
+          "speed_mps": 0.009800162813585478,
+          "abs_yaw_rate_radps": 0.003122578685584362,
+          "sim_time_s": 38.000000000000476,
+          "stop_confirmed": true,
+          "stopped": true,
+          "collision": false,
+          "fallen": false,
+          "criteria_pass": false,
+          "failure_reasons": [
+            "DISTANCE_OUT_OF_RANGE",
+            "HEADING_OUT_OF_RANGE"
+          ],
+          "source": "privileged_simulator_evaluator",
+          "stop_index": 14,
+          "achieved_at_checkpoint": false,
+          "passed": false
+        },
+        "B": {
+          "label": "B",
+          "target_xy_m": [
+            1.8,
+            0.6
+          ],
+          "base_xy_m": [
+            -0.08681136584123615,
+            0.1504899751210011
+          ],
+          "distance_to_target_center_m": 1.9396175893032084,
+          "heading_error_rad": 0.08753284061707892,
+          "speed_mps": 0.00047205716938952303,
+          "abs_yaw_rate_radps": 0.012364987333005055,
+          "sim_time_s": 236.7200000004022,
+          "stop_confirmed": true,
+          "stopped": true,
+          "collision": false,
+          "fallen": false,
+          "criteria_pass": false,
+          "failure_reasons": [
+            "DISTANCE_OUT_OF_RANGE",
+            "A_NOT_CONFIRMED_BEFORE_B"
+          ],
+          "source": "privileged_simulator_evaluator",
+          "eligible": false,
+          "passed": false
+        }
+      },
+      "checkpoint_order": [
+        "A",
+        "B"
+      ],
+      "order_satisfied": false,
+      "premature_b_stops_ignored": 0,
+      "requires_finish": true,
+      "finish_enforced_by": "episode_runner",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "heading_tolerance_rad": 0.25,
+      "collision": false,
+      "fallen": false,
+      "stopped": true,
+      "source": "privileged_simulator_evaluator"
+    },
+    "simulation_mode": "paused_during_model_inference",
+    "is_llm_result": true,
+    "checkpoints": {
+      "A": {
+        "label": "A",
+        "target_xy_m": [
+          6.4,
+          0.0
+        ],
+        "base_xy_m": [
+          0.06034515925771801,
+          0.022750398653108968
+        ],
+        "distance_to_target_center_m": 6.3396956614955835,
+        "heading_error_rad": 0.3452060762966425,
+        "speed_mps": 0.009800162813585478,
+        "abs_yaw_rate_radps": 0.003122578685584362,
+        "sim_time_s": 38.000000000000476,
+        "stop_confirmed": true,
+        "stopped": true,
+        "collision": false,
+        "fallen": false,
+        "criteria_pass": false,
+        "failure_reasons": [
+          "DISTANCE_OUT_OF_RANGE",
+          "HEADING_OUT_OF_RANGE"
+        ],
+        "source": "privileged_simulator_evaluator",
+        "stop_index": 14,
+        "achieved_at_checkpoint": false,
+        "passed": false
+      },
+      "B": {
+        "label": "B",
+        "target_xy_m": [
+          1.8,
+          0.6
+        ],
+        "base_xy_m": [
+          -0.08681136584123615,
+          0.1504899751210011
+        ],
+        "distance_to_target_center_m": 1.9396175893032084,
+        "heading_error_rad": 0.08753284061707892,
+        "speed_mps": 0.00047205716938952303,
+        "abs_yaw_rate_radps": 0.012364987333005055,
+        "sim_time_s": 236.7200000004022,
+        "stop_confirmed": true,
+        "stopped": true,
+        "collision": false,
+        "fallen": false,
+        "criteria_pass": false,
+        "failure_reasons": [
+          "DISTANCE_OUT_OF_RANGE",
+          "A_NOT_CONFIRMED_BEFORE_B"
+        ],
+        "source": "privileged_simulator_evaluator",
+        "eligible": false,
+        "passed": false
+      }
+    },
+    "order_satisfied": false
+  },
+  "config": {
+    "task": "memory_ab_occluded_v1",
+    "seed": 0,
+    "provider": "compatible",
+    "model": "deepseek-v4.1-flash",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "viewer": true,
+    "budgets": {
+      "max_model_calls": 120,
+      "max_wall_seconds": 2400,
+      "max_sim_seconds": 600,
+      "history_turns": 6,
+      "api_timeout": 90,
+      "max_output_tokens": 8192
+    },
+    "H0_reference": "runs/memory-v1-ablation-20261111-s0/H0/20261111-002934-api-memory_ab_occluded_v1-s0-dcae9e/metrics.json",
+    "memory_v1": true,
+    "entrypoint": "python -m go2_demo",
+    "protocol_retry": "default at most 2 requests per decision; shared budget",
+    "consecutive_gate_stop": 2,
+    "code_sha256": {
+      "go2_demo/__init__.py": "208c9d851b1e9def7a52c1f7e36f3cdbcdb086ae9897be733de868e48bbc357b",
+      "go2_demo/__main__.py": "8203bb136d92c30033f7ab8366537ffc4b2e7cff088ef043377bc15bb98aa67d",
+      "go2_demo/backend.py": "fc2f0ebd74ffec9eaea12f17e9c8d66cac8ad5253fceb9301d1aa9feea1755b8",
+      "go2_demo/harness.py": "d4b4851f5df8127c7aaed518cdff8919088f6389f9134e4c4883bea913828796",
+      "go2_demo/memory.py": "8519f1a093324745c7689c48dd0096b2b20d8fa9b98cff4c4cf4c8dd5bba9a7d",
+      "go2_demo/memory_context.py": "ffb9dbfe8882d888e9ed8b8c27b1c0cfb097d5b1812e03e8166b09997c228a0d",
+      "go2_demo/memory_perception.py": "ad690d04999235db828e413e2e70d930232548b82abd136ca655965a63c7b989",
+      "go2_demo/memory_planning.py": "95fcec7e9399db9e3102c6a372897d6080e006ebcea036b8b0e3ecf8315558bd",
+      "go2_demo/memory_protocol.py": "0a7ac4322ba5af2d36609134ce0a0839802518090de638489d3ff4fca145c931",
+      "go2_demo/models.py": "875ae500f08f2c4192bdf5ca58beac88e5c9c31c07391a1b1fc2a073128d2c39",
+      "go2_demo/ordered_evaluation.py": "ff57acbbebd7d4109e809fde17969152ae2a8dc5ebd55116d3716e1116da14ef",
+      "go2_demo/perception.py": "d69f8fa98b1321fc2eab6b5adc966d23c7ec90fffe547166fa0ab9a767b83382",
+      "go2_demo/quard.py": "a0c9e2fdaf6de57108efb87a0bb07d60511acfff56cac1ad1afa4a53663d52fe",
+      "go2_demo/runner.py": "9dfa0f10c0ff535eda673349c634575d04695db4debcdb657102e9a92e557fbe",
+      "go2_demo/scenarios.py": "5ae3159d9fef9bf13e1b7abe4243ff47999e940065994ea98932731ebaefb4b7",
+      "go2_demo/types.py": "5aeacfff31e2f9eae78796cd27bdc4d38700897f916c40680aafe8d6a75b941b"
+    }
+  },
+  "real_api_episodes": 1,
+  "nonempty_reasoning_missing_decisions": [
+    9
+  ],
+  "startup_failure": {
+    "episode": "runs/memory-v1-h2-gate-rerun-20261111-s0/H2/20261111-083814-api-memory_ab_occluded_v1-s0-87fc41",
+    "model_requests": 0,
+    "metrics": {
+      "success": false,
+      "termination": "startup_error",
+      "task_id": "memory_ab_occluded_v1",
+      "scenario_source": "local_memory_ordered_navigation_demo_not_official_benchmark",
+      "mode": "api",
+      "is_llm_result": true,
+      "error": {
+        "type": "ImportError",
+        "code": "RUNTIME_ERROR",
+        "message": "Failed to load GLFW3 shared library."
+      }
+    },
+    "cause": "run monitor activation flag inherited by GLFW Python probe; cleared before child launch"
+  },
+  "source_unchanged": true,
+  "H0_condition_comparison": {
+    "task": true,
+    "task_id": true,
+    "seed": true,
+    "model": true,
+    "budgets": true,
+    "evaluation": true,
+    "asset_lock_sha256": true,
+    "api_settings": true
+  },
+  "H0_metrics": {
+    "mode": "api",
+    "seed": 0,
+    "termination": "budget_exhausted",
+    "task_id": "memory_ab_occluded_v1",
+    "scenario_source": "local_memory_ordered_navigation_demo_not_official_benchmark",
+    "success": false,
+    "error": null,
+    "final_stop": {
+      "status": "succeeded",
+      "error_code": null,
+      "speed_mps": 0.022972177360348227,
+      "yaw_rate_radps": 0.0115557867857252
+    },
+    "model_calls": 120,
+    "motion_calls": 92,
+    "usage": {
+      "prompt_tokens": 1867189,
+      "completion_tokens": 117884,
+      "total_tokens": 1985073
+    },
+    "reasoning_responses": 120,
+    "reasoning_characters": 373249,
+    "wall_elapsed_s": 1247.713095386,
+    "sim_elapsed_s": 254.3800000004913,
+    "evaluation": {
+      "success": false,
+      "goal_kind": "ordered_standoff",
+      "checkpoints": {
+        "A": {
+          "label": "A",
+          "target_xy_m": [
+            6.4,
+            0.0
+          ],
+          "base_xy_m": [
+            5.616655252462496,
+            0.7367996471503488
+          ],
+          "distance_to_target_center_m": 1.0754081613673363,
+          "heading_error_rad": 0.05954000699948547,
+          "speed_mps": 0.012607659892241095,
+          "abs_yaw_rate_radps": 0.00043265034760297237,
+          "sim_time_s": 183.66000000014884,
+          "stop_confirmed": true,
+          "stopped": true,
+          "collision": false,
+          "fallen": false,
+          "criteria_pass": true,
+          "failure_reasons": [],
+          "source": "privileged_simulator_evaluator",
+          "stop_index": 67,
+          "achieved_at_checkpoint": true,
+          "passed": true
+        },
+        "B": {
+          "label": "B",
+          "target_xy_m": [
+            1.8,
+            0.6
+          ],
+          "base_xy_m": [
+            5.117369658396033,
+            -1.7938402901946433
+          ],
+          "distance_to_target_center_m": 4.090893885864774,
+          "heading_error_rad": 1.9420880128677553,
+          "speed_mps": 0.022972177360348227,
+          "abs_yaw_rate_radps": 0.0115557867857252,
+          "sim_time_s": 255.3800000004913,
+          "stop_confirmed": true,
+          "stopped": true,
+          "collision": false,
+          "fallen": false,
+          "criteria_pass": false,
+          "failure_reasons": [
+            "DISTANCE_OUT_OF_RANGE",
+            "HEADING_OUT_OF_RANGE"
+          ],
+          "source": "privileged_simulator_evaluator",
+          "eligible": true,
+          "passed": false
+        }
+      },
+      "checkpoint_order": [
+        "A",
+        "B"
+      ],
+      "order_satisfied": true,
+      "premature_b_stops_ignored": 0,
+      "requires_finish": true,
+      "finish_enforced_by": "episode_runner",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "heading_tolerance_rad": 0.25,
+      "collision": false,
+      "fallen": false,
+      "stopped": true,
+      "source": "privileged_simulator_evaluator"
+    },
+    "simulation_mode": "paused_during_model_inference",
+    "is_llm_result": true,
+    "checkpoints": {
+      "A": {
+        "label": "A",
+        "target_xy_m": [
+          6.4,
+          0.0
+        ],
+        "base_xy_m": [
+          5.616655252462496,
+          0.7367996471503488
+        ],
+        "distance_to_target_center_m": 1.0754081613673363,
+        "heading_error_rad": 0.05954000699948547,
+        "speed_mps": 0.012607659892241095,
+        "abs_yaw_rate_radps": 0.00043265034760297237,
+        "sim_time_s": 183.66000000014884,
+        "stop_confirmed": true,
+        "stopped": true,
+        "collision": false,
+        "fallen": false,
+        "criteria_pass": true,
+        "failure_reasons": [],
+        "source": "privileged_simulator_evaluator",
+        "stop_index": 67,
+        "achieved_at_checkpoint": true,
+        "passed": true
+      },
+      "B": {
+        "label": "B",
+        "target_xy_m": [
+          1.8,
+          0.6
+        ],
+        "base_xy_m": [
+          5.117369658396033,
+          -1.7938402901946433
+        ],
+        "distance_to_target_center_m": 4.090893885864774,
+        "heading_error_rad": 1.9420880128677553,
+        "speed_mps": 0.022972177360348227,
+        "abs_yaw_rate_radps": 0.0115557867857252,
+        "sim_time_s": 255.3800000004913,
+        "stop_confirmed": true,
+        "stopped": true,
+        "collision": false,
+        "fallen": false,
+        "criteria_pass": false,
+        "failure_reasons": [
+          "DISTANCE_OUT_OF_RANGE",
+          "HEADING_OUT_OF_RANGE"
+        ],
+        "source": "privileged_simulator_evaluator",
+        "eligible": true,
+        "passed": false
+      }
+    },
+    "order_satisfied": true
+  },
+  "H0_metrics_sha256": "cd9ab3c9d5700944f9aec0e2cc84fc223a63815c8a5c339831ac35d33181e156",
+  "first_successful_turn_decision": 2,
+  "first_successful_translation_decision": null,
+  "first_translation_attempt_decision": null,
+  "tool_counts": {
+    "track_point": 20,
+    "turn": 89,
+    "observe": 10,
+    "get_geometry": 1
+  },
+  "failure_counts": {},
+  "finish_decisions": [],
+  "first_valid_objects": {
+    "decision": 42,
+    "objects": [
+      {
+        "object_id": "task:B",
+        "category": "task_target",
+        "state": "confirmed",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7353858588714828,
+            0.7419368256821057
+          ]
+        },
+        "pose_covariance": null,
+        "last_seen": 41,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00035",
+          "position_m": [
+            -0.6955119147685257,
+            0.3260924715144235,
+            1.4218961000442505
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        },
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00035",
+          "pixel_uv": [
+            167.0,
+            251.0
+          ]
+        },
+        "evidence_ids": [
+          "e000188",
+          "e000200"
+        ]
+      }
+    ]
+  },
+  "target_reads": {
+    "A": [],
+    "B": [
+      {
+        "decision": 42,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "confirmed",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7353858588714828,
+              0.7419368256821057
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 41,
+          "confidence": 0.95,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00035",
+            "position_m": [
+              -0.6955119147685257,
+              0.3260924715144235,
+              1.4218961000442505
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00035",
+            "pixel_uv": [
+              167.0,
+              251.0
+            ]
+          },
+          "evidence_ids": [
+            "e000188",
+            "e000200"
+          ]
+        }
+      },
+      {
+        "decision": 43,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "confirmed",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7353858588714828,
+              0.7419368256821057
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 41,
+          "confidence": 0.95,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00035",
+            "position_m": [
+              -0.6955119147685257,
+              0.3260924715144235,
+              1.4218961000442505
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00035",
+            "pixel_uv": [
+              167.0,
+              251.0
+            ]
+          },
+          "evidence_ids": [
+            "e000188",
+            "e000200"
+          ]
+        }
+      },
+      {
+        "decision": 44,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "confirmed",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7353858588714828,
+              0.7419368256821057
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 41,
+          "confidence": 0.95,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00035",
+            "position_m": [
+              -0.6955119147685257,
+              0.3260924715144235,
+              1.4218961000442505
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00035",
+            "pixel_uv": [
+              167.0,
+              251.0
+            ]
+          },
+          "evidence_ids": [
+            "e000188",
+            "e000200"
+          ]
+        }
+      },
+      {
+        "decision": 45,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "predicted",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7353858588714828,
+              0.7419368256821057
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 41,
+          "confidence": 0.475,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00035",
+            "position_m": [
+              -0.6955119147685257,
+              0.3260924715144235,
+              1.4218961000442505
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "prediction_basis": "static_landmark_short_occlusion",
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00035",
+            "pixel_uv": [
+              167.0,
+              251.0
+            ]
+          },
+          "evidence_ids": [
+            "e000188",
+            "e000200"
+          ]
+        }
+      },
+      {
+        "decision": 46,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "predicted",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7353858588714828,
+              0.7419368256821057
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 41,
+          "confidence": 0.475,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00035",
+            "position_m": [
+              -0.6955119147685257,
+              0.3260924715144235,
+              1.4218961000442505
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "prediction_basis": "static_landmark_short_occlusion",
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00035",
+            "pixel_uv": [
+              167.0,
+              251.0
+            ]
+          },
+          "evidence_ids": [
+            "e000188",
+            "e000200"
+          ]
+        }
+      },
+      {
+        "decision": 61,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "confirmed",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7315112103171602,
+              0.3821811098989973
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 60,
+          "confidence": 0.95,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00051",
+            "position_m": [
+              0.07567881840338608,
+              0.025226272801128692,
+              1.4299588203430176
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00051",
+            "pixel_uv": [
+              336.0,
+              185.0
+            ]
+          },
+          "evidence_ids": [
+            "e000281",
+            "e000293"
+          ]
+        }
+      },
+      {
+        "decision": 62,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "confirmed",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7315112103171602,
+              0.3821811098989973
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 60,
+          "confidence": 0.95,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00051",
+            "position_m": [
+              0.07567881840338608,
+              0.025226272801128692,
+              1.4299588203430176
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00051",
+            "pixel_uv": [
+              336.0,
+              185.0
+            ]
+          },
+          "evidence_ids": [
+            "e000281",
+            "e000293"
+          ]
+        }
+      },
+      {
+        "decision": 63,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "confirmed",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7315112103171602,
+              0.3821811098989973
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 60,
+          "confidence": 0.95,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00051",
+            "position_m": [
+              0.07567881840338608,
+              0.025226272801128692,
+              1.4299588203430176
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00051",
+            "pixel_uv": [
+              336.0,
+              185.0
+            ]
+          },
+          "evidence_ids": [
+            "e000281",
+            "e000293"
+          ]
+        }
+      },
+      {
+        "decision": 64,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "predicted",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7315112103171602,
+              0.3821811098989973
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 60,
+          "confidence": 0.475,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00051",
+            "position_m": [
+              0.07567881840338608,
+              0.025226272801128692,
+              1.4299588203430176
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "prediction_basis": "static_landmark_short_occlusion",
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00051",
+            "pixel_uv": [
+              336.0,
+              185.0
+            ]
+          },
+          "evidence_ids": [
+            "e000281",
+            "e000293"
+          ]
+        }
+      },
+      {
+        "decision": 65,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "predicted",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7315112103171602,
+              0.3821811098989973
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 60,
+          "confidence": 0.475,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00051",
+            "position_m": [
+              0.07567881840338608,
+              0.025226272801128692,
+              1.4299588203430176
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "prediction_basis": "static_landmark_short_occlusion",
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00051",
+            "pixel_uv": [
+              336.0,
+              185.0
+            ]
+          },
+          "evidence_ids": [
+            "e000281",
+            "e000293"
+          ]
+        }
+      },
+      {
+        "decision": 66,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "predicted",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.7315112103171602,
+              0.3821811098989973
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 60,
+          "confidence": 0.475,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00051",
+            "position_m": [
+              0.07567881840338608,
+              0.025226272801128692,
+              1.4299588203430176
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "prediction_basis": "static_landmark_short_occlusion",
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00051",
+            "pixel_uv": [
+              336.0,
+              185.0
+            ]
+          },
+          "evidence_ids": [
+            "e000281",
+            "e000293"
+          ]
+        }
+      },
+      {
+        "decision": 101,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "confirmed",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.728840642044429,
+              0.3861067169094535
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 100,
+          "confidence": 0.95,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00084",
+            "position_m": [
+              0.021463410765673457,
+              0.016693763928857134,
+              1.48702871799469
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00084",
+            "pixel_uv": [
+              324.0,
+              183.0
+            ]
+          },
+          "evidence_ids": [
+            "e000488",
+            "e000500"
+          ]
+        }
+      },
+      {
+        "decision": 102,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "confirmed",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.728840642044429,
+              0.3861067169094535
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 100,
+          "confidence": 0.95,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00084",
+            "position_m": [
+              0.021463410765673457,
+              0.016693763928857134,
+              1.48702871799469
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00084",
+            "pixel_uv": [
+              324.0,
+              183.0
+            ]
+          },
+          "evidence_ids": [
+            "e000488",
+            "e000500"
+          ]
+        }
+      },
+      {
+        "decision": 103,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "confirmed",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.728840642044429,
+              0.3861067169094535
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 100,
+          "confidence": 0.95,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00084",
+            "position_m": [
+              0.021463410765673457,
+              0.016693763928857134,
+              1.48702871799469
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00084",
+            "pixel_uv": [
+              324.0,
+              183.0
+            ]
+          },
+          "evidence_ids": [
+            "e000488",
+            "e000500"
+          ]
+        }
+      },
+      {
+        "decision": 104,
+        "object": {
+          "object_id": "task:B",
+          "category": "task_target",
+          "state": "predicted",
+          "pose": {
+            "frame": "episode_start",
+            "position_m": [
+              1.728840642044429,
+              0.3861067169094535
+            ]
+          },
+          "pose_covariance": null,
+          "last_seen": 100,
+          "confidence": 0.475,
+          "source": "task_label_rgbd_tracking",
+          "task_label": "B",
+          "label_description": "绿方块",
+          "camera_pose": {
+            "frame": "current_camera_optical",
+            "image_id": "frame-00084",
+            "position_m": [
+              0.021463410765673457,
+              0.016693763928857134,
+              1.48702871799469
+            ],
+            "source": "rgbd_depth_intrinsics"
+          },
+          "measurement_provenance": {
+            "identity": "task_given_label_plus_unique_current_color_component",
+            "tracking": "rgbd_optical_flow",
+            "reference_pose": "existing_public_idealized_simulator_odometry",
+            "motion_delta_used": false
+          },
+          "prediction_basis": "static_landmark_short_occlusion",
+          "anchor_node": null,
+          "visual_feature": {
+            "image_id": "frame-00084",
+            "pixel_uv": [
+              324.0,
+              183.0
+            ]
+          },
+          "evidence_ids": [
+            "e000488",
+            "e000500"
+          ]
+        }
+      }
+    ]
+  },
+  "target_objects_in_md": [
+    {
+      "object_id": "task:B",
+      "pose_covariance": null,
+      "pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7288048201410928,
+          0.38353183834067883
+        ]
+      },
+      "category": "task_target",
+      "confidence": 0.95,
+      "visual_feature": {
+        "image_id": "frame-00100",
+        "pixel_uv": [
+          317.0,
+          183.0
+        ]
+      },
+      "source": "task_label_rgbd_tracking",
+      "anchor_node": null,
+      "state": "confirmed",
+      "last_seen": 120,
+      "evidence_ids": [
+        "e000005",
+        "e000022",
+        "e000034",
+        "e000099",
+        "e000116",
+        "e000188",
+        "e000200",
+        "e000225",
+        "e000281",
+        "e000293",
+        "e000322",
+        "e000380",
+        "e000396",
+        "e000411",
+        "e000472",
+        "e000488",
+        "e000500",
+        "e000522",
+        "e000589",
+        "e000601"
+      ],
+      "candidate_pose": null,
+      "task_label": "B",
+      "label_description": "绿方块",
+      "camera_pose": {
+        "frame": "current_camera_optical",
+        "image_id": "frame-00100",
+        "position_m": [
+          -0.012096744867433333,
+          0.016935442814406666,
+          1.5085567235946655
+        ],
+        "source": "rgbd_depth_intrinsics"
+      },
+      "measurement_provenance": {
+        "identity": "task_given_label_plus_unique_current_color_component",
+        "tracking": "rgbd_optical_flow",
+        "reference_pose": "existing_public_idealized_simulator_odometry",
+        "motion_delta_used": false
+      }
+    }
+  ],
+  "target_evidence_ledger": [
+    {
+      "evidence_id": "e000005",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 1,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354,
+            0.7421
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00001",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00001",
+          "pixel_uv": [
+            156.0,
+            248.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00001",
+          "position_m": [
+            -0.746545465871329,
+            0.31277287102254453,
+            1.4235464334487915
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000022",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 4,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7393738185676924,
+            0.382003556520252
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00003",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00003",
+          "pixel_uv": [
+            234.0,
+            174.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00003",
+          "position_m": [
+            -0.38559178412228773,
+            -0.024804149855819677,
+            1.4060306549072266
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000034",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 6,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            2.4023327436808373,
+            1.0034175641810097
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00004",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00004",
+          "pixel_uv": [
+            384.0,
+            235.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00004",
+          "position_m": [
+            0.4598283202607212,
+            0.39566622906155086,
+            2.222640037536621
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000035",
+      "kind": "target_relocated",
+      "source": "task_label_rgbd_tracking",
+      "step": 6,
+      "object_id": "task:B",
+      "old_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7393738185676924,
+          0.382003556520252
+        ]
+      },
+      "new_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          2.4023327436808373,
+          1.0034175641810097
+        ]
+      },
+      "evidence_ids": [
+        "e000034"
+      ]
+    },
+    {
+      "evidence_id": "e000080",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 16,
+      "object_id": "task:B",
+      "old_state": "contradicted",
+      "state": "stale",
+      "unobserved_steps": 10
+    },
+    {
+      "evidence_id": "e000099",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 20,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7289053975452315,
+            0.38859899143529847
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00017",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00017",
+          "pixel_uv": [
+            127.0,
+            282.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00017",
+          "position_m": [
+            -0.7596114850606778,
+            0.404468453084257,
+            1.2302515506744385
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000100",
+      "kind": "target_relocated",
+      "source": "task_label_rgbd_tracking",
+      "step": 20,
+      "object_id": "task:B",
+      "old_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7393738185676924,
+          0.382003556520252
+        ]
+      },
+      "new_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7289053975452315,
+          0.38859899143529847
+        ]
+      },
+      "evidence_ids": [
+        "e000099"
+      ]
+    },
+    {
+      "evidence_id": "e000116",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 23,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.808891831001307,
+            0.4879328252178292
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00019",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00019",
+          "pixel_uv": [
+            591.0,
+            182.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00019",
+          "position_m": [
+            1.026941498920792,
+            0.009456183231314842,
+            1.1792584657669067
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000160",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 33,
+      "object_id": "task:B",
+      "old_state": "unknown",
+      "state": "stale",
+      "unobserved_steps": 10
+    },
+    {
+      "evidence_id": "e000188",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 39,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7354859052592504,
+            0.3821052711022028
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00034",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00034",
+          "pixel_uv": [
+            20.0,
+            193.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00034",
+          "position_m": [
+            -1.0589940780960208,
+            0.04773429066542998,
+            1.1023762226104736
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000200",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 41,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7353858588714828,
+            0.7419368256821057
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00035",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00035",
+          "pixel_uv": [
+            167.0,
+            251.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00035",
+          "position_m": [
+            -0.6955119147685257,
+            0.3260924715144235,
+            1.4218961000442505
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000215",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 44,
+      "object_id": "task:B",
+      "old_state": "confirmed",
+      "state": "predicted",
+      "unobserved_steps": 3
+    },
+    {
+      "evidence_id": "e000225",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 46,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7342863290842825,
+            0.6852968235508405
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00039",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00039",
+          "pixel_uv": [
+            630.0,
+            292.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00039",
+          "position_m": [
+            1.121288713585141,
+            0.4062640266612829,
+            1.1258718967437744
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000270",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 56,
+      "object_id": "task:B",
+      "old_state": "unknown",
+      "state": "stale",
+      "unobserved_steps": 10
+    },
+    {
+      "evidence_id": "e000281",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 58,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7288757019836785,
+            0.3889285043101871
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00050",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00050",
+          "pixel_uv": [
+            153.0,
+            284.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00050",
+          "position_m": [
+            -0.692434936274639,
+            0.43459129634053917,
+            1.296575665473938
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000293",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 60,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7315112103171602,
+            0.3821811098989973
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00051",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00051",
+          "pixel_uv": [
+            336.0,
+            185.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00051",
+          "position_m": [
+            0.07567881840338608,
+            0.025226272801128692,
+            1.4299588203430176
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000308",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 63,
+      "object_id": "task:B",
+      "old_state": "confirmed",
+      "state": "predicted",
+      "unobserved_steps": 3
+    },
+    {
+      "evidence_id": "e000322",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 66,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            2.8030046064675997,
+            0.414336577286907
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00056",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00056",
+          "pixel_uv": [
+            552.0,
+            244.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00056",
+          "position_m": [
+            1.5159755968576873,
+            0.42056097203148746,
+            2.0328361988067627
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000323",
+      "kind": "target_relocated",
+      "source": "task_label_rgbd_tracking",
+      "step": 66,
+      "object_id": "task:B",
+      "old_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7315112103171602,
+          0.3821811098989973
+        ]
+      },
+      "new_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          2.8030046064675997,
+          0.414336577286907
+        ]
+      },
+      "evidence_ids": [
+        "e000322"
+      ]
+    },
+    {
+      "evidence_id": "e000369",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 76,
+      "object_id": "task:B",
+      "old_state": "contradicted",
+      "state": "stale",
+      "unobserved_steps": 10
+    },
+    {
+      "evidence_id": "e000380",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 78,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7479145956059345,
+            0.3818201308927221
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00067",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00067",
+          "pixel_uv": [
+            219.0,
+            281.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00067",
+          "position_m": [
+            -0.44180576198873034,
+            0.44620183922244905,
+            1.3705612421035767
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000381",
+      "kind": "target_relocated",
+      "source": "task_label_rgbd_tracking",
+      "step": 78,
+      "object_id": "task:B",
+      "old_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7315112103171602,
+          0.3821811098989973
+        ]
+      },
+      "new_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7479145956059345,
+          0.3818201308927221
+        ]
+      },
+      "evidence_ids": [
+        "e000380"
+      ]
+    },
+    {
+      "evidence_id": "e000396",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 80,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            3.5644271928668174,
+            0.6707092282798046
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00068",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00068",
+          "pixel_uv": [
+            386.0,
+            177.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00068",
+          "position_m": [
+            0.6809175959497902,
+            -0.025598405862774065,
+            3.192317247390747
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000397",
+      "kind": "target_relocated",
+      "source": "task_label_rgbd_tracking",
+      "step": 80,
+      "object_id": "task:B",
+      "old_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7315112103171602,
+          0.3821811098989973
+        ]
+      },
+      "new_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          3.5644271928668174,
+          0.6707092282798046
+        ]
+      },
+      "evidence_ids": [
+        "e000396"
+      ]
+    },
+    {
+      "evidence_id": "e000411",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 82,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7339286944445838,
+            0.6625421118502557
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00069",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00069",
+          "pixel_uv": [
+            617.0,
+            304.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00069",
+          "position_m": [
+            1.0653067700465366,
+            0.4458174550278784,
+            1.1164026260375977
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000412",
+      "kind": "target_relocated",
+      "source": "task_label_rgbd_tracking",
+      "step": 82,
+      "object_id": "task:B",
+      "old_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7315112103171602,
+          0.3821811098989973
+        ]
+      },
+      "new_pose": {
+        "frame": "episode_start",
+        "position_m": [
+          1.7339286944445838,
+          0.6625421118502557
+        ]
+      },
+      "evidence_ids": [
+        "e000411"
+      ]
+    },
+    {
+      "evidence_id": "e000457",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 92,
+      "object_id": "task:B",
+      "old_state": "contradicted",
+      "state": "stale",
+      "unobserved_steps": 10
+    },
+    {
+      "evidence_id": "e000472",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 95,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.882980351193795,
+            0.3793671784950846
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00081",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00081",
+          "pixel_uv": [
+            184.0,
+            270.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00081",
+          "position_m": [
+            -0.6708624384053115,
+            0.44806679465446997,
+            1.5435734987258911
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000488",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 98,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7289218991869801,
+            0.38980959013163663
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00083",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00083",
+          "pixel_uv": [
+            133.0,
+            272.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00083",
+          "position_m": [
+            -0.7935923410539264,
+            0.3936047804154863,
+            1.3266359567642212
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000500",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 100,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.728840642044429,
+            0.3861067169094535
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00084",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00084",
+          "pixel_uv": [
+            324.0,
+            183.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00084",
+          "position_m": [
+            0.021463410765673457,
+            0.016693763928857134,
+            1.48702871799469
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000516",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 103,
+      "object_id": "task:B",
+      "old_state": "confirmed",
+      "state": "predicted",
+      "unobserved_steps": 3
+    },
+    {
+      "evidence_id": "e000522",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 104,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.8590894632132973,
+            0.566667624794196
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00087",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00087",
+          "pixel_uv": [
+            588.0,
+            179.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00087",
+          "position_m": [
+            1.111903756923816,
+            -0.0020705842773255418,
+            1.291088581085205
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000570",
+      "kind": "belief_state_changed",
+      "source": "memory_rules",
+      "step": 114,
+      "object_id": "task:B",
+      "old_state": "unknown",
+      "state": "stale",
+      "unobserved_steps": 10
+    },
+    {
+      "evidence_id": "e000589",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 118,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7431237530184007,
+            0.38200652915516187
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00099",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00099",
+          "pixel_uv": [
+            129.0,
+            272.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00099",
+          "position_m": [
+            -0.8287686880290569,
+            0.40242049156266546,
+            1.3563491106033325
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    },
+    {
+      "evidence_id": "e000601",
+      "kind": "observation_confirmed",
+      "source": "task_label_rgbd_tracking",
+      "step": 120,
+      "observation": {
+        "object_id": "task:B",
+        "category": "task_target",
+        "pose": {
+          "frame": "episode_start",
+          "position_m": [
+            1.7288048201410928,
+            0.38353183834067883
+          ]
+        },
+        "pose_covariance": null,
+        "confidence": 0.95,
+        "source": "task_label_rgbd_tracking",
+        "frame_id": "frame-00100",
+        "anchor_node": null,
+        "visual_feature": {
+          "image_id": "frame-00100",
+          "pixel_uv": [
+            317.0,
+            183.0
+          ]
+        },
+        "task_label": "B",
+        "label_description": "绿方块",
+        "camera_pose": {
+          "frame": "current_camera_optical",
+          "image_id": "frame-00100",
+          "position_m": [
+            -0.012096744867433333,
+            0.016935442814406666,
+            1.5085567235946655
+          ],
+          "source": "rgbd_depth_intrinsics"
+        },
+        "measurement_provenance": {
+          "identity": "task_given_label_plus_unique_current_color_component",
+          "tracking": "rgbd_optical_flow",
+          "reference_pose": "existing_public_idealized_simulator_odometry",
+          "motion_delta_used": false
+        }
+      }
+    }
+  ],
+  "ledger_size": 607,
+  "B_relocation_count": 6,
+  "plans_in_md": [
+    {
+      "subgoals": [
+        {
+          "subgoal_id": "scan_A",
+          "description": "scan scene to locate blue ball A before approaching B",
+          "preconditions": [],
+          "completion": [],
+          "active": false,
+          "status": "进行中",
+          "evidence_ids": [
+            "e000016"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "on": "skill_stuck",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "recovery": "observe and re-plan a safe scan",
+      "plan_id": "plan-0001",
+      "active": false
+    },
+    {
+      "subgoals": [
+        {
+          "subgoal_id": "scan_A",
+          "description": "rotate conservatively to visually locate blue ball A",
+          "preconditions": [],
+          "completion": [],
+          "active": false,
+          "status": "进行中",
+          "evidence_ids": [
+            "e000178"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "on": "skill_stuck",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "recovery": "observe, then continue safe scan or replan exploration",
+      "plan_id": "plan-0002",
+      "active": false
+    },
+    {
+      "subgoals": [
+        {
+          "subgoal_id": "scan_A",
+          "description": "rotate conservatively to look for blue ball A before approaching B",
+          "preconditions": [],
+          "completion": [],
+          "active": false,
+          "status": "进行中",
+          "evidence_ids": [
+            "e000334"
+          ]
+        }
+      ],
+      "branches": [
+        {
+          "on": "skill_stuck",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "recovery": "observe current view, then continue safe scan or abort if no target appears",
+      "plan_id": "plan-0003",
+      "active": false
+    },
+    {
+      "subgoals": [
+        {
+          "subgoal_id": "scan_A",
+          "description": "turn conservatively to search for blue ball A",
+          "preconditions": [],
+          "completion": [],
+          "active": true,
+          "status": "进行中",
+          "evidence_ids": [
+            "e000520"
+          ]
+        },
+        {
+          "subgoal_id": "approach_A",
+          "description": "stand 1.0 m from A facing it, then stop",
+          "preconditions": [
+            {
+              "object_id": "task:A"
+            }
+          ],
+          "completion": [],
+          "active": true,
+          "status": "待做",
+          "evidence_ids": []
+        }
+      ],
+      "branches": [
+        {
+          "on": "skill_stuck",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "recovery": "stop, observe current view, then resume conservative scanning or abort if no target visible",
+      "plan_id": "plan-0004",
+      "active": true
+    }
+  ],
+  "final_pose_in_md": {
+    "frame": "episode_start",
+    "position_m": [
+      -0.08491613033242727,
+      0.14496089750037075
+    ],
+    "yaw_rad": 0.12384347185088797,
+    "source": "simulated_proprioception",
+    "provenance": "existing_public_idealized_simulator_odometry"
+  },
+  "A_candidate_input_count": 0,
+  "memory_event_counts": {
+    "target_state_changed": 44,
+    "replan_required": 30
+  },
+  "requested_turn_yaw_sum_rad": 41.550000000000026,
+  "A_checkpoint_decision_by_sim_time": null,
+  "B_reads_after_A": [],
+  "protocol_error_count": 0,
+  "length_count": 0,
+  "protocol_captures": [],
+  "successful_repair_decisions": [],
+  "user_stop": null,
+  "last_results": [
+    {
+      "event": "tool_results",
+      "wall_elapsed_s": 662.5970941639999,
+      "turn": 114,
+      "results": [
+        {
+          "call_id": "call_ff20920ad8ee40668d083388",
+          "tool": "turn",
+          "status": "succeeded",
+          "error_code": null,
+          "measured": {
+            "translation_start_frame_m": [
+              0.010422155134799459,
+              -0.0030480874303207795
+            ],
+            "yaw_delta_rad": 0.4437677153792725,
+            "position_error_m": 0.010858736327801051,
+            "heading_error_rad": 0.05623228462072749,
+            "elapsed_sim_s": 2.860000000013656
+          },
+          "stop": {
+            "status": "succeeded",
+            "error_code": null,
+            "speed_mps": 0.005704609233849011,
+            "yaw_rate_radps": 0.012337725616082209
+          },
+          "plan_id": "plan-0004",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "next_observation": {
+        "task": "依次完成两个目标：先找到蓝球 A，停到距其中心 0.82–1.18 米处，面向它（朝向误差不超过 0.25 弧度），调用 stop 确认停止；然后找到绿方块 B，以同样的距离和朝向标准停止，再调用 finish 结束整轮。B 只有在 A 的独立检查点已通过后才计分，直接先到 B 不算完成。两段行程都不得碰撞或跌倒。场景中的柜体是不允许接触的障碍，目标可能被柜体遮挡，需要安全绕行。目标位置不在工具中给出；只能用相机可见信息、追踪点几何和实测运动反馈作判断。请在离开初始区域之前留意两个目标，并自行验证 A 后再去 B。独立评分不接受模型自述。",
+        "image_id": "frame-00097",
+        "sim_time_s": 229.00000000036533,
+        "image_size": {
+          "width": 640,
+          "height": 360
+        },
+        "coordinate_convention": "tracked_points.relative_xy_m: origin at the current base body reference, horizontal forward and left axes, metres; yaw positive left. local_odometry: origin and horizontal axes fixed at the episode-start base body reference.",
+        "local_odometry": {
+          "translation_m": [
+            -0.13711137436264811,
+            0.12738344518102016
+          ],
+          "yaw_rad": -1.318807721801009,
+          "reference": "episode_start_body_horizontal",
+          "source": "simulated_proprioception"
+        },
+        "robot_state": {
+          "motion_state": "idle",
+          "body_height_m": 0.36673469506293394,
+          "body_pitch_rad": -0.028658905132450566,
+          "body_roll_rad": -0.022332384260075562,
+          "speed_mps": 0.005704609233849011,
+          "yaw_rate_radps": -0.012337725616082209,
+          "fallen": false,
+          "posture_control_supported": false
+        },
+        "tracked_points": [
+          {
+            "point_id": "point-011",
+            "image_id": "frame-00097",
+            "timestamp_s": 229.00000000036533,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-012",
+            "image_id": "frame-00097",
+            "timestamp_s": 229.00000000036533,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-013",
+            "image_id": "frame-00097",
+            "timestamp_s": 229.00000000036533,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-014",
+            "image_id": "frame-00097",
+            "timestamp_s": 229.00000000036533,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-015",
+            "image_id": "frame-00097",
+            "timestamp_s": 229.00000000036533,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-016",
+            "image_id": "frame-00097",
+            "timestamp_s": 229.00000000036533,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-017",
+            "image_id": "frame-00097",
+            "timestamp_s": 229.00000000036533,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-018",
+            "image_id": "frame-00097",
+            "timestamp_s": 229.00000000036533,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          }
+        ],
+        "capabilities": {
+          "planar_motion": true,
+          "height_pitch_control": false
+        },
+        "simulation_mode": "paused_during_model_inference",
+        "sensor_calibration": {
+          "camera_frame": "front_rgbd_optical",
+          "body_frame": "base",
+          "optical_axes": "x right, y down, z forward",
+          "body_axes": "x forward, y left, z up",
+          "camera_position_in_body_m": [
+            0.32,
+            0.0,
+            0.08
+          ],
+          "camera_optical_to_body_rotation": [
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          ]
+        },
+        "completion_requirements": {
+          "goal_kind": "ordered_standoff",
+          "reference_body": "base",
+          "stop_required": true,
+          "collision_free_required": true,
+          "max_stopped_speed_mps": 0.12,
+          "max_stopped_yaw_rate_radps": 0.25,
+          "standoff_m": 1.0,
+          "distance_tolerance_m": 0.18,
+          "heading_tolerance_rad": 0.25
+        }
+      }
+    },
+    {
+      "event": "tool_results",
+      "wall_elapsed_s": 667.82255716,
+      "turn": 115,
+      "results": [
+        {
+          "call_id": "call_c10d5dc71a7f4bf3a5ca711b",
+          "tool": "turn",
+          "status": "succeeded",
+          "error_code": null,
+          "measured": {
+            "translation_start_frame_m": [
+              -0.004790330196190224,
+              0.0169758450037623
+            ],
+            "yaw_delta_rad": 0.4562427492529113,
+            "position_error_m": 0.017638780484497598,
+            "heading_error_rad": 0.043757250747088694,
+            "elapsed_sim_s": 2.2800000000108867
+          },
+          "stop": {
+            "status": "succeeded",
+            "error_code": null,
+            "speed_mps": 0.03583425424434593,
+            "yaw_rate_radps": 0.0053907564041013965
+          },
+          "plan_id": "plan-0004",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "next_observation": {
+        "task": "依次完成两个目标：先找到蓝球 A，停到距其中心 0.82–1.18 米处，面向它（朝向误差不超过 0.25 弧度），调用 stop 确认停止；然后找到绿方块 B，以同样的距离和朝向标准停止，再调用 finish 结束整轮。B 只有在 A 的独立检查点已通过后才计分，直接先到 B 不算完成。两段行程都不得碰撞或跌倒。场景中的柜体是不允许接触的障碍，目标可能被柜体遮挡，需要安全绕行。目标位置不在工具中给出；只能用相机可见信息、追踪点几何和实测运动反馈作判断。请在离开初始区域之前留意两个目标，并自行验证 A 后再去 B。独立评分不接受模型自述。",
+        "image_id": "frame-00098",
+        "sim_time_s": 231.28000000037622,
+        "image_size": {
+          "width": 640,
+          "height": 360
+        },
+        "coordinate_convention": "tracked_points.relative_xy_m: origin at the current base body reference, horizontal forward and left axes, metres; yaw positive left. local_odometry: origin and horizontal axes fixed at the episode-start base body reference.",
+        "local_odometry": {
+          "translation_m": [
+            -0.12186602595031967,
+            0.13625508137548892
+          ],
+          "yaw_rad": -0.8625649725480976,
+          "reference": "episode_start_body_horizontal",
+          "source": "simulated_proprioception"
+        },
+        "robot_state": {
+          "motion_state": "idle",
+          "body_height_m": 0.36124349176365494,
+          "body_pitch_rad": -0.012447195525488381,
+          "body_roll_rad": -0.014167019710981606,
+          "speed_mps": 0.03583425424434593,
+          "yaw_rate_radps": 0.0053907564041013965,
+          "fallen": false,
+          "posture_control_supported": false
+        },
+        "tracked_points": [
+          {
+            "point_id": "point-011",
+            "image_id": "frame-00098",
+            "timestamp_s": 231.28000000037622,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-012",
+            "image_id": "frame-00098",
+            "timestamp_s": 231.28000000037622,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-013",
+            "image_id": "frame-00098",
+            "timestamp_s": 231.28000000037622,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-014",
+            "image_id": "frame-00098",
+            "timestamp_s": 231.28000000037622,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-015",
+            "image_id": "frame-00098",
+            "timestamp_s": 231.28000000037622,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-016",
+            "image_id": "frame-00098",
+            "timestamp_s": 231.28000000037622,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-017",
+            "image_id": "frame-00098",
+            "timestamp_s": 231.28000000037622,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-018",
+            "image_id": "frame-00098",
+            "timestamp_s": 231.28000000037622,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          }
+        ],
+        "capabilities": {
+          "planar_motion": true,
+          "height_pitch_control": false
+        },
+        "simulation_mode": "paused_during_model_inference",
+        "sensor_calibration": {
+          "camera_frame": "front_rgbd_optical",
+          "body_frame": "base",
+          "optical_axes": "x right, y down, z forward",
+          "body_axes": "x forward, y left, z up",
+          "camera_position_in_body_m": [
+            0.32,
+            0.0,
+            0.08
+          ],
+          "camera_optical_to_body_rotation": [
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          ]
+        },
+        "completion_requirements": {
+          "goal_kind": "ordered_standoff",
+          "reference_body": "base",
+          "stop_required": true,
+          "collision_free_required": true,
+          "max_stopped_speed_mps": 0.12,
+          "max_stopped_yaw_rate_radps": 0.25,
+          "standoff_m": 1.0,
+          "distance_tolerance_m": 0.18,
+          "heading_tolerance_rad": 0.25
+        }
+      }
+    },
+    {
+      "event": "tool_results",
+      "wall_elapsed_s": 673.169656628,
+      "turn": 116,
+      "results": [
+        {
+          "call_id": "call_d713cc6c124545dcb7eab0d5",
+          "tool": "turn",
+          "status": "succeeded",
+          "error_code": null,
+          "measured": {
+            "translation_start_frame_m": [
+              0.015326235480223289,
+              0.010773746961218751
+            ],
+            "yaw_delta_rad": 0.5376773503777672,
+            "position_error_m": 0.018734116407763284,
+            "heading_error_rad": 0.062322649622232884,
+            "elapsed_sim_s": 2.420000000011555
+          },
+          "stop": {
+            "status": "succeeded",
+            "error_code": null,
+            "speed_mps": 0.007144959316802598,
+            "yaw_rate_radps": 0.02868528649876413
+          },
+          "plan_id": "plan-0004",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "next_observation": {
+        "task": "依次完成两个目标：先找到蓝球 A，停到距其中心 0.82–1.18 米处，面向它（朝向误差不超过 0.25 弧度），调用 stop 确认停止；然后找到绿方块 B，以同样的距离和朝向标准停止，再调用 finish 结束整轮。B 只有在 A 的独立检查点已通过后才计分，直接先到 B 不算完成。两段行程都不得碰撞或跌倒。场景中的柜体是不允许接触的障碍，目标可能被柜体遮挡，需要安全绕行。目标位置不在工具中给出；只能用相机可见信息、追踪点几何和实测运动反馈作判断。请在离开初始区域之前留意两个目标，并自行验证 A 后再去 B。独立评分不接受模型自述。",
+        "image_id": "frame-00099",
+        "sim_time_s": 233.70000000038777,
+        "image_size": {
+          "width": 640,
+          "height": 360
+        },
+        "coordinate_convention": "tracked_points.relative_xy_m: origin at the current base body reference, horizontal forward and left axes, metres; yaw positive left. local_odometry: origin and horizontal axes fixed at the episode-start base body reference.",
+        "local_odometry": {
+          "translation_m": [
+            -0.10371363354366789,
+            0.1316228284145037
+          ],
+          "yaw_rad": -0.32488762217033057,
+          "reference": "episode_start_body_horizontal",
+          "source": "simulated_proprioception"
+        },
+        "robot_state": {
+          "motion_state": "idle",
+          "body_height_m": 0.36140158004079376,
+          "body_pitch_rad": -0.01757403812015963,
+          "body_roll_rad": -0.006173191253454054,
+          "speed_mps": 0.007144959316802598,
+          "yaw_rate_radps": -0.02868528649876413,
+          "fallen": false,
+          "posture_control_supported": false
+        },
+        "tracked_points": [
+          {
+            "point_id": "point-011",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-012",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-013",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-014",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-015",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-016",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-017",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-018",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          }
+        ],
+        "capabilities": {
+          "planar_motion": true,
+          "height_pitch_control": false
+        },
+        "simulation_mode": "paused_during_model_inference",
+        "sensor_calibration": {
+          "camera_frame": "front_rgbd_optical",
+          "body_frame": "base",
+          "optical_axes": "x right, y down, z forward",
+          "body_axes": "x forward, y left, z up",
+          "camera_position_in_body_m": [
+            0.32,
+            0.0,
+            0.08
+          ],
+          "camera_optical_to_body_rotation": [
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          ]
+        },
+        "completion_requirements": {
+          "goal_kind": "ordered_standoff",
+          "reference_body": "base",
+          "stop_required": true,
+          "collision_free_required": true,
+          "max_stopped_speed_mps": 0.12,
+          "max_stopped_yaw_rate_radps": 0.25,
+          "standoff_m": 1.0,
+          "distance_tolerance_m": 0.18,
+          "heading_tolerance_rad": 0.25
+        }
+      }
+    },
+    {
+      "event": "tool_results",
+      "wall_elapsed_s": 677.252111139,
+      "turn": 117,
+      "results": [
+        {
+          "call_id": "call_608dd246b08a4eb4a4675d38",
+          "tool": "track_point",
+          "status": "succeeded",
+          "point": {
+            "point_id": "point-019",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": true,
+            "pixel_uv": [
+              129.0,
+              272.0
+            ],
+            "relative_xy_m": [
+              1.6703,
+              0.8268
+            ],
+            "range_m": 1.8637,
+            "bearing_rad": 0.4596,
+            "confidence": 1.0,
+            "loss_reason": null,
+            "source": "rgbd_optical_flow"
+          }
+        }
+      ],
+      "next_observation": {
+        "task": "依次完成两个目标：先找到蓝球 A，停到距其中心 0.82–1.18 米处，面向它（朝向误差不超过 0.25 弧度），调用 stop 确认停止；然后找到绿方块 B，以同样的距离和朝向标准停止，再调用 finish 结束整轮。B 只有在 A 的独立检查点已通过后才计分，直接先到 B 不算完成。两段行程都不得碰撞或跌倒。场景中的柜体是不允许接触的障碍，目标可能被柜体遮挡，需要安全绕行。目标位置不在工具中给出；只能用相机可见信息、追踪点几何和实测运动反馈作判断。请在离开初始区域之前留意两个目标，并自行验证 A 后再去 B。独立评分不接受模型自述。",
+        "image_id": "frame-00099",
+        "sim_time_s": 233.70000000038777,
+        "image_size": {
+          "width": 640,
+          "height": 360
+        },
+        "coordinate_convention": "tracked_points.relative_xy_m: origin at the current base body reference, horizontal forward and left axes, metres; yaw positive left. local_odometry: origin and horizontal axes fixed at the episode-start base body reference.",
+        "local_odometry": {
+          "translation_m": [
+            -0.10371363354366789,
+            0.1316228284145037
+          ],
+          "yaw_rad": -0.32488762217033057,
+          "reference": "episode_start_body_horizontal",
+          "source": "simulated_proprioception"
+        },
+        "robot_state": {
+          "motion_state": "idle",
+          "body_height_m": 0.36140158004079376,
+          "body_pitch_rad": -0.01757403812015963,
+          "body_roll_rad": -0.006173191253454054,
+          "speed_mps": 0.007144959316802598,
+          "yaw_rate_radps": -0.02868528649876413,
+          "fallen": false,
+          "posture_control_supported": false
+        },
+        "tracked_points": [
+          {
+            "point_id": "point-012",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-013",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-014",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-015",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-016",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-017",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-018",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-019",
+            "image_id": "frame-00099",
+            "timestamp_s": 233.70000000038777,
+            "valid": true,
+            "pixel_uv": [
+              129.0,
+              272.0
+            ],
+            "relative_xy_m": [
+              1.6703,
+              0.8268
+            ],
+            "range_m": 1.8637,
+            "bearing_rad": 0.4596,
+            "confidence": 1.0,
+            "loss_reason": null,
+            "source": "rgbd_optical_flow"
+          }
+        ],
+        "capabilities": {
+          "planar_motion": true,
+          "height_pitch_control": false
+        },
+        "simulation_mode": "paused_during_model_inference",
+        "sensor_calibration": {
+          "camera_frame": "front_rgbd_optical",
+          "body_frame": "base",
+          "optical_axes": "x right, y down, z forward",
+          "body_axes": "x forward, y left, z up",
+          "camera_position_in_body_m": [
+            0.32,
+            0.0,
+            0.08
+          ],
+          "camera_optical_to_body_rotation": [
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          ]
+        },
+        "completion_requirements": {
+          "goal_kind": "ordered_standoff",
+          "reference_body": "base",
+          "stop_required": true,
+          "collision_free_required": true,
+          "max_stopped_speed_mps": 0.12,
+          "max_stopped_yaw_rate_radps": 0.25,
+          "standoff_m": 1.0,
+          "distance_tolerance_m": 0.18,
+          "heading_tolerance_rad": 0.25
+        }
+      }
+    },
+    {
+      "event": "tool_results",
+      "wall_elapsed_s": 683.747807858,
+      "turn": 118,
+      "results": [
+        {
+          "call_id": "call_6b540fc029c8495097667a89",
+          "tool": "turn",
+          "status": "succeeded",
+          "error_code": null,
+          "measured": {
+            "translation_start_frame_m": [
+              0.01355659979369853,
+              0.01864051544216136
+            ],
+            "yaw_delta_rad": 0.44873109402121836,
+            "position_error_m": 0.02304886578372053,
+            "heading_error_rad": 0.05126890597878164,
+            "elapsed_sim_s": 2.420000000011555
+          },
+          "stop": {
+            "status": "succeeded",
+            "error_code": null,
+            "speed_mps": 0.008463135285627183,
+            "yaw_rate_radps": 0.0014325553216679237
+          },
+          "plan_id": "plan-0004",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "next_observation": {
+        "task": "依次完成两个目标：先找到蓝球 A，停到距其中心 0.82–1.18 米处，面向它（朝向误差不超过 0.25 弧度），调用 stop 确认停止；然后找到绿方块 B，以同样的距离和朝向标准停止，再调用 finish 结束整轮。B 只有在 A 的独立检查点已通过后才计分，直接先到 B 不算完成。两段行程都不得碰撞或跌倒。场景中的柜体是不允许接触的障碍，目标可能被柜体遮挡，需要安全绕行。目标位置不在工具中给出；只能用相机可见信息、追踪点几何和实测运动反馈作判断。请在离开初始区域之前留意两个目标，并自行验证 A 后再去 B。独立评分不接受模型自述。",
+        "image_id": "frame-00100",
+        "sim_time_s": 236.12000000039933,
+        "image_size": {
+          "width": 640,
+          "height": 360
+        },
+        "coordinate_convention": "tracked_points.relative_xy_m: origin at the current base body reference, horizontal forward and left axes, metres; yaw positive left. local_odometry: origin and horizontal axes fixed at the episode-start base body reference.",
+        "local_odometry": {
+          "translation_m": [
+            -0.08491613033242727,
+            0.14496089750037075
+          ],
+          "yaw_rad": 0.12384347185088797,
+          "reference": "episode_start_body_horizontal",
+          "source": "simulated_proprioception"
+        },
+        "robot_state": {
+          "motion_state": "idle",
+          "body_height_m": 0.3615607955993236,
+          "body_pitch_rad": -0.015581199699994943,
+          "body_roll_rad": -0.010044092904741092,
+          "speed_mps": 0.008463135285627183,
+          "yaw_rate_radps": 0.0014325553216679237,
+          "fallen": false,
+          "posture_control_supported": false
+        },
+        "tracked_points": [
+          {
+            "point_id": "point-012",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-013",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-014",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-015",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-016",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-017",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-018",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-019",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          }
+        ],
+        "capabilities": {
+          "planar_motion": true,
+          "height_pitch_control": false
+        },
+        "simulation_mode": "paused_during_model_inference",
+        "sensor_calibration": {
+          "camera_frame": "front_rgbd_optical",
+          "body_frame": "base",
+          "optical_axes": "x right, y down, z forward",
+          "body_axes": "x forward, y left, z up",
+          "camera_position_in_body_m": [
+            0.32,
+            0.0,
+            0.08
+          ],
+          "camera_optical_to_body_rotation": [
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          ]
+        },
+        "completion_requirements": {
+          "goal_kind": "ordered_standoff",
+          "reference_body": "base",
+          "stop_required": true,
+          "collision_free_required": true,
+          "max_stopped_speed_mps": 0.12,
+          "max_stopped_yaw_rate_radps": 0.25,
+          "standoff_m": 1.0,
+          "distance_tolerance_m": 0.18,
+          "heading_tolerance_rad": 0.25
+        }
+      }
+    },
+    {
+      "event": "tool_results",
+      "wall_elapsed_s": 688.226651064,
+      "turn": 119,
+      "results": [
+        {
+          "call_id": "call_9a02c437508442e9af294f8b",
+          "tool": "track_point",
+          "status": "succeeded",
+          "point": {
+            "point_id": "point-020",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": true,
+            "pixel_uv": [
+              317.0,
+              183.0
+            ],
+            "relative_xy_m": [
+              1.8293,
+              0.0127
+            ],
+            "range_m": 1.8294,
+            "bearing_rad": 0.007,
+            "confidence": 1.0,
+            "loss_reason": null,
+            "source": "rgbd_optical_flow"
+          }
+        }
+      ],
+      "next_observation": {
+        "task": "依次完成两个目标：先找到蓝球 A，停到距其中心 0.82–1.18 米处，面向它（朝向误差不超过 0.25 弧度），调用 stop 确认停止；然后找到绿方块 B，以同样的距离和朝向标准停止，再调用 finish 结束整轮。B 只有在 A 的独立检查点已通过后才计分，直接先到 B 不算完成。两段行程都不得碰撞或跌倒。场景中的柜体是不允许接触的障碍，目标可能被柜体遮挡，需要安全绕行。目标位置不在工具中给出；只能用相机可见信息、追踪点几何和实测运动反馈作判断。请在离开初始区域之前留意两个目标，并自行验证 A 后再去 B。独立评分不接受模型自述。",
+        "image_id": "frame-00100",
+        "sim_time_s": 236.12000000039933,
+        "image_size": {
+          "width": 640,
+          "height": 360
+        },
+        "coordinate_convention": "tracked_points.relative_xy_m: origin at the current base body reference, horizontal forward and left axes, metres; yaw positive left. local_odometry: origin and horizontal axes fixed at the episode-start base body reference.",
+        "local_odometry": {
+          "translation_m": [
+            -0.08491613033242727,
+            0.14496089750037075
+          ],
+          "yaw_rad": 0.12384347185088797,
+          "reference": "episode_start_body_horizontal",
+          "source": "simulated_proprioception"
+        },
+        "robot_state": {
+          "motion_state": "idle",
+          "body_height_m": 0.3615607955993236,
+          "body_pitch_rad": -0.015581199699994943,
+          "body_roll_rad": -0.010044092904741092,
+          "speed_mps": 0.008463135285627183,
+          "yaw_rate_radps": 0.0014325553216679237,
+          "fallen": false,
+          "posture_control_supported": false
+        },
+        "tracked_points": [
+          {
+            "point_id": "point-013",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-014",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-015",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-016",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-017",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "inconsistent_flow",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-018",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-019",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": false,
+            "pixel_uv": null,
+            "relative_xy_m": null,
+            "range_m": null,
+            "bearing_rad": null,
+            "confidence": 0.0,
+            "loss_reason": "optical_flow_lost",
+            "source": "rgbd_optical_flow"
+          },
+          {
+            "point_id": "point-020",
+            "image_id": "frame-00100",
+            "timestamp_s": 236.12000000039933,
+            "valid": true,
+            "pixel_uv": [
+              317.0,
+              183.0
+            ],
+            "relative_xy_m": [
+              1.8293,
+              0.0127
+            ],
+            "range_m": 1.8294,
+            "bearing_rad": 0.007,
+            "confidence": 1.0,
+            "loss_reason": null,
+            "source": "rgbd_optical_flow"
+          }
+        ],
+        "capabilities": {
+          "planar_motion": true,
+          "height_pitch_control": false
+        },
+        "simulation_mode": "paused_during_model_inference",
+        "sensor_calibration": {
+          "camera_frame": "front_rgbd_optical",
+          "body_frame": "base",
+          "optical_axes": "x right, y down, z forward",
+          "body_axes": "x forward, y left, z up",
+          "camera_position_in_body_m": [
+            0.32,
+            0.0,
+            0.08
+          ],
+          "camera_optical_to_body_rotation": [
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ]
+          ]
+        },
+        "completion_requirements": {
+          "goal_kind": "ordered_standoff",
+          "reference_body": "base",
+          "stop_required": true,
+          "collision_free_required": true,
+          "max_stopped_speed_mps": 0.12,
+          "max_stopped_yaw_rate_radps": 0.25,
+          "standoff_m": 1.0,
+          "distance_tolerance_m": 0.18,
+          "heading_tolerance_rad": 0.25
+        }
+      }
+    }
+  ],
+  "last_plans": [
+    {
+      "decision": 115,
+      "planning_envelope": {
+        "plan_id": "plan-0004",
+        "subgoal_id": "scan_A"
+      }
+    },
+    {
+      "decision": 116,
+      "planning_envelope": {
+        "plan_id": "plan-0004",
+        "subgoal_id": "scan_A"
+      }
+    },
+    {
+      "decision": 117,
+      "planning_envelope": {
+        "plan_id": "plan-0004",
+        "subgoal_id": "scan_A"
+      }
+    },
+    {
+      "decision": 118,
+      "planning_envelope": null
+    },
+    {
+      "decision": 119,
+      "planning_envelope": {
+        "plan_id": "plan-0004",
+        "subgoal_id": "scan_A"
+      }
+    },
+    {
+      "decision": 120,
+      "planning_envelope": null
+    }
+  ],
+  "last_input_world": {
+    "step": 119,
+    "revision": 124,
+    "decision_step": 119,
+    "snapshot_lag_steps": 0,
+    "active_plan_id": "plan-0004",
+    "active_plan": {
+      "plan_id": "plan-0004",
+      "branches": [
+        {
+          "on": "skill_stuck",
+          "subgoal_id": "scan_A"
+        }
+      ],
+      "recovery": "stop, observe current view, then resume conservative scanning or abort if no target visible"
+    },
+    "bootstrap_hint": {
+      "reason": "visible_task_candidate_has_no_tool_track",
+      "suggested_tool": "track_point",
+      "suggested_arguments": {
+        "image_id": "frame-00100",
+        "u": 317,
+        "v": 183
+      },
+      "is_evidence_or_executed_action": false
+    },
+    "task_targets": [
+      {
+        "object_id": "task:A",
+        "task_label": "A",
+        "description": "蓝球",
+        "color": "blue"
+      },
+      {
+        "object_id": "task:B",
+        "task_label": "B",
+        "description": "绿方块",
+        "color": "green"
+      }
+    ],
+    "completion_requirements": {
+      "goal_kind": "ordered_standoff",
+      "reference_body": "base",
+      "stop_required": true,
+      "collision_free_required": true,
+      "max_stopped_speed_mps": 0.12,
+      "max_stopped_yaw_rate_radps": 0.25,
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "heading_tolerance_rad": 0.25
+    },
+    "current_observation": {
+      "image_id": "frame-00100",
+      "image_size": {
+        "width": 640,
+        "height": 360
+      },
+      "sensor_calibration": {
+        "camera_frame": "front_rgbd_optical",
+        "body_frame": "base",
+        "optical_axes": "x right, y down, z forward",
+        "body_axes": "x forward, y left, z up",
+        "camera_position_in_body_m": [
+          0.32,
+          0.0,
+          0.08
+        ],
+        "camera_optical_to_body_rotation": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        ]
+      },
+      "source": "current_public_rgbd_and_tool_geometry",
+      "target_candidates": [
+        {
+          "object_id": "task:B",
+          "task_label": "B",
+          "description": "绿方块",
+          "image_id": "frame-00100",
+          "pixel_uv": [
+            317,
+            183
+          ],
+          "camera_xyz_m": [
+            -0.012096744867433333,
+            0.016935442814406666,
+            1.5085567235946655
+          ],
+          "coordinate_frame": "current_camera_optical",
+          "status": "candidate_not_confirmed",
+          "source": "task_label_color_rgbd_v1"
+        }
+      ],
+      "tracked_points": [],
+      "visual_candidates": [
+        {
+          "image_id": "frame-00100",
+          "pixel_uv": [
+            204.0,
+            189.0
+          ],
+          "category": "unclassified_visual_feature",
+          "source": "rgb_corner_detector"
+        },
+        {
+          "image_id": "frame-00100",
+          "pixel_uv": [
+            317.0,
+            183.0
+          ],
+          "category": "unclassified_visual_feature",
+          "source": "rgb_corner_detector"
+        },
+        {
+          "image_id": "frame-00100",
+          "pixel_uv": [
+            595.0,
+            196.0
+          ],
+          "category": "unclassified_visual_feature",
+          "source": "rgb_corner_detector"
+        },
+        {
+          "image_id": "frame-00100",
+          "pixel_uv": [
+            597.0,
+            15.0
+          ],
+          "category": "unclassified_visual_feature",
+          "source": "rgb_corner_detector"
+        },
+        {
+          "image_id": "frame-00100",
+          "pixel_uv": [
+            207.0,
+            37.0
+          ],
+          "category": "unclassified_visual_feature",
+          "source": "rgb_corner_detector"
+        },
+        {
+          "image_id": "frame-00100",
+          "pixel_uv": [
+            469.0,
+            110.0
+          ],
+          "category": "unclassified_visual_feature",
+          "source": "rgb_corner_detector"
+        }
+      ]
+    },
+    "last_tool_feedback": [
+      {
+        "tool": "turn",
+        "status": "succeeded",
+        "error_code": null,
+        "plan_id": "plan-0004",
+        "subgoal_id": "scan_A"
+      }
+    ],
+    "measurements": {
+      "pose.x_m": {
+        "value": -0.08491613033242727,
+        "source": "simulated_proprioception",
+        "step": 119,
+        "evidence_ids": [
+          "e000596"
+        ]
+      },
+      "pose.y_m": {
+        "value": 0.14496089750037075,
+        "source": "simulated_proprioception",
+        "step": 119,
+        "evidence_ids": [
+          "e000597"
+        ]
+      },
+      "pose.yaw_rad": {
+        "value": 0.12384347185088797,
+        "source": "simulated_proprioception",
+        "step": 119,
+        "evidence_ids": [
+          "e000598"
+        ]
+      }
+    },
+    "context_limits": {
+      "state_char_limit": 12000,
+      "retry": false,
+      "projection": "bounded_prompt_view_full_checks_in_md",
+      "omitted_items": 0
+    }
+  }
+}

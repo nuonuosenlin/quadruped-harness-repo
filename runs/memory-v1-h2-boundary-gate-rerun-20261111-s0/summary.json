@@ -1,0 +1,190 @@
+{
+  "boundary_block_count": 1,
+  "maximum_blocked_move_attempt_streak": 1,
+  "first_A_candidate_input_decision": null,
+  "minimum_route_distance_to_A": {
+    "decision": 26,
+    "xy_m": [
+      1.2658222372152863,
+      1.0097254283749542
+    ],
+    "distance_to_A_m": 5.232525847101
+  },
+  "successful_translation_count": 37,
+  "metrics": {
+    "mode": "api",
+    "seed": 0,
+    "termination": "budget_exhausted",
+    "task_id": "memory_ab_occluded_v1",
+    "scenario_source": "local_memory_ordered_navigation_demo_not_official_benchmark",
+    "success": false,
+    "error": null,
+    "final_stop": {
+      "status": "succeeded",
+      "error_code": null,
+      "speed_mps": 0.015658381293452973,
+      "yaw_rate_radps": 0.008845035075337807
+    },
+    "model_calls": 120,
+    "decision_calls": 120,
+    "protocol_retries": 0,
+    "motion_calls": 51,
+    "usage": {
+      "prompt_tokens": 678620,
+      "completion_tokens": 162239,
+      "total_tokens": 840859
+    },
+    "reasoning_responses": 120,
+    "reasoning_characters": 579291,
+    "wall_elapsed_s": 1032.342083258,
+    "sim_elapsed_s": 125.45999999988668,
+    "evaluation": {
+      "success": false,
+      "goal_kind": "ordered_standoff",
+      "checkpoints": {
+        "A": {
+          "label": "A",
+          "target_xy_m": [
+            6.4,
+            0.0
+          ],
+          "base_xy_m": [
+            1.2455972658303718,
+            1.0389035018967276
+          ],
+          "distance_to_target_center_m": 5.258059340885059,
+          "heading_error_rad": 1.3748327454102367,
+          "speed_mps": 0.00653813252130475,
+          "abs_yaw_rate_radps": 0.01613900420006208,
+          "sim_time_s": 38.88000000000155,
+          "stop_confirmed": true,
+          "stopped": true,
+          "collision": false,
+          "fallen": false,
+          "criteria_pass": false,
+          "failure_reasons": [
+            "DISTANCE_OUT_OF_RANGE",
+            "HEADING_OUT_OF_RANGE"
+          ],
+          "source": "privileged_simulator_evaluator",
+          "stop_index": 15,
+          "achieved_at_checkpoint": false,
+          "passed": false
+        },
+        "B": {
+          "label": "B",
+          "target_xy_m": [
+            1.8,
+            0.6
+          ],
+          "base_xy_m": [
+            -3.228682926453537,
+            5.282445845630647
+          ],
+          "distance_to_target_center_m": 6.871168100990473,
+          "heading_error_rad": 2.0346960296400662,
+          "speed_mps": 0.015658381293452973,
+          "abs_yaw_rate_radps": 0.008845035075337807,
+          "sim_time_s": 126.45999999988668,
+          "stop_confirmed": true,
+          "stopped": true,
+          "collision": false,
+          "fallen": false,
+          "criteria_pass": false,
+          "failure_reasons": [
+            "DISTANCE_OUT_OF_RANGE",
+            "HEADING_OUT_OF_RANGE",
+            "A_NOT_CONFIRMED_BEFORE_B"
+          ],
+          "source": "privileged_simulator_evaluator",
+          "eligible": false,
+          "passed": false
+        }
+      },
+      "checkpoint_order": [
+        "A",
+        "B"
+      ],
+      "order_satisfied": false,
+      "premature_b_stops_ignored": 1,
+      "requires_finish": true,
+      "finish_enforced_by": "episode_runner",
+      "standoff_m": 1.0,
+      "distance_tolerance_m": 0.18,
+      "heading_tolerance_rad": 0.25,
+      "collision": false,
+      "fallen": false,
+      "stopped": true,
+      "source": "privileged_simulator_evaluator"
+    },
+    "simulation_mode": "paused_during_model_inference",
+    "is_llm_result": true,
+    "checkpoints": {
+      "A": {
+        "label": "A",
+        "target_xy_m": [
+          6.4,
+          0.0
+        ],
+        "base_xy_m": [
+          1.2455972658303718,
+          1.0389035018967276
+        ],
+        "distance_to_target_center_m": 5.258059340885059,
+        "heading_error_rad": 1.3748327454102367,
+        "speed_mps": 0.00653813252130475,
+        "abs_yaw_rate_radps": 0.01613900420006208,
+        "sim_time_s": 38.88000000000155,
+        "stop_confirmed": true,
+        "stopped": true,
+        "collision": false,
+        "fallen": false,
+        "criteria_pass": false,
+        "failure_reasons": [
+          "DISTANCE_OUT_OF_RANGE",
+          "HEADING_OUT_OF_RANGE"
+        ],
+        "source": "privileged_simulator_evaluator",
+        "stop_index": 15,
+        "achieved_at_checkpoint": false,
+        "passed": false
+      },
+      "B": {
+        "label": "B",
+        "target_xy_m": [
+          1.8,
+          0.6
+        ],
+        "base_xy_m": [
+          -3.228682926453537,
+          5.282445845630647
+        ],
+        "distance_to_target_center_m": 6.871168100990473,
+        "heading_error_rad": 2.0346960296400662,
+        "speed_mps": 0.015658381293452973,
+        "abs_yaw_rate_radps": 0.008845035075337807,
+        "sim_time_s": 126.45999999988668,
+        "stop_confirmed": true,
+        "stopped": true,
+        "collision": false,
+        "fallen": false,
+        "criteria_pass": false,
+        "failure_reasons": [
+          "DISTANCE_OUT_OF_RANGE",
+          "HEADING_OUT_OF_RANGE",
+          "A_NOT_CONFIRMED_BEFORE_B"
+        ],
+        "source": "privileged_simulator_evaluator",
+        "eligible": false,
+        "passed": false
+      }
+    },
+    "order_satisfied": false
+  },
+  "episode": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-boundary-gate-rerun-20261111-s0/H2/20261111-204056-api-memory_ab_occluded_v1-s0-ceafa1",
+  "memory_file": "/home/nuonuosenlin/Agent-harness/runs/memory-v1-h2-boundary-gate-rerun-20261111-s0/H2/20261111-204056-api-memory_ab_occluded_v1-s0-ceafa1/memory.md",
+  "finish_decisions": [],
+  "protocol_error_count": 0,
+  "length_count": 0,
+  "user_stop": null
+}
